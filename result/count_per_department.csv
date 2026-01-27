@@ -1,0 +1,13 @@
+department,students,supervisors,dataset_count
+A Community Hospital,11,10,13
+B Community Hospital,6,7,7
+C Community Hospital,4,3,4
+Diabetes and Endocrinology,8,9,9
+General Medicine,5,5,5
+Geriatric Medicine,12,10,16
+Haematology,10,10,11
+Neurology,12,15,16
+Paediatrics,22,19,32
+Psychiatry,7,8,9
+Surgical Unit,18,17,23
+Thoracic Surgery Unit,12,14,16

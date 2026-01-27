@@ -1,0 +1,11 @@
+feedback_provider,Item,spearman,p_value
+AI,Accurate,0.04,1.000
+AI,Clear Direction,-0.00,1.000
+AI,Criteria Based,0.08,1.000
+AI,Prioritization,-0.02,1.000
+AI,Supportive,0.00,1.000
+Supervisor,Accurate,0.50,<0.001
+Supervisor,Clear Direction,0.63,<0.001
+Supervisor,Criteria Based,0.60,<0.001
+Supervisor,Prioritization,0.58,<0.001
+Supervisor,Supportive,0.30,<0.001

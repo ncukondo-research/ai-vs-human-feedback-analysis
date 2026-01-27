@@ -1,0 +1,11 @@
+item,group,effect,variance,sd
+accurate,assessor,(Intercept),0.0356848250792395,0.188904274909912
+accurate,department,(Intercept),0.0908323121700507,0.301383994548567
+clear.direction,assessor,(Intercept),0.013660900763352,0.116879856105969
+clear.direction,department,(Intercept),0.169780814118244,0.412044674905821
+criteria.based,assessor,(Intercept),0.00801920176219829,0.089549995880504
+criteria.based,department,(Intercept),0.100608806059892,0.317188912258755
+prioritization,assessor,(Intercept),0.0297097586203558,0.172365189700113
+prioritization,department,(Intercept),0.0806592209605585,0.284005670648596
+supportive,assessor,(Intercept),5.3068826775495e-10,2.30366722369996e-05
+supportive,department,(Intercept),0.138333106265718,0.371931588152604
