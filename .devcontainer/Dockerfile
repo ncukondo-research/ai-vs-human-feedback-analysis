@@ -19,7 +19,7 @@ ENV PATH="/usr/local/bin:${PATH}"
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       libcurl4-openssl-dev libssl-dev libxml2-dev xz-utils cmake curl \
-      gdebi-core r-cran-devtools libfontconfig1-dev libfreetype6-dev \
+      gdebi-core libfontconfig1-dev libfreetype6-dev \
       libharfbuzz-dev libfribidi-dev libpng-dev libtiff5-dev libjpeg-dev \
       libnode-dev openssh-client \
  && rm -rf /var/lib/apt/lists/*
