@@ -1,9 +1,9 @@
 data/raw*
-**/raw_*
+**/raw*
 src/*/
 !src/analysis/
 !src/custom-filters/
-src/analysis/*/
+src/analysis/quantitative/*/
 src/**/*.html
 src/**/*.rmarkdown
 .claude/
@@ -11,3 +11,4 @@ result/src/
 
 
 /.quarto/
+.env
