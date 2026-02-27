@@ -1,0 +1,24 @@
+Editors
+JMIR Medical Education
+
+Dear Editors,
+
+On behalf of my coauthors, I am pleased to submit the manuscript entitled “Same logs, different voices: AI-generated vs human feedback during clinical clerkship in undergraduate education” for consideration in JMIR Medical Education.
+
+This mixed-methods study compares AI-generated feedback (GPT-4o) and supervisor-provided feedback on 161 weekly clinical clerkship logs from fifth- and sixth-year medical students at Nagoya University, Japan. Ten faculty and ten students evaluated both feedback types using a validated rubric and open-ended comments, and we integrated quantitative and qualitative findings through Joint Display Analysis. We found that AI feedback was longer and more consistently aligned with rubric criteria (especially criteria-based guidance and clear directions), while supervisor feedback offered clinically grounded insights and more natural, relationship-centered language. The work highlights complementary strengths and limitations of AI and human feedback in authentic clinical settings and provides evidence-based guidance for integrating AI tools into clerkship education without displacing human supervision.
+
+The manuscript is original, has not been published previously, and is not under consideration elsewhere. All authors have approved the manuscript and agree with its submission to JMIR Medical Education. Any conflicts of interest and funding sources are disclosed in the manuscript.
+
+We believe this work will be of interest to JMIR Medical Education readers because it addresses timely questions about the role of generative AI in health professions education, using real-world clinical clerkship data and a rigorous mixed-methods design. It offers actionable insights for educators and program leaders who are considering AI-supported feedback systems.
+
+Thank you for your consideration. Please feel free to contact me if any additional information is needed.
+
+Sincerely,
+
+Takeshi Kondo, MD, MHPE, PhD
+Center for Medical Education, Nagoya University Graduate School of Medicine
+65 Tsurumai-cho, Showa-ku, Nagoya, Aichi 466-8550, Japan
+Email: ncukondo@gmail.com
+Tel: +81-52-741-2111
+Fax: +81-52-741-2111
+ORCID: 0000-0002-3307-671X

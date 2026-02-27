@@ -20,10 +20,10 @@ pacman::p_load(
   broom
 )
 
-conversion_table <- rio::import(here("data", "raw_conversion_table.csv"))
+conversion_table <- rio::import(here("data", "quantitative", "raw_conversion_table.csv"))
 
 # Read the CSV file
-data <- rio::import(here("data", "raw_data.csv")) |>
+data <- rio::import(here("data", "quantitative", "raw_data.csv")) |>
   filter(
     !assessor %in% c(1, 2, 3), # exclude pre-testers
     !record_id %in% c(66, 106, 156) # Remove excluded data
@@ -75,7 +75,7 @@ feedback_text_data <- data |>
   mutate(feedback_letter_count = nchar(value))
 
 feedback_text_data |>
-  rio::export(here("data", "data_feedback_text.csv"))
+  rio::export(here("data", "quantitative", "data_feedback_text.csv"))
 
 tidy_data <- tidy_data |>
   left_join(
@@ -87,4 +87,4 @@ tidy_data <- tidy_data |>
 
 # Write to CSV
 tidy_data |>
-  rio::export(here("data", "data.csv"))
+  rio::export(here("data", "quantitative", "data.csv"))

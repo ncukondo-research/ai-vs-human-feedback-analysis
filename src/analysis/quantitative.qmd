@@ -46,7 +46,7 @@ pacman::p_load(
 )
 
 # Load the tidy data created in make_tidy_data.r
-tidy_data <- rio::import(here("data", "data.csv"))
+tidy_data <- rio::import(here("data", "quantitative", "data.csv"))
 
 ```
 
@@ -66,7 +66,7 @@ summary <- tidy_data |>
   )
 
 summary |>
-  rio::export(here("result", "dataset_summary.csv"))
+  rio::export(here("result", "quantitative", "dataset_summary.csv"))
 ```
 
 As shown below, the data were collected over the period from `{r} format(summary$min_time,"%Y-%m-%d")` to `{r} format(summary$max_time,"%Y-%m-%d")`, and include a total of `{r} summary$count` records. The dataset contains `{r} summary$dataset_count` datasets from `{r} summary$department_count` departments, `{r} summary$student_count` students, and `{r} summary$supervisor_count` supervisors ([@tbl-dataset-summary]).
@@ -131,7 +131,7 @@ count_per_department |>
   autofit()
 
 count_per_department |>
-  rio::export(here("result", "count_per_department.csv"))
+  rio::export(here("result", "quantitative", "count_per_department.csv"))
 ```
 
 ## Difference Between Feedback Length
@@ -174,7 +174,7 @@ ttab <- paired_by_id |>
   ) |>
   select(-ttest_list, -ttest_ai, -ttest_supervisor)
 
-ttab |> rio::export(here::here("result","paired_ttest_length_results.csv"))
+ttab |> rio::export(here::here("result", "quantitative","paired_ttest_length_results.csv"))
 
 ```
 
@@ -199,7 +199,7 @@ plot <- tidy_data |>
 
 plot |>
   ggsave(
-    filename = here("result", "fig_length_distribution.svg"),
+    filename = here("result", "quantitative", "fig_length_distribution.svg"),
     plot = _,
     width = 10, height = 6
   )
@@ -221,7 +221,7 @@ display_df <- ttab |>
     p_value = p_fmt
   ) 
 
-display_df |> rio::export(here::here("result","paired_ttest_length_results_formatted.csv"))
+display_df |> rio::export(here::here("result", "quantitative","paired_ttest_length_results_formatted.csv"))
 
 avail <- 6.5
 w <- rep(avail /ncol(display_df), ncol(display_df))
@@ -271,7 +271,7 @@ graph_diff_by_id <- diff_by_id |>
 
 graph_diff_by_id |>
   ggsave(
-    filename = here("result", "fig_diff_ai_vs_supervisor.svg"),
+    filename = here("result", "quantitative", "fig_diff_ai_vs_supervisor.svg"),
     plot = _,
     width = 10, height = 6
   )
@@ -320,7 +320,7 @@ ttab <- paired_by_id_and_assessortype |>
     bonferroni_p_fmt = ifelse(bonferroni_p < 0.001, "<0.001", sprintf("%.3f", bonferroni_p))
   )
 
-ttab |> rio::export(here::here("result","paired_ttest_results.csv"))
+ttab |> rio::export(here::here("result", "quantitative","paired_ttest_results.csv"))
 
 display_df <- ttab |>
   transmute(
@@ -341,7 +341,7 @@ display_df <- ttab |>
     )
   )
 
-display_df |> rio::export(here::here("result","paired_ttest_results_formatted.csv"))
+display_df |> rio::export(here::here("result", "quantitative","paired_ttest_results_formatted.csv"))
 
 ft <- flextable(display_df) |>
   flextable::autofit() |>
@@ -503,11 +503,11 @@ summary_table <- fixed_all |>
 
 
 # --- 4. Export CSV -------------------------------------------------------------
-rio::export(fixed_all,     here::here("result", "clmm_fixed_effects_all_items.csv"))
-rio::export(random_all,    here::here("result", "clmm_random_effects_all_items.csv"))
-rio::export(thresh_all,    here::here("result", "clmm_thresholds_all_items.csv"))
-rio::export(fit_all,       here::here("result", "clmm_model_fit_all_items.csv"))
-rio::export(summary_table, here::here("result", "clmm_summary_formatted.csv"))
+rio::export(fixed_all,     here::here("result", "quantitative", "clmm_fixed_effects_all_items.csv"))
+rio::export(random_all,    here::here("result", "quantitative", "clmm_random_effects_all_items.csv"))
+rio::export(thresh_all,    here::here("result", "quantitative", "clmm_thresholds_all_items.csv"))
+rio::export(fit_all,       here::here("result", "quantitative", "clmm_model_fit_all_items.csv"))
+rio::export(summary_table, here::here("result", "quantitative", "clmm_summary_formatted.csv"))
 
 # --- 5. Bonferroni correction for CLMM fixed effects --------------------------
 n_items <- length(all_items)
@@ -548,11 +548,11 @@ summary_table <- fixed_all |>
   )
 
 # --- 6. Export CSV -------------------------------------------------------------
-rio::export(fixed_all,     here::here("result", "clmm_fixed_effects_all_items_bonferroni.csv"))
-rio::export(random_all,    here::here("result", "clmm_random_effects_all_items.csv"))
-rio::export(thresh_all,    here::here("result", "clmm_thresholds_all_items.csv"))
-rio::export(fit_all,       here::here("result", "clmm_model_fit_all_items.csv"))
-rio::export(summary_table, here::here("result", "clmm_summary_formatted_bonferroni.csv"))
+rio::export(fixed_all,     here::here("result", "quantitative", "clmm_fixed_effects_all_items_bonferroni.csv"))
+rio::export(random_all,    here::here("result", "quantitative", "clmm_random_effects_all_items.csv"))
+rio::export(thresh_all,    here::here("result", "quantitative", "clmm_thresholds_all_items.csv"))
+rio::export(fit_all,       here::here("result", "quantitative", "clmm_model_fit_all_items.csv"))
+rio::export(summary_table, here::here("result", "quantitative", "clmm_summary_formatted_bonferroni.csv"))
 
 # --- 7. Nicely formatted table (flextable) -----------------------------
 
@@ -604,7 +604,7 @@ cor_test_results <- tidy_data |>
   )
 
 cor_test_results |>
-  rio::export(here("result", "correlation_letter_count_score_by_person_item.csv"))
+  rio::export(here("result", "quantitative", "correlation_letter_count_score_by_person_item.csv"))
 
 cor_test_results_formatted <- cor_test_results |>
   mutate(
@@ -635,7 +635,7 @@ cor_test_results_formatted <- cor_test_results |>
 
 
 cor_test_results_formatted |>
-  rio::export(here("result", "correlation_letter_count_score_by_person_item_formatted.csv"))
+  rio::export(here("result", "quantitative", "correlation_letter_count_score_by_person_item_formatted.csv"))
 
 avail <- 6
 w <- rep(avail /ncol(cor_test_results_formatted), ncol(cor_test_results_formatted))
@@ -675,7 +675,7 @@ mean_score_by_record <- tidy_data |>
 
 # Save the computed means
 mean_score_by_record |>
-  rio::export(here("result", "mean_score_by_record_person.csv"))
+  rio::export(here("result", "quantitative", "mean_score_by_record_person.csv"))
 
 # Plot overlapping histograms of per-record mean scores, colored by provider
 plot_mean_score_by_record <- ggplot(mean_score_by_record, aes(x = mean_score, fill = person)) +
@@ -689,7 +689,7 @@ plot_mean_score_by_record <- ggplot(mean_score_by_record, aes(x = mean_score, fi
 
 plot_mean_score_by_record |>
   ggsave(
-    filename = here("result", "fig_mean_score_per_record.svg"),
+    filename = here("result", "quantitative", "fig_mean_score_per_record.svg"),
     plot = _,
     width = 10, height = 6
   )
@@ -749,7 +749,7 @@ summary_df <- tibble::tibble(
 )
 
 # Save raw and formatted results
-rio::export(summary_df, here("result", "variance_tests_mean_score_by_record.csv"))
+rio::export(summary_df, here("result", "quantitative", "variance_tests_mean_score_by_record.csv"))
 
 display_df <- summary_df |>
   transmute(
@@ -762,7 +762,7 @@ display_df <- summary_df |>
     `Var(Supervisor)` = round(var_supervisor, 3)
   )
 
-rio::export(display_df, here("result", "variance_tests_mean_score_by_record_formatted.csv"))
+rio::export(display_df, here("result", "quantitative", "variance_tests_mean_score_by_record_formatted.csv"))
 
 display_df |>
   flextable::flextable() |>
