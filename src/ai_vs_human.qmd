@@ -23,6 +23,9 @@ Medical students and supervisors have evaluated the feedback provided by AI(Open
 # First, load the data, standardize the format,
 # and exclude data that is not subject to analysis.
 
+# Ensure renv is active (needed when running cells interactively in VSCode)
+if (is.null(renv::project())) renv::load()
+
 # Load necessary packages
 if (!requireNamespace("pacman", quietly = TRUE))
   install.packages("pacman", quietly = TRUE)
