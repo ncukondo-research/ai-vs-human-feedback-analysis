@@ -1,0 +1,7 @@
+Comparison,N pairs,Mean Diff,SD Diff,Cohen's d (95% CI),Interpretation
+Feedback Length,161,284.16,99.94,2.84 (2.50 to 3.19),Large
+Accurate,322,0.38,1.69,0.22 (0.11 to 0.33),Small
+Clear Direction,322,1.39,1.89,0.73 (0.61 to 0.86),Medium
+Criteria Based,322,1.70,1.84,0.93 (0.79 to 1.06),Large
+Prioritization,322,0.68,1.90,0.36 (0.24 to 0.47),Small
+Supportive,322,0.23,1.33,0.17 (0.06 to 0.28),Negligible

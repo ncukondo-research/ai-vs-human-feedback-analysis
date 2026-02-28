@@ -6,6 +6,7 @@ src/*/
 src/analysis/quantitative/*/
 src/**/*.html
 src/**/*.rmarkdown
+src/**/*.docx
 .claude/
 result/src/
 

@@ -1,0 +1,17 @@
+variable,n_missing,n_total,pct_complete
+ID,0,3220,100
+time,0,3220,100
+assessor_type,0,3220,100
+feedback_provider,0,3220,100
+student,0,3220,100
+assessor,0,3220,100
+record_id,0,3220,100
+unmatch,0,3220,100
+department,0,3220,100
+log_letter_count,0,3220,100
+log_date_count,0,3220,100
+log_id,0,3220,100
+item,0,3220,100
+person,0,3220,100
+value,0,3220,100
+feedback_letter_count,0,3220,100

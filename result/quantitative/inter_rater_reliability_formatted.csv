@@ -1,0 +1,11 @@
+Item,Person,N,% Agreement,Weighted Kappa,Kappa p,ICC (95% CI),ICC p
+Accurate,AI,161,36.0,0.062,0.412,0.062 (-0.087-0.210),0.207
+Accurate,Supervisor,161,41.0,0.383,<.001,0.384 (0.246-0.508),<.001
+Clear Direction,AI,161,44.7,0.150,0.047,0.151 (-0.004-0.298),0.028
+Clear Direction,Supervisor,161,37.9,0.535,<.001,0.536 (0.417-0.638),<.001
+Criteria Based,AI,161,44.1,0.076,0.313,0.076 (-0.080-0.229),0.169
+Criteria Based,Supervisor,161,31.1,0.427,<.001,0.428 (0.293-0.547),<.001
+Prioritization,AI,161,24.2,0.042,0.565,0.042 (-0.107-0.191),0.291
+Prioritization,Supervisor,161,32.9,0.379,<.001,0.381 (0.241-0.505),<.001
+Supportive,AI,161,49.7,0.073,0.304,0.073 (-0.083-0.226),0.178
+Supportive,Supervisor,161,55.9,0.365,<.001,0.367 (0.226-0.492),<.001

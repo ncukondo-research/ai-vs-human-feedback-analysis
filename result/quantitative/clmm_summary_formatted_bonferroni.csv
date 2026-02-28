@@ -1,16 +1,16 @@
-Item,Effect,OR,p_value
-Accurate,Provider: AI (vs supervisor),1.35 (0.91–2.00),1.000
-Accurate,Assessor type: student (vs faculty),1.77 (1.16–2.72),0.125
-Accurate,Interaction: supervisor × student,0.98 (0.55–1.76),1.000
-Clear Direction,Provider: AI (vs supervisor),6.61 (4.35–10.06),<0.001
-Clear Direction,Assessor type: student (vs faculty),1.37 (0.92–2.04),1.000
-Clear Direction,Interaction: supervisor × student,1.09 (0.61–1.95),1.000
-Criteria Based,Provider: AI (vs supervisor),11.81 (7.64–18.27),<0.001
-Criteria Based,Assessor type: student (vs faculty),1.60 (1.07–2.39),0.328
-Criteria Based,Interaction: supervisor × student,0.88 (0.49–1.59),1.000
-Prioritization,Provider: AI (vs supervisor),1.70 (1.16–2.50),0.098
-Prioritization,Assessor type: student (vs faculty),1.25 (0.83–1.89),1.000
-Prioritization,Interaction: supervisor × student,1.62 (0.92–2.86),1.000
-Supportive,Provider: AI (vs supervisor),1.34 (0.87–2.06),1.000
-Supportive,Assessor type: student (vs faculty),1.57 (0.99–2.49),0.833
-Supportive,Interaction: supervisor × student,1.19 (0.61–2.34),1.000
+Item,Effect,OR,p_uncorrected,p_bonferroni
+Accurate,Provider: AI (vs supervisor),1.35 (0.91–2.00),0.142,1.000
+Accurate,Assessor type: student (vs faculty),1.77 (1.16–2.72),0.008,0.125
+Accurate,Interaction: supervisor × student,0.98 (0.55–1.76),0.956,1.000
+Clear Direction,Provider: AI (vs supervisor),6.61 (4.35–10.06),<0.001,<0.001
+Clear Direction,Assessor type: student (vs faculty),1.37 (0.92–2.04),0.120,1.000
+Clear Direction,Interaction: supervisor × student,1.09 (0.61–1.95),0.780,1.000
+Criteria Based,Provider: AI (vs supervisor),11.81 (7.64–18.27),<0.001,<0.001
+Criteria Based,Assessor type: student (vs faculty),1.60 (1.07–2.39),0.022,0.328
+Criteria Based,Interaction: supervisor × student,0.88 (0.49–1.59),0.684,1.000
+Prioritization,Provider: AI (vs supervisor),1.70 (1.16–2.50),0.007,0.098
+Prioritization,Assessor type: student (vs faculty),1.25 (0.83–1.89),0.281,1.000
+Prioritization,Interaction: supervisor × student,1.62 (0.92–2.86),0.097,1.000
+Supportive,Provider: AI (vs supervisor),1.34 (0.87–2.06),0.189,1.000
+Supportive,Assessor type: student (vs faculty),1.57 (0.99–2.49),0.056,0.833
+Supportive,Interaction: supervisor × student,1.19 (0.61–2.34),0.603,1.000

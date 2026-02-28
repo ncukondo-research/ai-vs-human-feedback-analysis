@@ -328,7 +328,8 @@ display_df <- ttab |>
     mean_diff = paste0(round(mean_diff,2)," (", round(mean_diff_ci_low,2), "- ", round(mean_diff_ci_high,2), ")"),
     mean_ai = paste0(round(mean_ai,2), " (", round(ai_ci_low,2), "-", round(ai_ci_high,2), ")"),
     mean_supervisor = paste0(round(mean_supervisor,2), " (", round(supervisor_ci_low,2), "-", round(supervisor_ci_high,2), ")"),
-    p_value = bonferroni_p_fmt
+    p_uncorrected = p_fmt,
+    p_bonferroni = bonferroni_p_fmt
   ) |>
   mutate(
     Item = case_when(
@@ -353,7 +354,8 @@ ft <- flextable(display_df) |>
     mean_diff = "Mean Difference (AI - Supervisor)(95% CI)",
     mean_ai = "Mean AI (95% CI)",
     mean_supervisor = "Mean Supervisor (95% CI)",
-    p_value = "p-value"
+    p_uncorrected = "p-value",
+    p_bonferroni = "p (Bonferroni)"
   ) |>
   flextable::set_caption("Paired t-test results comparing AI and Supervisor ratings (with Bonferroni correction for 5 comparisons)")
 ft
@@ -517,24 +519,25 @@ total_tests <- n_items * n_effects_per_item
 fixed_all <- fixed_all |>
   mutate(
     bonferroni_p = pmin(p_value * total_tests, 1),
+    p_fmt = ifelse(p_value < 0.001, "<0.001", sprintf("%.3f", p_value)),
     bonferroni_p_fmt = ifelse(bonferroni_p < 0.001, "<0.001", sprintf("%.3f", bonferroni_p))
   )
 
-# Update summary table with corrected p-values
+# Update summary table with both uncorrected and corrected p-values
 summary_table <- fixed_all |>
   mutate(
     term_order = factor(term, levels = c("personai", "assessor_typestudent", "personai:assessor_typestudent")),
     Effect = label_term(term),
-    OR_display = sprintf("%.2f (%.2f–%.2f)", OR, OR_low, OR_high),
-    p_display = bonferroni_p_fmt  # Use Bonferroni-corrected p-value
+    OR_display = sprintf("%.2f (%.2f–%.2f)", OR, OR_low, OR_high)
   ) |>
   arrange(match(item, all_items), term_order) |>
-  select(item, Effect, OR_display, p_display) |>
+  select(item, Effect, OR_display, p_fmt, bonferroni_p_fmt) |>
   dplyr::transmute(
     Item = item,
     Effect = Effect,
     OR = OR_display,
-    p_value = p_display
+    p_uncorrected = p_fmt,
+    p_bonferroni = bonferroni_p_fmt
   ) |>
   mutate(
     Item = case_when(
@@ -568,10 +571,11 @@ ft <- summary_table |>
     Item = "Item",
     Effect = "Effect",
     OR = "Odds Ratio (95% CI)",
-    p_value = "p-value"
+    p_uncorrected = "p-value",
+    p_bonferroni = "p (Bonferroni)"
   ) |>
   flextable::set_caption(
-    "CLMM Fixed Effects Summary (all items, link = logit). Reference: AI × faculty. Values are OR (95% CI) and p-values."
+    "CLMM Fixed Effects Summary (all items, link = logit). Reference: AI × faculty. Values are OR (95% CI) and p-values. Bonferroni-corrected p-values are capped at 1.000."
   )
 
 ft
@@ -609,13 +613,15 @@ cor_test_results |>
 cor_test_results_formatted <- cor_test_results |>
   mutate(
     cor_display = sprintf("%.2f", cor),
-    p_display = ifelse(p_value < 0.001, "<0.001", sprintf("%.3f", p_value)),
+    p_uncorrected_display = ifelse(p_value < 0.001, "<0.001", sprintf("%.3f", p_value)),
+    p_bonferroni_display = bonferroni_p_fmt
   ) |>
   select(
     feedback_provider = person,
     Item = item,
     spearman = cor_display,
-    p_value = bonferroni_p_fmt
+    p_uncorrected = p_uncorrected_display,
+    p_bonferroni = p_bonferroni_display
   )|>
   mutate(
     Item = case_when(
@@ -653,7 +659,8 @@ cor_test_results_formatted |>
     Item = "Item",
     feedback_provider = "Feedback Provider",
     spearman = "Spearman's ρ",
-    p_value = "p-value"
+    p_uncorrected = "p-value",
+    p_bonferroni = "p (Bonferroni)"
   ) |>
   theme_vanilla()
 
