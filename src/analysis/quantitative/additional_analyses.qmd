@@ -166,7 +166,98 @@ plot_log |>
 plot_log
 ```
 
-### 2.3 Relationship Between Log Length and Score Differences
+### 2.3 Relationship Between Log Length and Scores
+
+```{r}
+#| label: tbl-log-score-by-person
+#| tbl-cap: "Spearman Correlation Between Log Length and Rubric Scores by Feedback Source"
+
+log_score_data <- tidy_data |>
+  filter(person %in% c("ai", "supervisor")) |>
+  select(record_id, assessor_type, item, person, value, log_letter_count)
+
+log_score_by_person <- log_score_data |>
+  group_by(person, item) |>
+  summarise(
+    n = n(),
+    spearman_rho = cor(log_letter_count, value, method = "spearman", use = "complete.obs"),
+    p_value = suppressWarnings(cor.test(log_letter_count, value, method = "spearman")$p.value),
+    .groups = "drop"
+  ) |>
+  mutate(
+    n_tests = n(),
+    bonferroni_p = pmin(p_value * n_tests, 1)
+  )
+
+log_score_by_person |>
+  rio::export(here("result", "quantitative", "log_length_score_correlation.csv"))
+
+log_score_by_person |>
+  transmute(
+    Source = case_when(
+      person == "ai" ~ "AI",
+      person == "supervisor" ~ "Supervisor",
+      TRUE ~ person
+    ),
+    Item = case_when(
+      item == "accurate" ~ "Accurate",
+      item == "clear.direction" ~ "Clear Direction",
+      item == "criteria.based" ~ "Criteria Based",
+      item == "prioritization" ~ "Prioritization",
+      item == "supportive" ~ "Supportive",
+      TRUE ~ item
+    ),
+    N = n,
+    `Spearman rho` = sprintf("%.3f", spearman_rho),
+    `p (uncorrected)` = ifelse(p_value < 0.001, "<.001", sprintf("%.3f", p_value)),
+    `p (Bonferroni)` = ifelse(bonferroni_p < 0.001, "<.001", sprintf("%.3f", bonferroni_p))
+  ) |>
+  flextable() |>
+  merge_v(j = "Source") |>
+  valign(j = "Source", valign = "top") |>
+  align(align = "center", part = "all") |>
+  autofit()
+```
+
+```{r}
+#| label: fig-log-score-by-person
+#| fig-cap: "Relationship Between Log Length and Rubric Scores by Feedback Source"
+
+plot_log_score <- log_score_data |>
+  mutate(
+    item = case_when(
+      item == "accurate" ~ "Accurate",
+      item == "clear.direction" ~ "Clear Direction",
+      item == "criteria.based" ~ "Criteria Based",
+      item == "prioritization" ~ "Prioritization",
+      item == "supportive" ~ "Supportive",
+      TRUE ~ item
+    ),
+    person = case_when(
+      person == "ai" ~ "AI",
+      person == "supervisor" ~ "Supervisor",
+      TRUE ~ person
+    )
+  ) |>
+  ggplot(aes(x = log_letter_count, y = value, color = person)) +
+  geom_jitter(alpha = 0.3, height = 0.15, width = 0) +
+  geom_smooth(method = "loess", se = TRUE) +
+  facet_wrap(~ item) +
+  labs(x = "Log Length (characters)", y = "Rubric Score", color = "Source") +
+  theme_minimal()
+
+plot_log_score |>
+  ggsave(
+    filename = here("result", "quantitative", "fig_log_length_vs_score.svg"),
+    plot = _, width = 12, height = 8
+  )
+
+plot_log_score
+```
+
+Spearman correlations between log length and rubric scores were computed separately for AI-generated and supervisor-provided feedback across all five rubric items (10 tests total, Bonferroni-corrected). No correlation reached statistical significance after correction (all Bonferroni-adjusted p > .05). The largest observed coefficient was rho = .137 (Supervisor, Clear Direction), which would explain less than 2% of variance. These results indicate that variation in student log length did not systematically influence rubric scores for either AI or supervisor feedback.
+
+### 2.4 Relationship Between Log Length and Score Differences
 
 ```{r}
 #| label: tbl-log-score-correlation
@@ -245,9 +336,81 @@ plot_scatter |>
 plot_scatter
 ```
 
+As a supplementary analysis, Spearman correlations between log length and score differences (AI minus Supervisor) were also examined. Only Clear Direction showed a nominally significant negative correlation (rho = -.156, uncorrected p = .005, Bonferroni-adjusted p = .025), indicating that longer logs were associated with slightly smaller score differences. However, this coefficient explains less than 2.5% of variance (r² = .024), and no other item reached significance after Bonferroni correction. Combined with the findings in Section 2.3, these results confirm that log length had negligible influence on both absolute scores and score differences between AI and supervisor feedback.
+
 ## 3. Normality Testing and Sensitivity Analysis (Reviewer N6)
 
-### 3.1 Shapiro-Wilk Test on Paired Differences
+### 3.1 Shapiro-Wilk Test on Raw Scores
+
+```{r}
+#| label: tbl-normality-raw
+#| tbl-cap: "Shapiro-Wilk Normality Tests on Raw Scores by Feedback Source and Item"
+
+raw_scores <- tidy_data |>
+  filter(person %in% c("ai", "supervisor"))
+
+normality_raw_scores <- raw_scores |>
+  group_by(person, item) |>
+  summarise(
+    n = n(),
+    shapiro_w = shapiro.test(value)$statistic,
+    shapiro_p = shapiro.test(value)$p.value,
+    .groups = "drop"
+  )
+
+# Feedback length (one value per record x person)
+raw_length <- tidy_data |>
+  distinct(record_id, person, .keep_all = TRUE) |>
+  filter(person %in% c("ai", "supervisor"))
+
+normality_raw_length <- raw_length |>
+  group_by(person) |>
+  summarise(
+    item = "feedback_length",
+    n = n(),
+    shapiro_w = shapiro.test(feedback_letter_count)$statistic,
+    shapiro_p = shapiro.test(feedback_letter_count)$p.value,
+    .groups = "drop"
+  )
+
+normality_raw <- bind_rows(normality_raw_scores, normality_raw_length) |>
+  mutate(
+    n_tests = n(),
+    bonferroni_p = pmin(shapiro_p * n_tests, 1)
+  )
+
+normality_raw |>
+  rio::export(here("result", "quantitative", "normality_raw_scores.csv"))
+
+normality_raw |>
+  transmute(
+    Source = case_when(
+      person == "ai" ~ "AI",
+      person == "supervisor" ~ "Supervisor",
+      TRUE ~ person
+    ),
+    Variable = case_when(
+      item == "accurate" ~ "Accurate",
+      item == "clear.direction" ~ "Clear Direction",
+      item == "criteria.based" ~ "Criteria Based",
+      item == "prioritization" ~ "Prioritization",
+      item == "supportive" ~ "Supportive",
+      item == "feedback_length" ~ "Feedback Length",
+      TRUE ~ item
+    ),
+    N = n,
+    `Shapiro-Wilk W` = sprintf("%.4f", shapiro_w),
+    `p (uncorrected)` = ifelse(shapiro_p < 0.001, "<.001", sprintf("%.3f", shapiro_p)),
+    `p (Bonferroni)` = ifelse(bonferroni_p < 0.001, "<.001", sprintf("%.3f", bonferroni_p))
+  ) |>
+  flextable() |>
+  merge_v(j = "Source") |>
+  valign(j = "Source", valign = "top") |>
+  align(align = "center", part = "all") |>
+  autofit()
+```
+
+### 3.2 Shapiro-Wilk Test on Paired Differences
 
 ```{r}
 #| label: tbl-normality-tests
@@ -335,7 +498,7 @@ normality_formatted |>
   autofit()
 ```
 
-### 3.2 Q-Q Plots
+### 3.3 Q-Q Plots
 
 ```{r}
 #| label: fig-qq-plots
@@ -369,6 +532,10 @@ plot_qq |>
 
 plot_qq
 ```
+
+Shapiro-Wilk tests on raw scores confirmed that all rubric items were non-normally distributed for both AI and supervisor feedback (all Bonferroni-adjusted p < .001), consistent with ordinal ratings concentrated at 4–5 (ceiling effect). Only AI-generated feedback length followed a normal distribution (W = 0.983, Bonferroni-adjusted p = .556), while supervisor feedback length did not (W = 0.869, Bonferroni-adjusted p < .001).
+
+For paired t-tests, the critical distributional assumption concerns the normality of paired differences rather than raw scores. Shapiro-Wilk tests on the paired differences (AI minus Supervisor) revealed significant departures from normality for all five rubric items (all W < 0.94, all Bonferroni-adjusted p < .001). Only the feedback length difference satisfied the normality assumption (W = 0.992, p = .550). As a sensitivity analysis, Wilcoxon signed-rank tests were conducted alongside paired t-tests for all six comparisons. In every case, both parametric and non-parametric tests reached the same conclusion (all p < .01), confirming that the original parametric results are robust to violations of the normality assumption and that the findings reported in the main analysis are not methodological artifacts.
 
 ## 4. Effect Sizes (Reviewer G5)
 
@@ -447,6 +614,8 @@ effect_formatted |>
   align(align = "center", part = "all") |>
   autofit()
 ```
+
+Cohen's d effect sizes with 95% confidence intervals were computed for all AI versus supervisor comparisons. For feedback length, AI-generated feedback was substantially longer than supervisor feedback (mean difference = 284.16 characters, d = 2.84, 95% CI 2.50 to 3.19), representing a large effect. Among rubric items, effect sizes varied considerably: Criteria Based showed a large effect (d = 0.93, 95% CI 0.79 to 1.06), Clear Direction a medium effect (d = 0.73, 95% CI 0.61 to 0.86), Prioritization (d = 0.36) and Accurate (d = 0.22) small effects, and Supportive a negligible effect (d = 0.17, 95% CI 0.06 to 0.28). All Cohen's d values were positive, indicating that AI consistently scored higher than supervisors across all items, though the practical significance ranged from negligible to large depending on the rubric dimension. All 95% confidence intervals excluded zero, consistent with the statistically significant paired differences reported in the main analysis.
 
 ## 5. Inter-Rater Reliability (Reviewers F8, N5)
 
@@ -537,4 +706,6 @@ irr_formatted |>
 
 Kappa interpretation (Landis & Koch, 1977): <0 = Poor, 0.00-0.20 = Slight, 0.21-0.40 = Fair, 0.41-0.60 = Moderate, 0.61-0.80 = Substantial, 0.81-1.00 = Almost Perfect.
 
-Note: With ordinal ratings concentrated at 4-5 (ceiling effect), kappa values may appear low even with reasonable agreement. Percentage agreement is reported alongside kappa to provide context.
+Inter-rater reliability between faculty and student evaluators differed markedly depending on the feedback source. For supervisor feedback, weighted kappa values ranged from 0.365 (Supportive) to 0.535 (Clear Direction), corresponding to fair-to-moderate agreement on the Landis and Koch scale, and all ICCs were statistically significant (all p < .001). Clear Direction showed the highest consistency (ICC = 0.536, 95% CI 0.417–0.638). For AI-generated feedback, by contrast, agreement was poor: weighted kappa values ranged from 0.042 (Prioritization) to 0.150 (Clear Direction), falling in the slight-or-below category, and most were not statistically significant. This pattern suggests that faculty and student evaluators applied the rubric more consistently when assessing supervisor feedback than when assessing AI feedback, possibly because the structured and formulaic nature of AI output was interpreted differently by the two evaluator groups.
+
+These results should be interpreted with caution given that ordinal ratings were concentrated at 4–5 (ceiling effect), which can attenuate kappa values even when raw agreement is reasonable. Percentage agreement is reported alongside kappa to provide context. Furthermore, because each record was evaluated by only one faculty member and one student, these reliability estimates reflect pairwise agreement rather than generalizability across the full evaluator pool. This design limitation, as noted by Reviewer N5, means that the observed scores may not fully represent what other evaluators would have assigned, and this should be acknowledged as a limitation of the study.
