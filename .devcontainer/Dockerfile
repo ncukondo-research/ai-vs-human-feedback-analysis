@@ -21,7 +21,7 @@ RUN apt-get update \
       libcurl4-openssl-dev libssl-dev libxml2-dev xz-utils cmake curl \
       gdebi-core libfontconfig1-dev libfreetype6-dev \
       libharfbuzz-dev libfribidi-dev libpng-dev libtiff5-dev libjpeg-dev \
-      libnode-dev openssh-client \
+      libnode-dev openssh-client librsvg2-bin \
  && rm -rf /var/lib/apt/lists/*
 
 # 4. Quarto CLI をインストール＆.deb 削除

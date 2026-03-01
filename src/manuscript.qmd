@@ -163,7 +163,7 @@ The research was conducted within the clinical clerkship programs for fifth- and
 
 This study was conducted as a mixed-methods study employing a convergent design from a pragmatic perspective [@Fetters2013-ob; @Maudsley2011-wz]. From the pragmatist standpoint of gaining insights that contribute to building a system where AI and supervisors complement each other to promote student learning, we examine the differences between AI-generated feedback and human written feedback on clinical clerkship logs using both quantitative and qualitative approaches. First, we collected feedback from supervising physicians on clinical clerkship logs entered by medical students in the e-portfolio (supervisor feedback) and generated feedback using AI on the clinical clerkship logs (AI feedback), see below for further details of this preparation process. Next, within each dataset the presentation order of the two feedback types (AI vs supervisor) was randomly assigned so that approximately half of the datasets presented AI feedback first and the other half presented supervisor feedback first. This randomization was intended to prevent evaluators from deducing the source of each feedback from its position. The 161 datasets were then randomly distributed among the 10 faculty evaluators and 10 student evaluators; because assignment was random, some evaluators assessed multiple records originating from the same clinical department. Then, medical students and supervising physician evaluators were asked to evaluate both types of feedback. The evaluation used the rubric developed by @Steiss2024-ra for quantitative analysis of scores and qualitative analysis of free-text comments. Finally, the results of the quantitative and qualitative analyses were integrated to gain deeper insights into the differences between AI and supervisor feedback. The process of preparing and evaluating AI feedback and supervisor feedback is shown in [@fig-flow_to_evaluation].
 
-![The process from preparing AI feedback and supervisor feedback to evaluating them](./result/quantitative/Fig_flow_of_feedback_and_evaluation.svg){#fig-flow_to_evaluation}
+![Overview of the feedback preparation and evaluation process in a mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at Nagoya University, Japan. Student logs from the e-portfolio were used to generate AI feedback (GPT-4o) and collect supervisor feedback, which were then tabulated, shuffled, and evaluated by blinded medical student and faculty evaluators.](../src/assets/flow_of_feedback_and_evaluation/flow_of_feedback_and_evaluation.svg){#fig-flow_to_evaluation}
 
 ### Generating AI feedback
 
@@ -255,7 +255,9 @@ df |>
 ```
 
 
-From October 2024 to January 2025, 10 medical students and 10 faculty who were not involved in the creation of the above student clerkship logs or feedback evaluated the AI and supervisor feedback. No missing data were identified; all 161 records contained complete rubric scores from both assessors across all five items, yielding 3,220 observations with 100% data completeness.
+From October 2024 to January 2025, 10 medical students and 10 faculty who were not involved in the creation of the above student clerkship logs or feedback evaluated the AI and supervisor feedback. No missing data were identified; all 161 records contained complete rubric scores from both assessors across all five items, yielding 3,220 observations with 100% data completeness. The flow of participants through each stage of the study is shown in [@fig-participant-flowchart].
+
+![JARS participant flowchart for a mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at Nagoya University, Japan (January 2024–January 2025). The diagram shows participant flow from enrollment (164 logs from 47 medical students across 12 departments) through exclusion (n = 3), feedback generation (within-subjects design: each log received both AI and supervisor feedback), blinded evaluation by 10 faculty and 10 student evaluators, to quantitative (3,220 observations) and qualitative analyses.](../src/assets/JARS_flowchart/jars-quant-participant-flowchart.svg){#fig-participant-flowchart}
 
 ### Quantitative analysis
 
@@ -267,13 +269,13 @@ Shapiro-Wilk tests assessed the normality of paired differences for all comparis
 
 The length of the feedback was compared between AI and supervisor feedback. Mean lengths were 382.02(95% CI 369.29-394.76) characters for AI and 97.87(95% CI 86.4-109.33) characters for supervisors. The distribution of the lengths of supervisor feedback and AI feedback is shown in [@fig-length_distribution]. Paired t-test results indicated that the mean character count of AI feedback was significantly higher than that of supervisor feedback (mean difference 284.16 characters; 95% CI 268.6-299.71; p <0.001; Cohen's d = 2.84, 95% CI 2.50–3.19).
 
-![Distribution of feedback lengths by character count](result/quantitative/fig_length_distribution.svg){#fig-length_distribution}
+![Distribution of feedback lengths by character count](../result/quantitative/fig_length_distribution.svg){#fig-length_distribution}
 
 #### Comparison of Scores
 
 The scores assigned by the evaluators to the AI and supervisor feedback were compared. @fig-diff-ai-vs-supervisor shows the differences in feedback scores by AI and supervisors for the same log. Values greater than 0 indicate that the AI score is higher, and values less than 0 indicate that the supervisor score is higher. Although there are slight differences among evaluators, AI scores tend to be higher except for the “supportive” item.
 
-![Distribution of Scores for Each Category ](result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
+![Distribution of Scores for Each Category ](../result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
 
 Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected p < 0.001), clear direction (corrected p < 0.001), prioritization (corrected p < 0.001), accurate (corrected p < 0.001), and supportive (corrected p = 0.011). Details including uncorrected p-values are shown in [@tbl-paired_ttest_results].
 
@@ -334,7 +336,7 @@ df |>
 
 To compare the consistency of feedback quality between AI and supervisors, we plotted the distribution of per-clinical clerkship log mean scores (see @fig-mean-score-per-record). AI exhibited smaller score dispersion, suggesting higher consistency in feedback quality. We further tested whether the variance of per-clinical clerkship log mean scores differs between AI and supervisors. The variance of per-clinical clerkship log mean scores was significantly larger for supervisors (Var=1.011, SD=1.005) than for AI (Var=0.262, SD=0.512) (Levene: F(1, 320)=73.203, p<.001; F-test: F(160, 160)=0.259, p<.001). The supervisor variance was about 3.9 times that of AI, suggesting that AI feedback quality is more consistent, whereas supervisor feedback quality is more variable.
 
-![Distribution of Mean Scores per Record](result/quantitative/fig_mean_score_per_record.svg){#fig-mean-score-per-record}
+![Distribution of Mean Scores per Record](../result/quantitative/fig_mean_score_per_record.svg){#fig-mean-score-per-record}
 
 #### Correlation between feedback length and score
 
@@ -351,15 +353,15 @@ df <- read.csv(here("result", "quantitative", "correlation_letter_count_score_by
 df_wide <- df |>
   pivot_wider(
     names_from = feedback_provider,
-    values_from = c(spearman, p_value),
+    values_from = c(spearman, p_bonferroni),
     names_sep = "_"
   ) |>
   select(
     Item,
     spearman_AI,
     spearman_Supervisor,
-    p_value_AI,
-    p_value_Supervisor
+    p_bonferroni_AI,
+    p_bonferroni_Supervisor
   )
 
 avail <- 6
@@ -372,9 +374,9 @@ df_wide |>
   set_header_labels(
     Item = "Item",
     spearman_AI = "AI",
-    spearman_Supervisor = "Supervisor", 
-    p_value_AI = "AI",
-    p_value_Supervisor = "Supervisor"
+    spearman_Supervisor = "Supervisor",
+    p_bonferroni_AI = "AI",
+    p_bonferroni_Supervisor = "Supervisor"
   ) |>
   add_header_row(values = c("", "Spearman's ρ", "Corrected p-value"), colwidths = c(1,2,2)) |>
   theme_vanilla() |>
