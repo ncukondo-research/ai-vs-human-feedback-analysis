@@ -157,7 +157,7 @@ Accordingly, an analytical examination situated within the clinical environment 
 
 ### Setting
 
-The research was conducted within the clinical clerkship programs for fifth- and sixth-year medical students at Nagoya University (NU), Japan. In Japan, students enter medical school directly after high school (around age 18) and complete a six-year program [@Nishigori2024-rr]. At NU, medical students finish classroom-based learning in clinical medicine and preparatory training for clinical clerkships (such as medical interviewing and physical examination) by the end of the fourth year. From late fourth to early fifth year they undertake observation-centered clinical clerkships, rotating through all departments for short periods of 1–2 weeks. From late fifth to early sixth year they participate in clinically active clerkships, rotating through each department for four weeks or longer. For this study, we focused on the clinical clerkship program at NU for students in the latter half of their fifth year and throughout their sixth year. During the clerkship, students join the medical team, examine patients, formulate assessments and plans, and document these in the electronic medical record. Because access to electronic medical records is rigidly restricted, students also record their daily activities, learning points, and future tasks in an e-portfolio system separate from the medical record. These clinical clerkship logs in e-portfolio are used solely for educational purposes, and students are instructed not to include any patient-identifying information. The e-portfolio automatically compiles the daily entries in the clerkship log into weekly records and sends them to the supervising physicians, who then provide written feedback to the students via the e-portfolio.
+The research was conducted within the clinical clerkship programs for fifth- and sixth-year medical students at Nagoya University (NU), Japan. In Japan, students enter medical school directly after high school (around age 18) and complete a six-year program [@Nishigori2024-rr]. At NU, medical students finish classroom-based learning in clinical medicine and preparatory training for clinical clerkships (such as medical interviewing and physical examination) by the end of the fourth year. From late fourth to early fifth year they undertake observation-centered clinical clerkships, rotating through all departments for short periods of 1–2 weeks. From late fifth to early sixth year they participate in clinically active clerkships, rotating through each department for four weeks or longer. For this study, we focused on the clinical clerkship program at NU for students in the latter half of their fifth year and throughout their sixth year. During the clerkship, students join the medical team, examine patients, formulate assessments and plans, and document these in the electronic medical record. Because access to electronic medical records is rigidly restricted, students also record their daily activities, learning points, and future tasks in an e-portfolio system separate from the medical record. These clinical clerkship logs in e-portfolio are used solely for educational purposes, and students are instructed not to include any patient-identifying information. Each daily log entry consists entirely of free-text fields in which students describe what they did during the clerkship, the cases they experienced, what they learned, and what they plan to do next; no Likert scales or structured questions are included, and no upper or lower character limits are imposed. Students entered their logs via smartphone. The e-portfolio automatically compiles the daily entries in the clerkship log into weekly records and sends them to the supervising physicians, who then provide written feedback to the students via the e-portfolio.
 
 ### Design
 
@@ -221,7 +221,7 @@ This study was approved by the Ethics Committee of Nagoya University Hospital (a
 
 ## Results
 
-During the clinical clerkship conducted at Nagoya University from January 9, 2024, to May 5, 2024, combinations of student clerkship logs and corresponding supervisor feedback were collected. The data included nine clinical departments and three community hospitals, involving a total of 47 medical students and 42 supervisors who contributed to the clerkship logs and feedback. On June 1, 2024, AI feedback was generated for the student clerkship logs. As a result, a total of 161 datasets were created, each consisting of a student's clerkship logs for one week, supervisor feedback, and AI feedback. The number of datasets, students, and supervisors by department is shown in [@tbl-dataset_summary].
+During the clinical clerkship conducted at Nagoya University from January 9, 2024, to May 5, 2024, combinations of student clerkship logs and corresponding supervisor feedback were collected. The data included nine clinical departments and three community hospitals, involving a total of 47 medical students and 42 supervisors who contributed to the clerkship logs and feedback. On June 1, 2024, AI feedback was generated for the student clerkship logs. As a result, a total of 161 datasets were created, each consisting of a student's clerkship logs for one week, supervisor feedback, and AI feedback. The weekly clerkship logs varied considerably in length (mean 675.2 characters, SD 459.8; median 551; range 51–2,342). The number of datasets, students, and supervisors by department is shown in [@tbl-dataset_summary].
 
 
 ```{r}
@@ -255,13 +255,17 @@ df |>
 ```
 
 
-From October 2024 to January 2025, 10 medical students and 10 faculty who were not involved in the creation of the above student clerkship logs or feedback evaluated the AI and supervisor feedback.
+From October 2024 to January 2025, 10 medical students and 10 faculty who were not involved in the creation of the above student clerkship logs or feedback evaluated the AI and supervisor feedback. No missing data were identified; all 161 records contained complete rubric scores from both assessors across all five items, yielding 3,220 observations with 100% data completeness.
 
 ### Quantitative analysis
 
+#### Distribution Assessment and Sensitivity Analysis
+
+Shapiro-Wilk tests assessed the normality of paired differences for all comparisons. The feedback length difference was normally distributed (W = 0.992, p = .550), supporting the use of the paired t-test for that variable. However, all five rubric score differences departed significantly from normality (all W ≤ 0.939, all p < .001 after Bonferroni correction). As a sensitivity analysis, Wilcoxon signed-rank tests were conducted alongside the paired t-tests; the two methods yielded identical conclusions regarding statistical significance for every variable. Moreover, the primary analysis of rubric scores employed cumulative link mixed models (see below), which do not assume normality of the outcome distribution.
+
 #### Difference Between Feedback Length
 
-The length of the feedback was compared between AI and supervisor feedback. Mean lengths were 382.02(95% CI 369.29-394.76) characters for AI and 97.87(95% CI 86.4-109.33) characters for supervisors. The distribution of the lengths of supervisor feedback and AI feedback is shown in [@fig-length_distribution]. Paired t-test results indicated that the mean character count of AI feedback was significantly higher than that of supervisor feedback (mean difference 284.16 characters; 95% CI 268.6-299.71; p <0.001).
+The length of the feedback was compared between AI and supervisor feedback. Mean lengths were 382.02(95% CI 369.29-394.76) characters for AI and 97.87(95% CI 86.4-109.33) characters for supervisors. The distribution of the lengths of supervisor feedback and AI feedback is shown in [@fig-length_distribution]. Paired t-test results indicated that the mean character count of AI feedback was significantly higher than that of supervisor feedback (mean difference 284.16 characters; 95% CI 268.6-299.71; p <0.001; Cohen's d = 2.84, 95% CI 2.50–3.19).
 
 ![Distribution of feedback lengths by character count](result/quantitative/fig_length_distribution.svg){#fig-length_distribution}
 
@@ -292,7 +296,9 @@ df |>
     mean_ai = "AI Mean Score (95% CI)",
     mean_supervisor = "Supervisor Mean Score (95% CI)",
     mean_diff = "Mean Difference (95% CI)",
-    p_value = "Corrected p-value"
+    cohens_d = "Cohen's d (95% CI)",
+    p_uncorrected = "p-value",
+    p_bonferroni = "Corrected p-value"
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
@@ -376,6 +382,42 @@ df_wide |>
   flextable::align(align = "left", part = "body", j = 1) |>
     flextable::align(align = "center", part = "body", j = 2:ncol(df_wide))
 
+```
+
+#### Relationship Between Student Log Length and Feedback Scores
+
+Because AI feedback is tightly text-anchored, variation in student log quality could potentially influence feedback scores. To examine whether log length influenced rubric scores, Spearman correlations were calculated between weekly log character count and each rubric score, separately by feedback provider. After Bonferroni correction for 10 comparisons, no significant correlations were observed for either AI or supervisor feedback (all corrected p > .05), indicating that variation in student log length did not systematically influence rubric scores for either feedback type.
+
+#### Inter-Rater Reliability
+
+Because each dataset was independently evaluated by one faculty member and one student, we examined agreement between these two assessor types using weighted Cohen's kappa (quadratic weights) and intraclass correlation coefficients (ICC), computed separately for AI and supervisor feedback across all five rubric items (@tbl-inter-rater-reliability). For supervisor feedback, inter-rater agreement was fair to moderate (weighted κ = 0.37–0.54, all p < .001). For AI feedback, agreement was poor (weighted κ = 0.04–0.15, mostly non-significant). This pattern suggests that faculty and student evaluators reached more consistent judgments when rating supervisor feedback than when rating AI feedback.
+
+```{r}
+#| label: tbl-inter-rater-reliability
+#| tbl-cap: Inter-Rater Reliability Between Faculty and Student Evaluators
+#| echo: false
+
+df <- read.csv(here("result", "quantitative", "inter_rater_reliability_formatted.csv"))
+
+avail <- 6
+w <- rep(avail / ncol(df), ncol(df))
+
+df |>
+  flextable() |>
+  flextable::set_table_properties(layout = "fixed") |>
+  flextable::width(width = w) |>
+  set_header_labels(
+    Item = "Item",
+    Person = "Feedback Type",
+    N = "N",
+    X..Agreement = "% Agreement",
+    Weighted.Kappa = "Weighted κ",
+    Kappa.p = "κ p-value",
+    ICC..95..CI. = "ICC (95% CI)",
+    ICC.p = "ICC p-value"
+  ) |>
+  fontsize(size = 8, part = "all") |>
+  theme_vanilla()
 ```
 
 #### Identification of Feedback Source
@@ -522,7 +564,7 @@ Future research should examine how learners respond to and utilize AI-generated 
 
 ### Limitations
 
-Several limitations should be acknowledged in this study. First, as this research was conducted at a single institution, the generalizability of our findings to other institutions or cultural contexts needs to be confirmed. The specific characteristics of Nagoya University's clinical clerkship program and the Japanese medical education system may not be representative of other settings. Second, while our evaluators included both faculty and students, their individual backgrounds and experiences may have influenced their feedback evaluations. The relatively small number of evaluators (10 faculty and 10 students) may also limit the robustness of our findings. Third, this study employed a specific AI model (GPT-4o) for feedback generation, and results may differ with other AI models or future iterations of the technology. The prompt engineering process, while systematic, was tailored to our specific context and may not be optimal for other settings. Fourth, the evaluation rubric used to assess feedback quality, while validated in previous research, was adapted for our context and may have limited applicability to other educational settings or feedback purposes. Finally, our study examined feedback on student logs but did not investigate how students actually utilize or respond to different types of feedback, which represents an important area for future investigation.
+Several limitations should be acknowledged in this study. First, as this research was conducted at a single institution, the generalizability of our findings to other institutions or cultural contexts needs to be confirmed. The specific characteristics of Nagoya University's clinical clerkship program and the Japanese medical education system may not be representative of other settings. Second, while our evaluators included both faculty and students, their individual backgrounds and experiences may have influenced their feedback evaluations. The relatively small number of evaluators (10 faculty and 10 students) may also limit the robustness of our findings. Third, this study employed a specific AI model (GPT-4o) for feedback generation, and results may differ with other AI models or future iterations of the technology. The prompt engineering process, while systematic, was tailored to our specific context and may not be optimal for other settings. Fourth, the evaluation rubric used to assess feedback quality, while validated in previous research, was adapted for our context and may have limited applicability to other educational settings or feedback purposes. Fifth, each dataset was evaluated by only one faculty member and one student, rather than by multiple independent raters. Inter-rater agreement was fair to moderate for supervisor feedback but poor for AI feedback, indicating that individual evaluator perspectives influenced ratings, particularly when assessing AI-generated output. Although the large number of datasets (N = 161) provides stability at the aggregate level, the precision of scores for individual datasets is limited. Finally, our study examined feedback on student logs but did not investigate how students actually utilize or respond to different types of feedback, which represents an important area for future investigation.
 
 ## Conclusions
 

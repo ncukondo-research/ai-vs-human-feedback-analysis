@@ -84,7 +84,7 @@ RESPONSE:
 
   > Comment: Please mention whether there were any missing data. If there were missing data, provide the proportion of missing data and perform the MCAR test to see if data were missing totally at random and consider performing multiple imputations.
 
-RESPONSE:
+RESPONSE: Thank you for this important point. We assessed data completeness across all variables. No missing data were identified: all 161 records contained complete rubric scores from both assessors (one faculty and one student) across all five items, yielding 3,220 observations with 100% data completeness. Consequently, neither MCAR testing nor multiple imputation was necessary. We have added a statement to this effect in the Results section, specifically following the description of the evaluation process (paragraph beginning "From October 2024 to January 2025...").
 
 ### Editor Comment.10
 
@@ -169,7 +169,7 @@ RESPONSE:
 
   > Comment: Since AI feedback is tightly text-anchored, variation in student log quality may drive AI performance. A brief characterization of the logs (length, completeness, variability) would help interpret the findings.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have added a characterization of the student logs in the revised manuscript. In the Methods (Setting), we now describe the log format: each daily entry consists entirely of free-text fields in which students describe what they did during the clerkship, the cases they experienced, what they learned, and what they plan to do next, with no character limits imposed. In the Results, we report that weekly logs varied considerably in length (mean 675.2 characters, SD 459.8; median 551; range 51–2,342). To directly address whether this variation influenced scores, we computed Spearman correlations between log character count and each rubric score separately by feedback provider. After Bonferroni correction, no significant correlations were observed for either AI or supervisor feedback, indicating that variation in log length did not systematically drive rubric scores for either feedback type. These results have been added as a new subsection ("Relationship Between Student Log Length and Feedback Scores") in the quantitative Results.
 
 ### F6: Reviewer F Comment 6
 
@@ -187,7 +187,7 @@ RESPONSE:
 
   > Comment: Consider reporting inter-rater reliability: Since each dataset was evaluated by one student and one faculty member, it would be helpful to report agreement or consistency between these two perspectives.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We computed weighted Cohen's kappa (quadratic weights) and intraclass correlation coefficients between faculty and student evaluators for each rubric item, separately by feedback type. For supervisor feedback, inter-rater agreement was fair to moderate (weighted κ = 0.37–0.54, all p < .001). For AI feedback, agreement was poor (weighted κ = 0.04–0.15, mostly non-significant). These results have been added as a new subsection ("Inter-Rater Reliability") with a table in the quantitative Results, and the limitation that each dataset was evaluated by only one faculty-student pair has been added to the Limitations section.
 
 ### F9: Reviewer F Comment 9
 
@@ -215,14 +215,14 @@ RESPONSE:
   > - (b) Does the e-portfolio consist solely of free-text entries, or are there specific questions or Likert scales included?
   > - (c) Are there any upper or lower word/character limits for student posts in the e-portfolio?
 
-RESPONSE:
+RESPONSE: Thank you for these clarification requests. We have added this information to the Methods (Setting) section of the revised manuscript. Specifically: (a) All students entered their logs via smartphone. (b) The e-portfolio consists solely of free-text entries in which students describe what they did during the clerkship, the cases they experienced, what they learned, and what they plan to do next; no Likert scales or structured questions are included. (c) No upper or lower character limits are imposed on student posts.
 
 ### G2: Reviewer G Comment 2
 
   > Comment: Relationship between e-portfolio content and AI feedback quality
   > It is understandable that the quality of generative AI feedback depends on the content of the portfolio. In this regard, and relating to my previous question, I am interested in the typical length of the e-portfolio entries. For instance, were there any specific trends observed, such as AI feedback being more likely to overlook clinical perspectives when the e-portfolio entry was below a certain word count? Furthermore, the degree of uniformity in the original e-portfolio descriptions may have also influenced the results. Please consider adding information regarding the volume and nature of the portfolio entries to the Methods section, or addressing these points in the Discussion or as a Study Limitation.
 
-RESPONSE:
+RESPONSE: Thank you for this insightful comment. We have added descriptive statistics on log length to the Results section: weekly logs varied considerably (mean 675.2 characters, SD 459.8; median 551; range 51–2,342). To examine whether log length influenced feedback quality, we calculated Spearman correlations between log character count and each rubric score separately for AI and supervisor feedback. After Bonferroni correction, no significant correlations were observed for either feedback type (all corrected p > .05). This indicates that variation in log length did not systematically influence rubric scores, and we did not find evidence that shorter logs led to lower AI feedback quality on rubric-measured dimensions. These results are reported in a new subsection ("Relationship Between Student Log Length and Feedback Scores") in the quantitative Results. We note, however, that the rubric does not directly capture clinical perspective; the qualitative analysis remains the primary evidence for AI's tendency to overlook clinical context regardless of log length.
 
 ## Minor
 
@@ -245,7 +245,7 @@ RESPONSE:
   > Comment: About Statistical results
   > Please report the effect sizes (in addition to p-values) for the differences in feedback length.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have added Cohen's d with 95% confidence intervals for all comparisons. For feedback length, the effect size was large (d = 2.84, 95% CI 2.50–3.19), reported in the text of the Results section. For rubric scores, effect sizes ranged from negligible to large: criteria-based (d = 0.93, 95% CI 0.79–1.06, large), clear direction (d = 0.73, 95% CI 0.61–0.86, medium), prioritization (d = 0.36, 95% CI 0.24–0.47, small), accurate (d = 0.22, 95% CI 0.11–0.33, small), and supportive (d = 0.17, 95% CI 0.06–0.28, negligible). These have been added as a new column in Table 2.
 
 ### G6: Reviewer G Comment 6
 
@@ -409,7 +409,7 @@ RESPONSE:
 
   > Comment: Another methodological issue is the evaluation methods used by human evaluators. As each dataset was distributed to 1 faculty member, would the other 9 faculty members have the same ratings? I feel that inner agreement between evaluators for the same dataset is important. Otherwise, although 10 faculty were included, the actual faculty evaluator for each dataset is only 1. This is the same issue for the student evaluators.
 
-RESPONSE:
+RESPONSE: Thank you for raising this important methodological concern. We agree that having each dataset evaluated by only one faculty member and one student is a limitation. To address this, we computed inter-rater reliability between the faculty and student evaluators for each rubric item. For supervisor feedback, agreement was fair to moderate (weighted κ = 0.37–0.54, all p < .001), suggesting reasonable consistency between faculty and student perspectives. For AI feedback, agreement was poor (weighted κ = 0.04–0.15, mostly non-significant), indicating that faculty and student evaluators assessed AI feedback quite differently. We have added these findings as a new subsection ("Inter-Rater Reliability") with a table in the quantitative Results. We have also explicitly acknowledged in the Limitations section that each dataset was evaluated by only one faculty-student pair, which limits the precision of individual dataset scores, although the large number of datasets (N = 161) provides stability at the aggregate level.
 
 ## Minor
 
@@ -417,7 +417,7 @@ RESPONSE:
 
   > Comment: Paired t-tests were conducted in this study. Are all the scores, for example, evaluated in Table 2, normally distributed?
 
-RESPONSE:
+RESPONSE: Thank you for raising this important point. We conducted Shapiro-Wilk tests on the paired differences for all comparisons. The feedback length difference was normally distributed (W = 0.992, p = .550), supporting the paired t-test for that variable. However, all five rubric score differences departed significantly from normality (all W ≤ 0.939, all p < .001 after Bonferroni correction). As a sensitivity analysis, we conducted Wilcoxon signed-rank tests alongside the paired t-tests; the two methods yielded identical conclusions regarding statistical significance for every variable. We note that our primary analysis of rubric scores used cumulative link mixed models (Table 3), which do not assume normality of the outcome distribution. These results have been added as a new subsection ("Distribution Assessment and Sensitivity Analysis") at the beginning of the quantitative Results.
 
 ### N7: Reviewer N Comment 7
 

@@ -323,11 +323,18 @@ ttab <- paired_by_id_and_assessortype |>
 ttab |> rio::export(here::here("result", "quantitative","paired_ttest_results.csv"))
 
 display_df <- ttab |>
+  mutate(
+    cohens_d = mean_diff / diff_sd,
+    se_d = sqrt(1 / n_pair + cohens_d^2 / (2 * n_pair)),
+    d_ci_low = cohens_d - 1.96 * se_d,
+    d_ci_high = cohens_d + 1.96 * se_d
+  ) |>
   transmute(
     Item = item,
     mean_diff = paste0(round(mean_diff,2)," (", round(mean_diff_ci_low,2), "- ", round(mean_diff_ci_high,2), ")"),
     mean_ai = paste0(round(mean_ai,2), " (", round(ai_ci_low,2), "-", round(ai_ci_high,2), ")"),
     mean_supervisor = paste0(round(mean_supervisor,2), " (", round(supervisor_ci_low,2), "-", round(supervisor_ci_high,2), ")"),
+    cohens_d = sprintf("%.2f (%.2f to %.2f)", cohens_d, d_ci_low, d_ci_high),
     p_uncorrected = p_fmt,
     p_bonferroni = bonferroni_p_fmt
   ) |>
@@ -354,6 +361,7 @@ ft <- flextable(display_df) |>
     mean_diff = "Mean Difference (AI - Supervisor)(95% CI)",
     mean_ai = "Mean AI (95% CI)",
     mean_supervisor = "Mean Supervisor (95% CI)",
+    cohens_d = "Cohen's d (95% CI)",
     p_uncorrected = "p-value",
     p_bonferroni = "p (Bonferroni)"
   ) |>
