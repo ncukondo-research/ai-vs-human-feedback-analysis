@@ -12,6 +12,7 @@ src/**/*.docx
 result/src/
 result/result/
 history/
+figure/
 
 
 /.quarto/

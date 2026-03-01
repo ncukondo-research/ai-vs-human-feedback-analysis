@@ -39,6 +39,7 @@ pacman::p_load(
   rio,
   svglite,
   ggplot2,
+  ggh4x,
   ordinal,
   purrr,
   broom,
@@ -260,10 +261,14 @@ paired_by_id <- tidy_data |>
 diff_by_id <- paired_by_id |>
   mutate(diffvalue = ai - supervisor)
 
+item_levels <- c("criteria.based", "clear.direction", "accurate", "prioritization", "supportive")
+item_labels <- c("(A) Criteria Based", "(B) Clear Direction", "(C) Accurate", "(D) Prioritization", "(E) Supportive")
+
 graph_diff_by_id <- diff_by_id |>
+  mutate(item = factor(item, levels = item_levels, labels = item_labels)) |>
   ggplot(aes(x = diffvalue, fill = assessor_type)) +
   geom_bar(position = "dodge") +
-  facet_wrap(~ item) +
+  facet_wrap2(~ item, axes = "all") +
   ggtitle("Differences between scores(AI-Supervisor)") +
   scale_x_continuous(breaks = -4:4) +
   labs(x = "Difference between AI and Supervisor") +

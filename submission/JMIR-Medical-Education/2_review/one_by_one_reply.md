@@ -231,7 +231,7 @@ RESPONSE: Thank you for this insightful comment. We have added descriptive stati
   > Comment: Questions about the evaluation rubric criteria
   > The authors utilize five evaluation categories for the rubric (e.g., criteria-based, clear directions for improvement). As these items are currently not numbered or labeled with IDs, they are somewhat difficult to track. It would be helpful to assign labels such as (A) criteria-based, (B) clear directions for improvement, and so on. Additionally, the order of these categories is inconsistent between the main text and Figure 3 / Table 2. Please ensure they are aligned throughout the manuscript.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have assigned alphabetical labels (A)–(E) to all five rubric items and standardized their order throughout the manuscript. The items are now consistently presented in the following sequence: (A) Criteria Based, (B) Clear Direction, (C) Accurate, (D) Prioritization, (E) Supportive. This order is now applied uniformly in Figure 3 (panel labels updated), Table 2 (rows reordered), and Table 3 (rows reordered), as well as in the relevant body text.
 
 ### G4: Reviewer G Comment 4
 
@@ -252,7 +252,7 @@ RESPONSE: Thank you for this suggestion. We have added Cohen's d with 95% confid
   > Comment: About Figure 3
   > If possible, please add specific values to the x-axis for the "accurate" and "clear direction" graphs.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have updated Figure 3 so that x-axis tick values (−4 to 4) are now displayed on all five panels, including "accurate" and "clear direction." In the original figure, x-axis labels were suppressed for panels in the upper row that had another panel directly below them (a default behavior of the ggplot2 faceting system). We resolved this by switching to the facet_wrap2 function from the ggh4x package with the axes = "all" option, which forces all axis tick marks to appear on every panel regardless of their position in the grid.
 
 ------------------------------------------------------
 

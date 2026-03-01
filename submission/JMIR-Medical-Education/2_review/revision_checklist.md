@@ -79,13 +79,15 @@
   - 各段階の参加者数を記載
   - ファイル: src/assets/JARS_flowchart/jars-quant-participant-flowchart.svg
 
-- [ ] **Figure 3 修正** (G6)
+- [x] **Figure 3 修正** (G6) ✓ manuscript+reply済
   - "accurate" と "clear direction" のx軸に数値追加
-  - ファイル: assets/fig_diff_ai_vs_supervisor.svg
+  - ggh4x::facet_wrap2(axes = "all") に変更して対応
+  - ファイル: result/quantitative/fig_diff_ai_vs_supervisor.svg
 
-- [ ] **図表の項目順序統一** (G3)
-  - Figure 3 と Table 2 の順序確認
-  - 必要に応じて修正
+- [x] **図表の項目順序統一** (G3) ✓ manuscript+reply済
+  - (A) Criteria Based, (B) Clear Direction, (C) Accurate, (D) Prioritization, (E) Supportive の順に統一
+  - Figure 3: factor levels + labels で並べ替え（quantitative.qmd）
+  - Table 2・3: manuscript.qmd内でfactor reorderingにより並べ替え
 
 ---
 
@@ -333,6 +335,8 @@
 | 2026-03-01 | 1.2, 1.3, 3.1, 3.5 | コホート構成明確化(G4), AI長さ設定明確化(H1,N3), API独立性明記(H3), 割当詳細明確化(N7)→Methods修正+reply記述 | 6項目 |
 | 2026-03-01 | 1.1, 3.2 | 正確なp値報告(L7): 本文の"p<0.05"→各項目の正確なp値に修正, CLMM表に未補正・補正後2列追加, reply記述 | 2項目 |
 | 2026-03-01 | 1.4, 3.4 | JARS participant flowchart作成・挿入(Editor5), Figure1キャプション改善(Editor10), reply記述 | 3項目 |
+| 2026-03-01 | 1.4 | Figure 3 x軸修正(G6): ggh4x::facet_wrap2(axes="all")でaccurate/clear.directionのx軸ラベル追加, reply記述 | 1項目 |
+| 2026-03-01 | 1.4, 3.4 | 項目順序統一(G3): (A)-(E)ラベル付与, Figure3/Table2/Table3の順序をCriteria Based→Clear Direction→Accurate→Prioritization→Supportiveに統一, reply記述 | 1項目 |
 
 ---
 

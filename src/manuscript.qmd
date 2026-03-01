@@ -284,10 +284,16 @@ Next, we compared the mean scores of AI and supervisor feedback for each categor
 
 df <- read.csv(here("result", "quantitative", "paired_ttest_results_formatted.csv"))
 
+item_order <- c("Criteria Based", "Clear Direction", "Accurate", "Prioritization", "Supportive")
+item_labels_tbl <- c("(A) Criteria Based", "(B) Clear Direction", "(C) Accurate", "(D) Prioritization", "(E) Supportive")
+df <- df |>
+  mutate(Item = factor(Item, levels = item_order, labels = item_labels_tbl)) |>
+  arrange(Item)
+
 avail <- 6
 w <- rep(avail /ncol(df), ncol(df))
 
-df |> 
+df |>
   flextable() |>
   flextable::set_table_properties(layout = "fixed") |>
   flextable::width(width = w) |>
@@ -313,6 +319,11 @@ Because the rubric used for scoring is a 5-point scale and the intervals from 1 
 #| echo: false
 
 df <- read.csv(here("result", "quantitative", "clmm_summary_formatted_bonferroni.csv"))
+item_order <- c("Criteria Based", "Clear Direction", "Accurate", "Prioritization", "Supportive")
+item_labels_tbl <- c("(A) Criteria Based", "(B) Clear Direction", "(C) Accurate", "(D) Prioritization", "(E) Supportive")
+df <- df |>
+  mutate(Item = factor(Item, levels = item_order, labels = item_labels_tbl)) |>
+  arrange(Item)
 df |>
   flextable() |>
   flextable::set_table_properties(layout = "fixed") |>
