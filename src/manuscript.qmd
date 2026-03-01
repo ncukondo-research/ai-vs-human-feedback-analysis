@@ -90,15 +90,13 @@ format:
 
 # setup
 
-if (!requireNamespace("pacman", quietly = TRUE))
-  install.packages("pacman", quietly = TRUE)
-pacman::p_load(
-  tidyr,
-  dplyr,
-  readr,
-  here,
-  flextable
-)
+suppressPackageStartupMessages({
+  library(tidyr)
+  library(dplyr)
+  library(readr)
+  library(here)
+  library(flextable)
+})
 
 set_flextable_defaults(
   table.layout = "fixed",
