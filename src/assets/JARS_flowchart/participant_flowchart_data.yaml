@@ -1,0 +1,78 @@
+# Participant Flowchart Data
+# For JARS-compliant participant flowchart (Editor Comment 5)
+# Study design: Within-subjects (same logs evaluated with both AI and supervisor feedback)
+
+enrollment:
+  setting: "Nagoya University School of Medicine, Japan"
+  clerkship_period: "January 9 – May 5, 2024"
+  departments: 12  # 9 university departments + 3 community hospitals
+  students:
+    total: 47
+    description: "5th–6th year medical students (single cohort)"
+    note: "Same cohort transitioning from 5th to 6th year in April 2024"
+  supervisors:
+    total: 42
+    description: "Supervising physicians across 12 clinical departments"
+  logs_collected:
+    total: 164
+    format: "Free-text weekly e-portfolio entries via smartphone"
+
+exclusion:
+  logs_excluded:
+    total: 3
+    ids: [66, 106, 156]
+    reason: "Supervisor entered contact messages to students instead of feedback"
+  logs_remaining: 161
+
+feedback_generation:
+  supervisor_feedback:
+    total: 161
+    description: "Collected during clerkship as routine practice"
+    constraints: "No instructions regarding length, structure, or format"
+  ai_feedback:
+    total: 161
+    generation_date: "June 1, 2024"
+    model: "GPT-4o (gpt-4o-2024-05-13)"
+    method: "Independent API call per log, no shared context"
+    prompt_length_instruction: "500 characters"
+  datasets_assembled: 161  # Each = 1 log + 1 supervisor FB + 1 AI FB
+
+evaluator_recruitment:
+  period: "October 2024 – January 2025"
+  faculty:
+    recruited: 10
+    declined: 0
+    inclusion: "Involvement in teaching medical students"
+    exclusion: "Authors of student logs or supervisor feedback being evaluated"
+    recruitment_method: "Mailing list for medical educators"
+  students:
+    recruited: 10
+    declined: 0
+    inclusion: "Currently in clinical clerkships or preparatory education"
+    exclusion: "Authors of student logs used in the study"
+    recruitment_method: "Student representatives via social media"
+
+evaluation:
+  design: "Each dataset evaluated by 1 faculty + 1 student evaluator"
+  randomization: "Presentation order of AI vs supervisor feedback randomized (~50:50)"
+  blinding: "Evaluators not informed which feedback was AI or supervisor"
+  instrument: "Steiss et al. rubric (5 items, 5-point scale each)"
+  rubric_items:
+    - "Criteria-based"
+    - "Clear directions for improvement"
+    - "Accurate"
+    - "Prioritization of essential features"
+    - "Supportive tone"
+
+analysis:
+  quantitative:
+    logs_analyzed: 161
+    logs_excluded: 0
+    total_observations: 3220  # 161 logs × 2 feedback types × 2 evaluators × 5 items
+    faculty_observations: 1610
+    student_observations: 1610
+    missing_data: 0
+    completeness: "100%"
+  qualitative:
+    logs_analyzed: 161
+    method: "Thematic analysis of open-ended evaluator comments"

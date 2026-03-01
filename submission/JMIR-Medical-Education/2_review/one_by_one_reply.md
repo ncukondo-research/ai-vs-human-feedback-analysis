@@ -367,7 +367,7 @@ RESPONSE:
   > Comment: Report exact p-values instead of only thresholds where possible.
   > Solution: Revise tables and text accordingly.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have revised the manuscript to report exact p-values throughout. In the Results text, the paired t-test paragraph now reports the Bonferroni-corrected p-value for each rubric item individually (all corrected p < .001, except supportive: corrected p = .011), replacing the previous summary statement of "p < .05." Both Table 2 (paired t-tests) and Table 3 (cumulative link mixed models) now include separate columns for uncorrected and Bonferroni-corrected p-values, with exact values reported to three decimal places where p ≥ .001 (e.g., p = .002, p = .011, p = .142) and "< .001" used only when the exact value falls below this threshold, consistent with APA reporting conventions.
 
 ------------------------------------------------------
 

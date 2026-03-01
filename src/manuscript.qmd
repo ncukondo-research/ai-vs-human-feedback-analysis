@@ -275,7 +275,7 @@ The scores assigned by the evaluators to the AI and supervisor feedback were com
 
 ![Distribution of Scores for Each Category ](result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
 
-Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories, with p < 0.05. The p-values are after Bonferroni correction for the five items. Details are shown in [@tbl-paired_ttest_results].
+Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected p < 0.001), clear direction (corrected p < 0.001), prioritization (corrected p < 0.001), accurate (corrected p < 0.001), and supportive (corrected p = 0.011). Details including uncorrected p-values are shown in [@tbl-paired_ttest_results].
 
 ```{r}
 #| label: tbl-paired_ttest_results
@@ -313,20 +313,20 @@ Because the rubric used for scoring is a 5-point scale and the intervals from 1 
 #| echo: false
 
 df <- read.csv(here("result", "quantitative", "clmm_summary_formatted_bonferroni.csv"))
-avail <- 6
-w <- rep(avail /ncol(df), ncol(df))
-df |> 
+df |>
   flextable() |>
   flextable::set_table_properties(layout = "fixed") |>
-  flextable::width(width = c(1,2.4,1.8,0.9)) |>
+  flextable::width(width = c(1, 2.2, 1.4, 0.7, 0.7)) |>
   flextable::merge_v(j = "Item") |>
   set_header_labels(
     Item = "Item",
     Effect = "Effect",
     OR = "OR (95% CI)",
-    p_value = "Corrected p-value"
+    p_uncorrected = "p-value",
+    p_bonferroni = "Corrected p-value"
   ) |>
-  theme_vanilla() 
+  fontsize(size = 8, part = "all") |>
+  theme_vanilla()
 ```
 
 

@@ -3,6 +3,7 @@ data/raw*
 src/*/
 !src/analysis/
 !src/custom-filters/
+!src/assets/
 src/analysis/quantitative/*/
 src/**/*.html
 src/**/*.rmarkdown
