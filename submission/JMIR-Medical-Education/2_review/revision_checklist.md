@@ -4,11 +4,11 @@
 
 | フェーズ | 完了 | 合計 | 進捗率 |
 |---------|------|------|--------|
-| Phase 1: 別リポジトリでの分析 | 10 | 12 | 83% |
+| Phase 1: 別リポジトリでの分析 | 11 | 12 | 92% |
 | Phase 2: 原稿修正（高優先度） | 0 | 15 | 0% |
-| Phase 3: 原稿修正（中優先度） | 9 | 14 | 64% |
+| Phase 3: 原稿修正（中優先度） | 12 | 14 | 86% |
 | Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **19** | **49** | **39%** |
+| **Total** | **23** | **49** | **47%** |
 
 ---
 
@@ -74,10 +74,10 @@
 
 ## 1.4 図の修正・新規作成
 
-- [ ] **Participant Flowchart 新規作成** (Editor 5)
+- [x] **Participant Flowchart 新規作成** (Editor 5) ✓ manuscript+reply済
   - JARSテンプレート使用
   - 各段階の参加者数を記載
-  - ファイル: assets/fig_participant_flowchart.svg
+  - ファイル: src/assets/JARS_flowchart/jars-quant-participant-flowchart.svg
 
 - [ ] **Figure 3 修正** (G6)
   - "accurate" と "clear direction" のx軸に数値追加
@@ -231,13 +231,12 @@
 
 > **依存**: Phase 1.4 の図作成が必要
 
-- [ ] **Participant Flowchart の挿入** (Editor 5)
-  - Phase 1.4 で作成した図を原稿に挿入
-  - キャプション追加
+- [x] **Participant Flowchart の挿入** (Editor 5) ✓ manuscript+reply済
+  - Results冒頭に挿入、自己完結的キャプション付き
 
 - [ ] **図表キャプションの詳細化** (Editor 10)
-  - [ ] Figure 1: 研究デザイン、対象集団、場所、期間を追加
-  - [ ] Figure 2: 同上
+  - [x] Figure 1: 研究デザイン、対象集団、場所、期間を追加 ✓
+  - [x] Figure 2 (JARS flowchart): 新規作成時に対応済 ✓
   - [ ] Figure 3: 同上
   - [ ] 全テーブル: 自己完結的なキャプションに修正
 
@@ -333,6 +332,7 @@
 | 2026-02-28 | 1.2, 3.1 | 欠測データ確認→Results記載, ログ特性→Methods/Results記載, ログ長-スコア相関→Results新セクション, reply記述(Editor9, F5, G1, G2) | 4項目 |
 | 2026-03-01 | 1.2, 1.3, 3.1, 3.5 | コホート構成明確化(G4), AI長さ設定明確化(H1,N3), API独立性明記(H3), 割当詳細明確化(N7)→Methods修正+reply記述 | 6項目 |
 | 2026-03-01 | 1.1, 3.2 | 正確なp値報告(L7): 本文の"p<0.05"→各項目の正確なp値に修正, CLMM表に未補正・補正後2列追加, reply記述 | 2項目 |
+| 2026-03-01 | 1.4, 3.4 | JARS participant flowchart作成・挿入(Editor5), Figure1キャプション改善(Editor10), reply記述 | 3項目 |
 
 ---
 

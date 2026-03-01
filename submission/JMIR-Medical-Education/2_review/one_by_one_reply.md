@@ -55,7 +55,7 @@ RESPONSE:
 
   > Comment: The JARS Participant Flowchart https://apastyle.apa.org/jars/jars-quant-participant-flowchart.pdf can provide readers with visual information about the participants across each stage of the study. I strongly suggest authors use this, which will need to be amended according to the study design.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have created a JARS-compliant participant flowchart adapted to our within-subjects study design and added it to the Results section as a new figure. The flowchart depicts participant flow through four stages: (1) Enrollment—164 logs from 47 medical students across 12 departments were assessed for eligibility, with 3 logs excluded because supervisors entered contact messages instead of feedback; (2) Feedback Generation—each of the 161 eligible logs received both supervisor feedback (collected during clerkship) and AI feedback (GPT-4o, generated June 1, 2024), reflecting the within-subjects design; (3) Evaluation—161 paired datasets were evaluated by 10 faculty and 10 student evaluators blinded to feedback source; and (4) Analysis—quantitative analysis of 3,220 observations (161 logs × 2 feedback types × 2 evaluators × 5 rubric items; 100% data completeness) and qualitative thematic analysis of open-ended evaluator comments. We also updated the caption of the existing feedback flow diagram (Figure 1) to be more descriptive and self-contained, in accordance with Editor Comment 10.
 
 ### Editor Comment.6
 
