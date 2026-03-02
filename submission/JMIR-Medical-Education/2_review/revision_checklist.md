@@ -4,11 +4,11 @@
 
 | フェーズ | 完了 | 合計 | 進捗率 |
 |---------|------|------|--------|
-| Phase 1: 別リポジトリでの分析 | 11 | 12 | 92% |
-| Phase 2: 原稿修正（高優先度） | 6 | 15 | 40% |
-| Phase 3: 原稿修正（中優先度） | 12 | 14 | 86% |
+| Phase 1: 別リポジトリでの分析 | 12 | 12 | 100% |
+| Phase 2: 原稿修正（高優先度） | 17 | 15 | 113% |
+| Phase 3: 原稿修正（中優先度） | 14 | 14 | 100% |
 | Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **29** | **49** | **59%** |
+| **Total** | **43** | **49** | **88%** |
 
 ---
 
@@ -163,23 +163,23 @@
 
 ## 2.5 JARS準拠の構造化 (Editor 1, 6)
 
-- [ ] **Methods の見出し再構成** (Editor 1)
-  - [ ] 量的部分: Inclusion/Exclusion 追加
-  - [ ] 量的部分: Participant Characteristics 追加
-  - [ ] 量的部分: Sampling Procedures 追加
-  - [ ] 量的部分: Sample Size/Power/Precision 追加
-  - [ ] 量的部分: Measures and Covariates 追加
-  - [ ] 質的部分: Research Design Overview 追加
-  - [ ] 質的部分: Study Participants or Data Sources 追加
-  - [ ] 質的部分: Participant Recruitment 追加
-  - [ ] 質的部分: Data Collection 追加
+- [x] **Methods の見出し再構成** (Editor 1) ✓ manuscript+reply済
+  - [x] 量的部分: Inclusion/Exclusion 追加 → Participants > Inclusion and Exclusion
+  - [x] 量的部分: Participant Characteristics 追加 → Participants > Participant Characteristics
+  - [x] 量的部分: Sampling Procedures 追加 → Participants > Sampling Procedures
+  - [x] 量的部分: Sample Size/Power/Precision 追加 → Sample Size, Power, and Precision
+  - [x] 量的部分: Measures and Covariates 追加 → Materials > Evaluation Instrument
+  - [x] 質的部分: Research Design Overview 追加 → Design セクションで対応
+  - [x] 質的部分: Study Participants or Data Sources 追加 → Participants + Qualitative Analysis冒頭で対応
+  - [x] 質的部分: Participant Recruitment 追加 → Sampling Procedures で対応
+  - [x] 質的部分: Data Collection 追加 → Data Collection セクション新設
 
-- [ ] **Ethical Considerations サブセクション追加** (Editor 6)
-  - [ ] 1. 倫理審査・承認に関する声明
-  - [ ] 2. インフォームドコンセントまたは免除の記載
-  - [ ] 3. プライバシー・機密保持の保護
-  - [ ] 4. 補償の種類と金額
-  - [ ] 5. 個人識別不可能性の確認
+- [x] **Ethical Considerations サブセクション追加** (Editor 6) ✓ manuscript+reply済
+  - [x] 1. 倫理審査・承認に関する声明（既存）
+  - [x] 2. インフォームドコンセントまたは免除の記載（既存）
+  - [x] 3. プライバシー・機密保持の保護（既存）
+  - [x] 4. 補償の種類と金額（新規追加）
+  - [x] 5. 個人識別不可能性の確認（新規追加）
 
 ---
 
@@ -201,10 +201,10 @@
   - 最大トークン制限: なし
   - 指導医フィードバックの制約: なし
 
-- [ ] **指導医フィードバックの文脈詳細** (N2)
-  - フィードバックへの期待（長さ/構造）
-  - フィードバック訓練の有無
-  - 口頭 vs 書面フィードバックの位置づけ
+- [x] **指導医フィードバックの文脈詳細** (N2) ✓ manuscript+reply済
+  - フィードバックへの期待（長さ/構造）: 指示なし
+  - フィードバック訓練の有無: なし（システム説明のみ）
+  - 口頭 vs 書面フィードバックの位置づけ: 書面は口頭の補完（状況による）
 
 ## 3.2 統計報告の強化 (Editor 7, G5, L7, N4, N6)
 
@@ -262,8 +262,9 @@
 
 ## 3.5 その他の方法論的詳細
 
-- [ ] **飽和達成の記載** (Editor 8)
-  - 質的分析で飽和に達したかどうかを記載
+- [x] **飽和達成の記載** (Editor 8) ✓ manuscript+reply済
+  - 全データ分析のため従来的saturationは分析目標ではない
+  - theoretically sufficientとして記載
 
 - [x] **ランダム化・割当プロセスの明確化** (N7) ✓ manuscript+reply済
   - Design セクションに詳細を追記
@@ -345,6 +346,7 @@
 | 2026-03-01 | 1.4 | Figure 3 x軸修正(G6): ggh4x::facet_wrap2(axes="all")でaccurate/clear.directionのx軸ラベル追加, reply記述 | 1項目 |
 | 2026-03-01 | 1.4, 3.4 | 項目順序統一(G3): (A)-(E)ラベル付与, Figure3/Table2/Table3の順序をCriteria Based→Clear Direction→Accurate→Prioritization→Supportiveに統一, reply記述 | 1項目 |
 | 2026-03-02 | 2.1, 2.3 | ルーブリック限界明示(F1,L1,H2): Introduction/Methods/Results/Limitations/Table2・3キャプション修正, プロンプト最適化認識(F3,F4,L5): Methods・Limitations追記, reply記述(F1,F3,F4,H2,L1,L5) | 6項目 |
+| 2026-03-02 | 2.5, 3.1, 3.5 | JARS準拠Methods再構成(Editor1): Participants/Materials/Sample Size/Data Collection新設, Ethical Considerations補完(Editor6): 補償・個人識別不可能性追加, 指導医文脈追記(N2): Setting, 飽和記載(Editor8): Qualitative Analysis, reply記述(Editor1,Editor6,Editor8,N2) | 14項目 |
 
 ---
 

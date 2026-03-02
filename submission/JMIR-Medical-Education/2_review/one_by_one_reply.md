@@ -28,7 +28,13 @@ RESPONSE:
   > - etc...
   > This will help readers with the relevant information to enable replication in future research.
 
-RESPONSE:
+RESPONSE: Thank you for this guidance. We have restructured the Methods section to align with the JARS mixed-methods reporting standards. Because this is a convergent mixed-methods study in which the same participants and data collection procedures serve both strands, we adopted a hybrid structure that avoids redundant duplication while incorporating all required JARS headings.
+
+For the quantitative component, the Methods section now includes the following JARS-compliant subsections: Participants (with sub-headings for Inclusion and Exclusion, Participant Characteristics, and Sampling Procedures), Materials (comprising Generating AI Feedback, Prompt Development, and Evaluation Instrument, corresponding to Measures and Covariates), Sample Size, Power, and Precision, Data Collection, and Quantitative Analysis.
+
+For the qualitative component, the JARS requirements are addressed as follows: the Research Design Overview is covered in the Design section, which describes the convergent mixed-methods framework; Study Participants or Data Sources is addressed in both the Participants section and the opening of the Qualitative Analysis section, which identifies the open-ended evaluator comments as the qualitative data; Participant Recruitment is covered in the Sampling Procedures sub-section; and Data Collection is addressed in the dedicated Data Collection section, which describes the evaluation procedure including the sequence of rubric scoring, free-text comments, and source identification.
+
+The Integration of Results and Ethical Considerations sections have been retained as shared elements applicable to both strands.
 
 ### Editor Comment.2
 
@@ -66,7 +72,13 @@ RESPONSE: Thank you for this suggestion. We have created a JARS-compliant partic
   > 4. Compensation type and amount for human subjects research.
   > 5. Please make sure that no identification of individual participants/users in any images of the manuscript or supplementary material is possible.
 
-RESPONSE:
+RESPONSE: Thank you for this important request. An "Ethical Considerations" subsection already existed in the Methods section of our original submission. We have now ensured that it explicitly addresses all five points:
+
+1. Ethics review and approval: The study was approved by the Ethics Committee of Nagoya University Hospital (approval number: 2023-0451). This statement was present in the original manuscript and has been retained.
+2. Informed consent: An opt-out approach was used for the research use of student clinical clerkship logs and supervisor feedback accumulated in the e-portfolio, with explanations provided to all students and supervisors. Research participants who served as evaluators were recruited using an opt-in approach and all provided informed consent before participating. These descriptions were present in the original manuscript and have been retained.
+3. Privacy and confidentiality: All data used in the research were anonymized for analysis; all proper nouns were replaced with alphabetic characters, and linking tables were managed in an encrypted state. This description was present in the original manuscript and has been retained.
+4. Compensation: We have added a statement that evaluators received no financial compensation for their participation; as acknowledgment of their contribution, they were provided with information about the research and early access to the AI prompt used for feedback generation.
+5. Individual identifiability: We have added a statement confirming that no individually identifiable information of any participant is presented in this manuscript, tables, figures, or supplementary materials.
 
 ### Editor Comment.7
 
@@ -78,7 +90,7 @@ RESPONSE:
 
   > Comment: Please mention if saturation was achieved.
 
-RESPONSE:
+RESPONSE: Thank you for raising this point. Because this study analyzed the complete set of open-ended evaluator comments from all 20 evaluators across all 161 datasets rather than sampling iteratively until no new themes emerged, data saturation in its conventional sense was not the analytic target. All available qualitative data were coded and analyzed; the resulting themes are therefore empirically grounded in the full dataset and can be considered theoretically sufficient for the purposes of this study. We have added this clarification to the Qualitative Analysis subsection of the revised Methods.
 
 ### Editor Comment.9
 
@@ -437,7 +449,11 @@ RESPONSE:
 
   > Comment: Provide more detail on the context and nature of supervisor feedback to support fair comparison and generalizability. Please describe supervisors' typical expectations for the e-portfolio feedback (eg, required length/structure, whether verbal feedback is the primary modality, whether feedback is intended to comment on the written log vs observed performance), and whether any faculty development/training existed for written feedback. Because supervisor feedback appears to be produced under routine time pressure, the manuscript should discuss how this context influences the interpretation of 'quality' as measured by a rubric originally designed for written feedback on texts.
 
-RESPONSE:
+RESPONSE: Thank you for this important request for contextual detail. We have added the following information to the revised manuscript.
+
+In the Setting section, we now describe the context of supervisor feedback: supervising physicians received orientation on the e-portfolio system but no specific training or instructions regarding the content, length, structure, or format of their written feedback. Written feedback in the e-portfolio primarily served as a complement to verbal feedback provided during clinical supervision, although the relative emphasis varied across supervisors and departments. In the Prompt Development subsection (within the newly created Materials section), we note that supervising physicians received no instructions regarding length, structure, or format for their feedback, making the comparison one between a rubric-optimized AI system and naturalistic supervisor feedback produced under routine clinical conditions.
+
+These additions clarify that the supervisor feedback captured in this study reflects authentic, time-pressured clinical practice rather than a controlled experimental condition, which is relevant both for interpreting the quantitative results and for assessing the generalizability of the findings.
 
 ### N3: Reviewer N Comment 3
 
