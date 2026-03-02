@@ -112,14 +112,19 @@
 
 ## 2.2 100%検出のバイアス議論 (F2, L2)
 
-- [ ] **Discussion/Limitations に追加**
-  - 全評価者が正確に識別→ブラインド評価が成立していない可能性
-  - 識別が評価に影響した可能性（expectancy bias）を議論
-  - 識別可能性自体が重要な知見であることを主張
-
-- [ ] **L2への追加対応**（可能な場合）
-  - 知覚された出典による層別分析の検討
-  - または実施不可能な理由を説明
+- [x] **Methods（Evaluation Instrument）に追加**
+  - 識別質問がルーブリック評価・自由記述の完了後に提示された旨を明記
+- [x] **Results（Identification of Feedback Source）を補足**
+  - ブラインド手続き下での結果であることを記載
+- [x] **Discussion（Comparison with the Literature）を拡張**
+  - 暗黙の認識バイアスの可能性を議論
+  - 識別可能性自体が質的差異の傍証であることを主張
+  - 評価後に識別を尋ねた点でunblinded studyとは異なることを明記
+- [x] **Limitations に新項目（Third）を追加**
+  - expectancy biasの可能性を認める
+  - 全員正解→層別分析は論理的に不可能である理由を説明
+  - 後続limitation番号を繰り上げ（全8項目）
+- [x] **F2・L2への返信ドラフト作成**（one_by_one_reply.md）
 
 ## 2.3 プロンプト最適化の認識 (F3, F4, H2, L5)
 

@@ -161,7 +161,13 @@ Regarding the addition of a clinically oriented evaluation framework: implementi
 
   > Comment: The 100% detection accuracy: A striking finding is that all 20 evaluators (10 faculty and 10 students) correctly identified the source of the feedback in every instance. While the study aimed for a blinded evaluation, this perfect detection suggests that the "voice" of the AI is unmistakably distinct from human supervisors in this context. The authors should discuss whether this immediate identification might have introduced a cognitive bias in how evaluators applied the rubric scores.
 
-RESPONSE:
+RESPONSE: Thank you for raising this important point. We agree that the implications of perfect detection accuracy deserve explicit discussion.
+
+We would like to clarify the blinding procedures that were in place. Within each dataset, the presentation order of the two feedback types (AI vs supervisor) was randomly assigned so that approximately half presented AI feedback first and the other half presented supervisor feedback first. All source labels were removed. Critically, the identification question was administered only after evaluators had completed all rubric scoring and free-text comments for that feedback entry. This sequence was designed to ensure that evaluators recorded their quality judgments before being asked about the source.
+
+We acknowledge, however, that the perfect detection accuracy indicates that the textual characteristics distinguishing the two feedback types were highly salient. Even though evaluators were not informed of the source, they may have formed implicit judgments during the evaluation process based on features such as text length, structural patterns, and language style. We cannot rule out the possibility that such implicit recognition influenced rubric ratings.
+
+In the revised manuscript, we have addressed this concern in three places. First, in the Methods (Evaluation Instrument), we now explicitly state that the identification question was presented only after all rubric scoring and free-text comments had been completed. Second, in the Results (Identification of Feedback Source), we now note that this finding occurred despite the blinding procedures and direct readers to the Discussion for interpretive considerations. Third, in the Discussion (Comparison with the Literature), we have expanded the paragraph on feedback source identification to discuss both aspects: the possibility that implicit recognition introduced expectancy bias, and the interpretation that perfect detection constitutes a substantive finding reflecting genuinely pronounced differences between the two feedback types, consistent with all five qualitative themes. We have also added a new limitation (Third) addressing this issue, including the logical impossibility of stratifying by perceived source when perceived and actual source are identical for every observation.
 
 ### F3: Reviewer F Comment 3
 
@@ -362,7 +368,15 @@ Instead, we have addressed the construct mismatch in the following ways. First, 
   > Comment: All evaluators correctly identified whether feedback was AI- or human-generated, suggesting that the evaluation was not blinded and that expectancy bias may have influenced scoring.
   > Solution: Discuss this as a major internal validity threat and report whether evaluators' beliefs about the source influenced their ratings; ideally, re-analyze scores stratified by perceived source.
 
-RESPONSE:
+RESPONSE: Thank you for identifying this as an important internal validity concern. We appreciate both the specific concern and the proposed analytical solution.
+
+We would first like to clarify the blinding procedures. The presentation order of AI and supervisor feedback was randomized within each dataset, and all source labels were removed. The identification question was administered only after evaluators had completed all rubric scoring and free-text comments. Evaluators were therefore not informed of the feedback source at the time of quality rating. We have now made these procedural details explicit in the Methods (Evaluation Instrument) and Results (Identification of Feedback Source) sections of the revised manuscript.
+
+We acknowledge that the perfect detection accuracy indicates the textual differences between the two feedback types were highly salient, and that evaluators may have formed implicit judgments about the source during evaluation. This possibility is now discussed as a limitation in the revised manuscript.
+
+Regarding the proposed stratified re-analysis by perceived source: because every evaluator correctly identified every item (100% accuracy across all 3,220 observations), perceived source and actual source are identical for every observation. There is therefore no variation in perceived source within either feedback condition, making it logically impossible to stratify scores by perceived source or to estimate the magnitude of any expectancy bias through this approach.
+
+In the revised manuscript, we have addressed this concern in the following ways: (1) In the Discussion (Comparison with the Literature), we now discuss both sides of the 100% detection finding, acknowledging the possibility of implicit recognition bias while also noting that perfect detection is a substantive finding consistent with all five qualitative themes. (2) We have added a new limitation (Third in the Limitations section) that explicitly addresses the potential for expectancy bias, explains why stratified analysis is not feasible, and notes that rubric score differences, particularly on items where AI scored highest, should be interpreted with this caveat in mind.
 
 ### L3: Reviewer L Comment 3
 
