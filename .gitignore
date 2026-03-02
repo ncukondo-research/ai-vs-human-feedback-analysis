@@ -8,6 +8,7 @@ src/analysis/quantitative/*/
 src/**/*.html
 src/**/*.rmarkdown
 src/**/*.docx
+!src/assets/appendix/*.docx
 .claude/
 result/src/
 result/result/
