@@ -61,15 +61,15 @@ Regarding demographic and clinical factors: detailed demographic information (ag
 
   > Comment: In the concluding paragraphs of the abstract and discussion, please mention 1) how the study is innovative, 2) how it is different from existing studies, 3) what it brings to the field, and 4) its implications in the real world. Ensure the content in both concluding paragraphs match.
 
-RESPONSE: Thank you for this suggestion. We have rewritten the Conclusions section of the abstract to address all four elements.
+RESPONSE: Thank you for this suggestion. We have revised the Conclusions sections of both the abstract and the Discussion to address all four elements, and ensured that their content is aligned.
 
-Regarding innovation and difference from existing studies: the abstract now states that this study extends the comparison of AI-generated and supervisor feedback to an authentic clinical clerkship environment, moving beyond classroom and simulation settings examined in prior work.
+Regarding innovation and difference from existing studies: both sections now state that this study extends the comparison of AI-generated and supervisor feedback to an authentic clinical clerkship environment, moving beyond classroom and simulation settings examined in prior work.
 
-Regarding what the study brings to the field: the abstract highlights the key distinction that emerged between text-anchored AI feedback, which systematically addresses written log content in alignment with rubric criteria, and experience-based supervisor feedback, which draws on clinical observation and professional judgment. This framework for characterizing the complementary nature of each feedback type is the central contribution of the study.
+Regarding what the study brings to the field: both sections highlight the key distinction between text-anchored AI feedback, which systematically addresses written log content in alignment with rubric criteria, and experience-based supervisor feedback, which draws on clinical observation and professional judgment.
 
-Regarding real-world implications: the abstract concludes that AI feedback should supplement rather than replace supervisor feedback, and that hybrid models leveraging each type's advantages warrant investigation in clinical education.
+Regarding real-world implications: both sections conclude that AI feedback should supplement rather than replace supervisor feedback, and that hybrid models leveraging each type's advantages warrant investigation in clinical education.
 
-We will ensure that the Discussion conclusions are revised to match the abstract conclusions in a subsequent revision pass.
+The Discussion Conclusions additionally specifies the model used (GPT-4o with a rubric-embedded prompt) and identifies future research directions, including generalization to other AI models, languages, and institutional contexts, as well as the impact of AI-assisted feedback on student learning outcomes.
 
 ### Editor Comment.5
 
@@ -237,7 +237,7 @@ RESPONSE:
 
   > Comment: This study is conducted in Japanese, with Japanese students, supervisors, and AI output. The qualitative findings show that language naturalness and tone strongly influenced perceptions. Yet the discussion treats the results as broadly applicable to AI in clinical education. The authors should more carefully theorize how linguistic and cultural context may shape both AI performance and its reception.
 
-RESPONSE:
+RESPONSE: Thank you for this important point. We have addressed the linguistic and cultural context in two places. In the Limitations (First), we now note that the study was conducted entirely in Japanese and that GPT-4o's performance in Japanese may differ from its performance in English, potentially affecting the naturalness and quality of AI-generated feedback. We also note that the cultural context of Japanese medical education, where deference to senior clinicians is strongly emphasized, may have contributed to higher regard for supervisor feedback and influenced evaluators' perceptions of the two feedback sources. In the Conclusions, we now explicitly identify language and institutional context as dimensions that require investigation before generalizing the findings.
 
 ### F8: Reviewer F Comment 8
 
@@ -364,7 +364,7 @@ RESPONSE: Thank you for raising this important methodological concern. (1) Yes, 
   > (1) Clearly distinguish consistency as a design feature of AI feedback from consistency as something that is always educationally desirable.
   > (2) Emphasize that variability in supervisor feedback may reflect selective prioritization and clinical judgment, rather than lower feedback quality.
 
-RESPONSE:
+RESPONSE: Thank you for this insightful observation. We agree that the original explanation risked circularity. In the revised Discussion (Comparison with the Literature, paragraph on consistency), we now distinguish two separate mechanisms: AI's adherence to rubric criteria, which follows from embedding those criteria in the prompt, and the consistency of its output across different inputs, which is a structural consequence of using the same model and prompt configuration for every log entry. We explicitly state that this consistency is best understood as a design feature of AI feedback generation rather than an inherently desirable educational property, as effective feedback may sometimes require selective emphasis tailored to individual learner needs. We also reframe supervisor variability as reflecting selective prioritization and clinical judgment, noting that supervisors chose which aspects to emphasize based on their professional assessment of each student's needs, resulting in variable but contextually responsive feedback.
 
 ------------------------------------------------------
 
@@ -409,14 +409,14 @@ In the revised manuscript, we have addressed this concern in the following ways:
   > Comment: The study evaluates perceived feedback quality but not whether AI or human feedback led to different learning behaviors, revisions, or clinical improvement.
   > Solution: Reframe conclusions to explicitly limit claims to perceived quality, or include secondary analysis of student revisions or engagement with feedback if available.
 
-RESPONSE:
+RESPONSE: Thank you for this important clarification. We agree that the study evaluates structural feedback quality as assessed by the rubric, not downstream learning outcomes. In the Limitations (Eighth), we have revised the wording to state explicitly that the study "evaluated the structural quality of feedback as assessed by the rubric, but did not investigate whether AI-generated or supervisor-provided feedback led to different learning behaviors, revisions, or clinical improvement." The Conclusions now identifies the impact of AI-assisted feedback on student learning outcomes as a direction for future research. We note that our rubric-based measures capture structural dimensions of feedback (criteria-based guidance, clarity, text alignment) that are relatively objective, and the qualitative analysis provides complementary evidence on perceived strengths and limitations. However, the relationship between these quality indicators and actual educational outcomes remains to be investigated.
 
 ### L4: Reviewer L Comment 4
 
   > Comment: Only GPT-4o and one Japanese medical school were studied, which limits external validity.
   > Solution: Explicitly state that findings are model- and context-dependent, and avoid general claims about "AI feedback" broadly.
 
-RESPONSE:
+RESPONSE: Thank you for this point. The Limitations already addresses both the single-institution constraint (First) and the model specificity (Fourth). To further reinforce this, we have revised the Conclusions to explicitly reference "GPT-4o with a rubric-embedded prompt" when describing the AI feedback, and to identify generalization to other AI models, languages, and institutional contexts as a necessary direction for future research. We retained "AI feedback" as a general term throughout the manuscript for readability, but the Limitations and Conclusions now make clear that the findings are specific to the model, prompt, language, and institutional context studied.
 
 ## Minor
 
@@ -457,7 +457,7 @@ RESPONSE:
 
   > Comment: Clarify the conceptual framing and the manuscript's unique contribution. The Introduction motivates the work well, but the Discussion would benefit from a clearer articulation of what new knowledge this study adds beyond prior classroom/simulation comparisons (eg, which features of the clerkship context are expected to change the nature of feedback).
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. In the revised Discussion (Comparison with the Literature, paragraph on text-anchored versus experience-based feedback), we now explicitly frame the study's contribution relative to prior work. We note that most prior comparisons have been conducted in classroom or simulation settings where the knowledge base is well-defined and the feedback task is circumscribed. We then identify three contextual features of clinical clerkships that distinguish the feedback task and amplify the differences between AI and supervisor feedback: (1) supervisors work under substantial time pressure and provide written feedback as a complement to ongoing face-to-face clinical teaching; (2) written comments prioritize what each supervisor judges most important for a given student; and (3) clinical reasoning, situational awareness, and tacit professional knowledge are central to clerkship learning but difficult to articulate in written form and largely inaccessible to AI systems operating solely on the written log text. The Conclusions similarly frames the study as extending this comparison to an authentic clinical clerkship environment.
 
 ### N2: Reviewer N Comment 2
 

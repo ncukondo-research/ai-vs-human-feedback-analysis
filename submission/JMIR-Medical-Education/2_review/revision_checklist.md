@@ -5,10 +5,10 @@
 | フェーズ | 完了 | 合計 | 進捗率 |
 |---------|------|------|--------|
 | Phase 1: 別リポジトリでの分析 | 12 | 12 | 100% |
-| Phase 2: 原稿修正（高優先度） | 20 | 15 | 133% |
-| Phase 3: 原稿修正（中優先度） | 14 | 14 | 100% |
+| Phase 2: 原稿修正（高優先度） | 21 | 15 | 140% |
+| Phase 3: 原稿修正（中優先度） | 19 | 14 | 136% |
 | Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **46** | **49** | **94%** |
+| **Total** | **52** | **49** | **106%** |
 
 ---
 
@@ -154,10 +154,10 @@
   - [x] Results: 全5項目のOR + 95% CI、Cohen d + 95% CI、Levene F追加
   - [x] Demographics未収集の理由をreplyで説明（opt-out同意範囲、ボランティア負担軽減）
 
-- [ ] **結論段落の強化** (Editor 4) — 抄録は完了、Discussion未対応
-  - [x] 抄録の結論に追加: 革新性、既存研究との違い、分野への貢献、実世界への示唆 ✓ manuscript+reply済
-  - [ ] Discussion の結論に同内容を追加
-  - [ ] 両者の内容一致を確認
+- [x] **結論段落の強化** (Editor 4) ✓ manuscript+reply済
+  - [x] 抄録の結論に追加: 革新性、既存研究との違い、分野への貢献、実世界への示唆 ✓
+  - [x] Discussion の結論に同内容を追加（H3に変更、GPT-4o文脈限定、将来の研究方向も追記） ✓
+  - [x] 両者の内容一致を確認 ✓
 
 ## 2.5 JARS準拠の構造化 (Editor 1, 6)
 
@@ -270,25 +270,28 @@
 - [x] **API呼び出しの独立性を明記** (H3) ✓ manuscript+reply済
   - Generating AI feedback セクションに追記
 
-- [ ] **一貫性と変動性の解釈強化** (H4)
-  - AI一貫性 = 設計上の特徴 ≠ 常に教育的に望ましい
+- [x] **一貫性と変動性の解釈強化** (H4) ✓ manuscript+reply済
+  - AI一貫性 = 同一モデル・プロンプトの構造的帰結（設計上の特徴）≠ 常に教育的に望ましい
   - 指導医変動性 = 選択的優先順位付けと臨床判断の反映
 
 ## 3.6 Discussion の強化
 
-- [ ] **独自の貢献の明確化** (N1)
-  - 教室/シミュレーション比較を超える新知見
-  - 臨床実習文脈がフィードバックの性質をどう変えるか
+- [x] **独自の貢献の明確化** (N1) ✓ manuscript+reply済
+  - 先行研究が教室/シミュレーション環境であることを明示
+  - 臨床実習の固有要因（時間的制約、対面指導の補完、暗黙知のテキスト化困難）を追加
 
-- [ ] **言語・文化的文脈の考察** (F7)
-  - 日本語・日本文化がAIパフォーマンスと受容に与える影響
+- [x] **言語・文化的文脈の考察** (F7) ✓ manuscript+reply済
+  - GPT-4oの日本語性能の限界、目上を重んじる文化の影響をLimitations第1項に追記
+  - Conclusionsで言語・制度的文脈への一般化を今後の課題として明記
 
-- [ ] **知覚された品質 vs 実際の学習成果** (L3)
-  - 結論を「知覚された品質」に明示的に限定
+- [x] **知覚された品質 vs 実際の学習成果** (L3) ✓ manuscript+reply済
+  - Limitations第8項を「structural quality as assessed by the rubric」に限定
+  - 学習行動・改善への影響は今後の研究課題として明記
 
-- [ ] **外的妥当性の限界** (L4)
-  - GPT-4oのみ、単一機関のみであることを強調
-  - 「AIフィードバック」全般への一般化を避ける
+- [x] **外的妥当性の限界** (L4) ✓ manuscript+reply済
+  - Conclusionsで「GPT-4o with a rubric-embedded prompt」と明記
+  - 他モデル・言語・機関への一般化を今後の課題として追記
+  - 本文中の「AI feedback」は可読性のため維持
 
 ---
 
@@ -346,6 +349,7 @@
 | 2026-03-02 | 2.1, 2.3 | ルーブリック限界明示(F1,L1,H2): Introduction/Methods/Results/Limitations/Table2・3キャプション修正, プロンプト最適化認識(F3,F4,L5): Methods・Limitations追記, reply記述(F1,F3,F4,H2,L1,L5) | 6項目 |
 | 2026-03-02 | 2.5, 3.1, 3.5 | JARS準拠Methods再構成(Editor1): Participants/Materials/Sample Size/Data Collection新設, Ethical Considerations補完(Editor6): 補償・個人識別不可能性追加, 指導医文脈追記(N2): Setting, 飽和記載(Editor8): Qualitative Analysis, reply記述(Editor1,Editor6,Editor8,N2) | 14項目 |
 | 2026-03-02 | 2.4 | タイトル変更(Editor2): JMIR形式に修正+reply済, 抄録強化(Editor3): Methods/Results/Conclusions全面改訂(442語)+reply済, 抄録結論強化(Editor4): 革新性・text-anchored vs experience-based・ハイブリッドモデル追加+reply済 | 3項目 |
+| 2026-03-02 | 2.4, 3.5, 3.6 | Discussion改訂: Conclusions拡張・H3化(Editor4), 一貫性解釈修正(H4), 臨床実習文脈の独自貢献(N1), 言語・文化的文脈(F7)→Limitations追記, perceived quality限定(L3)→Limitations修正, 外的妥当性(L4)→Conclusions限定, 全6件reply記述 | 6項目 |
 
 ---
 
