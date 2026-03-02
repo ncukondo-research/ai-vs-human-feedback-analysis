@@ -49,13 +49,27 @@ RESPONSE: Thank you for this guidance. We have revised the title to follow the J
   > - In the Methods, provide research design (e.g., cross-section, retrospective/prospective cohort), total sample size or per group, some demographic/clinical factors e.g., participants sex, age, diseases, etc., the materials used (e.g., instruments, apparatus), the outcome measures, sampling procedure, and the data-gathering procedures, and if applicable, the source of any secondary data as well as from where participants were recruited, and the selection criteria.
   > - In the Results, mention the name of the statistical tests, the alpha level, and all point estimates (e.g., differences between groups, single point estimates, etc) with confidence intervals. If presenting %, also include absolute values and confidence intervals.
 
-RESPONSE:
+RESPONSE: Thank you for this guidance. We have substantially strengthened the abstract (now 442 words) to be more robust and reflective of the manuscript.
+
+In the Methods section, we now specify the research design (convergent mixed-methods study), the total sample (161 weekly clerkship logs from 47 fifth- and sixth-year medical students across 12 clinical departments), the study site and period (Nagoya University, Japan; January–May 2024), the inclusion and exclusion criteria (164 eligible logs assessed, 3 excluded because supervisors entered contact messages rather than substantive feedback), the materials (GPT-4o for AI feedback generation; a validated five-category feedback quality rubric), the data-gathering procedures (blinded, randomized evaluation order consisting of rubric scoring, open-ended comments, and source identification), and the statistical approach (paired t-tests, cumulative link mixed models; alpha = .05 with Bonferroni correction; qualitative thematic analysis; Joint Display Analysis).
+
+In the Results section, we now report the names of statistical tests, the alpha level, and all point estimates with 95% confidence intervals. Specifically, we report the feedback length difference with Cohen d and its 95% CI, the cumulative link mixed model odds ratios with 95% CIs and exact P values for all five rubric categories, the variance ratio with the Levene F statistic and P value for consistency analysis, and the detection accuracy (20/20 evaluators).
+
+Regarding demographic and clinical factors: detailed demographic information (age, sex) was not collected from either participant group. Student clerkship logs were collected through routine educational practice under opt-out consent, which did not include consent for the collection or disclosure of individual demographic data. Feedback evaluators participated as unpaid volunteers, and the information requested was kept to a minimum to reduce burden and invasiveness. This is described in the Participant Characteristics and Ethical Considerations subsections of the revised manuscript.
 
 ### Editor Comment.4
 
   > Comment: In the concluding paragraphs of the abstract and discussion, please mention 1) how the study is innovative, 2) how it is different from existing studies, 3) what it brings to the field, and 4) its implications in the real world. Ensure the content in both concluding paragraphs match.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have rewritten the Conclusions section of the abstract to address all four elements.
+
+Regarding innovation and difference from existing studies: the abstract now states that this study extends the comparison of AI-generated and supervisor feedback to an authentic clinical clerkship environment, moving beyond classroom and simulation settings examined in prior work.
+
+Regarding what the study brings to the field: the abstract highlights the key distinction that emerged between text-anchored AI feedback, which systematically addresses written log content in alignment with rubric criteria, and experience-based supervisor feedback, which draws on clinical observation and professional judgment. This framework for characterizing the complementary nature of each feedback type is the central contribution of the study.
+
+Regarding real-world implications: the abstract concludes that AI feedback should supplement rather than replace supervisor feedback, and that hybrid models leveraging each type's advantages warrant investigation in clinical education.
+
+We will ensure that the Discussion conclusions are revised to match the abstract conclusions in a subsequent revision pass.
 
 ### Editor Comment.5
 

@@ -5,10 +5,10 @@
 | フェーズ | 完了 | 合計 | 進捗率 |
 |---------|------|------|--------|
 | Phase 1: 別リポジトリでの分析 | 12 | 12 | 100% |
-| Phase 2: 原稿修正（高優先度） | 17 | 15 | 113% |
+| Phase 2: 原稿修正（高優先度） | 20 | 15 | 133% |
 | Phase 3: 原稿修正（中優先度） | 14 | 14 | 100% |
 | Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **43** | **49** | **88%** |
+| **Total** | **46** | **49** | **94%** |
 
 ---
 
@@ -144,20 +144,18 @@
 
 ## 2.4 タイトル・抄録の改訂 (Editor 2, 3, 4)
 
-- [ ] **タイトル変更** (Editor 2)
-  - JMIR形式: "Issue or Intervention in Demographic/Disease/Condition: Method/Study Design"
-  - 現在: "Same logs, different voices: AI-generated vs human feedback during clinical clerkship in undergraduate education"
-  - 修正案: _______________
+- [x] **タイトル変更** (Editor 2) ✓ manuscript+reply済
+  - JMIR形式: "AI-generated versus human supervisor feedback on medical students' clinical clerkship logs: convergent mixed methods study"
 
-- [ ] **抄録の強化** (Editor 3) - 最大450語
-  - [ ] Methods: 研究デザイン、サンプルサイズ、人口統計学的要因追加
-  - [ ] Methods: 材料、アウトカム指標、サンプリング手順追加
-  - [ ] Results: 統計検定名、α水準追加
-  - [ ] Results: 点推定値と信頼区間追加
-  - [ ] Results: パーセンテージに絶対値と信頼区間追加
+- [x] **抄録の強化** (Editor 3) ✓ manuscript+reply済 - 442語/最大450語
+  - [x] Methods: 研究デザイン、サンプルサイズ、inclusion/exclusion、施設・期間追加
+  - [x] Methods: 材料（validated five-category rubric, GPT-4o）、blinded randomized order、α水準追加
+  - [x] Results: 統計検定名、α水準追加
+  - [x] Results: 全5項目のOR + 95% CI、Cohen d + 95% CI、Levene F追加
+  - [x] Demographics未収集の理由をreplyで説明（opt-out同意範囲、ボランティア負担軽減）
 
-- [ ] **結論段落の強化** (Editor 4)
-  - [ ] 抄録の結論に追加: 革新性、既存研究との違い、分野への貢献、実世界への示唆
+- [ ] **結論段落の強化** (Editor 4) — 抄録は完了、Discussion未対応
+  - [x] 抄録の結論に追加: 革新性、既存研究との違い、分野への貢献、実世界への示唆 ✓ manuscript+reply済
   - [ ] Discussion の結論に同内容を追加
   - [ ] 両者の内容一致を確認
 
@@ -347,6 +345,7 @@
 | 2026-03-01 | 1.4, 3.4 | 項目順序統一(G3): (A)-(E)ラベル付与, Figure3/Table2/Table3の順序をCriteria Based→Clear Direction→Accurate→Prioritization→Supportiveに統一, reply記述 | 1項目 |
 | 2026-03-02 | 2.1, 2.3 | ルーブリック限界明示(F1,L1,H2): Introduction/Methods/Results/Limitations/Table2・3キャプション修正, プロンプト最適化認識(F3,F4,L5): Methods・Limitations追記, reply記述(F1,F3,F4,H2,L1,L5) | 6項目 |
 | 2026-03-02 | 2.5, 3.1, 3.5 | JARS準拠Methods再構成(Editor1): Participants/Materials/Sample Size/Data Collection新設, Ethical Considerations補完(Editor6): 補償・個人識別不可能性追加, 指導医文脈追記(N2): Setting, 飽和記載(Editor8): Qualitative Analysis, reply記述(Editor1,Editor6,Editor8,N2) | 14項目 |
+| 2026-03-02 | 2.4 | タイトル変更(Editor2): JMIR形式に修正+reply済, 抄録強化(Editor3): Methods/Results/Conclusions全面改訂(442語)+reply済, 抄録結論強化(Editor4): 革新性・text-anchored vs experience-based・ハイブリッドモデル追加+reply済 | 3項目 |
 
 ---
 
