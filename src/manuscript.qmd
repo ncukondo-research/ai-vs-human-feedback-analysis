@@ -1,6 +1,6 @@
 ---
 bibliography: library.json
-title: "Same logs, different voices: AI-generated vs human feedback during clinical clerkship in undergraduate education"
+title: "AI-generated versus human supervisor feedback on medical students' clinical clerkship logs: convergent mixed methods study"
 author:
   - name: Takeshi Kondo
     orcid: 0000-0002-3307-671X

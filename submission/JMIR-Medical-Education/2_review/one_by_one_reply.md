@@ -40,7 +40,7 @@ The Integration of Results and Ethical Considerations sections have been retaine
 
   > Comment: Please modify the title to be in line with our journal guidelines for titles ("Issue or Intervention in Demographic/Disease/Condition: Method/Study Design") https://jmir.zendesk.com/hc/en-us/articles/115002943791-What-are-JMIR-s-guidelines-for-article-titles
 
-RESPONSE:
+RESPONSE: Thank you for this guidance. We have revised the title to follow the JMIR format of "Issue or Intervention in Demographic/Disease/Condition: Method/Study Design." The new title is: "AI-generated versus human supervisor feedback on medical students' clinical clerkship logs: convergent mixed methods study."
 
 ### Editor Comment.3
 
