@@ -79,8 +79,7 @@ editor:
   render-on-save: false
 format:
   html: default
-  docx:
-    reference-doc: reference.docx
+  docx: default
   typst: default
 ---
 
