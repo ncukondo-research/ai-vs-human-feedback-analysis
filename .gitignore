@@ -9,6 +9,7 @@ src/**/*.html
 src/**/*.rmarkdown
 src/**/*.docx
 !src/assets/appendix/*.docx
+*:Zone.Identifier
 .claude/
 result/src/
 result/result/
