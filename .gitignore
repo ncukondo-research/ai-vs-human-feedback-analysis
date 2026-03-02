@@ -18,5 +18,7 @@ figure/
 
 __pycache__/
 
+.playwright-mcp/
+
 /.quarto/
 .env
