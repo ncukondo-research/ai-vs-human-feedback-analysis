@@ -5,10 +5,10 @@
 | フェーズ | 完了 | 合計 | 進捗率 |
 |---------|------|------|--------|
 | Phase 1: 別リポジトリでの分析 | 11 | 12 | 92% |
-| Phase 2: 原稿修正（高優先度） | 0 | 15 | 0% |
+| Phase 2: 原稿修正（高優先度） | 6 | 15 | 40% |
 | Phase 3: 原稿修正（中優先度） | 12 | 14 | 86% |
 | Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **23** | **49** | **47%** |
+| **Total** | **29** | **49** | **59%** |
 
 ---
 
@@ -97,15 +97,17 @@
 
 ## 2.1 ルーブリックの限界と解釈の明確化 (F1, L1, H2)
 
-- [ ] **Introduction での早期明示**
+- [x] **Introduction での早期明示** ✓ manuscript+reply済
   - Steiss et al. ルーブリックは書面フィードバック用であり、臨床的次元（診断推論、専門的判断等）を直接評価しないことを記載
+  - 質的分析を併用するjustificationとして機能
 
-- [ ] **Results での解釈限定**
-  - Tables 2, 3 の解釈時に「このルーブリック基準において」と明記
+- [x] **Results での解釈限定** ✓ manuscript+reply済
+  - Tables 2, 3 の解釈時に「このルーブリック基準において」と明記（Comparison of Scores末尾に段落追加）
   - AIが「全体的に優れている」という誤解を避ける表現に修正
+  - Table 2/3のキャプションにルーブリックの測定範囲を明記
 
-- [ ] **Discussion での補完説明**
-  - 質的分析が臨床的価値を補完していることを強調
+- [x] **Discussion/Limitationsでの補完説明** ✓ manuscript+reply済
+  - 質的分析（Perspective as a clinician, Continuity with practice）が臨床的価値を補完していることを強調
   - ルーブリックスコアと教育的品質の区別を明確化
 
 ## 2.2 100%検出のバイアス議論 (F2, L2)
@@ -121,17 +123,17 @@
 
 ## 2.3 プロンプト最適化の認識 (F3, F4, H2, L5)
 
-- [ ] **Methods での早期認識**
-  - AIはルーブリックに最適化されたこと
+- [x] **Methods での早期認識** ✓ manuscript+reply済
+  - AIはルーブリックに最適化されたこと（5基準を明示的に埋め込み）
   - 指導医は事後評価（rubric-naïve）であること
   - 「自然な」比較ではないことを明示
 
-- [ ] **本文にプロンプト要約を追加** (L5)
-  - プロンプトの主要要素を簡潔に記載
+- [x] **本文にプロンプト要約を追加** (L5) ✓ manuscript+reply済
+  - プロンプトの主要要素（5基準の埋め込み）を簡潔に記載
   - Multimedia Appendix への参照を維持
 
-- [ ] **Limitations に追加**
-  - プロンプト感度分析がないこと
+- [x] **Limitations に追加** ✓ manuscript+reply済
+  - プロンプト感度分析がないこと（Limitations第5項として追加）
   - 代替プロンプトでの結果が異なる可能性
   - 結果の一般化可能性・再現性の限界
 
@@ -337,6 +339,7 @@
 | 2026-03-01 | 1.4, 3.4 | JARS participant flowchart作成・挿入(Editor5), Figure1キャプション改善(Editor10), reply記述 | 3項目 |
 | 2026-03-01 | 1.4 | Figure 3 x軸修正(G6): ggh4x::facet_wrap2(axes="all")でaccurate/clear.directionのx軸ラベル追加, reply記述 | 1項目 |
 | 2026-03-01 | 1.4, 3.4 | 項目順序統一(G3): (A)-(E)ラベル付与, Figure3/Table2/Table3の順序をCriteria Based→Clear Direction→Accurate→Prioritization→Supportiveに統一, reply記述 | 1項目 |
+| 2026-03-02 | 2.1, 2.3 | ルーブリック限界明示(F1,L1,H2): Introduction/Methods/Results/Limitations/Table2・3キャプション修正, プロンプト最適化認識(F3,F4,L5): Methods・Limitations追記, reply記述(F1,F3,F4,H2,L1,L5) | 6項目 |
 
 ---
 

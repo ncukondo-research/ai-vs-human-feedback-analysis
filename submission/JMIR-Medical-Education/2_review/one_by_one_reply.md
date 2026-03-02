@@ -141,7 +141,21 @@ RESPONSE:
   > This creates a construct validity problem: AI is being evaluated on a metric that is closer to its design space than to the supervisors'. Your own qualitative findings ("Perspective as a clinician", "Continuity with practice") demonstrate that supervisors contribute important value that the rubric cannot score. This tension should be made explicit earlier and more strongly in the paper, especially when interpreting the higher AI scores in Tables 2 and 3.
   > At present, readers may mistakenly infer that AI feedback is "better" overall, rather than "better at meeting this particular rubric".
 
-RESPONSE:
+RESPONSE: Thank you for this important observation. We agree that the tension between the rubric's structural focus and the clinically meaningful dimensions of supervisor feedback deserves explicit acknowledgment, and that readers may otherwise interpret higher AI rubric scores as indicating overall educational superiority.
+
+We have made the following changes to address this concern.
+
+In the Introduction (end of the Rationale subsection), we added a framing note explaining that, because rubric-based instruments tend to emphasize structural dimensions rather than clinically specific qualities such as diagnostic reasoning and professional judgment, a complementary qualitative component was incorporated to capture dimensions of feedback value that rubric scoring alone cannot assess. This framing also serves to justify the mixed-methods design.
+
+In the Methods section (Prompt Development subsection), we now explicitly state that the prompt embedded the five criteria of the Steiss et al. rubric as the evaluation framework for generating feedback, while supervising physicians received no rubric-based instruction. We state that this means the study compares a rubric-optimized AI system with naturalistic supervisor feedback rather than constituting a neutral comparison of inherent feedback quality.
+
+In the Results section (Comparison of Scores subsection), we added an interpretive paragraph following the score comparison data, directing readers to consider this design asymmetry when interpreting Tables 2 and 3, and referencing the qualitative themes of Perspective as a clinician and Continuity with practice as complementary evidence of clinical value that the rubric does not capture.
+
+In the Limitations section, we substantially expanded the discussion of the rubric's scope. We now explicitly state that the Steiss et al. rubric was designed for written academic feedback and emphasizes structural dimensions that are also embedded in the AI prompt, while clinically meaningful attributes such as diagnostic reasoning and professional judgment are not directly captured. Rubric score differences therefore reflect adherence to specific structural dimensions rather than overall educational quality.
+
+We also added brief notes to the captions of Tables 2 and 3 specifying what the rubric does and does not measure, so that readers who focus on the tables without reading the surrounding text are not misled.
+
+Regarding the addition of a clinically oriented evaluation framework: implementing a validated clinically oriented rubric evaluation post hoc was not feasible within the scope of this revision. We believe the qualitative findings partially address this gap, as the themes of Perspective as a clinician and Continuity with practice capture exactly the clinical dimensions that supervisors contribute and that the Steiss et al. rubric cannot score. These qualitative findings are now more explicitly framed in the Limitations as complementary evidence of the clinical value of supervisor feedback.
 
 ### F2: Reviewer F Comment 2
 
@@ -154,14 +168,24 @@ RESPONSE:
   > Comment: AI feedback was explicitly engineered to follow the same rubric used for evaluation (via prompt design referencing Steiss et al. and other criteria). Supervisors, by contrast, were not trained or instructed to write in accordance with that rubric.
   > This creates a form of criterion contamination: the AI was optimized for the scoring instrument, whereas supervisors were evaluated post hoc against it. This does not invalidate the findings, but it does mean the results cannot be interpreted as a neutral comparison of "natural" AI vs human feedback quality. This limitation should be acknowledged more explicitly and earlier (not only as part of generic limitations).
 
-RESPONSE:
+RESPONSE: Thank you for identifying this methodological concern. We agree that the criterion alignment between the AI prompt and the evaluation rubric should be acknowledged more explicitly and earlier in the manuscript.
+
+In response, we have added the following to the Methods section (Prompt Development subsection): the prompt explicitly embedded the five criteria of the Steiss et al. rubric as the evaluation framework for generating feedback, while supervising physicians provided feedback according to their usual clinical practice without rubric guidance. We now state explicitly that this means the study compares a rubric-optimized AI system with naturalistic supervisor feedback rather than constituting a neutral comparison of inherent feedback quality.
+
+This framing is introduced briefly in the Introduction (end of the Rationale subsection) and expanded in the Limitations section. We also added an interpretive paragraph at the end of the Comparison of Scores subsection in the Results, directing readers to interpret the reported score differences with this design feature in mind.
+
+We agree with the reviewer that this asymmetry does not invalidate the findings but changes how they should be interpreted. The rubric score advantages for AI on criteria-based and clear direction items, where effect sizes are large (Cohen d = 0.93 and 0.73, respectively), reflect the degree to which AI adhered to dimensions it was explicitly prompted to follow, rather than demonstrating inherent superiority on those dimensions.
 
 ### F4: Reviewer F Comment 4
 
   > Comment: Although the manuscript describes prompt development in detail, it treats this process primarily as a technical prerequisite rather than as a core methodological and pedagogical intervention. In reality, the prompts determine what the AI attends to, what it values, and what kind of feedback it produces. By explicitly embedding rubric criteria, structural expectations, and feedback principles into the prompt, the authors effectively trained the AI to perform well on the very dimensions later used for evaluation. This means the study does not simply compare "AI feedback" with "supervisor feedback," but rather compares a rubric-optimized AI system with naturalistic supervisor feedback, introducing a form of construct alignment that advantages the AI condition.
   > Furthermore, the absence of any prompt sensitivity analysis limits interpretability and reproducibility. It remains unclear whether the observed superiority of AI on criteria-based and clarity dimensions reflects inherent properties of GPT-4o or is contingent on this specific, carefully engineered prompt. Alternative prompts—shorter, less structured, or more clinically oriented—might have produced qualitatively different AI feedback and potentially different comparative outcomes. Without testing or reporting such alternatives, readers cannot assess the robustness or generalizability of the findings, and other researchers cannot replicate or extend the work in a principled way.
 
-RESPONSE:
+RESPONSE: Thank you for this detailed analysis. We agree that the prompt development process should be positioned as a core methodological decision rather than a technical prerequisite, and that the absence of a prompt sensitivity analysis is a genuine interpretive limitation.
+
+In the revised Methods section (Prompt Development subsection), we have added explicit language identifying the prompt as a key methodological choice that shapes what the AI attends to and values. We now state that the prompt embedded the Steiss et al. rubric criteria as the evaluation framework, and that this means the comparison is between a rubric-optimized AI system and naturalistic supervisor feedback rather than a comparison of inherent feedback quality potential. This is complemented by a framing note added to the Introduction and an expanded discussion in the Limitations section.
+
+Regarding prompt sensitivity analysis, we acknowledge this as a meaningful limitation and have added it explicitly to the Limitations section. It is not possible to retrospectively determine whether the observed rubric score advantages reflect inherent properties of GPT-4o or are contingent on this specific prompt engineering. Alternative prompts, whether shorter, less structured, or more clinically oriented, might produce qualitatively different outcomes, limiting both the interpretability and the reproducibility of the current findings. We were unable to conduct a sensitivity analysis within the scope of this revision, as the prompt was developed iteratively through a pilot testing process, and varying it systematically would constitute a separate study design. We have noted this as an important direction for future research.
 
 ## Minor
 
@@ -285,7 +309,11 @@ RESPONSE: Thank you for raising these important points. We have added clarificat
   > (1) To what extent the higher rubric scores of AI feedback may reflect better alignment with the rubric, rather than broader educational quality.
   > (2) How this optimization should be understood when comparing AI feedback with supervisor feedback that was produced under real clinical time constraints.
 
-RESPONSE:
+RESPONSE: Thank you for these clarification requests.
+
+Regarding point (1), the extent to which higher rubric scores reflect rubric alignment rather than broader educational quality: we have addressed this at multiple points in the revised manuscript. In the Methods section (Prompt Development subsection), we now explicitly state that the AI prompt embedded the five Steiss et al. rubric criteria, while supervisors provided feedback without rubric guidance. In the Results section (Comparison of Scores subsection), we added an interpretive paragraph stating that the observed score differences reflect, at least in part, adherence to the specific structural dimensions assessed by this rubric rather than overall educational quality. In the Limitations section, we state that clinically meaningful attributes such as diagnostic reasoning and professional judgment are not directly captured by this instrument, and that the qualitative themes of Perspective as a clinician and Continuity with practice provide complementary evidence of clinical value that the rubric does not score.
+
+Regarding point (2), how this optimization should be understood in the context of comparison with time-pressured supervisor feedback: we have framed this in the Introduction and Limitations sections as an asymmetric comparison that reflects authentic implementation practice. The study does not compare AI and supervisors under identical conditions; it compares a rubric-optimized AI system with naturalistic supervisor feedback produced under real clinical time constraints. This framing acknowledges that the comparison is informative precisely because it reflects how AI and human feedback actually differ in practice, while being transparent that it does not constitute a test of inherent feedback quality potential.
 
 ### H3: Reviewer H Comment 3
 
@@ -323,7 +351,11 @@ RESPONSE:
   > Comment: The Steiss et al. rubric strongly rewards structure, explicit criteria, and completeness, which inherently favors LLM-generated text. Clinically meaningful attributes such as diagnostic reasoning, professional judgment, and feasibility of recommendations are under-represented.
   > Solution: Authors should explicitly acknowledge this construct mismatch and either (a) include an additional clinically oriented evaluation framework or (b) perform a sensitivity analysis using clinician-defined criteria.
 
-RESPONSE:
+RESPONSE: Thank you for identifying this construct mismatch. We agree that the Steiss et al. rubric's emphasis on structural dimensions, including criteria-based structure, clarity of directions, and text alignment, corresponds closely to the dimensions embedded in the AI prompt, while clinically meaningful attributes such as diagnostic reasoning and professional judgment are not directly captured.
+
+Regarding the proposed solutions: we were unable to include an additional clinically oriented evaluation framework or conduct a sensitivity analysis using clinician-defined criteria within the scope of this revision, as both would require additional data collection or re-evaluation that is not feasible post hoc. We acknowledge this as a limitation of the current study.
+
+Instead, we have addressed the construct mismatch in the following ways. First, we added explicit acknowledgment in the Introduction, Methods, Results, and Limitations sections that the rubric's structural dimensions were also embedded in the AI prompt, and that rubric score differences should not be interpreted as evidence of overall educational superiority of AI feedback. Second, we added notes to the captions of Tables 2 and 3 clarifying what the rubric does and does not measure. Third, we emphasize in the Limitations section that the qualitative themes of Perspective as a clinician and Continuity with practice serve as complementary evidence of the clinical dimensions that supervisors contribute and that the rubric cannot score. We believe this framing addresses the core concern while being transparent about the study's scope.
 
 ### L2: Reviewer L Comment 2
 
@@ -353,7 +385,7 @@ RESPONSE:
   > Comment: The prompt explicitly embeds rubric criteria, which likely contributed to AI's higher rubric scores.
   > Solution: Briefly report prompt wording in the main text and acknowledge its role in shaping results.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have revised the Methods section (Prompt Development subsection) to briefly report the key elements of the prompt in the main text. Specifically, we now state that the prompt explicitly embedded the five criteria of the Steiss et al. rubric as the evaluation framework for generating feedback, namely criteria-based guidance, clear directions for improvement, accuracy, appropriate prioritization, and supportive tone, and that the AI was instructed to address each criterion in its output. This addition makes clear that the prompt wording was directly informed by the evaluation rubric used to assess feedback quality. The full prompt, in both the original Japanese and an English translation, is available in Multimedia Appendix 1.
 
 ### L6: Reviewer L Comment 6
 
