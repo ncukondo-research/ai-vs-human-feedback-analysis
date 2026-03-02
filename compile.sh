@@ -41,6 +41,10 @@ quarto render "$input_file" --to docx
 # Quarto outputs to result/ directory (configured in _quarto.yml output-dir)
 rendered_file="result/src/${base_name}.docx"
 
+# Fix flextable OOXML issues that cause Word's "unreadable content" warning.
+echo "[compile] Fixing flextable OOXML compatibility..."
+python3 fix_docx.py "${rendered_file}"
+
 mkdir -p "$(dirname "$output_file")"
 mv "${rendered_file}" "$output_file"
 echo "Manuscript compiled and saved to $output_file"
