@@ -122,31 +122,31 @@ RESPONSE: Thank you for this suggestion. We have revised all figure and table ca
 
   > Comment: Please let us know on revision if you would agree to a manuscript transfer to one of the suggested JMIR Publications journals, and which journal you prefer.
 
-RESPONSE:
+RESPONSE: Thank you for the suggestion. We respectfully prefer to keep the manuscript with JMIR Medical Education. This study provides practical insights for medical educators and medical education researchers considering the integration of AI into clinical feedback workflows, and we believe JMIR Medical Education is the most appropriate venue for reaching this audience.
 
 ### Editor Comment.12
 
   > Comment: Please ensure you have reviewed JMIR's online information regarding conflict of interest disclosures and included them accordingly in the manuscript in the appropriate section.
 
-RESPONSE:
+RESPONSE: Thank you for this reminder. We have reviewed JMIR's conflict of interest disclosure requirements. None of the authors have conflicts of interest to declare. The Conflicts of Interest section in the manuscript has been updated to state "None declared," consistent with JMIR formatting conventions.
 
 ### Editor Comment.13
 
   > Comment: Please add a section on Data Availability. Please add these data sharing statements after the Acknowledgements.
 
-RESPONSE:
+RESPONSE: Thank you for this request. We have added a Data Availability section after the Acknowledgements. The anonymized evaluation data and analysis code are publicly available at a GitHub repository (https://github.com/ncukondo-research/ai-vs-human-feedback-analysis-open-data). The AI feedback generation prompt, the evaluation rubric, and its translation process are provided in Multimedia Appendices 1, 2, and 3, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
 
 ### Editor Comment.14
 
   > Comment: Authors may wish to declare if any funder or funding body played a role in the study design, data collection, analysis, interpretation of results, or the writing of the manuscript.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have added a statement to the manuscript clarifying that this work was supported by JSPS KAKENHI Grant Number 25K06542, and that the funder had no role in the study design, data collection, analysis, interpretation of results, or the writing of the manuscript.
 
 ### Editor Comment.15
 
   > Comment: Please use this tool to disclose in the manuscript whether generative AI was used in any portion of the manuscript writing https://panbibliotekar.github.io/gaidet-declaration/index.html
 
-RESPONSE:
+RESPONSE: Thank you for this request. We used the GAIDeT Declaration Generator to formally disclose the use of generative AI. According to the Generative AI Delegation Taxonomy (GAIDeT), the following tasks were delegated to generative AI tools under full human supervision: literature search and systematization, code generation, and translation. The specific tools used were GitHub Copilot (Claude Sonnet 4.5, Claude Opus 4.5, GPT-4.1, GPT-5) and Claude Code (Claude Opus 4.5) for R code generation and Japanese-to-English translation assistance, and Deep Research by ChatGPT (GPT-4o, GPT-5, GPT-5.1) for literature searches. All generated code and text were reviewed, tested, and modified by the authors. Generative AI tools are not listed as authors. This declaration has been added to the Acknowledgements section of the manuscript.
 
 ------------------------------------------------------
 
@@ -249,7 +249,7 @@ RESPONSE: Thank you for this suggestion. We computed weighted Cohen's kappa (qua
 
   > Comment: There are occasional typos and awkward phrasings (likely from translation) that should be smoothed in final copyediting.
 
-RESPONSE:
+RESPONSE: Thank you for noting this. We have carefully proofread the entire manuscript and corrected the following issues: typographical errors including double spaces and missing spaces before parentheses in statistical reporting; grammatical errors including subject-verb disagreements (e.g., "logs that was written" corrected to "logs that were written") and missing prepositions (e.g., "perceived of higher quality" corrected to "perceived to be of higher quality"); awkward phrasings from translation (e.g., "We will use the term 'AI feedback' used in this study below" simplified to "The term 'AI feedback' is used in this study"); a terminology inconsistency where "reports" was used instead of the standard term "logs"; missing serial conjunctions; and punctuation corrections including a missing comma before a nonrestrictive clause and incorrect hyphenation of "odds ratio."
 
 ------------------------------------------------------
 
@@ -432,7 +432,7 @@ RESPONSE: Thank you for this suggestion. We have revised the Methods section (Pr
   > Comment: "AI feedback," "GPT-4o feedback," and "LLM feedback" are used interchangeably.
   > Solution: Standardize terminology throughout.
 
-RESPONSE:
+RESPONSE: Thank you for identifying this inconsistency. We have standardized terminology throughout the manuscript. "AI feedback" is now used consistently as the term for feedback generated by GPT-4o in this study. The term is formally introduced in the Methods section, where it is defined as the feedback generated through the OpenAI Chat Completion API (GPT-4o). "GPT-4o" is used only when referring specifically to the model itself (e.g., in the Methods and Limitations sections), not as a modifier for "feedback." "LLM" and "LLMs" are used only as general nouns when discussing large language models as a class of technology (e.g., in the Introduction and Prompt Development sections), not to refer to the feedback produced in this study. We have also removed instances where "LLM" was used redundantly close to the specific model description, replacing them with "large language models" or "the model" for clarity.
 
 ### L7: Reviewer L Comment 7
 
@@ -505,4 +505,4 @@ RESPONSE: Thank you for this request for clarification. We have revised the Desi
 
   > Comment: Please ensure all abbreviations are defined at first use (eg, TRAPD, JDA). Please also check figure/table captions for self-contained clarity and verify that all Multimedia Appendices are referenced consistently in the main text.
 
-RESPONSE:
+RESPONSE: Thank you for this careful review. We have checked all abbreviations in the manuscript and ensured they are defined at first use. Specifically, TRAPD is now defined as "Translation, Review, Adjudication, Pretesting, and Documentation (TRAPD)" at its first appearance in the Evaluation Instrument subsection. JDA was already defined as "Joint Display Analysis (JDA)" at first use in the Integration of Results subsection. JARS is now defined as "Journal Article Reporting Standards (JARS)" in the participant flowchart caption. We also corrected a formatting inconsistency where "Multimedia Appendix.3" appeared with an erroneous period; this has been corrected to "Multimedia Appendix 3." All three Multimedia Appendices are referenced in the main text: Multimedia Appendix 1 in the Prompt Development subsection, Multimedia Appendix 2 in the Evaluation Instrument subsection, and Multimedia Appendix 3 in the rubric translation description. Figure and table captions were revised for self-contained clarity as described in our response to Editor Comment 10.

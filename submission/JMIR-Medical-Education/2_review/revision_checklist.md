@@ -7,8 +7,8 @@
 | Phase 1: 別リポジトリでの分析 | 12 | 12 | 100% |
 | Phase 2: 原稿修正（高優先度） | 21 | 15 | 140% |
 | Phase 3: 原稿修正（中優先度） | 24 | 14 | 171% |
-| Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **57** | **49** | **116%** |
+| Phase 4: 管理的項目・校正 | 8 | 8 | 100% |
+| **Total** | **65** | **49** | **133%** |
 
 ---
 
@@ -302,40 +302,47 @@
 
 ## 4.1 追加セクション
 
-- [ ] **Data Availability セクション追加** (Editor 13)
+- [x] **Data Availability セクション追加** (Editor 13) ✓ manuscript+reply済
   - Acknowledgements の後に配置
+  - GitHub リポジトリ(匿名化データ+分析コード)、Multimedia Appendices、ログ非公開理由を記載
 
-- [ ] **資金提供者の役割記載** (Editor 14)
-  - 研究デザイン、データ収集、分析、結果解釈、原稿執筆への関与の有無
+- [x] **資金提供者の役割記載** (Editor 14) ✓ manuscript+reply済
+  - JSPS KAKENHIは研究デザイン・データ収集・分析・結果解釈・原稿執筆に関与なし
 
-- [ ] **生成AI使用の開示** (Editor 15)
-  - GAIDET宣言ツール使用: https://panbibliotekar.github.io/gaidet-declaration/index.html
+- [x] **生成AI使用の開示** (Editor 15) ✓ manuscript+reply済
+  - GAIDeT宣言ツール使用: literature search, code generation, translation
+  - Acknowledgementsセクションに追記
 
-- [ ] **利益相反開示の確認** (Editor 12)
-  - JMIRのCOI開示情報を確認し適切に記載
+- [x] **利益相反開示の確認** (Editor 12) ✓ manuscript+reply済
+  - "None declared." に修正（JMIR書式準拠）
 
 ## 4.2 用語・表記の統一
 
-- [ ] **用語の統一** (L6)
-  - "AI feedback" / "GPT-4o feedback" / "LLM feedback" を統一
-  - 採用する用語: _______________
+- [x] **用語の統一** (L6) ✓ manuscript+reply済
+  - "AI feedback" を統一用語として使用（既に統一済み）
+  - "LLM" は一般名詞としてのみ使用、フィードバック呼称としては不使用
+  - 191行目の冗長な "LLM" 使用を "large language models" / "the model" に修正
 
-- [ ] **略語の初出定義** (N8)
-  - [ ] TRAPD を初出時に定義
-  - [ ] JDA を初出時に定義
-  - [ ] その他の略語確認
+- [x] **略語の初出定義** (N8) ✓ manuscript+reply済
+  - [x] TRAPD → "Translation, Review, Adjudication, Pretesting, and Documentation (TRAPD)" に修正
+  - [x] JDA → 既に定義済み "Joint Display Analysis (JDA)"
+  - [x] JARS → "Journal Article Reporting Standards (JARS)" に修正
+  - [x] "Multimedia Appendix.3" → "Multimedia Appendix 3" に修正
 
-- [ ] **Multimedia Appendices の参照一貫性確認** (N8)
+- [x] **Multimedia Appendices の参照一貫性確認** (N8) ✓ 確認済
+  - 3つすべて本文中で参照されていることを確認
 
 ## 4.3 校正
 
-- [ ] **タイポ・不自然な表現の修正** (F9)
-  - 全文の校正
+- [x] **タイポ・不自然な表現の修正** (F9) ✓ manuscript+reply済
+  - 二重スペース3箇所修正、主語動詞不一致2箇所修正、前置詞不足1箇所修正
+  - 翻訳由来の不自然な表現修正、用語不統一（reports→logs）修正
+  - 句読点・ハイフネーション修正
 
 ## 4.4 ジャーナル対応
 
-- [ ] **ジャーナル移管の希望を回答** (Editor 11)
-  - 希望するJMIR Publicationsジャーナル: _______________
+- [x] **ジャーナル移管の希望を回答** (Editor 11) ✓ reply済
+  - JMIR Medical Educationでの掲載を希望（移管不要）
 
 ---
 
@@ -355,18 +362,39 @@
 | 2026-03-02 | 2.4, 3.5, 3.6 | Discussion改訂: Conclusions拡張・H3化(Editor4), 一貫性解釈修正(H4), 臨床実習文脈の独自貢献(N1), 言語・文化的文脈(F7)→Limitations追記, perceived quality限定(L3)→Limitations修正, 外的妥当性(L4)→Conclusions限定, 全6件reply記述 | 6項目 |
 | 2026-03-03 | 3.2, 3.4 | JMIR統計ガイドライン準拠(Editor7): fmt_p()関数導入, P値書式統一(イタリックP,先頭ゼロなし,P>.99), Cohen d修正, テーブルヘッダー修正. p=1.000説明(N4): P>.99に変更+reply. 図表キャプション詳細化(Editor10): Table1,4,5,6,7+Figure3,4,5. Joint Display整理(F6): Row1/3区別明確化. 全4件reply記述 | 5項目 |
 
+| 2026-03-04 | 4 | Editor11: 移管不要回答, Editor12: COI "None declared."修正, Editor13: Data Availabilityセクション新設, Editor14: Funder role追記, Editor15: GAIDeT宣言追記, L6: 用語統一確認+LLM修正, N8: TRAPD/JARS初出定義+Appendix.3修正, F9: 全文校正(11箇所修正). 全8件reply記述 | 8項目 |
+
+---
+
+# Phase 5: 投稿前最終準備
+
+- [ ] **匿名化データリポジトリの作成**
+  - GitHub: ncukondo-research/ai-vs-human-feedback-analysis-open-data を作成
+  - 匿名化された評価スコアデータを格納
+  - 分析コードを格納
+  - READMEにデータ説明を記載
+
+- [ ] **Zenodoでの永続的DOI付与**
+  - GitHub-Zenodo連携を設定
+  - リリースを作成してDOIを取得
+  - 取得したDOIをmanuscriptのData Availabilityセクションに追記
+
+- [ ] **原稿のコンパイル確認**
+  - compile.shでDOCX出力を確認
+  - 図表・参考文献の出力を目視確認
+
+- [ ] **共著者レビュー**
+  - 返信文書（one_by_one_reply.md）の確認依頼
+  - 修正原稿の確認依頼
+
+- [ ] **JMIR投稿システムでの再提出**
+  - 修正原稿（DOCX）のアップロード
+  - 返信文書のアップロード
+  - Multimedia Appendices 1-3 の確認・再アップロード（必要に応じて）
+
 ---
 
 # メモ・検討事項
-
-## タイトル修正案
-- 案1:
-- 案2:
-- 案3:
-
-## ジャーナル移管希望先
-- 第1希望:
-- 第2希望:
 
 ## 分析リポジトリ情報
 - パス:
