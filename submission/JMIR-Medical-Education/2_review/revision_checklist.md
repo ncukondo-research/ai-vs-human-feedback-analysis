@@ -6,9 +6,9 @@
 |---------|------|------|--------|
 | Phase 1: 別リポジトリでの分析 | 12 | 12 | 100% |
 | Phase 2: 原稿修正（高優先度） | 21 | 15 | 140% |
-| Phase 3: 原稿修正（中優先度） | 19 | 14 | 136% |
+| Phase 3: 原稿修正（中優先度） | 24 | 14 | 171% |
 | Phase 4: 管理的項目・校正 | 0 | 8 | 0% |
-| **Total** | **52** | **49** | **106%** |
+| **Total** | **57** | **49** | **116%** |
 
 ---
 
@@ -214,15 +214,17 @@
 - [x] **正確なp値の報告** (L7) ✓ manuscript+reply済
   - 本文・表ともに正確なp値を報告（p ≥ .001は3桁、p < .001はAPA準拠で"<.001"）
 
-- [ ] **p=1.000 の説明** (N4)
-  - Bonferroni補正後に1.000となる場合があることを注記
+- [x] **p=1.000 の説明** (N4) ✓ manuscript+reply済
+  - JMIR準拠で P>.99 に変更、Bonferroni補正による上限キャップの説明をreplyに記載
 
 - [x] **正規性検定の結果追加** (N6) ✓ manuscript+reply済
   - Shapiro-Wilk 検定結果
   - 非正規の場合はノンパラメトリック検定結果も報告
 
-- [ ] **JMIR統計ガイドライン準拠確認** (Editor 7)
-  - 全統計値の形式を確認・修正
+- [x] **JMIR統計ガイドライン準拠確認** (Editor 7) ✓ manuscript+reply済
+  - P値: イタリック大文字P、先頭ゼロなし、スペースなし（*P*<.001）
+  - P=1.000 → P>.99、Cohen's d → Cohen d、テーブルヘッダー「P value」統一
+  - 分析コードにfmt_p()関数導入（quantitative.qmd, additional_analyses.qmd）
 
 ## 3.3 評価者間信頼性 (F8, N5)
 
@@ -241,22 +243,23 @@
 - [x] **Participant Flowchart の挿入** (Editor 5) ✓ manuscript+reply済
   - Results冒頭に挿入、自己完結的キャプション付き
 
-- [ ] **図表キャプションの詳細化** (Editor 10)
+- [x] **図表キャプションの詳細化** (Editor 10) ✓ manuscript+reply済
   - [x] Figure 1: 研究デザイン、対象集団、場所、期間を追加 ✓
   - [x] Figure 2 (JARS flowchart): 新規作成時に対応済 ✓
-  - [ ] Figure 3: 同上
-  - [ ] 全テーブル: 自己完結的なキャプションに修正
+  - [x] Figure 3, 4, 5: study context定型文追加 ✓
+  - [x] Table 1, 4, 5, 6, 7: 自己完結的なキャプションに修正 ✓
 
-- [ ] **Joint Display (Table 6) の整理** (F6)
-  - Row 1 と Row 3 の重複確認
-  - 必要に応じて統合または区別を明確化
+- [x] **Joint Display (Table 6) の整理** (F6) ✓ csv+reply済
+  - Row 1: "Feedback length difference (AI > supervisor)" に明確化
+  - Row 3: "Correlation between feedback length and rubric score (significant for supervisors, absent for AI)" に明確化
+  - 両行を維持し、区別を明確にする方針でreply記述
 
-- [ ] **ルーブリック項目のラベル付与** (G3)
+- [x] **ルーブリック項目のラベル付与** (G3) ✓ manuscript+reply済
   - (A) criteria-based, (B) clear directions, (C) accuracy, (D) prioritization, (E) supportive tone
   - 本文、Figure 3、Table 2 で順序統一
 
-- [ ] **Figure 3 の更新反映** (G6)
-  - Phase 1.4 で修正した図を差し替え
+- [x] **Figure 3 の更新反映** (G6) ✓ 分析リポジトリで修正済（ggh4x対応+項目順序統一）
+  - SVGは分析側レンダリング時に自動更新
 
 ## 3.5 その他の方法論的詳細
 
@@ -350,6 +353,7 @@
 | 2026-03-02 | 2.5, 3.1, 3.5 | JARS準拠Methods再構成(Editor1): Participants/Materials/Sample Size/Data Collection新設, Ethical Considerations補完(Editor6): 補償・個人識別不可能性追加, 指導医文脈追記(N2): Setting, 飽和記載(Editor8): Qualitative Analysis, reply記述(Editor1,Editor6,Editor8,N2) | 14項目 |
 | 2026-03-02 | 2.4 | タイトル変更(Editor2): JMIR形式に修正+reply済, 抄録強化(Editor3): Methods/Results/Conclusions全面改訂(442語)+reply済, 抄録結論強化(Editor4): 革新性・text-anchored vs experience-based・ハイブリッドモデル追加+reply済 | 3項目 |
 | 2026-03-02 | 2.4, 3.5, 3.6 | Discussion改訂: Conclusions拡張・H3化(Editor4), 一貫性解釈修正(H4), 臨床実習文脈の独自貢献(N1), 言語・文化的文脈(F7)→Limitations追記, perceived quality限定(L3)→Limitations修正, 外的妥当性(L4)→Conclusions限定, 全6件reply記述 | 6項目 |
+| 2026-03-03 | 3.2, 3.4 | JMIR統計ガイドライン準拠(Editor7): fmt_p()関数導入, P値書式統一(イタリックP,先頭ゼロなし,P>.99), Cohen d修正, テーブルヘッダー修正. p=1.000説明(N4): P>.99に変更+reply. 図表キャプション詳細化(Editor10): Table1,4,5,6,7+Figure3,4,5. Joint Display整理(F6): Row1/3区別明確化. 全4件reply記述 | 5項目 |
 
 ---
 

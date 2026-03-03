@@ -98,7 +98,7 @@ RESPONSE: Thank you for this important request. An "Ethical Considerations" subs
 
   > Comment: Please cross-check the statistics follow the journal's Guidelines for Reporting Statistics https://support.jmir.org/hc/en-us/articles/360019690851-Guidelines-for-Reporting-Statistics
 
-RESPONSE:
+RESPONSE: Thank you for this guidance. We have systematically cross-checked all statistical reporting in the manuscript against the JMIR Guidelines for Reporting Statistics and made the following corrections throughout the text, abstract, and tables. (1) P value formatting: all P values now use italic uppercase P with no leading zero and no spaces around operators (e.g., P<.001, P=.098), consistent with the guideline. (2) P values that equal 1.000 after Bonferroni correction (arising when the uncorrected value multiplied by the number of comparisons exceeds 1) have been changed to P>.99, in accordance with the guideline that P values cannot equal 0 or 1. (3) Cohen d is now reported without the possessive (previously "Cohen's d") with italic d, consistent with the guideline. (4) All table column headings now use "P value" rather than "p-value." (5) Spearman correlation headers now use "Spearman rho" without the possessive. These formatting changes have been applied consistently across the abstract, the body text, and all table headers.
 
 ### Editor Comment.8
 
@@ -116,7 +116,7 @@ RESPONSE: Thank you for this important point. We assessed data completeness acro
 
   > Comment: Please make your table and figure captions more descriptive. The captions should be detailed enough to be read without any reference from the text; please include study design, disease, study population, location, time frame, etc.
 
-RESPONSE:
+RESPONSE: Thank you for this suggestion. We have revised all figure and table captions to be self-contained. Each caption now includes the study context (convergent mixed-methods study, Nagoya University medical students, Japan, 2024) so that figures and tables can be understood independently of the main text. For the key results tables (Tables 2 and 3), captions additionally specify the rubric items, their labels, and the measurement scope of the instrument. For the remaining tables (Tables 1, 4, 5, 6, and 7) and figures (Figures 3, 4, and 5), we added a standardized description of the study population and setting alongside a brief explanation of what each figure or table displays. Figures 1 and 2 had already been updated with detailed captions as described in our response to Editor Comment 5.
 
 ### Editor Comment.11
 
@@ -231,7 +231,7 @@ RESPONSE: Thank you for this suggestion. We have added a characterization of the
 
   > Comment: Table 6 is valuable but dense. Some rows (e.g., 1 and 3) overlap conceptually. Consider tightening this to avoid redundancy.
 
-RESPONSE:
+RESPONSE: Thank you for this observation. We reviewed Rows 1 and 3 and agree that both draw on feedback length data and the Text Length qualitative theme, which creates an appearance of overlap. However, the two rows address distinct analytic questions and yield different meta-inferences. Row 1 addresses the raw length difference between AI and supervisor feedback: AI feedback was significantly longer, and the qualitative theme explains how this length difference affected perceived quality (e.g., enabling specific examples but sometimes resulting in verbosity). Row 3 addresses the correlation between feedback length and rubric scores: for supervisors, longer feedback was associated with higher scores, whereas no such relationship existed for AI feedback. Combined with the qualitative observations, this generates the new insight that sufficient length is necessary to cover required feedback elements, but longer feedback is not inherently better, as prioritization matters as well. To make this distinction clearer, we have revised the quantitative column descriptions in the Joint Display table: Row 1 now reads "Feedback length difference (AI > supervisor)" and Row 3 now reads "Correlation between feedback length and rubric score (significant for supervisors, absent for AI)." We believe both rows contribute distinct integrative value and have retained them as separate entries with the clarified descriptions.
 
 ### F7: Reviewer F Comment 7
 
@@ -479,7 +479,7 @@ RESPONSE: Thank you for this important observation. We acknowledge that the 500-
 
   > Comment: There are P values equal to 1 in multiple parts of this manuscript.
 
-RESPONSE:
+RESPONSE: Thank you for flagging this. The P values reported as 1.000 arose from Bonferroni correction: when the uncorrected P value is multiplied by the number of comparisons (15 for the cumulative link mixed models), the product can exceed 1 and is mathematically capped at 1.000. In accordance with the JMIR Guidelines for Reporting Statistics, which state that P values cannot equal 0 or 1, we have changed all instances of P=1.000 to P>.99 throughout the manuscript text, abstract, and tables. This applies to the Bonferroni-corrected P values for the accurate and supportive rubric items in the cumulative link mixed model results, as well as other non-significant corrected values.
 
 ### N5: Reviewer N Comment 5
 

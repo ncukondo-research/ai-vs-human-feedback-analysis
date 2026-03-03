@@ -15,7 +15,7 @@ if ls renv/library/*/*/*/*/00LOCK-* 1>/dev/null 2>&1; then
 fi
 
 # Remove broken package directories (empty dirs without DESCRIPTION).
-for pkg_dir in renv/library/*/*/*/*/; do
+for pkg_dir in renv/library/*/*/*/; do
   pkg_name=$(basename "$pkg_dir")
   case "$pkg_name" in 00LOCK-*|.|..) continue ;; esac
   if [ -d "$pkg_dir" ] && [ ! -f "$pkg_dir/DESCRIPTION" ]; then

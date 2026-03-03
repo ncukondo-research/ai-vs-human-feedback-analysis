@@ -127,7 +127,7 @@ ORCID ID: https://orcid.org/0000-0002-3307-671X<br>
 
 **Methods:** This convergent mixed-methods study included 161 weekly clinical clerkship logs from 47 fifth- and sixth-year medical students across 12 clinical departments at Nagoya University, Japan (January–May 2024). Of 164 eligible logs, 3 were excluded because supervisors entered contact messages rather than substantive feedback. AI feedback was generated using GPT-4o. Ten faculty physicians and 10 medical students evaluated both feedback types in blinded, randomized order using a validated five-category rubric (criteria-based, clear direction, accuracy, prioritization, supportive tone), followed by open-ended comments and source identification. Quantitative analyses (paired t-tests, cumulative link mixed models; α = .05 with Bonferroni correction) were complemented by qualitative thematic analysis and integrated using Joint Display Analysis.
 
-**Results:** AI feedback was significantly longer than supervisor feedback (mean 382 vs 98 characters; Cohen d = 2.84, 95% CI 2.50–3.19; P < .001). Cumulative link mixed models showed AI scored higher on criteria-based (OR 11.81, 95% CI 7.64–18.27; P < .001) and clear direction (OR 6.61, 95% CI 4.35–10.06; P < .001), with no significant differences on accuracy (OR 1.35, 95% CI 0.91–2.00; P = 1.000), prioritization (OR 1.70, 95% CI 1.16–2.50; P = .098), or supportive tone (OR 1.34, 95% CI 0.87–2.06; P = 1.000). AI feedback showed greater consistency (variance ratio 3.9:1; Levene F(1,320) = 73.20, P < .001). All 20 evaluators correctly identified feedback sources. Qualitative analysis revealed that AI provided structured, text-anchored feedback addressing rubric criteria, while supervisors offered experience-based feedback grounded in clinical context and professional expertise.
+**Results:** AI feedback was significantly longer than supervisor feedback (mean 382 vs 98 characters; Cohen *d*=2.84, 95% CI 2.50–3.19; *P*<.001). Cumulative link mixed models showed AI scored higher on criteria-based (OR 11.81, 95% CI 7.64–18.27; *P*<.001) and clear direction (OR 6.61, 95% CI 4.35–10.06; *P*<.001), with no significant differences on accuracy (OR 1.35, 95% CI 0.91–2.00; *P*>.99), prioritization (OR 1.70, 95% CI 1.16–2.50; *P*=.098), or supportive tone (OR 1.34, 95% CI 0.87–2.06; *P*>.99). AI feedback showed greater consistency (variance ratio 3.9:1; Levene *F*(1,320)=73.20, *P*<.001). All 20 evaluators correctly identified feedback sources. Qualitative analysis revealed that AI provided structured, text-anchored feedback addressing rubric criteria, while supervisors offered experience-based feedback grounded in clinical context and professional expertise.
 
 **Conclusions:** This study extends the comparison of AI-generated and supervisor feedback to an authentic clinical clerkship environment, moving beyond classroom and simulation settings examined in prior work. Through integrated mixed-methods analysis, a key distinction emerged between text-anchored AI feedback, which systematically addresses written log content in alignment with rubric criteria, and experience-based supervisor feedback, which draws on clinical observation and professional judgment. AI consistently delivered structured feedback addressing gaps that arise when time-pressured supervisors provide brief comments, while supervisors contributed clinically grounded insights that AI cannot replicate. These complementary strengths suggest that AI feedback should supplement rather than replace supervisor feedback, and that hybrid models leveraging each type's advantages warrant investigation in clinical education.
 
@@ -206,7 +206,7 @@ In addition to the rubric, the instrument included a closed question asking eval
 
 ### Sample Size, Power, and Precision
 
-The required sample size for the t-test was calculated using the values published in the paper by @Steiss2024-ra, that developed the rubric used for quantitative analysis. The paper reported effect sizes in terms of Partial eta-squared and Cohen's d, which were used to calculate the sample size. In this study, considering the comparison between AI and supervisor feedback, the sample size was calculated based on Cohen's d of 0.34 as reported by Steiss et al [@Steiss2024-ra]. With power set at 0.8 and alpha at 0.05, 155 data points per group would be needed.
+The required sample size for the t-test was calculated using the values published in the paper by @Steiss2024-ra, that developed the rubric used for quantitative analysis. The paper reported effect sizes in terms of partial eta-squared and Cohen *d*, which were used to calculate the sample size. In this study, considering the comparison between AI and supervisor feedback, the sample size was calculated based on Cohen *d* of 0.34 as reported by Steiss et al [@Steiss2024-ra]. With power set at 0.8 and alpha at 0.05, 155 data points per group would be needed.
 
 ### Data Collection
 
@@ -245,7 +245,7 @@ During the clinical clerkship conducted at Nagoya University from January 9, 202
 #| echo: false
 #| message: false
 #| label: tbl-dataset_summary
-#| tbl-cap: Dataset Summary
+#| tbl-cap: "Dataset Summary. Convergent mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs, Nagoya University, Japan, 2024."
 #| tbl-footnote: "Except for A, B, and C Community Hospital, all departments are affiliated with Nagoya University. ^2 The total number of students exceeds 47 because some students rotated through multiple departments."
 
 df <- read.csv(here("result", "quantitative", "dataset_summary.csv"))
@@ -280,21 +280,21 @@ From October 2024 to January 2025, 10 medical students and 10 faculty who were n
 
 #### Distribution Assessment and Sensitivity Analysis
 
-Shapiro-Wilk tests assessed the normality of paired differences for all comparisons. The feedback length difference was normally distributed (W = 0.992, p = .550), supporting the use of the paired t-test for that variable. However, all five rubric score differences departed significantly from normality (all W ≤ 0.939, all p < .001 after Bonferroni correction). As a sensitivity analysis, Wilcoxon signed-rank tests were conducted alongside the paired t-tests; the two methods yielded identical conclusions regarding statistical significance for every variable. Moreover, the primary analysis of rubric scores employed cumulative link mixed models (see below), which do not assume normality of the outcome distribution.
+Shapiro-Wilk tests assessed the normality of paired differences for all comparisons. The feedback length difference was normally distributed (*W*=0.992, *P*=.550), supporting the use of the paired t-test for that variable. However, all five rubric score differences departed significantly from normality (all *W*≤0.939, all *P*<.001 after Bonferroni correction). As a sensitivity analysis, Wilcoxon signed-rank tests were conducted alongside the paired t-tests; the two methods yielded identical conclusions regarding statistical significance for every variable. Moreover, the primary analysis of rubric scores employed cumulative link mixed models (see below), which do not assume normality of the outcome distribution.
 
 #### Difference Between Feedback Length
 
-The length of the feedback was compared between AI and supervisor feedback. Mean lengths were 382.02(95% CI 369.29-394.76) characters for AI and 97.87(95% CI 86.4-109.33) characters for supervisors. The distribution of the lengths of supervisor feedback and AI feedback is shown in [@fig-length_distribution]. Paired t-test results indicated that the mean character count of AI feedback was significantly higher than that of supervisor feedback (mean difference 284.16 characters; 95% CI 268.6-299.71; p <0.001; Cohen's d = 2.84, 95% CI 2.50–3.19).
+The length of the feedback was compared between AI and supervisor feedback. Mean lengths were 382.02(95% CI 369.29-394.76) characters for AI and 97.87(95% CI 86.4-109.33) characters for supervisors. The distribution of the lengths of supervisor feedback and AI feedback is shown in [@fig-length_distribution]. Paired t-test results indicated that the mean character count of AI feedback was significantly higher than that of supervisor feedback (mean difference 284.16 characters; 95% CI 268.6-299.71; *P*<.001; Cohen *d*=2.84, 95% CI 2.50–3.19).
 
-![Distribution of feedback lengths by character count](../result/quantitative/fig_length_distribution.svg){#fig-length_distribution}
+![Distribution of AI-generated and supervisor feedback lengths by character count for 161 clinical clerkship logs from 47 medical students, Nagoya University, Japan, 2024.](../result/quantitative/fig_length_distribution.svg){#fig-length_distribution}
 
 #### Comparison of Scores
 
 The scores assigned by the evaluators to the AI and supervisor feedback were compared. @fig-diff-ai-vs-supervisor shows the differences in feedback scores by AI and supervisors for the same log. Values greater than 0 indicate that the AI score is higher, and values less than 0 indicate that the supervisor score is higher. Although there are slight differences among evaluators, AI scores tend to be higher except for the “supportive” item.
 
-![Distribution of Scores for Each Category ](../result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
+![Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed-methods study, Nagoya University, Japan, 2024.](../result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
 
-Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected p < 0.001), clear direction (corrected p < 0.001), prioritization (corrected p < 0.001), accurate (corrected p < 0.001), and supportive (corrected p = 0.011). Details including uncorrected p-values are shown in [@tbl-paired_ttest_results].
+Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected *P*<.001), clear direction (corrected *P*<.001), prioritization (corrected *P*<.001), accurate (corrected *P*<.001), and supportive (corrected *P*=.011). Details including uncorrected p-values are shown in [@tbl-paired_ttest_results].
 
 ```{r}
 #| label: tbl-paired_ttest_results
@@ -321,16 +321,16 @@ df |>
     mean_ai = "AI Mean Score (95% CI)",
     mean_supervisor = "Supervisor Mean Score (95% CI)",
     mean_diff = "Mean Difference (95% CI)",
-    cohens_d = "Cohen's d (95% CI)",
-    p_uncorrected = "p-value",
-    p_bonferroni = "Corrected p-value"
+    cohens_d = "Cohen d (95% CI)",
+    p_uncorrected = "P value",
+    p_bonferroni = "Corrected P value"
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
 
 ```
 
-Because the rubric used for scoring is a 5-point scale and the intervals from 1 to 5 may not be equal, using average scores may not be appropriate. Therefore, we used ordinal logistic regression to examine whether there are differences between AI and supervisors scores. We also employed a mixed-effects ordinal model to account for assessor type (student or faculty) and random effects by assessor. The results are shown in @tbl-ordinal-regression-clmm. In the ordinal logistic regression, three effects are expressed as odds ratios (OR) for each category. "Provider: AI" indicates that the larger the OR above 1, the more likely AI is to receive higher scores compared to supervisors. "Assessor type: student" indicates that the larger the OR above 1, the more likely students are to give higher scores compared to faculty. "Interaction: supervisor × student" indicates that the larger the OR above 1, the greater the difference in scores between AI and supervisors among students compared to faculty. P-values are Bonferroni-corrected for comparisons across 15 items. The results indicated that, for the items criteria based, and clear direction, AI feedback received significantly higher scores than supervisor feedback (OR = 11.81 [95% CI: 7.64–18.27], p < 0.001; OR = 6.61 [95% CI: 4.35–10.06], p < 0.001) (OR, odds-ratio, values larger than 1 indicate higher scores for AI than for supervisors). For accurate, prioritization, and supportive, AI also tended to receive higher scores, but the differences between AI and supervisors were not significant (OR = 1.35 [95% CI: 0.91–2.00], p = 1.000; OR = 1.70 [95% CI: 1.16–2.50], p = 0.098; OR = 1.34 [95% CI: 0.87–2.06], p = 1.000). Regarding assessor type (student vs faculty), no significant differences were observed in any of the items. We also included interaction terms to test whether the effects of AI vs supervisor depended on assessor type, but no significant interaction effects were observed for any item.
+Because the rubric used for scoring is a 5-point scale and the intervals from 1 to 5 may not be equal, using average scores may not be appropriate. Therefore, we used ordinal logistic regression to examine whether there are differences between AI and supervisors scores. We also employed a mixed-effects ordinal model to account for assessor type (student or faculty) and random effects by assessor. The results are shown in @tbl-ordinal-regression-clmm. In the ordinal logistic regression, three effects are expressed as odds ratios (OR) for each category. "Provider: AI" indicates that the larger the OR above 1, the more likely AI is to receive higher scores compared to supervisors. "Assessor type: student" indicates that the larger the OR above 1, the more likely students are to give higher scores compared to faculty. "Interaction: supervisor × student" indicates that the larger the OR above 1, the greater the difference in scores between AI and supervisors among students compared to faculty. *P* values are Bonferroni-corrected for comparisons across 15 items. The results indicated that, for the items criteria based, and clear direction, AI feedback received significantly higher scores than supervisor feedback (OR=11.81 [95% CI: 7.64–18.27], *P*<.001; OR=6.61 [95% CI: 4.35–10.06], *P*<.001) (OR, odds-ratio, values larger than 1 indicate higher scores for AI than for supervisors). For accurate, prioritization, and supportive, AI also tended to receive higher scores, but the differences between AI and supervisors were not significant (OR=1.35 [95% CI: 0.91–2.00], *P*>.99; OR=1.70 [95% CI: 1.16–2.50], *P*=.098; OR=1.34 [95% CI: 0.87–2.06], *P*>.99). Regarding assessor type (student vs faculty), no significant differences were observed in any of the items. We also included interaction terms to test whether the effects of AI vs supervisor depended on assessor type, but no significant interaction effects were observed for any item.
 
 ```{r}
 #| label: tbl-ordinal-regression-clmm
@@ -352,8 +352,8 @@ df |>
     Item = "Item",
     Effect = "Effect",
     OR = "OR (95% CI)",
-    p_uncorrected = "p-value",
-    p_bonferroni = "Corrected p-value"
+    p_uncorrected = "P value",
+    p_bonferroni = "Corrected P value"
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
@@ -363,17 +363,17 @@ These rubric-based findings should be interpreted in light of the asymmetric des
 
 #### Consistency of Feedback Quality
 
-To compare the consistency of feedback quality between AI and supervisors, we plotted the distribution of per-clinical clerkship log mean scores (see @fig-mean-score-per-record). AI exhibited smaller score dispersion, suggesting higher consistency in feedback quality. We further tested whether the variance of per-clinical clerkship log mean scores differs between AI and supervisors. The variance of per-clinical clerkship log mean scores was significantly larger for supervisors (Var=1.011, SD=1.005) than for AI (Var=0.262, SD=0.512) (Levene: F(1, 320)=73.203, p<.001; F-test: F(160, 160)=0.259, p<.001). The supervisor variance was about 3.9 times that of AI, suggesting that AI feedback quality is more consistent, whereas supervisor feedback quality is more variable.
+To compare the consistency of feedback quality between AI and supervisors, we plotted the distribution of per-clinical clerkship log mean scores (see @fig-mean-score-per-record). AI exhibited smaller score dispersion, suggesting higher consistency in feedback quality. We further tested whether the variance of per-clinical clerkship log mean scores differs between AI and supervisors. The variance of per-clinical clerkship log mean scores was significantly larger for supervisors (Var=1.011, SD=1.005) than for AI (Var=0.262, SD=0.512) (Levene: *F*(1, 320)=73.203, *P*<.001; *F*-test: *F*(160, 160)=0.259, *P*<.001). The supervisor variance was about 3.9 times that of AI, suggesting that AI feedback quality is more consistent, whereas supervisor feedback quality is more variable.
 
-![Distribution of Mean Scores per Record](../result/quantitative/fig_mean_score_per_record.svg){#fig-mean-score-per-record}
+![Distribution of per-record mean rubric scores for AI-generated and supervisor feedback on 161 clinical clerkship logs, Nagoya University, Japan, 2024. AI feedback shows smaller dispersion, indicating higher consistency.](../result/quantitative/fig_mean_score_per_record.svg){#fig-mean-score-per-record}
 
 #### Correlation between feedback length and score
 
-To investigate whether the character count of feedback is correlated with the scores given by evaluators, we calculated the Spearman's rank correlation coefficient for each feedback provider. The results are summarized in @tbl-correlation-between-letter-count-and-score. p-values are Bonferroni-corrected for comparisons across 10 items. A significant positive correlation would suggest that longer feedback tends to receive higher scores. No significant correlation was observed between text length and score for AI, but a significant correlation was found for all item categories for supervisors. This suggests that longer feedback from supervisors tends to receive higher scores.
+To investigate whether the character count of feedback is correlated with the scores given by evaluators, we calculated the Spearman's rank correlation coefficient for each feedback provider. The results are summarized in @tbl-correlation-between-letter-count-and-score. *P* values are Bonferroni-corrected for comparisons across 10 items. A significant positive correlation would suggest that longer feedback tends to receive higher scores. No significant correlation was observed between text length and score for AI, but a significant correlation was found for all item categories for supervisors. This suggests that longer feedback from supervisors tends to receive higher scores.
 
 ```{r}
 #| label: tbl-correlation-between-letter-count-and-score
-#| tbl-cap: "Correlation between Letter Count and Score for Each Feedback Provider"
+#| tbl-cap: "Spearman Rank Correlation Between Feedback Character Count and Rubric Score by Feedback Provider. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. P values are Bonferroni-corrected for 10 comparisons."
 #| echo: false
 
 df <- read.csv(here("result", "quantitative", "correlation_letter_count_score_by_person_item_formatted.csv"))
@@ -407,7 +407,7 @@ df_wide |>
     p_bonferroni_AI = "AI",
     p_bonferroni_Supervisor = "Supervisor"
   ) |>
-  add_header_row(values = c("", "Spearman's ρ", "Corrected p-value"), colwidths = c(1,2,2)) |>
+  add_header_row(values = c("", "Spearman ρ", "Corrected P value"), colwidths = c(1,2,2)) |>
   theme_vanilla() |>
   flextable::align(align = "center", part = "all") |>
   flextable::align(align = "left", part = "body", j = 1) |>
@@ -417,15 +417,15 @@ df_wide |>
 
 #### Relationship Between Student Log Length and Feedback Scores
 
-Because AI feedback is tightly text-anchored, variation in student log quality could potentially influence feedback scores. To examine whether log length influenced rubric scores, Spearman correlations were calculated between weekly log character count and each rubric score, separately by feedback provider. After Bonferroni correction for 10 comparisons, no significant correlations were observed for either AI or supervisor feedback (all corrected p > .05), indicating that variation in student log length did not systematically influence rubric scores for either feedback type.
+Because AI feedback is tightly text-anchored, variation in student log quality could potentially influence feedback scores. To examine whether log length influenced rubric scores, Spearman correlations were calculated between weekly log character count and each rubric score, separately by feedback provider. After Bonferroni correction for 10 comparisons, no significant correlations were observed for either AI or supervisor feedback (all corrected *P*>.05), indicating that variation in student log length did not systematically influence rubric scores for either feedback type.
 
 #### Inter-Rater Reliability
 
-Because each dataset was independently evaluated by one faculty member and one student, we examined agreement between these two assessor types using weighted Cohen's kappa (quadratic weights) and intraclass correlation coefficients (ICC), computed separately for AI and supervisor feedback across all five rubric items (@tbl-inter-rater-reliability). For supervisor feedback, inter-rater agreement was fair to moderate (weighted κ = 0.37–0.54, all p < .001). For AI feedback, agreement was poor (weighted κ = 0.04–0.15, mostly non-significant). This pattern suggests that faculty and student evaluators reached more consistent judgments when rating supervisor feedback than when rating AI feedback.
+Because each dataset was independently evaluated by one faculty member and one student, we examined agreement between these two assessor types using weighted Cohen's kappa (quadratic weights) and intraclass correlation coefficients (ICC), computed separately for AI and supervisor feedback across all five rubric items (@tbl-inter-rater-reliability). For supervisor feedback, inter-rater agreement was fair to moderate (weighted κ=0.37–0.54, all *P*<.001). For AI feedback, agreement was poor (weighted κ=0.04–0.15, mostly non-significant). This pattern suggests that faculty and student evaluators reached more consistent judgments when rating supervisor feedback than when rating AI feedback.
 
 ```{r}
 #| label: tbl-inter-rater-reliability
-#| tbl-cap: Inter-Rater Reliability Between Faculty and Student Evaluators
+#| tbl-cap: "Inter-Rater Reliability Between Faculty and Student Evaluators for AI-Generated and Supervisor Feedback. Convergent mixed-methods study, Nagoya University, Japan, 2024. Weighted Cohen kappa (quadratic weights) and intraclass correlation coefficients (ICC) were computed for each rubric item."
 #| echo: false
 
 df <- read.csv(here("result", "quantitative", "inter_rater_reliability_formatted.csv"))
@@ -443,9 +443,9 @@ df |>
     N = "N",
     X..Agreement = "% Agreement",
     Weighted.Kappa = "Weighted κ",
-    Kappa.p = "κ p-value",
+    Kappa.p = "κ P value",
     ICC..95..CI. = "ICC (95% CI)",
-    ICC.p = "ICC p-value"
+    ICC.p = "ICC P value"
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
@@ -461,7 +461,7 @@ The qualitative analysis of the free-text comments provided by the evaluators re
 
 ```{r}
 #| label: tbl-themes
-#| tbl-cap: Categorized Themes Identified in Qualitative Analysis
+#| tbl-cap: "Themes Identified in Qualitative Analysis of Evaluator Comments on AI-Generated and Supervisor Feedback. Convergent mixed-methods study, 161 clinical clerkship logs, Nagoya University, Japan, 2024."
 #| echo: false
 
 df <- read.csv(here("result", "qualitative", "theme_table_en_simple.csv")) |>
@@ -524,7 +524,7 @@ JDA was used to integrate the results of the quantitative and qualitative analys
 
 ```{r}
 #| label: tbl-joint_display
-#| tbl-cap: Joint Display Integrating Quantitative and Qualitative Results
+#| tbl-cap: "Joint Display Integrating Quantitative and Qualitative Findings From a Convergent Mixed-Methods Study Comparing AI-Generated and Supervisor Feedback on Clinical Clerkship Logs, Nagoya University, Japan, 2024."
 #| echo: false
 
 df <- read.csv(here("result", "integration", "joint_display_analysis.csv")) |>

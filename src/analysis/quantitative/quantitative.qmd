@@ -46,6 +46,18 @@ pacman::p_load(
   flextable
 )
 
+# Format p-values per JMIR guidelines:
+# - no leading zero (.142 not 0.142)
+# - p < .001 → "<.001"
+# - p >= 0.9995 (rounds to 1.000) → ">.99"
+fmt_p <- function(p) {
+  ifelse(p < 0.001, "<.001",
+    ifelse(p >= 0.9995, ">.99",
+      sub("^0\\.", ".", sprintf("%.3f", p))
+    )
+  )
+}
+
 # Load the tidy data created in make_tidy_data.r
 tidy_data <- rio::import(here("data", "quantitative", "data.csv"))
 
@@ -171,7 +183,7 @@ ttab <- paired_by_id |>
     mean_diff_ci_high = map_dbl(ttest_list, ~ .x$conf.int[2])
   ) |>
   mutate(
-    p_fmt     = ifelse(ttest_p < 0.001, "<0.001", sprintf("%.3f", ttest_p))
+    p_fmt     = fmt_p(ttest_p)
   ) |>
   select(-ttest_list, -ttest_ai, -ttest_supervisor)
 
@@ -321,8 +333,8 @@ ttab <- paired_by_id_and_assessortype |>
   mutate(
     n_comparisons = n(),  # Number of items being compared
     bonferroni_p = pmin(ttest_p * n_comparisons, 1),  # Bonferroni correction
-    p_fmt     = ifelse(ttest_p < 0.001, "<0.001", sprintf("%.3f", ttest_p)),
-    bonferroni_p_fmt = ifelse(bonferroni_p < 0.001, "<0.001", sprintf("%.3f", bonferroni_p))
+    p_fmt     = fmt_p(ttest_p),
+    bonferroni_p_fmt = fmt_p(bonferroni_p)
   )
 
 ttab |> rio::export(here::here("result", "quantitative","paired_ttest_results.csv"))
@@ -505,7 +517,7 @@ summary_table <- fixed_all |>
     term_order = factor(term, levels = c("Provider: AI (vs supervisor)", "Assessor type: student (vs faculty)", "Interaction: supervisor × student")),
     Effect = label_term(term),
     OR_display = sprintf("%.2f (%.2f–%.2f)", OR, OR_low, OR_high),
-    p_display = ifelse(p_value < .001, "<0.001", sprintf("%.3f", p_value))
+    p_display = fmt_p(p_value)
   ) |>
   arrange(match(item, all_items), term_order) |>
   select(item, Effect, OR_display, p_display) |>
@@ -532,8 +544,8 @@ total_tests <- n_items * n_effects_per_item
 fixed_all <- fixed_all |>
   mutate(
     bonferroni_p = pmin(p_value * total_tests, 1),
-    p_fmt = ifelse(p_value < 0.001, "<0.001", sprintf("%.3f", p_value)),
-    bonferroni_p_fmt = ifelse(bonferroni_p < 0.001, "<0.001", sprintf("%.3f", bonferroni_p))
+    p_fmt = fmt_p(p_value),
+    bonferroni_p_fmt = fmt_p(bonferroni_p)
   )
 
 # Update summary table with both uncorrected and corrected p-values
@@ -617,7 +629,7 @@ cor_test_results <- tidy_data |>
   mutate(
     n_tests = n(),  # Total number of correlation tests
     bonferroni_p = pmin(p_value * n_tests, 1),  # Bonferroni correction
-    bonferroni_p_fmt = ifelse(bonferroni_p < 0.001, "<0.001", sprintf("%.3f", bonferroni_p))
+    bonferroni_p_fmt = fmt_p(bonferroni_p)
   )
 
 cor_test_results |>
@@ -626,7 +638,7 @@ cor_test_results |>
 cor_test_results_formatted <- cor_test_results |>
   mutate(
     cor_display = sprintf("%.2f", cor),
-    p_uncorrected_display = ifelse(p_value < 0.001, "<0.001", sprintf("%.3f", p_value)),
+    p_uncorrected_display = fmt_p(p_value),
     p_bonferroni_display = bonferroni_p_fmt
   ) |>
   select(
@@ -777,7 +789,7 @@ display_df <- summary_df |>
     `Statistic (F)` = round(Statistic, 3),
     df1 = round(df1, 0),
     df2 = round(df2, 0),
-    `p-value` = ifelse(p_value < 0.001, "<0.001", sprintf("%.3f", p_value)),
+    `p-value` = fmt_p(p_value),
     `Var(AI)` = round(var_ai, 3),
     `Var(Supervisor)` = round(var_supervisor, 3)
   )

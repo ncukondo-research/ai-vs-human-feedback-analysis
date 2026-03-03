@@ -1,11 +1,10 @@
 "Quantitative Analysis","Qualitative Analysis","Type of Integration"
-"- Feedback length","- Theme: ""Text Length""","- Quantitative results support qualitative findings
+"- Feedback length difference (AI > supervisor)","- Theme: ""Text Length""","- Quantitative results support qualitative findings
 - Qualitative findings explain quantitative results"
 "- Comparison of Rubric Scores
 - Feedback length","- Theme: ""Adherence to the feedback criteria and structure""
 - Theme: ""Text Length""","- Quantitative and qualitative results complement each other"
-"- Correlation between feedback length and score
-- Feedback length","- Theme: ""Text Length""","- Combination of quantitative and qualitative results leads to new insights"
+"- Correlation between feedback length and rubric score (significant for supervisors, absent for AI)","- Theme: ""Text Length""","- Combination of quantitative and qualitative results leads to new insights"
 "- Consistency of Feedback Quality","- Theme: ""Adherence to the feedback criteria and structure""","- Quantitative results support qualitative findings"
 "- Comparison of Rubric Scores","- Theme: ""Continuity and consistency""
 - Theme: ""Perspective as a clinician""","- Qualitative results expand quantitative results"

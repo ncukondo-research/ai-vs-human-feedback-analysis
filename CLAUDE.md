@@ -42,6 +42,6 @@ Do NOT use `@pandoc-key` syntax. These files are not processed by Pandoc, so cit
 The manuscript and reviewer replies must follow academic journal conventions:
 
 - Do not use em dashes. Use commas, semicolons, parentheses, or restructure the sentence instead.
-- Do not use bold or italic formatting in the manuscript body or reviewer replies.
+- Do not use bold or italic formatting for emphasis in the manuscript body or reviewer replies. However, italic is required for statistical symbols per JMIR convention (e.g., *P*<.001, Cohen *d*, *F*-test, *W*).
 - Do not use bullet points or numbered lists in the manuscript body. Use continuous prose. (Bullet points are acceptable in reviewer reply documents where the format calls for them.)
 - Write in a natural, formal academic register appropriate for a medical education journal.

@@ -37,6 +37,18 @@ pacman::p_load(
   irr
 )
 
+# Format p-values per JMIR guidelines:
+# - no leading zero (.142 not 0.142)
+# - p < .001 → "<.001"
+# - p >= 0.9995 (rounds to 1.000) → ">.99"
+fmt_p <- function(p) {
+  ifelse(p < 0.001, "<.001",
+    ifelse(p >= 0.9995, ">.99",
+      sub("^0\\.", ".", sprintf("%.3f", p))
+    )
+  )
+}
+
 tidy_data <- rio::import(here("data", "quantitative", "data.csv"))
 ```
 
@@ -209,8 +221,8 @@ log_score_by_person |>
     ),
     N = n,
     `Spearman rho` = sprintf("%.3f", spearman_rho),
-    `p (uncorrected)` = ifelse(p_value < 0.001, "<.001", sprintf("%.3f", p_value)),
-    `p (Bonferroni)` = ifelse(bonferroni_p < 0.001, "<.001", sprintf("%.3f", bonferroni_p))
+    `p (uncorrected)` = fmt_p(p_value),
+    `p (Bonferroni)` = fmt_p(bonferroni_p)
   ) |>
   flextable() |>
   merge_v(j = "Source") |>
@@ -297,8 +309,8 @@ log_score_corr |>
     ),
     N = n,
     `Spearman rho` = sprintf("%.3f", spearman_rho),
-    `p (uncorrected)` = ifelse(p_value < 0.001, "<.001", sprintf("%.3f", p_value)),
-    `p (Bonferroni)` = ifelse(bonferroni_p < 0.001, "<.001", sprintf("%.3f", bonferroni_p))
+    `p (uncorrected)` = fmt_p(p_value),
+    `p (Bonferroni)` = fmt_p(bonferroni_p)
   ) |>
   flextable() |>
   align(align = "center", part = "all") |>
@@ -400,8 +412,8 @@ normality_raw |>
     ),
     N = n,
     `Shapiro-Wilk W` = sprintf("%.4f", shapiro_w),
-    `p (uncorrected)` = ifelse(shapiro_p < 0.001, "<.001", sprintf("%.3f", shapiro_p)),
-    `p (Bonferroni)` = ifelse(bonferroni_p < 0.001, "<.001", sprintf("%.3f", bonferroni_p))
+    `p (uncorrected)` = fmt_p(shapiro_p),
+    `p (Bonferroni)` = fmt_p(bonferroni_p)
   ) |>
   flextable() |>
   merge_v(j = "Source") |>
@@ -482,10 +494,10 @@ normality_formatted <- normality_all |>
     ),
     N = n,
     `Shapiro-Wilk W` = sprintf("%.4f", shapiro_w),
-    `Shapiro-Wilk p` = ifelse(shapiro_p < 0.001, "<.001", sprintf("%.3f", shapiro_p)),
+    `Shapiro-Wilk p` = fmt_p(shapiro_p),
     `Wilcoxon V` = sprintf("%.0f", wilcox_v),
-    `Wilcoxon p` = ifelse(wilcox_p < 0.001, "<.001", sprintf("%.3f", wilcox_p)),
-    `t-test p` = ifelse(ttest_p < 0.001, "<.001", sprintf("%.3f", ttest_p)),
+    `Wilcoxon p` = fmt_p(wilcox_p),
+    `t-test p` = fmt_p(ttest_p),
     `Same conclusion` = ifelse(conclusion_same, "Yes", "No")
   )
 
@@ -688,9 +700,9 @@ irr_formatted <- irr_results |>
     N = n,
     `% Agreement` = sprintf("%.1f", pct_agreement),
     `Weighted Kappa` = sprintf("%.3f", kappa_quadratic),
-    `Kappa p` = ifelse(kappa_p < 0.001, "<.001", sprintf("%.3f", kappa_p)),
+    `Kappa p` = fmt_p(kappa_p),
     `ICC (95% CI)` = sprintf("%.3f (%.3f-%.3f)", icc_value, icc_lower, icc_upper),
-    `ICC p` = ifelse(icc_p < 0.001, "<.001", sprintf("%.3f", icc_p))
+    `ICC p` = fmt_p(icc_p)
   )
 
 irr_formatted |>
