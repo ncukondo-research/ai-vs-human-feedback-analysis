@@ -363,6 +363,7 @@
 | 2026-03-03 | 3.2, 3.4 | JMIR統計ガイドライン準拠(Editor7): fmt_p()関数導入, P値書式統一(イタリックP,先頭ゼロなし,P>.99), Cohen d修正, テーブルヘッダー修正. p=1.000説明(N4): P>.99に変更+reply. 図表キャプション詳細化(Editor10): Table1,4,5,6,7+Figure3,4,5. Joint Display整理(F6): Row1/3区別明確化. 全4件reply記述 | 5項目 |
 
 | 2026-03-04 | 4 | Editor11: 移管不要回答, Editor12: COI "None declared."修正, Editor13: Data Availabilityセクション新設, Editor14: Funder role追記, Editor15: GAIDeT宣言追記, L6: 用語統一確認+LLM修正, N8: TRAPD/JARS初出定義+Appendix.3修正, F9: 全文校正(11箇所修正). 全8件reply記述 | 8項目 |
+| 2026-03-04 | 5 | コンパイル確認: Table 1データソース修正(dataset_summary.csv→count_per_department.csv), ヘッダーtitle case統一 | 1項目 |
 
 ---
 
@@ -379,9 +380,11 @@
   - リリースを作成してDOIを取得
   - 取得したDOIをmanuscriptのData Availabilityセクションに追記
 
-- [ ] **原稿のコンパイル確認**
+- [x] **原稿のコンパイル確認** ✓ 2026-03-04
   - compile.shでDOCX出力を確認
   - 図表・参考文献の出力を目視確認
+  - Table 1: データソースを dataset_summary.csv → count_per_department.csv に修正（部門別データが正しく表示されるよう修正）
+  - Table 1: ヘッダーをtitle caseに統一（他テーブルとフォーマット一致）
 
 - [ ] **共著者レビュー**
   - 返信文書（one_by_one_reply.md）の確認依頼
