@@ -364,21 +364,24 @@
 
 | 2026-03-04 | 4 | Editor11: 移管不要回答, Editor12: COI "None declared."修正, Editor13: Data Availabilityセクション新設, Editor14: Funder role追記, Editor15: GAIDeT宣言追記, L6: 用語統一確認+LLM修正, N8: TRAPD/JARS初出定義+Appendix.3修正, F9: 全文校正(11箇所修正). 全8件reply記述 | 8項目 |
 | 2026-03-04 | 5 | コンパイル確認: Table 1データソース修正(dataset_summary.csv→count_per_department.csv), ヘッダーtitle case統一 | 1項目 |
+| 2026-03-05 | 5 | データリポジトリ完成: AIフィードバック生成ソースコード追加, Zenodo DOI取得(10.5281/zenodo.18868578), manuscript+reply更新 | 2項目 |
 
 ---
 
 # Phase 5: 投稿前最終準備
 
-- [ ] **匿名化データリポジトリの作成**
+- [x] **匿名化データリポジトリの作成** ✓ 2026-03-05
   - GitHub: ncukondo-research/ai-vs-human-feedback-analysis-open-data を作成
   - 匿名化された評価スコアデータを格納
   - 分析コードを格納
-  - READMEにデータ説明を記載
+  - AIフィードバック生成システムのソースコード（feedback-generation/）を追加
+  - READMEにデータ説明・フィードバック生成システムの説明を記載
 
-- [ ] **Zenodoでの永続的DOI付与**
+- [x] **Zenodoでの永続的DOI付与** ✓ 2026-03-05
   - GitHub-Zenodo連携を設定
-  - リリースを作成してDOIを取得
+  - リリースを作成してDOIを取得（doi: 10.5281/zenodo.18868578）
   - 取得したDOIをmanuscriptのData Availabilityセクションに追記
+  - reviewer replyのEditor Comment.13への返答にもDOIを反映
 
 - [x] **原稿のコンパイル確認** ✓ 2026-03-04
   - compile.shでDOCX出力を確認
