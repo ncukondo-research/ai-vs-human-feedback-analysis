@@ -134,7 +134,7 @@ RESPONSE: Thank you for this reminder. We have reviewed JMIR's conflict of inter
 
   > Comment: Please add a section on Data Availability. Please add these data sharing statements after the Acknowledgements.
 
-RESPONSE: Thank you for this request. We have added a Data Availability section after the Acknowledgements. The anonymized evaluation data and analysis code are publicly available at a GitHub repository (https://github.com/ncukondo-research/ai-vs-human-feedback-analysis-open-data). The AI feedback generation prompt, the evaluation rubric, and its translation process are provided in Multimedia Appendices 1, 2, and 3, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
+RESPONSE: Thank you for this request. We have added a Data Availability section after the Acknowledgements. The anonymized evaluation data, analysis code, and the source code of the AI feedback generation system are publicly available (doi: https://doi.org/10.5281/zenodo.18868578). The AI feedback generation prompt, the evaluation rubric, and its translation process are provided in Multimedia Appendices 1, 2, and 3, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
 
 ### Editor Comment.14
 
