@@ -136,6 +136,28 @@ text_and_code |>
   ) |>
   readr::write_excel_csv(here("data", "qualitative", "text_and_code_en.csv"), na = "")
 
+# Create anonymized text_and_code_en for open data repository
+# - Replace original IDs with sequential anonymous IDs per provider
+# - Remove assessor_type to prevent cross-referencing
+text_and_code |>
+  select(ID, provider, feedback_en, code_en) |>
+  arrange(provider, ID) |>
+  group_by(provider) |>
+  mutate(anon_id = paste0(
+    ifelse(provider == "AI", "AI", "SU"),
+    "_",
+    sprintf("%03d", row_number())
+  )) |>
+  ungroup() |>
+  select(anon_id, provider, feedback_en, code_en) |>
+  rename(
+    ID = anon_id,
+    Provider = provider,
+    Text = feedback_en,
+    Code = code_en
+  ) |>
+  readr::write_excel_csv(here("data", "qualitative", "text_and_code_en_anon.csv"), na = "")
+
 # Create code_list grouped by code with text column containing ID:feedback
 code_list <- text_and_code |>
   select(ID, provider, code, code_en, everything()) |>
