@@ -6,7 +6,7 @@
 
   > Thank you for submitting your manuscript. I have considered the reviewers' comments and, after my own reading, I would like to provide some additional guidance to help strengthen your manuscript.
 
-RESPONSE:
+RESPONSE: Thank you for your careful reading and the detailed guidance. We have addressed all of your comments and those of the reviewers in the revised manuscript. The major revisions include restructuring the Methods section to align with JARS mixed-methods reporting standards, revising the title and abstract to conform to JMIR guidelines, strengthening the statistical reporting, and adding several new sections (Data Availability, participant flowchart, and expanded Ethical Considerations). Point-by-point responses are provided below.
 
 ### Editor Comment.1
 
@@ -157,7 +157,7 @@ RESPONSE: Thank you for this request. We used the GAIDeT Declaration Generator t
   > This paper offers a timely and methodologically rigorous comparison of AI-generated and supervisor-provided feedback on authentic clinical clerkship logs. By moving beyond classroom-based tasks into real clinical settings, and by integrating quantitative rubric scoring with qualitative thematic and joint display analyses, the authors provide a nuanced account of how AI and human feedback differ not only in quality but in kind.
   > The central finding, that AI delivers rubric-aligned and text-anchored feedback while supervisors provide clinically expert and relationally meaningful feedback, is convincing and well supported. However, the manuscript would benefit from clearer framing of what the rubric captures (and omits), more critical engagement with the implications of perfect detectability, and greater caution in interpreting higher rubric scores as educational superiority. Overall, this is a strong contribution that would be further strengthened by tighter theoretical and methodological framing.
 
-RESPONSE:
+RESPONSE: Thank you for this thoughtful and constructive assessment. We have carefully addressed the three areas you identified. First, we have made the rubric's scope and limitations explicit from the Introduction onward, clarifying that it captures structural dimensions of feedback quality but not clinically specific attributes such as diagnostic reasoning or professional judgment. Second, we have expanded the Discussion to engage more critically with the implications of perfect source identification, including the possibility of expectancy bias and the interpretation of detectability itself as evidence of qualitative differences. Third, we have added interpretive qualifications throughout the Results and Discussion to ensure that higher AI rubric scores are not read as evidence of overall educational superiority. Detailed responses to each specific comment follow below.
 
 ## Major
 
@@ -259,7 +259,7 @@ RESPONSE: Thank you for noting this. We have carefully proofread the entire manu
 
   > This study evaluates and compares the quality of feedback provided by physicians and generative AI on student e-portfolios during clinical clerkships. Although the study has a limitation in that it focuses on students from a single university, I believe it is a meaningful contribution to the field, particularly in its qualitative evaluation and discussion regarding the use of generative AI for formative assessment. However, there are several points of clarification and areas for improvement that should be addressed.
 
-RESPONSE:
+RESPONSE: Thank you for recognizing the contribution of the qualitative evaluation and discussion. We have addressed all of your requests for clarification, including detailed information about the e-portfolio format and log characteristics, improved figure presentation, and unified ordering of rubric items across all tables and figures. Specific responses are provided below.
 
 ## Major
 
@@ -318,7 +318,7 @@ RESPONSE: Thank you for this suggestion. We have updated Figure 3 so that x-axis
 
   > This manuscript reports a well-designed mixed-methods study that compares AI-generated feedback with supervisor-provided feedback in real clinical clerkship settings. The use of a convergent mixed-methods design with joint display analysis is appropriate and well explained. Overall, this study makes a timely and valuable contribution to the medical education literature on the use of generative AI for learning support.
 
-RESPONSE:
+RESPONSE: Thank you for this positive evaluation of our study design and mixed-methods approach. We have addressed all of your comments, including clarifications on AI configuration and feedback length settings, the relationship between prompt optimization and rubric alignment, API call independence, and the interpretation of AI consistency versus supervisor variability. Specific responses follow below.
 
 ## Major
 
@@ -374,7 +374,7 @@ RESPONSE: Thank you for this insightful observation. We agree that the original 
 
   > This paper presents a timely and important mixed-methods comparison of AI-generated and supervisor-provided feedback in authentic clinical clerkship settings using real student portfolios. The use of 161 real-world datasets, validated analytic rubric, and joint display analysis represents a strong methodological contribution to the AI-in-medical-education literature. However, several methodological and conceptual issues limit the strength and generalizability of the conclusions and should be addressed before the manuscript is suitable for publication.
 
-RESPONSE:
+RESPONSE: Thank you for this thorough evaluation and for identifying the methodological and conceptual issues. We have made substantial revisions to address each concern, including explicit acknowledgment of the construct mismatch between the rubric and clinical feedback quality, expanded discussion of identification bias as an internal validity threat, strengthened caution regarding generalizability, and additional statistical reporting (effect sizes with confidence intervals, normality testing, and inter-rater reliability). Detailed responses follow below.
 
 ## Major
 
@@ -449,7 +449,7 @@ RESPONSE: Thank you for this suggestion. We have revised the manuscript to repor
 
   > Thank you for the opportunity to review this manuscript entitled "Same logs, different voices: AI-generated vs human feedback during clinical clerkship in undergraduate education." This mixed-methods study compares AI-generated written feedback (generated with GPT-4o) with supervising physicians' routine written feedback on authentic clinical clerkship learning logs. The topic is timely and highly relevant to clinical education, given the persistent constraints on supervisors' time and the increasing interest in using large language models to augment feedback workflows. Below are my detailed comments for improving this manuscript.
 
-RESPONSE:
+RESPONSE: Thank you for your detailed and constructive review. We have addressed all of your comments, including clarifying the study's unique contribution relative to prior classroom and simulation studies, providing additional context on supervisor feedback practices, adding precise p-values and inter-rater reliability estimates, clarifying the randomization and allocation process, and defining all abbreviations at first use. Specific responses follow below.
 
 ## Major
 
