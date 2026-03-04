@@ -248,7 +248,8 @@ During the clinical clerkship conducted at Nagoya University from January 9, 202
 #| tbl-cap: "Dataset Summary. Convergent mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs, Nagoya University, Japan, 2024."
 #| tbl-footnote: "Except for A, B, and C Community Hospital, all departments are affiliated with Nagoya University. ^2 The total number of students exceeds 47 because some students rotated through multiple departments."
 
-df <- read.csv(here("result", "quantitative", "dataset_summary.csv"))
+df <- read.csv(here("result", "quantitative", "count_per_department.csv")) |>
+  select(department, dataset_count, students, supervisors)
 
 avail <- 6
 w <- rep(avail /ncol(df), ncol(df))
@@ -259,9 +260,9 @@ df |>
   flextable::width(width = w) |>
   set_header_labels(
     department = "Department*",
-    dataset_count = "Number of datasets",
-    students = "Number of students†",
-    supervisors = "Number of supervisors‡"
+    dataset_count = "Number of Datasets",
+    students = "Number of Students†",
+    supervisors = "Number of Supervisors‡"
   ) |>
   theme_vanilla() |>
   add_footer_lines(c("*Except for A, B, and C Community Hospital, all departments are affiliated with Nagoya University.", "†The total number of students exceeds 47 because some students rotated through multiple departments.","‡The total number of supervisors exceeds 42 because some supervisors provided feedback in multiple departments.")) |>
