@@ -10,7 +10,7 @@ src/**/*.rmarkdown
 src/**/*.docx
 !src/assets/appendix/*.docx
 *:Zone.Identifier
-.claude/
+.claude/settings.local.json
 result/src/
 result/result/
 history/
