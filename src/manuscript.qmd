@@ -104,7 +104,7 @@ set_flextable_defaults(
 ```
 ## Original Paper
 
-# Same logs, different voices: AI-generated vs human feedback during clinical clerkship in undergraduate education
+# AI-generated versus human supervisor feedback on medical students' clinical clerkship logs: convergent mixed methods study
 
 Takeshi Kondo ,MD, MHPE, PhD; Jeroen Donkers, PhD; Hiroshi Nishigori, MD, MMEd, PhD; Sanne Rovers, PhD; Sylvia Heeneman, PhD
 
