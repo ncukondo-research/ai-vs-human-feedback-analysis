@@ -11,9 +11,10 @@
       "section": "Results",
       "md_line": 176,
       "anchor_text": "Journal Article Reporting Standards (JARS)",
-      "context": "Figure 2: Journal Article Reporting Standards (JARS) participant flowchart for a mixed-methods study comparing AI-generated and supe...",
-      "comment": "I don’t think you have to include that the flowchart follows the JARS standard.",
-      "status": "pending"
+      "context": "Figure 2: Journal Article Reporting Standards (JARS) participant flowchart for a mixed-methods study comparing AI-generated and supe...",
+      "comment": "I don't think you have to include that the flowchart follows the JARS standard.",
+      "status": "resolved",
+      "resolution": "Removed 'Journal Article Reporting Standards (JARS)' from the Figure 2 caption. Caption now starts with 'Participant flowchart'."
     },
     {
       "id": "c36",
@@ -25,7 +26,8 @@
       "anchor_text": null,
       "context": "Cohen >>|<<d (95% CI)",
       "comment": "Format headers to include line breaks at the correct spot as indicated.",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Added line break in Table 2 header: 'Cohen d\\n(95% CI)' and 'Corrected\\nP value'."
     },
     {
       "id": "c41",
@@ -37,7 +39,8 @@
       "anchor_text": null,
       "context": "Corrected >>|<<P value",
       "comment": "Line break",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Added line break in Table 4 merged header row: 'Corrected\\nP value'."
     },
     {
       "id": "c46",
@@ -46,10 +49,11 @@
       "date": "2026-03-13T10:28:00Z",
       "section": "Correlation between feedback length and score",
       "md_line": 284,
-      "anchor_text": "Table 4",
-      "context": "Table 4: Spearman Rank Correlation Between Feedback Character Count and Rubric Score by...",
+      "anchor_text": "Table 4",
+      "context": "Table 4: Spearman Rank Correlation Between Feedback Character Count and Rubric Score by...",
       "comment": "This table is incorrect. The values for supervisor rows are shifted down. Compare the table in the original document.",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Added select(-p_uncorrected) before pivot_wider. The p_uncorrected column made each row unique, preventing AI/Supervisor values from merging into the same Item row."
     },
     {
       "id": "c50",
@@ -61,7 +65,8 @@
       "anchor_text": "% Agreement Weighted κ κ P value",
       "context": "% Agreement Weighted κ κ P value",
       "comment": "Improve headers and layout of the table. (inlcude line breaks, asjust column widths)",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Added line breaks to all long headers in Table 5 (Feedback\\nType, %\\nAgreement, Weighted\\nκ, κ\\nP value, ICC\\n(95% CI), ICC\\nP value) and set custom column widths for better layout."
     }
   ],
   "revisions": []

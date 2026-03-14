@@ -275,7 +275,7 @@ df |>
 
 From October 2024 to January 2025, 10 medical students and 10 faculty who were not involved in the creation of the above student clerkship logs or feedback evaluated the AI and supervisor feedback. No missing data were identified; all 161 records contained complete rubric scores from both assessors across all five items, yielding 3,220 observations with 100% data completeness. The flow of participants through each stage of the study is shown in [@fig-participant-flowchart].
 
-![Journal Article Reporting Standards (JARS) participant flowchart for a mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at Nagoya University, Japan (January 2024–January 2025). The diagram shows participant flow from enrollment (164 logs from 47 medical students across 12 departments) through exclusion (n = 3), feedback generation (within-subjects design: each log received both AI and supervisor feedback), blinded evaluation by 10 faculty and 10 student evaluators, to quantitative (3,220 observations) and qualitative analyses.](../src/assets/JARS_flowchart/jars-quant-participant-flowchart.svg){#fig-participant-flowchart}
+![Participant flowchart for a mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at Nagoya University, Japan (January 2024–January 2025). The diagram shows participant flow from enrollment (164 logs from 47 medical students across 12 departments) through exclusion (n = 3), feedback generation (within-subjects design: each log received both AI and supervisor feedback), blinded evaluation by 10 faculty and 10 student evaluators, to quantitative (3,220 observations) and qualitative analyses.](../src/assets/JARS_flowchart/jars-quant-participant-flowchart.svg){#fig-participant-flowchart}
 
 ### Quantitative analysis
 
@@ -322,9 +322,9 @@ df |>
     mean_ai = "AI Mean Score (95% CI)",
     mean_supervisor = "Supervisor Mean Score (95% CI)",
     mean_diff = "Mean Difference (95% CI)",
-    cohens_d = "Cohen d (95% CI)",
+    cohens_d = "Cohen d\n(95% CI)",
     p_uncorrected = "P value",
-    p_bonferroni = "Corrected P value"
+    p_bonferroni = "Corrected\nP value"
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
@@ -381,6 +381,7 @@ df <- read.csv(here("result", "quantitative", "correlation_letter_count_score_by
 
 # Reshape the data to have separate columns for each feedback provider
 df_wide <- df |>
+  select(-p_uncorrected) |>
   pivot_wider(
     names_from = feedback_provider,
     values_from = c(spearman, p_bonferroni),
@@ -408,7 +409,7 @@ df_wide |>
     p_bonferroni_AI = "AI",
     p_bonferroni_Supervisor = "Supervisor"
   ) |>
-  add_header_row(values = c("", "Spearman ρ", "Corrected P value"), colwidths = c(1,2,2)) |>
+  add_header_row(values = c("", "Spearman ρ", "Corrected\nP value"), colwidths = c(1,2,2)) |>
   theme_vanilla() |>
   flextable::align(align = "center", part = "all") |>
   flextable::align(align = "left", part = "body", j = 1) |>
@@ -437,16 +438,16 @@ w <- rep(avail / ncol(df), ncol(df))
 df |>
   flextable() |>
   flextable::set_table_properties(layout = "fixed") |>
-  flextable::width(width = w) |>
+  flextable::width(width = c(1.0, 0.8, 0.4, 0.7, 0.7, 0.6, 1.0, 0.6)) |>
   set_header_labels(
     Item = "Item",
-    Person = "Feedback Type",
+    Person = "Feedback\nType",
     N = "N",
-    X..Agreement = "% Agreement",
-    Weighted.Kappa = "Weighted κ",
-    Kappa.p = "κ P value",
-    ICC..95..CI. = "ICC (95% CI)",
-    ICC.p = "ICC P value"
+    X..Agreement = "%\nAgreement",
+    Weighted.Kappa = "Weighted\nκ",
+    Kappa.p = "κ\nP value",
+    ICC..95..CI. = "ICC\n(95% CI)",
+    ICC.p = "ICC\nP value"
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()

@@ -13,7 +13,8 @@
       "anchor_text": null,
       "context": "..., readers cannot assess the robustness or generalizability of the findings, and other researchers cannot replicate or extend the work in a principled >>|<<way.",
       "comment": "Very interesting point from the reviewer. But in fact, AI and prompt cannot be separated. We were obliged to use the best prompt possible. ",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "No direct change needed (positive feedback). The AI+prompt inseparability point was reflected in the B2 edit to the F4 response."
     },
     {
       "id": "c27",
@@ -25,7 +26,8 @@
       "anchor_text": "prompt sensitivity analysis",
       "context": "Regarding prompt sensitivity analysis, we acknowledge this as a meaningful limitation and have added it explicitly to...",
       "comment": "Maybe add that you did test several prompts before selecting this final one.",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Added sentence about testing multiple prompt variations during pilot phase and AI+prompt inseparability to the F4 response."
     },
     {
       "id": "c30",
@@ -37,7 +39,8 @@
       "anchor_text": null,
       "context": "...acter limits imposed. In the Results, we report that weekly logs varied considerably in length (mean 675.2 characters, SD 459.8; median 551; range 51–>>|<<2,342). To directly address whether this variation influenced scores, we computed Spearman correlations between log character count and each rubric sc...",
       "comment": "Excellent analysis and response",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "No change needed (positive feedback)."
     },
     {
       "id": "c32",
@@ -49,7 +52,8 @@
       "anchor_text": null,
       "context": "RESPONSE: Thank you for this observation. We reviewed Rows 1 and 3 >>|<<and agree that both draw on feedback length data and the Text Length qualitative theme, which creates an appearance of overlap. However, the two rows ...",
       "comment": "Maybe add that the table has number 7 now.",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Added 'of Table 7 (Joint Display)' to the F6 response."
     },
     {
       "id": "c45",
@@ -60,8 +64,9 @@
       "md_line": 265,
       "anchor_text": "length",
       "context": "...port the effect sizes (in addition to p-values) for the differences in feedback length.",
-      "comment": "This is fine, but text lengths do not follow normal distributions, so standard effect sizes like Cohen’s d are not very meaningful. But if a reviewer wants them, you can include those...",
-      "status": "pending"
+      "comment": "This is fine, but text lengths do not follow normal distributions, so standard effect sizes like Cohen's d are not very meaningful. But if a reviewer wants them, you can include those...",
+      "status": "resolved",
+      "resolution": "No change needed. Cohen's d retained as reviewer requested it; Jeroen's note acknowledged."
     },
     {
       "id": "c53",
@@ -73,7 +78,8 @@
       "anchor_text": "feedback",
       "context": "... concerns about influence between student cases, please clarify: (1) Whether AI feedback for each student was generated in a separate and independent session or API cal...",
       "comment": "Good point, good response!",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "No change needed (positive feedback)."
     }
   ],
   "revisions": [
@@ -86,7 +92,8 @@
       "md_line": 35,
       "content": "effect",
       "context_accepted": "...ification), and the statistical approach (paired t-tests, cumulative link mixed effect models; alpha = .05 with Bonferroni correction; qualitative thematic analysis; ...",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Applied: 'mixed models' changed to 'mixed effect models' in Editor Comment.3 response."
     }
   ]
 }
