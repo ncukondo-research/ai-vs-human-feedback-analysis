@@ -1,0 +1,68 @@
+{
+  "source": "2026_03_13_01_study1_manuscript_JD.docx",
+  "extraction_date": "2026-03-14",
+  "markdown_file": "2026_03_13_01_study1_manuscript_JD.md",
+  "comments": [
+    {
+      "id": "c28",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:08:00Z",
+      "section": "Results",
+      "md_line": 176,
+      "anchor_text": "Journal Article Reporting Standards (JARS)",
+      "context": "Figure 2: Journal Article Reporting Standards (JARS) participant flowchart for a mixed-methods study comparing AI-generated and supe...",
+      "comment": "I don’t think you have to include that the flowchart follows the JARS standard.",
+      "status": "pending"
+    },
+    {
+      "id": "c36",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:23:00Z",
+      "section": "(Unknown)",
+      "md_line": null,
+      "anchor_text": null,
+      "context": "Cohen >>|<<d (95% CI)",
+      "comment": "Format headers to include line breaks at the correct spot as indicated.",
+      "status": "pending"
+    },
+    {
+      "id": "c41",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:24:00Z",
+      "section": "Correlation between feedback length and score",
+      "md_line": 287,
+      "anchor_text": null,
+      "context": "Corrected >>|<<P value",
+      "comment": "Line break",
+      "status": "pending"
+    },
+    {
+      "id": "c46",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:28:00Z",
+      "section": "Correlation between feedback length and score",
+      "md_line": 284,
+      "anchor_text": "Table 4",
+      "context": "Table 4: Spearman Rank Correlation Between Feedback Character Count and Rubric Score by...",
+      "comment": "This table is incorrect. The values for supervisor rows are shifted down. Compare the table in the original document.",
+      "status": "pending"
+    },
+    {
+      "id": "c50",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:04:00Z",
+      "section": "(Unknown)",
+      "md_line": null,
+      "anchor_text": "% Agreement Weighted κ κ P value",
+      "context": "% Agreement Weighted κ κ P value",
+      "comment": "Improve headers and layout of the table. (inlcude line breaks, asjust column widths)",
+      "status": "pending"
+    }
+  ],
+  "revisions": []
+}

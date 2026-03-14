@@ -1,0 +1,92 @@
+{
+  "source": "one_by_one_reply-JD.docx",
+  "extraction_date": "2026-03-14",
+  "markdown_file": "one_by_one_reply-JD.md",
+  "comments": [
+    {
+      "id": "c26",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T09:52:00Z",
+      "section": "F4: Reviewer F Comment 4",
+      "md_line": 185,
+      "anchor_text": null,
+      "context": "..., readers cannot assess the robustness or generalizability of the findings, and other researchers cannot replicate or extend the work in a principled >>|<<way.",
+      "comment": "Very interesting point from the reviewer. But in fact, AI and prompt cannot be separated. We were obliged to use the best prompt possible. ",
+      "status": "pending"
+    },
+    {
+      "id": "c27",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T09:54:00Z",
+      "section": "F4: Reviewer F Comment 4",
+      "md_line": 185,
+      "anchor_text": "prompt sensitivity analysis",
+      "context": "Regarding prompt sensitivity analysis, we acknowledge this as a meaningful limitation and have added it explicitly to...",
+      "comment": "Maybe add that you did test several prompts before selecting this final one.",
+      "status": "pending"
+    },
+    {
+      "id": "c30",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T09:55:00Z",
+      "section": "F5: Reviewer F Comment 5",
+      "md_line": 199,
+      "anchor_text": null,
+      "context": "...acter limits imposed. In the Results, we report that weekly logs varied considerably in length (mean 675.2 characters, SD 459.8; median 551; range 51–>>|<<2,342). To directly address whether this variation influenced scores, we computed Spearman correlations between log character count and each rubric sc...",
+      "comment": "Excellent analysis and response",
+      "status": "pending"
+    },
+    {
+      "id": "c32",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T09:59:00Z",
+      "section": "F6: Reviewer F Comment 6",
+      "md_line": 205,
+      "anchor_text": null,
+      "context": "RESPONSE: Thank you for this observation. We reviewed Rows 1 and 3 >>|<<and agree that both draw on feedback length data and the Text Length qualitative theme, which creates an appearance of overlap. However, the two rows ...",
+      "comment": "Maybe add that the table has number 7 now.",
+      "status": "pending"
+    },
+    {
+      "id": "c45",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:14:00Z",
+      "section": "G5: Reviewer G Comment 5",
+      "md_line": 265,
+      "anchor_text": "length",
+      "context": "...port the effect sizes (in addition to p-values) for the differences in feedback length.",
+      "comment": "This is fine, but text lengths do not follow normal distributions, so standard effect sizes like Cohen’s d are not very meaningful. But if a reviewer wants them, you can include those...",
+      "status": "pending"
+    },
+    {
+      "id": "c53",
+      "type": "comment",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T10:17:00Z",
+      "section": "H3: Reviewer H Comment 3",
+      "md_line": 305,
+      "anchor_text": "feedback",
+      "context": "... concerns about influence between student cases, please clarify: (1) Whether AI feedback for each student was generated in a separate and independent session or API cal...",
+      "comment": "Good point, good response!",
+      "status": "pending"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "r0",
+      "type": "insertion",
+      "author": "Donkers, Jeroen (EDUC)",
+      "date": "2026-03-13T09:17:00Z",
+      "section": "Editor Comment.3",
+      "md_line": 35,
+      "content": "effect",
+      "context_accepted": "...ification), and the statistical approach (paired t-tests, cumulative link mixed effect models; alpha = .05 with Bonferroni correction; qualitative thematic analysis; ...",
+      "status": "pending"
+    }
+  ]
+}
