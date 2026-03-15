@@ -13,7 +13,8 @@
       "anchor_text": "this study",
       "context": "We note that this study compares AI feedback generated through a prompt explicitly informed by establis...",
       "comment": "this is our study/ the current study?If yes: This comment here does not fit in the flow of the introduction, and the purpose of the introdcution, move to methods. ",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Rubric scope paragraph removed from Introduction. Content moved to Methods (Evaluation Instrument)."
     },
     {
       "id": "c273",
@@ -25,7 +26,8 @@
       "anchor_text": "In contrast, Steiss et al [18]",
       "context": "... human and AI feedback, most of them employed holistic scoring methods [13,19]. In contrast, Steiss et al [18] used analytical criteria that evaluate feedback by breaking it down into variou...",
       "comment": "Here add the considerarions on the rubric",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Rubric considerations now in Evaluation Instrument subsection (paragraph 1)."
     },
     {
       "id": "c570",
@@ -37,7 +39,8 @@
       "anchor_text": "Shapiro-Wilk tests assessed the normality of paired differences for all comparisons.",
       "context": "Shapiro-Wilk tests assessed the normality of paired differences for all comparisons. The feedback length difference was normally distributed (W=0.992, P=.550), supp...",
       "comment": "This is usually in the methods/ do not need to repeat (unless journal guidelines indicate to do so)",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Noted. Content retained in Results as it supports the narrative flow."
     },
     {
       "id": "c573",
@@ -49,7 +52,8 @@
       "anchor_text": "As a sensitivity analysis, Wilcoxon signed-rank tests were conducted alongside the paired t-tests",
       "context": "...ificantly from normality (all W≤0.939, all P<.001 after Bonferroni correction). As a sensitivity analysis, Wilcoxon signed-rank tests were conducted alongside the paired t-tests; the two methods yielded identical conclusions regarding statistical significan...",
       "comment": "in principle also information for the methods section",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "Noted. Content retained in Results."
     },
     {
       "id": "c1236",
@@ -61,7 +65,8 @@
       "anchor_text": "These rubric-based findings should be interpreted in light of the asymmetric design described in the Methods section:",
       "context": "These rubric-based findings should be interpreted in light of the asymmetric design described in the Methods section: AI feedback was generated with the rubric criteria explicitly embedded in the p...",
       "comment": "yes here it is in line..",
-      "status": "pending"
+      "status": "resolved",
+      "resolution": "No change needed (positive feedback confirming placement is appropriate)."
     }
   ],
   "revisions": [
