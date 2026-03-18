@@ -1,139 +1,5 @@
 [
   {
-    "id": "Abd-Alrazaq2023-tz",
-    "type": "article-journal",
-    "title": "Large language models in medical education: Opportunities, challenges, and future directions",
-    "author": [
-      {
-        "family": "Abd-Alrazaq",
-        "given": "Alaa"
-      },
-      {
-        "family": "AlSaad",
-        "given": "Rawan"
-      },
-      {
-        "family": "Alhuwail",
-        "given": "Dari"
-      },
-      {
-        "family": "Ahmed",
-        "given": "Arfan"
-      },
-      {
-        "family": "Healy",
-        "given": "Padraig Mark"
-      },
-      {
-        "family": "Latifi",
-        "given": "Syed"
-      },
-      {
-        "family": "Aziz",
-        "given": "Sarah"
-      },
-      {
-        "family": "Damseh",
-        "given": "Rafat"
-      },
-      {
-        "family": "Alabed Alrazak",
-        "given": "Sadam"
-      },
-      {
-        "family": "Sheikh",
-        "given": "Javaid"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2023,
-          6,
-          1
-        ]
-      ]
-    },
-    "container-title": "JMIR Med. Educ.",
-    "volume": "9",
-    "issue": "1",
-    "page": "e48291",
-    "DOI": "10.2196/48291",
-    "PMID": "37261894",
-    "ISSN": "2369-3762",
-    "URL": "https://mededu.jmir.org/2023/1/e48291",
-    "abstract": "The integration of large language models (LLMs), such as those in the Generative Pre-trained Transformers (GPT) series, into medical education has the potential to transform learning experiences for students and elevate their knowledge, skills, and competence. Drawing on a wealth of professional and academic experience, we propose that LLMs hold promise for revolutionizing medical curriculum development, teaching methodologies, personalized study plans and learning materials, student assessments, and more. However, we also critically examine the challenges that such integration might pose by addressing issues of algorithmic bias, overreliance, plagiarism, misinformation, inequity, privacy, and copyright concerns in medical education. As we navigate the shift from an information-driven educational paradigm to an artificial intelligence (AI)-driven educational paradigm, we argue that it is paramount to understand both the potential and the pitfalls of LLMs in medical education. This paper thus offers our perspective on the opportunities and challenges of using LLMs in this context. We believe that the insights gleaned from this analysis will serve as a foundation for future recommendations and best practices in the field, fostering the responsible and effective use of AI technologies in medical education.",
-    "publisher": "JMIR Medical Education",
-    "custom": {
-      "uuid": "c28fdfb7-68be-4631-a421-8bc8fd0fac81",
-      "created_at": "2026-02-09T01:09:41.251Z",
-      "timestamp": "2026-02-09T08:41:17.563Z",
-      "attachments": {
-        "directory": "Abd-Alrazaq2023-tz-PMID37261894-c28fdfb7",
-        "files": [
-          {
-            "filename": "fulltext.pdf",
-            "role": "fulltext"
-          },
-          {
-            "filename": "fulltext.md",
-            "role": "fulltext"
-          }
-        ]
-      },
-      "paperpile": {
-        "_id": "0cb2657b-54ad-0ab4-8a17-81af70d9d5d6",
-        "accessed": {
-          "year": "2024",
-          "month": "12",
-          "day": "23"
-        },
-        "attachments": [
-          {
-            "_id": "a9c482ac-28c9-4192-85f3-975baad128df",
-            "article_pdf": 1,
-            "created": 1734942915.91,
-            "filename": "All Papers/Other/Abd-Alrazaq et al. 2023 - Large language models in medical education - Opportunities, challenges, and future directions.pdf",
-            "filesize": 596655,
-            "gdrive_id": "1buvicsPazx40kUr19V2g0M7mZPgDU-_3",
-            "mimeType": "application/pdf",
-            "pub_id": "0cb2657b-54ad-0ab4-8a17-81af70d9d5d6",
-            "source_filename": "mededu-2023-1-e48291.pdf"
-          }
-        ],
-        "autoCleaned": 1,
-        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.2196/48291",
-        "citekey": "Abd-Alrazaq2023-tz",
-        "created": 1734942909.6220002,
-        "dup_sha1": "6dfe80dfb0404a5095a18ddb18ad9d28b8056e21",
-        "folders": [],
-        "id_list": [
-          "sha1:37ab1718a07cd4978230e48b61f3e0972cdd1f6c",
-          "dup_sha1:6dfe80dfb0404a5095a18ddb18ad9d28b8056e21",
-          "doi:10.2196/48291",
-          "pmc:PMC10273039",
-          "pmid:37261894",
-          "url:http://dx.doi.org/10.2196/48291",
-          "url:https://mededu.jmir.org/2023/1/e48291",
-          "url:https://www.ncbi.nlm.nih.gov/pubmed/37261894",
-          "url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10273039"
-        ],
-        "incomplete": 0,
-        "kind": "Research Article",
-        "labels": [],
-        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-        "pdf_restricted": 0,
-        "pmc": "PMC10273039",
-        "pubtype": "PP_ARTICLE",
-        "sha1": "37ab1718a07cd4978230e48b61f3e0972cdd1f6c",
-        "subfolders": [
-          "All Papers/A"
-        ]
-      }
-    },
-    "language": "en"
-  },
-  {
     "id": "Ali2025-fd",
     "type": "article-journal",
     "title": "Bytes versus brains: A comparative study of AI-generated feedback and human tutor feedback in medical education",
@@ -2319,179 +2185,6 @@
     }
   },
   {
-    "id": "Jarry-Trujillo2024-kg",
-    "type": "article-journal",
-    "title": "Surgeons vs ChatGPT: Assessment and feedback performance based on real surgical scenarios",
-    "author": [
-      {
-        "family": "Jarry Trujillo",
-        "given": "Cristián"
-      },
-      {
-        "family": "Vela Ulloa",
-        "given": "Javier"
-      },
-      {
-        "family": "Escalona Vivas",
-        "given": "Gabriel"
-      },
-      {
-        "family": "Grasset Escobar",
-        "given": "Eugenio"
-      },
-      {
-        "family": "Villagrán Gutiérrez",
-        "given": "Ignacio"
-      },
-      {
-        "family": "Achurra Tirado",
-        "given": "Pablo"
-      },
-      {
-        "family": "Varas Cohen",
-        "given": "Julián"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          7,
-          1
-        ]
-      ]
-    },
-    "container-title": "J. Surg. Educ.",
-    "volume": "81",
-    "issue": "7",
-    "page": "960-966",
-    "DOI": "10.1016/j.jsurg.2024.03.012",
-    "PMID": "38749814",
-    "ISSN": "1931-7204",
-    "URL": "http://dx.doi.org/10.1016/j.jsurg.2024.03.012",
-    "abstract": "INTRODUCTION: Artificial intelligence tools are being progressively integrated into medicine and surgical education. Large language models, such as ChatGPT, could provide relevant feedback aimed at improving surgical skills. The purpose of this study is to assess ChatGPT´s ability to provide feedback based on surgical scenarios. METHODS: Surgical situations were transformed into texts using a neutral narrative. Texts were evaluated by ChatGPT 4.0 and 3 surgeons (A, B, C) after a brief instruction was delivered: identify errors and provide feedback accordingly. Surgical residents were provided with each of the situations and feedback obtained during the first stage, as written by each surgeon and ChatGPT, and were asked to assess the utility of feedback (FCUR) and its quality (FQ). As control measurement, an Education-Expert (EE) and a Clinical-Expert (CE) were asked to assess FCUR and FQ. RESULTS: Regarding residents' evaluations, 96.43% of times, outputs provided by ChatGPT were considered useful, comparable to what surgeons' B and C obtained. Assessing FQ, ChatGPT and all surgeons received similar scores. Regarding EE's assessment, ChatGPT obtained a significantly higher FQ score when compared to surgeons A and B (p = 0.019; p = 0.033) with a median score of 8 vs. 7 and 7.5, respectively; and no difference respect surgeon C (score of 8; p = 0.2). Regarding CE´s assessment, surgeon B obtained the highest FQ score while ChatGPT received scores comparable to that of surgeons A and C. When participants were asked to identify the source of the feedback, residents, CE, and EE perceived ChatGPT's outputs as human-provided in 33.9%, 28.5%, and 14.3% of cases, respectively. CONCLUSION: When given brief written surgical situations, ChatGPT was able to identify errors with a detection rate comparable to that of experienced surgeons and to generate feedback that was considered useful for skill improvement in a surgical context performing as well as surgical instructors across assessments made by general surgery residents, an experienced surgeon, and a nonsurgeon feedback expert.",
-    "publisher": "Elsevier BV",
-    "custom": {
-      "uuid": "dbc62c15-cb3b-41b0-855f-c497259a938e",
-      "created_at": "2026-02-09T01:09:41.254Z",
-      "timestamp": "2026-02-17T07:12:52.375Z",
-      "attachments": {
-        "directory": "Jarry-Trujillo2024-kg-PMID38749814-dbc62c15",
-        "files": [
-          {
-            "filename": "fulltext.pdf",
-            "role": "fulltext"
-          },
-          {
-            "filename": "fulltext.md",
-            "role": "fulltext"
-          }
-        ]
-      },
-      "check": {
-        "checked_at": "2026-02-17T07:12:48.275Z",
-        "status": "metadata_outdated",
-        "findings": [
-          {
-            "type": "metadata_outdated",
-            "message": "Remote metadata has been updated since import",
-            "details": {
-              "updated_fields": [
-                "title",
-                "container-title",
-                "page",
-                "volume",
-                "issue",
-                "issued"
-              ],
-              "field_diffs": [
-                {
-                  "field": "title",
-                  "local": "Surgeons vs ChatGPT: Assessment and feedback performance based on real surgical scenarios",
-                  "remote": "Surgeons vs ChatGPT: Assessment and Feedback Performance Based on Real Surgical Scenarios"
-                },
-                {
-                  "field": "container-title",
-                  "local": "J. Surg. Educ.",
-                  "remote": "Journal of Surgical Education"
-                },
-                {
-                  "field": "page",
-                  "local": "960-966",
-                  "remote": null
-                },
-                {
-                  "field": "volume",
-                  "local": "81",
-                  "remote": null
-                },
-                {
-                  "field": "issue",
-                  "local": "7",
-                  "remote": null
-                },
-                {
-                  "field": "issued",
-                  "local": "2024-7-1",
-                  "remote": "2024-5"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "paperpile": {
-        "_id": "960ad386-fbc4-06b1-a44f-de568b06966f",
-        "accessed": {
-          "year": "2024",
-          "month": "11",
-          "day": "26"
-        },
-        "attachments": [
-          {
-            "_id": "9e8ad918-538f-4a00-9e83-ca8df842985f",
-            "article_pdf": 1,
-            "created": 1732576718.7359998,
-            "filename": "All Papers/Other/Jarry Trujillo et al. 2024 - Surgeons vs ChatGPT - Assessment and feedback performance based on real surgical scenarios.pdf",
-            "filesize": 814363,
-            "gdrive_id": "1Zf83OLECTyjOeQYI5v2OhFKSzIHcGkbl",
-            "mimeType": "application/pdf",
-            "pub_id": "960ad386-fbc4-06b1-a44f-de568b06966f",
-            "source_filename": "1-s2.0-S1931720424001582-main.pdf"
-          }
-        ],
-        "autoCleaned": 1,
-        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1016/j.jsurg.2024.03.012",
-        "citekey": "Jarry-Trujillo2024-kg",
-        "created": 1732576288.941,
-        "dup_sha1": "754b87ec59efa3c1fe197b86f3427e59757432dc",
-        "folders": [],
-        "id_list": [
-          "sha1:8526fba87fe3107e1efb1a5c62570ff1deaf7f7f",
-          "dup_sha1:754b87ec59efa3c1fe197b86f3427e59757432dc",
-          "doi:10.1016/j.jsurg.2024.03.012",
-          "pmid:38749814",
-          "url:http://dx.doi.org/10.1016/j.jsurg.2024.03.012",
-          "url:https://www.sciencedirect.com/science/article/pii/S1931720424001582",
-          "url:https://linkinghub.elsevier.com/retrieve/pii/S1931720424001582",
-          "url:https://www.ncbi.nlm.nih.gov/pubmed/38749814"
-        ],
-        "incomplete": 0,
-        "issn_alt": "1878-7452",
-        "kind": "Research Article",
-        "labels": [],
-        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-        "pdf_restricted": 1,
-        "pubtype": "PP_ARTICLE",
-        "sha1": "8526fba87fe3107e1efb1a5c62570ff1deaf7f7f",
-        "subfolders": [
-          "All Papers/J"
-        ]
-      }
-    },
-    "language": "en"
-  },
-  {
     "id": "Jayawardena2025-gj",
     "type": "article-journal",
     "title": "Dental students' learning experience: Artificial intelligence vs human feedback on assignments",
@@ -3879,6 +3572,87 @@
     "language": "en"
   },
   {
+    "id": "Nishigori2014-qc",
+    "type": "article-journal",
+    "title": "Bushido and Medical Professionalism in Japan",
+    "author": [
+      {
+        "family": "Nishigori",
+        "given": "Hiroshi"
+      },
+      {
+        "family": "Harrison",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Busari",
+        "given": "Jamiu"
+      },
+      {
+        "family": "Dornan",
+        "given": "Tim"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "container-title": "Acad. Med.",
+    "volume": "89",
+    "issue": "4",
+    "page": "560-563",
+    "DOI": "10.1097/ACM.0000000000000176",
+    "PMID": "24556758",
+    "ISSN": "1040-2446",
+    "URL": "http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage&an=00001888-201404000-00017",
+    "abstract": "Medical professionalism has become a core topic in medical education. As it has been considered mostly from a Western perspective, there is a need to examine how the same or similar concepts are reflected in a wider range of cultural contexts. To gain insights into medical professionalism concepts in Japanese culture, the authors compare the tenets of a frequently referenced Western guide to professionalism (the physician charter proposed by the American Board of Internal Medicine Foundation, American College of Physicians Foundation, and the European Federation of Internal Medicine) with the concepts of Bushido, a Japanese code of personal conduct originating from the ancient samurai warriors. The authors also present survey evidence about how a group of present-day Japanese doctors view the values of Bushido.Cultural scholars have demonstrated Bushido's continuing influence on Japanese people today. The authors explain the seven main virtues of Bushido (e.g., rectitude), describe the similarities and differences between Bushido and the physician charter, and speculate on factors that may account for the differences, including the influence of religion, how much the group versus the individual is emphasized in a culture, and what emphasis is given to virtue-based versus duty-based ethics.The authors suggest that for those who are teaching and practicing in Japan today, Bushido's virtues are applicable when considering medical professionalism and merit further study. They urge that there be a richer discussion, from the viewpoints of different cultures, on the meaning of professionalism in today's health care practice.",
+    "custom": {
+      "uuid": "f10e42a9-25b8-4dee-b3c0-9d4beb59fcec",
+      "created_at": "2026-02-09T01:09:41.693Z",
+      "timestamp": "2026-02-09T01:09:41.693Z",
+      "tags": [
+        "_Archived/Zotero Import (Oct 01)",
+        "_Archived/Zotero Import (Oct 01)/My Library",
+        "教える役割による影響/Bushido",
+        "_Archived/科研費 - マンガ",
+        "教える役割による影響",
+        "_Archived/Mendeley インポート 2019/6/11 17:31:22"
+      ],
+      "paperpile": {
+        "_id": "f1177121-7028-0998-a2a4-2f7f4eeafc3f",
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1097/ACM.0000000000000176",
+        "citekey": "Nishigori2014-qc",
+        "created": 1633063046.605364,
+        "dup_sha1": "0b7526b638ecff8b940d5ab1bd9f707e9c71dd1f",
+        "folders": [
+          "66c8acfe-b0f5-057b-8c50-993880a21830",
+          "db7554e3-9847-0952-b62b-70f00f0979f7",
+          "9083400d-28d2-0dc3-83d1-dd8d4bf7bfa7",
+          "71a91d97-793c-0ea6-b534-7e68c43b5318",
+          "abb7a624-6097-0644-acee-7266cbca281a",
+          "00ef9ef9-44ea-0780-a156-2af456f947ff"
+        ],
+        "id_list": [
+          "sha1:e3cb73885b2e240d36d23e19d4edc58ae2131bbf",
+          "dup_sha1:0b7526b638ecff8b940d5ab1bd9f707e9c71dd1f",
+          "doi:10.1097/ACM.0000000000000176",
+          "pmid:24556758",
+          "url:http://dx.doi.org/10.1097/ACM.0000000000000176",
+          "url:http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage&an=00001888-201404000-00017",
+          "url:https://www.ncbi.nlm.nih.gov/pubmed/24556758"
+        ],
+        "incomplete": 0,
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pubtype": "PP_ARTICLE",
+        "sha1": "e3cb73885b2e240d36d23e19d4edc58ae2131bbf"
+      }
+    }
+  },
+  {
     "id": "Nishigori2024-rr",
     "type": "article-journal",
     "title": "Medical education in Japan",
@@ -4237,110 +4011,6 @@
     "language": "en"
   },
   {
-    "id": "Ortega-Ochoa2024-ub",
-    "type": "article-journal",
-    "title": "The effectiveness of empathic chatbot feedback for developing computer competencies, motivation, self-regulation, and metacognitive reasoning in online higher education",
-    "author": [
-      {
-        "family": "Ortega-Ochoa",
-        "given": "Elvis"
-      },
-      {
-        "family": "Quiroga Pérez",
-        "given": "José"
-      },
-      {
-        "family": "Arguedas",
-        "given": "Marta"
-      },
-      {
-        "family": "Daradoumis",
-        "given": "Thanasis"
-      },
-      {
-        "family": "Marquès Puig",
-        "given": "Joan Manuel"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          4,
-          1
-        ]
-      ]
-    },
-    "container-title": "Internet of Things",
-    "volume": "25",
-    "page": "101101",
-    "DOI": "10.1016/j.iot.2024.101101",
-    "ISSN": "2542-6605",
-    "URL": "https://www.sciencedirect.com/science/article/pii/S254266052400043X",
-    "abstract": "At the forefront of Artificial Intelligence of Things, this paper delves into empathic agents to revolutionize computer competencies acquisition and catalyze motivational, regulatory, and metacognitive dynamics in online higher education. Previous research on student processing of empathic feedback has been limited, often neglecting learning performance and its impact on students’ motivation, self-regulation, and metacognitive reasoning. The objective was to analyze the effectiveness of empathic feedback, cognitive and affective, on these four issues in online learning. A quasi-experimental design was used, in which a conversational agent, DSLab-Bot, was integrated into the syllabus and Information Technology infrastructure. Students from an online university's Distributed Systems course participated (N= 196), selected through one-stage cluster probability sampling. They were divided into experimental and control groups receiving feedback from DSLab-Bot and the teacher, respectively. Results showed no significant differences between the groups in learning performance, motivation, or self-regulation, except in one item of motivation (self-efficacy) and self-regulation. There were strong correlations between thirteen cognitive (1–4, 6, 7, 9–15) and seven affective (1, 4–9) chatbot feedback types with conceptual change (MRCC) and personal growth and understanding (MRPGU). There were high weights of similar chatbot feedback types indicating a pronounced influence of these on metacognitive reasoning components, even self-reflection (MRSR). In conclusion, empathic chatbot feedback is as effective as human teacher feedback in facilitating learning, motivation, and self-regulation. Moreover, specific empathic feedback types are crucial in fostering MRCC, MRPGU, and MRSR strongly. Practitioners should consider these specific types of empathic feedback for future empathic agent configurations.",
-    "custom": {
-      "uuid": "2be08486-ca1e-4061-9d61-ea1860ed6cc5",
-      "created_at": "2026-02-09T01:09:41.316Z",
-      "timestamp": "2026-02-09T15:30:16.003Z",
-      "attachments": {
-        "directory": "Ortega-Ochoa2024-ub-2be08486",
-        "files": [
-          {
-            "filename": "fulltext.pdf",
-            "role": "fulltext"
-          },
-          {
-            "filename": "fulltext.md",
-            "role": "fulltext"
-          }
-        ]
-      },
-      "paperpile": {
-        "_id": "496f5f03-54ee-0887-aa64-b7227fdf992f",
-        "attachments": [
-          {
-            "_id": "eb800927-638f-0c1e-834d-54602c590899",
-            "article_pdf": 1,
-            "created": 1707826757.822743,
-            "filename": "All Papers/Other/Ortega-Ochoa et al. 2024 - The effectiveness of empathic chatbot feedbac ... lf-regulation, and metacognitive reasoning in online higher education.pdf",
-            "filesize": 2499156,
-            "gdrive_id": "1AEA8T0WwAHKt-tAttxgJpJQ-CysO_kLy",
-            "mimeType": "application/pdf",
-            "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-            "pub_id": "496f5f03-54ee-0887-aa64-b7227fdf992f",
-            "source_filename": "[article_pdf].pdf"
-          }
-        ],
-        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1016/j.iot.2024.101101",
-        "citekey": "Ortega-Ochoa2024-ub",
-        "crawl_urls": [
-          "https://www.sciencedirect.com/science/article/pii/S254266052400043X",
-          "http://dx.doi.org/10.1016/j.iot.2024.101101",
-          "https://dx.doi.org/10.1016/j.iot.2024.101101",
-          "https://linkinghub.elsevier.com/retrieve/pii/S254266052400043X"
-        ],
-        "created": 1707826753.70225,
-        "dup_sha1": "d98a89ada0a365264caa3e4fa25e3f58a9006a9e",
-        "folders": [],
-        "id_list": [
-          "sha1:f470f7019e42e149afcb09a920f91bff3dbf91cf",
-          "dup_sha1:d98a89ada0a365264caa3e4fa25e3f58a9006a9e",
-          "doi:10.1016/j.iot.2024.101101",
-          "url:http://dx.doi.org/10.1016/j.iot.2024.101101",
-          "url:https://www.sciencedirect.com/science/article/pii/S254266052400043X",
-          "url:https://dx.doi.org/10.1016/j.iot.2024.101101",
-          "url:https://linkinghub.elsevier.com/retrieve/pii/S254266052400043X"
-        ],
-        "incomplete": 0,
-        "labels": [],
-        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-        "pdf_restricted": 0,
-        "pubtype": "PP_ARTICLE",
-        "sha1": "f470f7019e42e149afcb09a920f91bff3dbf91cf"
-      }
-    }
-  },
-  {
     "id": "Poeppelman2025-iv",
     "type": "article-journal",
     "title": "\"but why?\": Explanatory feedback is a reliable marker of high-quality narrative assessment of surgical performance",
@@ -4479,52 +4149,6 @@
       }
     },
     "language": "en"
-  },
-  {
-    "id": "R-Core-Team2024-jc",
-    "type": "document",
-    "title": "R: A Language and Environment for Statistical Computing",
-    "author": [
-      {
-        "literal": "R Core Team"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2024
-        ]
-      ]
-    },
-    "URL": "https://www.R-project.org/",
-    "custom": {
-      "uuid": "42194450-b42b-4d2b-bb0e-61177751a2e5",
-      "created_at": "2026-02-09T01:09:41.251Z",
-      "timestamp": "2026-02-09T01:09:41.251Z",
-      "paperpile": {
-        "_id": "43c88c3d-e8c8-0bc6-b0ac-ba34e753d18c",
-        "address": "Vienna, Austria",
-        "autoCleaned": 1,
-        "citekey": "R-Core-Team2024-jc",
-        "created": 1735272845.49,
-        "dup_sha1": "ce5358f6720f2bfaa025beffd42446c9014f4fc8",
-        "folders": [],
-        "id_list": [
-          "sha1:8dd995a25a6fbb0fe2d8c22d69020d0d3a4c26d7",
-          "dup_sha1:ce5358f6720f2bfaa025beffd42446c9014f4fc8"
-        ],
-        "incomplete": 0,
-        "institution": "R Foundation for Statistical Computing",
-        "labels": [],
-        "original_citekey": "dummy",
-        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-        "pubtype": "PP_MISC",
-        "sha1": "8dd995a25a6fbb0fe2d8c22d69020d0d3a4c26d7",
-        "subfolders": [
-          "All Papers/R"
-        ]
-      }
-    }
   },
   {
     "id": "Renting2023-pk",
@@ -5105,123 +4729,6 @@
         "pdf_restricted": 0,
         "pubtype": "PP_ARTICLE",
         "sha1": "fe9cc21fa3189cf1a40c13cf4ca19e2e42a8ddab"
-      }
-    },
-    "language": "en"
-  },
-  {
-    "id": "Van-Ostaeyen2023-wo",
-    "type": "article-journal",
-    "title": "A qualitative textual analysis of feedback comments in ePortfolios: Quality and alignment with the CanMEDS roles",
-    "author": [
-      {
-        "family": "Van Ostaeyen",
-        "given": "Sofie"
-      },
-      {
-        "family": "Embo",
-        "given": "Mieke"
-      },
-      {
-        "family": "Rotsaert",
-        "given": "Tijs"
-      },
-      {
-        "family": "De Clercq",
-        "given": "Orphée"
-      },
-      {
-        "family": "Schellens",
-        "given": "Tammy"
-      },
-      {
-        "family": "Valcke",
-        "given": "Martin"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2023,
-          12,
-          22
-        ]
-      ]
-    },
-    "container-title": "Perspect. Med. Educ.",
-    "volume": "12",
-    "issue": "1",
-    "page": "584-593",
-    "DOI": "10.5334/pme.1050",
-    "PMID": "38144672",
-    "ISSN": "2212-277X",
-    "URL": "http://dx.doi.org/10.5334/pme.1050",
-    "abstract": "Introduction: Competency-based education requires high-quality feedback to guide students' acquisition of competencies. Sound assessment and feedback systems, such as ePortfolios, are needed to facilitate seeking and giving feedback during clinical placements. However, it is unclear whether the written feedback comments in ePortfolios are of high quality and aligned with the current competency focus. Therefore, this study investigates the quality of written feedback comments in ePortfolios of healthcare students, as well as how these feedback comments align with the CanMEDS roles. Methods: A qualitative textual analysis was conducted. 2,349 written feedback comments retrieved from the ePortfolios of 149 healthcare students (specialist medicine, general practice, occupational therapy, speech therapy and midwifery) were analysed retrospectively using deductive content analysis. Two structured categorisation matrices, one based on four literature-derived feedback quality criteria (performance, judgment, elaboration and improvement) and another one on the seven CanMEDS roles (Medical Expert, Communicator, Collaborator, Leader, Health Advocate, Scholar and Professional), guided the analysis. Results: The minority of the feedback comments (n = 352; 14.9%) could be considered of high quality because they met all four quality criteria. Most feedback comments were of moderate quality and met only two to three quality criteria. Regarding the CanMEDS roles, the Medical Expert role was most frequently represented in the feedback comments, as opposed to the roles Leader and Health Advocate. Discussion: The results highlighted that providing high-quality feedback is challenging. To respond to these challenges, it is recommended to set up individual and continuous feedback training.",
-    "publisher": "Perspect Med Educ",
-    "custom": {
-      "uuid": "80aacda4-b4ff-4e4f-be69-45aa4ad96dd2",
-      "created_at": "2026-02-09T01:09:41.236Z",
-      "timestamp": "2026-02-09T16:56:20.598Z",
-      "attachments": {
-        "directory": "Van-Ostaeyen2023-wo-PMID38144672-80aacda4",
-        "files": [
-          {
-            "filename": "fulltext.pdf",
-            "role": "fulltext"
-          },
-          {
-            "filename": "fulltext.md",
-            "role": "fulltext"
-          }
-        ]
-      },
-      "paperpile": {
-        "_id": "28baf8ab-d9ce-0c35-a066-98cbe589b5c4",
-        "accessed": {
-          "year": "2025",
-          "month": "10",
-          "day": "17"
-        },
-        "attachments": [
-          {
-            "_id": "429416ee-de4a-4c8a-bf99-2c00ef795d4f",
-            "article_pdf": 1,
-            "created": 1760657886.649,
-            "filename": "All Papers/Other/Van Ostaeyen et al. 2023 - A qualitative textual analysis of feedback comments in ePortfolios - Quality and alignment with the CanMEDS roles.pdf",
-            "filesize": 786628,
-            "gdrive_id": "1ZeYZAG8tAmRpuQMz_GLPk1dwGXFplgGH",
-            "mimeType": "application/pdf",
-            "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-            "pub_id": "28baf8ab-d9ce-0c35-a066-98cbe589b5c4",
-            "source_filename": "6585872af2ec0.pdf"
-          }
-        ],
-        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.5334/pme.1050",
-        "citekey": "Van-Ostaeyen2023-wo",
-        "created": 1760657881.813,
-        "dup_sha1": "cac9bc0310efbe111dafdf98f6b3ecab7f2374ac",
-        "folders": [],
-        "id_list": [
-          "sha1:0e545f48792a9323e88f9e1a701d8153be3a35aa",
-          "dup_sha1:cac9bc0310efbe111dafdf98f6b3ecab7f2374ac",
-          "doi:10.5334/pme.1050",
-          "pmc:PMC10742175",
-          "pmid:38144672",
-          "url:http://dx.doi.org/10.5334/pme.1050",
-          "url:https://pubmed.ncbi.nlm.nih.gov/38144672/",
-          "url:https://www.ncbi.nlm.nih.gov/pubmed/38144672",
-          "url:https://account.pmejournal.org/index.php/up-j-pme/article/view/1050",
-          "url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10742175"
-        ],
-        "incomplete": 0,
-        "issn_alt": "2212-2761",
-        "kind": "Research Article",
-        "labels": [],
-        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
-        "pdf_restricted": 0,
-        "pmc": "PMC10742175",
-        "pubtype": "PP_ARTICLE",
-        "sha1": "0e545f48792a9323e88f9e1a701d8153be3a35aa"
       }
     },
     "language": "en"
@@ -5886,6 +5393,581 @@
     "language": "en"
   },
   {
+    "id": "Abd-Alrazaq2023-tz",
+    "type": "article-journal",
+    "title": "Large language models in medical education: Opportunities, challenges, and future directions",
+    "author": [
+      {
+        "family": "Abd-Alrazaq",
+        "given": "Alaa"
+      },
+      {
+        "family": "AlSaad",
+        "given": "Rawan"
+      },
+      {
+        "family": "Alhuwail",
+        "given": "Dari"
+      },
+      {
+        "family": "Ahmed",
+        "given": "Arfan"
+      },
+      {
+        "family": "Healy",
+        "given": "Padraig Mark"
+      },
+      {
+        "family": "Latifi",
+        "given": "Syed"
+      },
+      {
+        "family": "Aziz",
+        "given": "Sarah"
+      },
+      {
+        "family": "Damseh",
+        "given": "Rafat"
+      },
+      {
+        "family": "Alabed Alrazak",
+        "given": "Sadam"
+      },
+      {
+        "family": "Sheikh",
+        "given": "Javaid"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          1
+        ]
+      ]
+    },
+    "container-title": "JMIR Med. Educ.",
+    "volume": "9",
+    "issue": "1",
+    "page": "e48291",
+    "DOI": "10.2196/48291",
+    "PMID": "37261894",
+    "ISSN": "2369-3762",
+    "URL": "https://mededu.jmir.org/2023/1/e48291",
+    "abstract": "The integration of large language models (LLMs), such as those in the Generative Pre-trained Transformers (GPT) series, into medical education has the potential to transform learning experiences for students and elevate their knowledge, skills, and competence. Drawing on a wealth of professional and academic experience, we propose that LLMs hold promise for revolutionizing medical curriculum development, teaching methodologies, personalized study plans and learning materials, student assessments, and more. However, we also critically examine the challenges that such integration might pose by addressing issues of algorithmic bias, overreliance, plagiarism, misinformation, inequity, privacy, and copyright concerns in medical education. As we navigate the shift from an information-driven educational paradigm to an artificial intelligence (AI)-driven educational paradigm, we argue that it is paramount to understand both the potential and the pitfalls of LLMs in medical education. This paper thus offers our perspective on the opportunities and challenges of using LLMs in this context. We believe that the insights gleaned from this analysis will serve as a foundation for future recommendations and best practices in the field, fostering the responsible and effective use of AI technologies in medical education.",
+    "publisher": "JMIR Medical Education",
+    "custom": {
+      "uuid": "c28fdfb7-68be-4631-a421-8bc8fd0fac81",
+      "created_at": "2026-02-09T01:09:41.251Z",
+      "timestamp": "2026-02-09T08:41:17.563Z",
+      "attachments": {
+        "directory": "Abd-Alrazaq2023-tz-PMID37261894-c28fdfb7",
+        "files": [
+          {
+            "filename": "fulltext.pdf",
+            "role": "fulltext"
+          },
+          {
+            "filename": "fulltext.md",
+            "role": "fulltext"
+          }
+        ]
+      },
+      "paperpile": {
+        "_id": "0cb2657b-54ad-0ab4-8a17-81af70d9d5d6",
+        "accessed": {
+          "year": "2024",
+          "month": "12",
+          "day": "23"
+        },
+        "attachments": [
+          {
+            "_id": "a9c482ac-28c9-4192-85f3-975baad128df",
+            "article_pdf": 1,
+            "created": 1734942915.91,
+            "filename": "All Papers/Other/Abd-Alrazaq et al. 2023 - Large language models in medical education - Opportunities, challenges, and future directions.pdf",
+            "filesize": 596655,
+            "gdrive_id": "1buvicsPazx40kUr19V2g0M7mZPgDU-_3",
+            "mimeType": "application/pdf",
+            "pub_id": "0cb2657b-54ad-0ab4-8a17-81af70d9d5d6",
+            "source_filename": "mededu-2023-1-e48291.pdf"
+          }
+        ],
+        "autoCleaned": 1,
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.2196/48291",
+        "citekey": "Abd-Alrazaq2023-tz",
+        "created": 1734942909.6220002,
+        "dup_sha1": "6dfe80dfb0404a5095a18ddb18ad9d28b8056e21",
+        "folders": [],
+        "id_list": [
+          "sha1:37ab1718a07cd4978230e48b61f3e0972cdd1f6c",
+          "dup_sha1:6dfe80dfb0404a5095a18ddb18ad9d28b8056e21",
+          "doi:10.2196/48291",
+          "pmc:PMC10273039",
+          "pmid:37261894",
+          "url:http://dx.doi.org/10.2196/48291",
+          "url:https://mededu.jmir.org/2023/1/e48291",
+          "url:https://www.ncbi.nlm.nih.gov/pubmed/37261894",
+          "url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10273039"
+        ],
+        "incomplete": 0,
+        "kind": "Research Article",
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pdf_restricted": 0,
+        "pmc": "PMC10273039",
+        "pubtype": "PP_ARTICLE",
+        "sha1": "37ab1718a07cd4978230e48b61f3e0972cdd1f6c",
+        "subfolders": [
+          "All Papers/A"
+        ]
+      }
+    },
+    "language": "en"
+  },
+  {
+    "id": "Jarry-Trujillo2024-kg",
+    "type": "article-journal",
+    "title": "Surgeons vs ChatGPT: Assessment and feedback performance based on real surgical scenarios",
+    "author": [
+      {
+        "family": "Jarry Trujillo",
+        "given": "Cristián"
+      },
+      {
+        "family": "Vela Ulloa",
+        "given": "Javier"
+      },
+      {
+        "family": "Escalona Vivas",
+        "given": "Gabriel"
+      },
+      {
+        "family": "Grasset Escobar",
+        "given": "Eugenio"
+      },
+      {
+        "family": "Villagrán Gutiérrez",
+        "given": "Ignacio"
+      },
+      {
+        "family": "Achurra Tirado",
+        "given": "Pablo"
+      },
+      {
+        "family": "Varas Cohen",
+        "given": "Julián"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          1
+        ]
+      ]
+    },
+    "container-title": "J. Surg. Educ.",
+    "volume": "81",
+    "issue": "7",
+    "page": "960-966",
+    "DOI": "10.1016/j.jsurg.2024.03.012",
+    "PMID": "38749814",
+    "ISSN": "1931-7204",
+    "URL": "http://dx.doi.org/10.1016/j.jsurg.2024.03.012",
+    "abstract": "INTRODUCTION: Artificial intelligence tools are being progressively integrated into medicine and surgical education. Large language models, such as ChatGPT, could provide relevant feedback aimed at improving surgical skills. The purpose of this study is to assess ChatGPT´s ability to provide feedback based on surgical scenarios. METHODS: Surgical situations were transformed into texts using a neutral narrative. Texts were evaluated by ChatGPT 4.0 and 3 surgeons (A, B, C) after a brief instruction was delivered: identify errors and provide feedback accordingly. Surgical residents were provided with each of the situations and feedback obtained during the first stage, as written by each surgeon and ChatGPT, and were asked to assess the utility of feedback (FCUR) and its quality (FQ). As control measurement, an Education-Expert (EE) and a Clinical-Expert (CE) were asked to assess FCUR and FQ. RESULTS: Regarding residents' evaluations, 96.43% of times, outputs provided by ChatGPT were considered useful, comparable to what surgeons' B and C obtained. Assessing FQ, ChatGPT and all surgeons received similar scores. Regarding EE's assessment, ChatGPT obtained a significantly higher FQ score when compared to surgeons A and B (p = 0.019; p = 0.033) with a median score of 8 vs. 7 and 7.5, respectively; and no difference respect surgeon C (score of 8; p = 0.2). Regarding CE´s assessment, surgeon B obtained the highest FQ score while ChatGPT received scores comparable to that of surgeons A and C. When participants were asked to identify the source of the feedback, residents, CE, and EE perceived ChatGPT's outputs as human-provided in 33.9%, 28.5%, and 14.3% of cases, respectively. CONCLUSION: When given brief written surgical situations, ChatGPT was able to identify errors with a detection rate comparable to that of experienced surgeons and to generate feedback that was considered useful for skill improvement in a surgical context performing as well as surgical instructors across assessments made by general surgery residents, an experienced surgeon, and a nonsurgeon feedback expert.",
+    "publisher": "Elsevier BV",
+    "custom": {
+      "uuid": "dbc62c15-cb3b-41b0-855f-c497259a938e",
+      "created_at": "2026-02-09T01:09:41.254Z",
+      "timestamp": "2026-02-17T07:12:52.375Z",
+      "attachments": {
+        "directory": "Jarry-Trujillo2024-kg-PMID38749814-dbc62c15",
+        "files": [
+          {
+            "filename": "fulltext.pdf",
+            "role": "fulltext"
+          },
+          {
+            "filename": "fulltext.md",
+            "role": "fulltext"
+          }
+        ]
+      },
+      "check": {
+        "checked_at": "2026-02-17T07:12:48.275Z",
+        "status": "metadata_outdated",
+        "findings": [
+          {
+            "type": "metadata_outdated",
+            "message": "Remote metadata has been updated since import",
+            "details": {
+              "updated_fields": [
+                "title",
+                "container-title",
+                "page",
+                "volume",
+                "issue",
+                "issued"
+              ],
+              "field_diffs": [
+                {
+                  "field": "title",
+                  "local": "Surgeons vs ChatGPT: Assessment and feedback performance based on real surgical scenarios",
+                  "remote": "Surgeons vs ChatGPT: Assessment and Feedback Performance Based on Real Surgical Scenarios"
+                },
+                {
+                  "field": "container-title",
+                  "local": "J. Surg. Educ.",
+                  "remote": "Journal of Surgical Education"
+                },
+                {
+                  "field": "page",
+                  "local": "960-966",
+                  "remote": null
+                },
+                {
+                  "field": "volume",
+                  "local": "81",
+                  "remote": null
+                },
+                {
+                  "field": "issue",
+                  "local": "7",
+                  "remote": null
+                },
+                {
+                  "field": "issued",
+                  "local": "2024-7-1",
+                  "remote": "2024-5"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "paperpile": {
+        "_id": "960ad386-fbc4-06b1-a44f-de568b06966f",
+        "accessed": {
+          "year": "2024",
+          "month": "11",
+          "day": "26"
+        },
+        "attachments": [
+          {
+            "_id": "9e8ad918-538f-4a00-9e83-ca8df842985f",
+            "article_pdf": 1,
+            "created": 1732576718.7359998,
+            "filename": "All Papers/Other/Jarry Trujillo et al. 2024 - Surgeons vs ChatGPT - Assessment and feedback performance based on real surgical scenarios.pdf",
+            "filesize": 814363,
+            "gdrive_id": "1Zf83OLECTyjOeQYI5v2OhFKSzIHcGkbl",
+            "mimeType": "application/pdf",
+            "pub_id": "960ad386-fbc4-06b1-a44f-de568b06966f",
+            "source_filename": "1-s2.0-S1931720424001582-main.pdf"
+          }
+        ],
+        "autoCleaned": 1,
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1016/j.jsurg.2024.03.012",
+        "citekey": "Jarry-Trujillo2024-kg",
+        "created": 1732576288.941,
+        "dup_sha1": "754b87ec59efa3c1fe197b86f3427e59757432dc",
+        "folders": [],
+        "id_list": [
+          "sha1:8526fba87fe3107e1efb1a5c62570ff1deaf7f7f",
+          "dup_sha1:754b87ec59efa3c1fe197b86f3427e59757432dc",
+          "doi:10.1016/j.jsurg.2024.03.012",
+          "pmid:38749814",
+          "url:http://dx.doi.org/10.1016/j.jsurg.2024.03.012",
+          "url:https://www.sciencedirect.com/science/article/pii/S1931720424001582",
+          "url:https://linkinghub.elsevier.com/retrieve/pii/S1931720424001582",
+          "url:https://www.ncbi.nlm.nih.gov/pubmed/38749814"
+        ],
+        "incomplete": 0,
+        "issn_alt": "1878-7452",
+        "kind": "Research Article",
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pdf_restricted": 1,
+        "pubtype": "PP_ARTICLE",
+        "sha1": "8526fba87fe3107e1efb1a5c62570ff1deaf7f7f",
+        "subfolders": [
+          "All Papers/J"
+        ]
+      }
+    },
+    "language": "en"
+  },
+  {
+    "id": "Ortega-Ochoa2024-ub",
+    "type": "article-journal",
+    "title": "The effectiveness of empathic chatbot feedback for developing computer competencies, motivation, self-regulation, and metacognitive reasoning in online higher education",
+    "author": [
+      {
+        "family": "Ortega-Ochoa",
+        "given": "Elvis"
+      },
+      {
+        "family": "Quiroga Pérez",
+        "given": "José"
+      },
+      {
+        "family": "Arguedas",
+        "given": "Marta"
+      },
+      {
+        "family": "Daradoumis",
+        "given": "Thanasis"
+      },
+      {
+        "family": "Marquès Puig",
+        "given": "Joan Manuel"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          1
+        ]
+      ]
+    },
+    "container-title": "Internet of Things",
+    "volume": "25",
+    "page": "101101",
+    "DOI": "10.1016/j.iot.2024.101101",
+    "ISSN": "2542-6605",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S254266052400043X",
+    "abstract": "At the forefront of Artificial Intelligence of Things, this paper delves into empathic agents to revolutionize computer competencies acquisition and catalyze motivational, regulatory, and metacognitive dynamics in online higher education. Previous research on student processing of empathic feedback has been limited, often neglecting learning performance and its impact on students’ motivation, self-regulation, and metacognitive reasoning. The objective was to analyze the effectiveness of empathic feedback, cognitive and affective, on these four issues in online learning. A quasi-experimental design was used, in which a conversational agent, DSLab-Bot, was integrated into the syllabus and Information Technology infrastructure. Students from an online university's Distributed Systems course participated (N= 196), selected through one-stage cluster probability sampling. They were divided into experimental and control groups receiving feedback from DSLab-Bot and the teacher, respectively. Results showed no significant differences between the groups in learning performance, motivation, or self-regulation, except in one item of motivation (self-efficacy) and self-regulation. There were strong correlations between thirteen cognitive (1–4, 6, 7, 9–15) and seven affective (1, 4–9) chatbot feedback types with conceptual change (MRCC) and personal growth and understanding (MRPGU). There were high weights of similar chatbot feedback types indicating a pronounced influence of these on metacognitive reasoning components, even self-reflection (MRSR). In conclusion, empathic chatbot feedback is as effective as human teacher feedback in facilitating learning, motivation, and self-regulation. Moreover, specific empathic feedback types are crucial in fostering MRCC, MRPGU, and MRSR strongly. Practitioners should consider these specific types of empathic feedback for future empathic agent configurations.",
+    "custom": {
+      "uuid": "2be08486-ca1e-4061-9d61-ea1860ed6cc5",
+      "created_at": "2026-02-09T01:09:41.316Z",
+      "timestamp": "2026-02-09T15:30:16.003Z",
+      "attachments": {
+        "directory": "Ortega-Ochoa2024-ub-2be08486",
+        "files": [
+          {
+            "filename": "fulltext.pdf",
+            "role": "fulltext"
+          },
+          {
+            "filename": "fulltext.md",
+            "role": "fulltext"
+          }
+        ]
+      },
+      "paperpile": {
+        "_id": "496f5f03-54ee-0887-aa64-b7227fdf992f",
+        "attachments": [
+          {
+            "_id": "eb800927-638f-0c1e-834d-54602c590899",
+            "article_pdf": 1,
+            "created": 1707826757.822743,
+            "filename": "All Papers/Other/Ortega-Ochoa et al. 2024 - The effectiveness of empathic chatbot feedbac ... lf-regulation, and metacognitive reasoning in online higher education.pdf",
+            "filesize": 2499156,
+            "gdrive_id": "1AEA8T0WwAHKt-tAttxgJpJQ-CysO_kLy",
+            "mimeType": "application/pdf",
+            "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+            "pub_id": "496f5f03-54ee-0887-aa64-b7227fdf992f",
+            "source_filename": "[article_pdf].pdf"
+          }
+        ],
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1016/j.iot.2024.101101",
+        "citekey": "Ortega-Ochoa2024-ub",
+        "crawl_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S254266052400043X",
+          "http://dx.doi.org/10.1016/j.iot.2024.101101",
+          "https://dx.doi.org/10.1016/j.iot.2024.101101",
+          "https://linkinghub.elsevier.com/retrieve/pii/S254266052400043X"
+        ],
+        "created": 1707826753.70225,
+        "dup_sha1": "d98a89ada0a365264caa3e4fa25e3f58a9006a9e",
+        "folders": [],
+        "id_list": [
+          "sha1:f470f7019e42e149afcb09a920f91bff3dbf91cf",
+          "dup_sha1:d98a89ada0a365264caa3e4fa25e3f58a9006a9e",
+          "doi:10.1016/j.iot.2024.101101",
+          "url:http://dx.doi.org/10.1016/j.iot.2024.101101",
+          "url:https://www.sciencedirect.com/science/article/pii/S254266052400043X",
+          "url:https://dx.doi.org/10.1016/j.iot.2024.101101",
+          "url:https://linkinghub.elsevier.com/retrieve/pii/S254266052400043X"
+        ],
+        "incomplete": 0,
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pdf_restricted": 0,
+        "pubtype": "PP_ARTICLE",
+        "sha1": "f470f7019e42e149afcb09a920f91bff3dbf91cf"
+      }
+    }
+  },
+  {
+    "id": "R-Core-Team2024-jc",
+    "type": "document",
+    "title": "R: A Language and Environment for Statistical Computing",
+    "author": [
+      {
+        "literal": "R Core Team"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "URL": "https://www.R-project.org/",
+    "custom": {
+      "uuid": "42194450-b42b-4d2b-bb0e-61177751a2e5",
+      "created_at": "2026-02-09T01:09:41.251Z",
+      "timestamp": "2026-02-09T01:09:41.251Z",
+      "paperpile": {
+        "_id": "43c88c3d-e8c8-0bc6-b0ac-ba34e753d18c",
+        "address": "Vienna, Austria",
+        "autoCleaned": 1,
+        "citekey": "R-Core-Team2024-jc",
+        "created": 1735272845.49,
+        "dup_sha1": "ce5358f6720f2bfaa025beffd42446c9014f4fc8",
+        "folders": [],
+        "id_list": [
+          "sha1:8dd995a25a6fbb0fe2d8c22d69020d0d3a4c26d7",
+          "dup_sha1:ce5358f6720f2bfaa025beffd42446c9014f4fc8"
+        ],
+        "incomplete": 0,
+        "institution": "R Foundation for Statistical Computing",
+        "labels": [],
+        "original_citekey": "dummy",
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pubtype": "PP_MISC",
+        "sha1": "8dd995a25a6fbb0fe2d8c22d69020d0d3a4c26d7",
+        "subfolders": [
+          "All Papers/R"
+        ]
+      }
+    }
+  },
+  {
+    "id": "Van-Ostaeyen2023-wo",
+    "type": "article-journal",
+    "title": "A qualitative textual analysis of feedback comments in ePortfolios: Quality and alignment with the CanMEDS roles",
+    "author": [
+      {
+        "family": "Van Ostaeyen",
+        "given": "Sofie"
+      },
+      {
+        "family": "Embo",
+        "given": "Mieke"
+      },
+      {
+        "family": "Rotsaert",
+        "given": "Tijs"
+      },
+      {
+        "family": "De Clercq",
+        "given": "Orphée"
+      },
+      {
+        "family": "Schellens",
+        "given": "Tammy"
+      },
+      {
+        "family": "Valcke",
+        "given": "Martin"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          22
+        ]
+      ]
+    },
+    "container-title": "Perspect. Med. Educ.",
+    "volume": "12",
+    "issue": "1",
+    "page": "584-593",
+    "DOI": "10.5334/pme.1050",
+    "PMID": "38144672",
+    "ISSN": "2212-277X",
+    "URL": "http://dx.doi.org/10.5334/pme.1050",
+    "abstract": "Introduction: Competency-based education requires high-quality feedback to guide students' acquisition of competencies. Sound assessment and feedback systems, such as ePortfolios, are needed to facilitate seeking and giving feedback during clinical placements. However, it is unclear whether the written feedback comments in ePortfolios are of high quality and aligned with the current competency focus. Therefore, this study investigates the quality of written feedback comments in ePortfolios of healthcare students, as well as how these feedback comments align with the CanMEDS roles. Methods: A qualitative textual analysis was conducted. 2,349 written feedback comments retrieved from the ePortfolios of 149 healthcare students (specialist medicine, general practice, occupational therapy, speech therapy and midwifery) were analysed retrospectively using deductive content analysis. Two structured categorisation matrices, one based on four literature-derived feedback quality criteria (performance, judgment, elaboration and improvement) and another one on the seven CanMEDS roles (Medical Expert, Communicator, Collaborator, Leader, Health Advocate, Scholar and Professional), guided the analysis. Results: The minority of the feedback comments (n = 352; 14.9%) could be considered of high quality because they met all four quality criteria. Most feedback comments were of moderate quality and met only two to three quality criteria. Regarding the CanMEDS roles, the Medical Expert role was most frequently represented in the feedback comments, as opposed to the roles Leader and Health Advocate. Discussion: The results highlighted that providing high-quality feedback is challenging. To respond to these challenges, it is recommended to set up individual and continuous feedback training.",
+    "publisher": "Perspect Med Educ",
+    "custom": {
+      "uuid": "80aacda4-b4ff-4e4f-be69-45aa4ad96dd2",
+      "created_at": "2026-02-09T01:09:41.236Z",
+      "timestamp": "2026-02-09T16:56:20.598Z",
+      "attachments": {
+        "directory": "Van-Ostaeyen2023-wo-PMID38144672-80aacda4",
+        "files": [
+          {
+            "filename": "fulltext.pdf",
+            "role": "fulltext"
+          },
+          {
+            "filename": "fulltext.md",
+            "role": "fulltext"
+          }
+        ]
+      },
+      "paperpile": {
+        "_id": "28baf8ab-d9ce-0c35-a066-98cbe589b5c4",
+        "accessed": {
+          "year": "2025",
+          "month": "10",
+          "day": "17"
+        },
+        "attachments": [
+          {
+            "_id": "429416ee-de4a-4c8a-bf99-2c00ef795d4f",
+            "article_pdf": 1,
+            "created": 1760657886.649,
+            "filename": "All Papers/Other/Van Ostaeyen et al. 2023 - A qualitative textual analysis of feedback comments in ePortfolios - Quality and alignment with the CanMEDS roles.pdf",
+            "filesize": 786628,
+            "gdrive_id": "1ZeYZAG8tAmRpuQMz_GLPk1dwGXFplgGH",
+            "mimeType": "application/pdf",
+            "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+            "pub_id": "28baf8ab-d9ce-0c35-a066-98cbe589b5c4",
+            "source_filename": "6585872af2ec0.pdf"
+          }
+        ],
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.5334/pme.1050",
+        "citekey": "Van-Ostaeyen2023-wo",
+        "created": 1760657881.813,
+        "dup_sha1": "cac9bc0310efbe111dafdf98f6b3ecab7f2374ac",
+        "folders": [],
+        "id_list": [
+          "sha1:0e545f48792a9323e88f9e1a701d8153be3a35aa",
+          "dup_sha1:cac9bc0310efbe111dafdf98f6b3ecab7f2374ac",
+          "doi:10.5334/pme.1050",
+          "pmc:PMC10742175",
+          "pmid:38144672",
+          "url:http://dx.doi.org/10.5334/pme.1050",
+          "url:https://pubmed.ncbi.nlm.nih.gov/38144672/",
+          "url:https://www.ncbi.nlm.nih.gov/pubmed/38144672",
+          "url:https://account.pmejournal.org/index.php/up-j-pme/article/view/1050",
+          "url:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10742175"
+        ],
+        "incomplete": 0,
+        "issn_alt": "2212-2761",
+        "kind": "Research Article",
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pdf_restricted": 0,
+        "pmc": "PMC10742175",
+        "pubtype": "PP_ARTICLE",
+        "sha1": "0e545f48792a9323e88f9e1a701d8153be3a35aa"
+      }
+    },
+    "language": "en"
+  },
+  {
+    "id": "harigai-2024",
     "type": "article-journal",
     "title": "Response accuracy of GPT-4 across languages: insights from an expert-level diagnostic radiology examination in Japan",
     "author": [
@@ -5941,9 +6023,6 @@
     "URL": "http://dx.doi.org/10.1007/s11604-024-01673-6",
     "abstract": "<jats:title>Abstract</jats:title>\n          <jats:sec>\n            <jats:title>Purpose</jats:title>\n            <jats:p>This study aims to investigate the effects of language selection and translation quality on Generative Pre-trained Transformer-4 (GPT-4)'s response accuracy to expert-level diagnostic radiology questions.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Materials and methods</jats:title>\n            <jats:p>We analyzed 146 diagnostic radiology questions from the Japan Radiology Board Examination (2020–2022), with consensus answers provided by two board-certified radiologists. The questions, originally in Japanese, were translated into English by GPT-4 and DeepL and into German and Chinese by GPT-4. Responses were generated by GPT-4 five times per question set per language. Response accuracy was compared between languages using one-way ANOVA with Bonferroni correction or the Mann–Whitney U test. Scores on selected English questions translated by a professional service and GPT-4 were also compared. The impact of translation quality on GPT-4’s performance was assessed by linear regression analysis.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Results</jats:title>\n            <jats:p>The median scores (interquartile range) for the 146 questions were 70 (68–72) (Japanese), 89 (84.5–95.5) (GPT-4 English), 64 (55.5–67) (Chinese), and 56 (46.5–67.5) (German). Significant differences were found between Japanese and English (p = 0.002) and between Japanese and German (p = 0.022). The counts of correct responses across five attempts for each question were significantly associated with the quality of translation into English (GPT-4, DeepL) and German (GPT-4). In a subset of 31 questions where English translations yielded fewer correct responses than Japanese originals, professionally translated questions yielded better scores than those translated by GPT-4 (13 versus 8 points, p = 0.0079).</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Conclusion</jats:title>\n            <jats:p>GPT-4 exhibits higher accuracy when responding to English-translated questions compared to original Japanese questions, a trend not observed with German or Chinese translations. Accuracy improves with higher-quality English translations, underscoring the importance of high-quality translations in improving GPT-4’s response accuracy to diagnostic radiology questions in non-English languages and aiding non-native English speakers in obtaining accurate answers from large language models.</jats:p>\n          </jats:sec>",
     "publisher": "Springer Science and Business Media LLC",
-    "source": "Crossref",
-    "language": "en",
-    "id": "harigai-2024",
     "custom": {
       "uuid": "6b9d32b5-f64d-4dd0-b566-f03fbdd2937d",
       "created_at": "2026-03-15T01:27:02.867Z",
@@ -5961,9 +6040,12 @@
           }
         ]
       }
-    }
+    },
+    "source": "Crossref",
+    "language": "en"
   },
   {
+    "id": "strasser-2026",
     "type": "article-journal",
     "title": "Performance Evaluation of Large Language Models in Multilingual Medical Multiple-Choice Questions: Mixed Methods Study",
     "author": [
@@ -6002,9 +6084,6 @@
     "URL": "http://dx.doi.org/10.2196/81399",
     "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec sec-type=\"background\">\n                    <jats:title>Background</jats:title>\n                    <jats:p>Artificial intelligence continues to transform health care, offering promising applications in clinical practice and medical education. While large language models (LLMs), as a form of generative artificial intelligence, have shown potential to match or surpass medical students in licensing examinations, their performance varies across languages. Recent studies highlight the complex influence and interdependency of factors such as language and model type on LLMs’ accuracy; yet, cross-language comparisons remain underexplored.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"objective\">\n                    <jats:title>Objective</jats:title>\n                    <jats:p>This study evaluates the performance of LLMs in answering medical multiple-choice questions quantitatively and qualitatively across 3 languages (German, French, and Italian), aiming to uncover model capabilities in a multilingual medical education context.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"methods\">\n                    <jats:title>Methods</jats:title>\n                    <jats:p>For this mixed methods study, 114 publicly accessible multiple-choice questions in German, French, and Italian from an online self-assessment tool were analyzed. A quantitative performance analysis of several LLMs developed by OpenAI, Meta AI, Anthropic, and DeepSeek was conducted to evaluate their performance on answering the questions in text-only format. For the comparative analysis, a variation of input question language (German, French, and Italian) and prompt language (English vs language-matched) was used. The 2 best-performing LLMs were then prompted to provide answer explanations for incorrectly answered questions. A subsequent qualitative analysis was conducted on these explanations to identify the reasons leading to the incorrect answers.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"results\">\n                    <jats:title>Results</jats:title>\n                    <jats:p>\n                      The performance of LLMs in answering medical multiple-choice questions varied by model and language, showing substantial differences in accuracy (between 64% and 87%). The effect of input question language was significant (\n                      <jats:italic>P</jats:italic>\n                      &lt;.01) with models performing best on German questions. Across the analyzed LLMs, prompting in English generally led to better performance in comparison to language-matched prompts, but the top-performing models exceptionally showed comparable results for language-matched prompts. Qualitative analysis revealed that answer explanations of the analyzed models (GPT4o and Claude-Sonnet-3.7) showed different reasoning errors. In several explanations, this occurred despite factual accuracy on the represented topic. Furthermore, this analysis revealed 3 questions to be insufficiently precise.\n                    </jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"conclusions\">\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Our results underline the potential of LLMs in answering medical examination questions and highlight the importance of careful consideration of model choice, prompt, and input languages, because of relevant performance variability across these factors. Analysis of answer explanations demonstrates a valuable use case of LLMs for improving examination question quality in medical education, if data security regulations permit their use. Human oversight of language-sensitive or clinically nuanced content remains essential to determine whether incorrect output stems from flaws in the questions themselves or from errors generated by the LLMs. There is a need for ongoing evaluation as well as transparent reporting to ensure reliable integration of LLMs into medical education contexts.</jats:p>\n                  </jats:sec>",
     "publisher": "JMIR Publications Inc.",
-    "source": "Crossref",
-    "language": "en",
-    "id": "strasser-2026",
     "custom": {
       "uuid": "d4e0ec66-3f0a-4f01-b9e4-005ef816aa51",
       "created_at": "2026-03-15T01:26:56.902Z",
@@ -6018,7 +6097,9 @@
           }
         ]
       }
-    }
+    },
+    "source": "Crossref",
+    "language": "en"
   },
   {
     "id": "van-de-Ridder2014-ld",
