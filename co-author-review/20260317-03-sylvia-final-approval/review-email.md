@@ -18,6 +18,20 @@ All edits are in the paragraph beginning "An important consideration for interpr
 | 2 | Before "[55]" (Tanaka et al.) | Inserted "Author et al" (highlighted yellow) | Add narrative citation (author names) before the bracketed reference number |
 | 3 | After "where deference to senior clinicians is strongly emphasized" | Inserted "ref" (highlighted yellow) | Add a supporting reference for the claim about deference to senior clinicians in Japanese medical education |
 
+## Changes Applied (2026-03-18, commit 29635dc)
+
+### Manuscript changes (`src/manuscript.qmd`)
+
+| # | Edit requested | Resolution |
+|---|---------------|------------|
+| 1 | Add narrative citation before [54] (Hirosawa et al.) | Changed `@strasser-2026` to `Strasser et al [@strasser-2026]` in Discussion (Comparison with the Literature) |
+| 2 | Add narrative citation before [55] (Tanaka et al.) | Changed `@harigai-2024` to `Harigai et al [@harigai-2024]` in Discussion (Comparison with the Literature) |
+| 3 | Add reference for "deference to senior clinicians" | Added `[@Nishigori2014-qc]` after the claim in both Discussion and Limitations sections |
+
+### No reply document changes
+
+Sylvia's final review contained only manuscript edits.
+
 ## Status
 
-Approved for submission pending these 3 minor edits.
+All 3 edits applied. Approved for submission.
