@@ -9,8 +9,10 @@ Legend: **AUTO** = 既存情報で機械的に対応可 / **PARTIAL** = ドラ�
 
 ## Phase 0: 方針決定（着手前に合意が必要）
 
-- [ ] **E1 方針**: JARS qualitative要素を既存Methodsに「見出しだけ付け直す」方式か、新規subsectionを追加する方式か
-- [ ] **E2 方針**: thematic mapを mermaid（qmdに埋込可）で描くか、別ツールで画像化するか
+- [x] **E1 方針**: JARS qualitative要素を既存Methodsに「見出しだけ付け直す」方式か、新規subsectionを追加する方式か
+  - 決定: 最小侵襲 — `#### Methodological Integrity` subsection を新設し、Reflexivity には researcher-participant relationship の1文追加。旧 saturation 段落（L.221）は Methodological Integrity に吸収して削除。
+- [x] **E2 方針**: thematic mapを mermaid（qmdに埋込可）で描くか、別ツールで画像化するか
+  - 決定: PptxGenJS + YAML data で既存 JARS_flowchart パターンに倣って SVG/PNG 生成。Ahmed et al. 2025 準拠で RQ / AI-Supervisor pole / 5 themes + sub-themes / complementarity 結論 のシンプル階層構造。dimension groupingは本文・Table 2と乖離するため不採用。
 - [ ] **F-Major.2 論拠**: detectability理論化でどの先行文献に立脚するか（既存library内で足りるか、`search-hub`調査が必要か）
 - [ ] **F-Major.3 論拠**: prompt設計を「educational valuesのoperationalization」として位置付ける際の参照枠組み（例: curriculum alignment理論、learning design文献）
 - [ ] **F-Minor.2 方針**: Table 2のどの列を本文に残し、どれをappendixに移すか
@@ -34,12 +36,14 @@ Legend: **AUTO** = 既存情報で機械的に対応可 / **PARTIAL** = ドラ�
 
 ## Phase 2: 新規生成物（NEEDS-INPUT）
 
-- [ ] **E1: JARS Qualitative Methodological Integrity セクション追加**
+- [x] **E1: JARS Qualitative Methodological Integrity セクション追加**
   - Researcher Description / Data & analytic strategy / Findings–interpretation / Transferability / Methodological Integrity
   - 既存Qualitative Analysis節（L.217–227）との整合をとりつつ追記
-- [ ] **E2: Thematic Map 図作成**
+  - ✅ 完了 (2026-04-20): `src/manuscript.qmd` L.227 に `#### Methodological Integrity` 新設、3段落でadequacy/groundedness、credibility/triangulation/audit trail/negative case analysis、member checks非実施の論拠/coherence/transferabilityを網羅。Reflexivity末尾にresearcher-participant relationshipの1文追加。旧L.221は削除。`Levitt2018-jq` (APA JARS-Qual) を `library.json` に追加。
+- [x] **E2: Thematic Map 図作成**
   - themes と sub-themes の関係を可視化
   - Figure番号・キャプション・本文参照位置を決定
+  - ✅ 完了 (2026-04-20): `src/assets/thematic_map/` に PptxGenJS 生成スクリプト + YAML data + PPTX/PNG/SVG 出力を配置。theme/sub-theme名は Table 2 (`theme_table_en_simple.csv`) と完全一致、5 themes の並びは manuscript L.488 と一致。新造概念（dimension grouping）は本文・表との乖離を避けるため不採用。`manuscript.qmd` Qualitative analysis Results 冒頭に `{#fig-thematic_map}` として挿入し、本文で `[@fig-thematic_map]` / `[@tbl-themes]` に cross-reference。Ahmed 2025 を `@Ahmed2025-tm` で引用。
 
 ## Phase 3: 原稿修正（PARTIAL — ドラフト→著者レビュー）
 
@@ -74,12 +78,21 @@ Legend: **AUTO** = 既存情報で機械的に対応可 / **PARTIAL** = ドラ�
 ## Phase 5: Reply文書作成
 
 - [ ] `one_by_one_reply.md` のTODOを各項目のdraftで埋める
+  - [x] Editor Comment.1 (E1 / JARS): 追加本文を verbatim 転記 + JARS要素 inline annotation 形式で完成
+  - [x] Editor Comment.2 (E2 / Thematic map): Ahmed 2025 準拠のdesign説明 + 追加sentence verbatim + 図要素の列挙。`Ahmed2025-tm` を library.json に追加、manuscriptで `@Ahmed2025-tm` で引用
+  - [ ] Editor Comment.3 (E3 / Discussion references)
+  - [ ] Editor Comment.4 (E4 / Missing data)
+  - [ ] Reviewer F (Major.1 / Major.2 / Major.3 / Minor.1 / Minor.2 / Minor.3)
+  - [ ] Reviewer G (Minor.1 / Minor.2)
+  - [ ] Reviewer L (Minor.1 / Minor.2)
+  - [x] Reviewer N: 謝辞のみ
 - [ ] 手動引用（Pandoc展開されない形式）で統一
+- [ ] セクション名参照で統一（render前はpage番号を置かない。render後に必要なら追記）
 - [ ] Editor宛カバー文（summary of changes）を冒頭に追加
 
 ## Phase 6: ビルド・提出物生成
 
-- [ ] `library.json` 更新確認（GAIDeT他の追加分）
+- [ ] `library.json` 更新確認（Levitt2018-jq 済 / Ahmed2025-tm 済 / GAIDeT他の追加分）
 - [ ] `compile.sh` でmanuscript DOCX生成
 - [ ] `new_YYYY_MM_DD_study1_manuscript.docx` として `3_review/` に保存
 - [ ] `tracked-changes` skillで旧版（`new_2026_03_19_study1_manuscript.docx`）との比較DOCX生成

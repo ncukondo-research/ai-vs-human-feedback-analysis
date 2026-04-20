@@ -1,0 +1,21 @@
+{
+  "name": "thematic-map",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "bun run generate-thematic-map.ts",
+    "screenshot": "pptx2png thematic_map.pptx -r 1920x1080 -o . && mv slide_001.png thematic_map.png",
+    "svg": "pptx2svg thematic_map.pptx -o . && mv slide_001.svg thematic_map.svg",
+    "build": "bun run generate && bun run screenshot && bun run svg"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "yaml": "^2.8.2"
+  }
+}

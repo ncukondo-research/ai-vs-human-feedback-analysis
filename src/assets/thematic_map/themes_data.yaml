@@ -1,0 +1,48 @@
+title: "Thematic map: differences between AI-generated and supervisor feedback on clinical clerkship logs"
+research_question: "How do AI-generated and supervisor feedback differ on medical students' clinical clerkship logs?"
+ai_pole: "AI-generated feedback"
+supervisor_pole: "Supervisor feedback"
+
+# Themes and sub-themes are sourced verbatim from
+# result/qualitative/theme_table_en_simple.csv. The ordering of themes
+# follows the presentation order in the manuscript Results (L.488 of
+# manuscript.qmd) and Table 2.
+
+themes:
+  - name: "Adherence to the feedback criteria and structure"
+    ai:
+      - "Well-structured feedback that adheres to principles"
+      - "Mismatch with student preferences"
+    supervisor:
+      - "Entries not complying with feedback principles and standards"
+
+  - name: "Continuity and consistency"
+    ai:
+      - "Feedback based on a comprehensive review of the recorded content"
+      - "Support for verbalizing experiences"
+      - "Limitations due to lack of understanding of the practicum context"
+      - "Variability in feedback quality depending on the content recorded"
+    supervisor:
+      - "Feedback that takes into account the practicum context"
+      - "Feedback that does not reflect the content of the report"
+      - "Limitations of feedback within a limited time"
+
+  - name: "Perspective as a clinician"
+    ai:
+      - "Lack of expert perspective"
+    supervisor:
+      - "Expert perspective"
+      - "Conflict of interest as an educator"
+
+  - name: "Quality of the Japanese language"
+    ai:
+      - "Insufficient output quality"
+    supervisor:
+      - "Natural expressions"
+      - "Descriptions that evoke the feeling of being reviewed by a human"
+
+  - name: "Text length"
+    ai:
+      - "Overly verbose expressions"
+    supervisor:
+      - "Insufficient amount of description"

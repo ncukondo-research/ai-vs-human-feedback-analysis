@@ -2743,6 +2743,56 @@
     "language": "en"
   },
   {
+    "id": "Levitt2018-jq",
+    "type": "article-journal",
+    "title": "Journal article reporting standards for qualitative primary, qualitative meta-analytic, and mixed methods research in psychology: The APA Publications and Communications Board task force report.",
+    "author": [
+      {
+        "family": "Levitt",
+        "given": "Heidi M."
+      },
+      {
+        "family": "Bamberg",
+        "given": "Michael"
+      },
+      {
+        "family": "Creswell",
+        "given": "John W."
+      },
+      {
+        "family": "Frost",
+        "given": "David M."
+      },
+      {
+        "family": "Josselson",
+        "given": "Ruthellen"
+      },
+      {
+        "family": "Suárez-Orozco",
+        "given": "Carola"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          1
+        ]
+      ]
+    },
+    "container-title": "American Psychologist",
+    "container-title-short": "American Psychologist",
+    "volume": "73",
+    "issue": "1",
+    "page": "26-46",
+    "DOI": "10.1037/amp0000151",
+    "ISSN": "1935-990X",
+    "URL": "http://dx.doi.org/10.1037/amp0000151",
+    "publisher": "American Psychological Association (APA)",
+    "source": "Crossref",
+    "language": "en"
+  },
+  {
     "id": "Lee2024-th",
     "type": "article-journal",
     "title": "The rise of ChatGPT: Exploring its potential in medical education",
@@ -6316,6 +6366,59 @@
         ]
       }
     },
+    "language": "en"
+  },
+  {
+    "id": "Ahmed2025-tm",
+    "type": "article-journal",
+    "title": "Using thematic analysis in qualitative research",
+    "author": [
+      {
+        "family": "Ahmed",
+        "given": "Sirwan Khalid"
+      },
+      {
+        "family": "Mohammed",
+        "given": "Ribwar Arsalan"
+      },
+      {
+        "family": "Nashwan",
+        "given": "Abdulqadir J."
+      },
+      {
+        "family": "Ibrahim",
+        "given": "Radhwan Hussein"
+      },
+      {
+        "family": "Abdalla",
+        "given": "Araz Qadir"
+      },
+      {
+        "family": "M. Ameen",
+        "given": "Barzan Mohammed"
+      },
+      {
+        "family": "Khdhir",
+        "given": "Renas Mohammed"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "container-title": "Journal of Medicine, Surgery, and Public Health",
+    "container-title-short": "Journal of Medicine, Surgery, and Public Health",
+    "volume": "6",
+    "page": "100198",
+    "DOI": "10.1016/j.glmedi.2025.100198",
+    "ISSN": "2949-916X",
+    "URL": "http://dx.doi.org/10.1016/j.glmedi.2025.100198",
+    "publisher": "Elsevier BV",
+    "source": "Crossref",
     "language": "en"
   }
 ]
