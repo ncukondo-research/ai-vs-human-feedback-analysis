@@ -6369,6 +6369,69 @@
     "language": "en"
   },
   {
+    "id": "Maher2026-au",
+    "type": "article-journal",
+    "title": "Whose Voice is it Anyway? Artificial Intelligence and the New Crisis of Authenticity in Medical Education",
+    "author": [
+      {
+        "family": "Maher",
+        "given": "Jessica"
+      },
+      {
+        "family": "Byszewski",
+        "given": "Anna"
+      },
+      {
+        "family": "Lochnan",
+        "given": "Heather"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          1
+        ]
+      ]
+    },
+    "container-title": "Perspectives on Medical Education",
+    "container-title-short": "Perspect Med Educ",
+    "volume": "15",
+    "issue": "1",
+    "page": "351-355",
+    "DOI": "10.5334/pme.2265",
+    "ISSN": "2212-277X",
+    "URL": "http://dx.doi.org/10.5334/pme.2265",
+    "publisher": "Ubiquity Press, Ltd.",
+    "language": "en"
+  },
+  {
+    "id": "Morris2026-sa",
+    "type": "article",
+    "title": "Same Feedback, Different Source: How AI vs. Human Feedback Shapes Learner Engagement",
+    "author": [
+      {
+        "family": "Morris",
+        "given": "Caitlin"
+      },
+      {
+        "family": "Maes",
+        "given": "Pattie"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "DOI": "10.48550/ARXIV.2602.11311",
+    "URL": "https://arxiv.org/abs/2602.11311",
+    "publisher": "arXiv"
+  },
+  {
     "id": "Ahmed2025-tm",
     "type": "article-journal",
     "title": "Using thematic analysis in qualitative research",
@@ -6419,6 +6482,119 @@
     "URL": "http://dx.doi.org/10.1016/j.glmedi.2025.100198",
     "publisher": "Elsevier BV",
     "source": "Crossref",
+    "language": "en"
+  },
+  {
+    "id": "Biggs1996-yt",
+    "type": "article-journal",
+    "title": "Enhancing teaching through constructive alignment",
+    "author": [
+      {
+        "family": "Biggs",
+        "given": "John"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1996,
+          10,
+          1
+        ]
+      ]
+    },
+    "container-title": "Higher Education",
+    "volume": "32",
+    "issue": "3",
+    "page": "347-364",
+    "DOI": "10.1007/BF00138871",
+    "ISSN": "1573-174X",
+    "URL": "https://doi.org/10.1007/BF00138871"
+  },
+  {
+    "id": "snchezmendiola-2025",
+    "type": "article-journal",
+    "title": "Applied insights for using Generative Artificial Intelligence in Faculty Development in Health Professions Education",
+    "author": [
+      {
+        "family": "Sánchez-Mendiola",
+        "given": "Melchor"
+      },
+      {
+        "family": "Anakin",
+        "given": "Megan"
+      },
+      {
+        "family": "Findyartini",
+        "given": "Ardi"
+      },
+      {
+        "family": "Levine",
+        "given": "Rachel"
+      },
+      {
+        "family": "Da Silva",
+        "given": "Ana"
+      },
+      {
+        "family": "Vakani",
+        "given": "Farhan Saeed"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          8
+        ]
+      ]
+    },
+    "container-title": "MedEdPublish",
+    "container-title-short": "MedEdPublish",
+    "volume": "15",
+    "page": "279",
+    "DOI": "10.12688/mep.21403.1",
+    "ISSN": "2312-7996",
+    "URL": "http://dx.doi.org/10.12688/mep.21403.1",
+    "publisher": "F1000 Research Ltd",
+    "language": "en"
+  },
+  {
+    "id": "Yavuz2024-vj",
+    "type": "article-journal",
+    "title": "Utilizing large language models for EFL essay grading: An examination of reliability and validity in rubric‐based assessments",
+    "author": [
+      {
+        "family": "Yavuz",
+        "given": "Fatih"
+      },
+      {
+        "family": "Çelik",
+        "given": "Özgür"
+      },
+      {
+        "family": "Yavaş Çelik",
+        "given": "Gamze"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          4
+        ]
+      ]
+    },
+    "container-title": "Br. J. Educ. Technol.",
+    "volume": "56",
+    "issue": "1",
+    "page": "150-166",
+    "DOI": "10.1111/bjet.13494",
+    "ISSN": "1467-8535",
+    "URL": "http://dx.doi.org/10.1111/bjet.13494",
+    "publisher": "Wiley",
     "language": "en"
   }
 ]
