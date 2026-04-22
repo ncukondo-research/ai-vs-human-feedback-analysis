@@ -6596,5 +6596,289 @@
     "URL": "http://dx.doi.org/10.1111/bjet.13494",
     "publisher": "Wiley",
     "language": "en"
+  },
+  {
+    "id": "Dornan2014-eu",
+    "type": "article-journal",
+    "title": "How and what do medical students learn in clerkships? Experience based learning (ExBL)",
+    "author": [
+      {
+        "family": "Dornan",
+        "given": "Tim"
+      },
+      {
+        "family": "Tan",
+        "given": "Naomi"
+      },
+      {
+        "family": "Boshuizen",
+        "given": "Henny"
+      },
+      {
+        "family": "Gick",
+        "given": "Rachel"
+      },
+      {
+        "family": "Isba",
+        "given": "Rachel"
+      },
+      {
+        "family": "Mann",
+        "given": "Karen"
+      },
+      {
+        "family": "Scherpbier",
+        "given": "Albert"
+      },
+      {
+        "family": "Spencer",
+        "given": "John"
+      },
+      {
+        "family": "Timmins",
+        "given": "Elizabeth"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          12,
+          18
+        ]
+      ]
+    },
+    "container-title": "Adv. Health Sci. Educ. Theory Pract.",
+    "volume": "19",
+    "issue": "5",
+    "page": "721-749",
+    "DOI": "10.1007/s10459-014-9501-0",
+    "PMID": "24638146",
+    "ISSN": "1382-4996",
+    "URL": "https://link.springer.com/article/10.1007/s10459-014-9501-0",
+    "abstract": "Clerkship education has been called a 'black box' because so little is known about what, how, and under which conditions students learn. Our aim was to develop a blueprint for education in ambulatory and inpatient settings, and in single encounters, traditional rotations, or longitudinal experiences. We identified 548 causal links between conditions, processes, and outcomes of clerkship education in 168 empirical papers published over 7 years and synthesised a theory of how students learn. They do so when they are given affective, pedagogic, and organisational support. Affective support comes from doctors' and many other health workers' interactions with students. Pedagogic support comes from informal interactions and modelling as well as doctors' teaching, supervision, and precepting. Organisational support comes from every tier of a curriculum. Core learning processes of observing, rehearsing, and contributing to authentic clinical activities take place within triadic relationships between students, patients, and practitioners. The phrase 'supported participation in practice' best describes the educational process. Much of the learning that results is too tacit, complex, contextualised, and individual to be defined as a set of competencies. We conclude that clerkship education takes place within relationships between students, patients, and doctors, supported by informal, individual, contextualised, and affective elements of the learned curriculum, alongside formal, standardised elements of the taught and assessed curriculum. This research provides a blueprint for designing and evaluating clerkship curricula as well as helping patients, students, and practitioners collaborate in educating tomorrow's doctors.",
+    "publisher": "Springer Science and Business Media LLC",
+    "custom": {
+      "uuid": "2982d2d0-82aa-4cb0-9dad-622b1db03c0c",
+      "created_at": "2026-02-09T01:09:41.250Z",
+      "timestamp": "2026-02-09T12:05:41.594Z",
+      "attachments": {
+        "directory": "Dornan2014-eu-PMID24638146-2982d2d0",
+        "files": [
+          {
+            "filename": "fulltext.pdf",
+            "role": "fulltext"
+          },
+          {
+            "filename": "fulltext.md",
+            "role": "fulltext"
+          }
+        ]
+      },
+      "paperpile": {
+        "_id": "b4812996-451a-0bc9-8bbe-ddb4a2116eeb",
+        "accessed": {
+          "year": "2025",
+          "month": "1",
+          "day": "7"
+        },
+        "attachments": [
+          {
+            "_id": "8e40a22f-ec26-4317-b0d2-ccf8f901fdad",
+            "article_pdf": 1,
+            "created": 1736229685.547,
+            "filename": "All Papers/Other/Dornan et al. 2014 - How and what do medical students learn in clerkships - Experience based learning (ExBL).pdf",
+            "filesize": 361991,
+            "gdrive_id": "1OrhxfZ2lUwsStegxaEq3uTPatSyEDpMn",
+            "mimeType": "application/pdf",
+            "pub_id": "b4812996-451a-0bc9-8bbe-ddb4a2116eeb",
+            "source_filename": "s10459-014-9501-0.pdf"
+          }
+        ],
+        "autoCleaned": 1,
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.1007/s10459-014-9501-0",
+        "citekey": "Dornan2014-eu",
+        "created": 1736229682.8300002,
+        "dup_sha1": "d528b634781db0942d90ff041d1d8fb638bfa437",
+        "folders": [],
+        "id_list": [
+          "sha1:b8ddc3209bba31fca8246aa762ecefde201eb259",
+          "dup_sha1:d528b634781db0942d90ff041d1d8fb638bfa437",
+          "doi:10.1007/s10459-014-9501-0",
+          "pmid:24638146",
+          "url:http://dx.doi.org/10.1007/s10459-014-9501-0",
+          "url:https://link.springer.com/article/10.1007/s10459-014-9501-0",
+          "url:http://link.springer.com/10.1007/s10459-014-9501-0",
+          "url:https://www.ncbi.nlm.nih.gov/pubmed/24638146",
+          "url:https://link.springer.com/content/pdf/10.1007/s10459-014-9501-0.pdf"
+        ],
+        "incomplete": 0,
+        "issn_alt": "1573-1677",
+        "kind": "Research Article",
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pdf_restricted": 0,
+        "pubtype": "PP_ARTICLE",
+        "sha1": "b8ddc3209bba31fca8246aa762ecefde201eb259",
+        "subfolders": [
+          "All Papers/D"
+        ]
+      }
+    },
+    "language": "en"
+  },
+  {
+    "id": "Yardley2012-ci",
+    "type": "article-journal",
+    "title": "Experiential learning: AMEE Guide No. 63",
+    "author": [
+      {
+        "family": "Yardley",
+        "given": "Sarah"
+      },
+      {
+        "family": "Teunissen",
+        "given": "Pim W"
+      },
+      {
+        "family": "Dornan",
+        "given": "Tim"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          2,
+          1
+        ]
+      ]
+    },
+    "container-title": "Med. Teach.",
+    "volume": "34",
+    "issue": "2",
+    "page": "e102-e115",
+    "DOI": "10.3109/0142159X.2012.650741",
+    "ISSN": "0142-159X",
+    "URL": "https://doi.org/10.3109/0142159X.2012.650741",
+    "abstract": "This Guide provides an overview of educational theory relevant to learning from experience. It considers experience gained in clinical workplaces from early medical student days through qualification to continuing professional development. Three key assumptions underpin the Guide: learning is ‘situated’; it can be viewed either as an individual or a collective process; and the learning relevant to this Guide is triggered by authentic practice-based experiences. We first provide an overview of the guiding principles of experiential learning and significant historical contributions to its development as a theoretical perspective. We then discuss socio-cultural perspectives on experiential learning, highlighting their key tenets and drawing together common threads between theories. The second part of the Guide provides examples of learning from experience in practice to show how theoretical stances apply to clinical workplaces. Early experience, student clerkships and residency training are discussed in turn. We end with a summary of the current state of understanding.",
+    "custom": {
+      "uuid": "015e88f6-e6b7-4438-aaad-5bffc396006b",
+      "created_at": "2026-02-09T01:09:42.974Z",
+      "timestamp": "2026-03-11T05:18:42.460Z",
+      "tags": [
+        "_Archived/Zotero Import (Oct 01)",
+        "教える役割による影響/Workplace learning",
+        "_Archived/Zotero Import (Oct 01)/My Library"
+      ],
+      "attachments": {
+        "directory": "Yardley2012-ci-015e88f6",
+        "files": [
+          {
+            "filename": "fulltext.pdf",
+            "role": "fulltext"
+          },
+          {
+            "filename": "fulltext.md",
+            "role": "fulltext"
+          }
+        ]
+      },
+      "paperpile": {
+        "_id": "936ecc13-26c7-0fe7-a3bc-5671cce7d95a",
+        "accessed": {
+          "month": "4",
+          "day": "19",
+          "year": "2021"
+        },
+        "citedByLink": "http://scholar.google.com/scholar?hl=en&lr=&num=30&cites=http://dx.doi.org/10.3109/0142159X.2012.650741",
+        "citekey": "Yardley2012-ci",
+        "created": 1633059435.739036,
+        "database": "Taylor and Francis+NEJM",
+        "dup_sha1": "298f0030609917ecaaff55ff028f37ba1a6bda79",
+        "folders": [
+          "66c8acfe-b0f5-057b-8c50-993880a21830",
+          "840c6722-c604-0339-847c-950b80118c34",
+          "db7554e3-9847-0952-b62b-70f00f0979f7"
+        ],
+        "id_list": [
+          "sha1:f8269dadb92624e1c02aec4eda423b4f39e07bfd",
+          "dup_sha1:298f0030609917ecaaff55ff028f37ba1a6bda79",
+          "doi:10.3109/0142159X.2012.650741",
+          "url:http://dx.doi.org/10.3109/0142159X.2012.650741",
+          "url:https://doi.org/10.3109/0142159X.2012.650741"
+        ],
+        "incomplete": 0,
+        "labels": [],
+        "owner": "806F1DCECFEA11EAAB12182C9D9F4BF5",
+        "pubtype": "PP_ARTICLE",
+        "sha1": "f8269dadb92624e1c02aec4eda423b4f39e07bfd",
+        "titleshort": "Experiential learning"
+      }
+    }
+  },
+  {
+    "type": "article-journal",
+    "title": "GAIDeT (Generative AI Delegation Taxonomy): A taxonomy for humans to delegate tasks to generative artificial intelligence in scientific research and publishing",
+    "author": [
+      {
+        "family": "Suchikova",
+        "given": "Yana"
+      },
+      {
+        "family": "Tsybuliak",
+        "given": "Natalia"
+      },
+      {
+        "family": "Teixeira da Silva",
+        "given": "Jaime A"
+      },
+      {
+        "family": "Nazarovets",
+        "given": "Serhii"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          22
+        ]
+      ]
+    },
+    "container-title": "Accountability in research",
+    "container-title-short": "Account Res",
+    "volume": "33",
+    "issue": "3",
+    "page": "2544331",
+    "DOI": "10.1080/08989621.2025.2544331",
+    "PMID": "40781729",
+    "ISSN": "0898-9621",
+    "publisher-place": "United States",
+    "source": "PubMed",
+    "epub-date": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          8
+        ]
+      ]
+    },
+    "id": "suchikova-2026",
+    "custom": {
+      "uuid": "1199970f-bc12-4953-a487-c9d18bf08469",
+      "created_at": "2026-04-22T05:07:24.945Z",
+      "timestamp": "2026-04-22T05:07:24.945Z"
+    }
   }
 ]

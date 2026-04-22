@@ -6,13 +6,13 @@
 
   > Thank you for the revision. Please address some outstanding issues.
 
-RESPONSE: [TODO: Brief acknowledgment and summary of the major revisions made in response to the editor's and reviewers' second-round comments.]
+RESPONSE: We thank the Editor and the reviewers for the second round of constructive feedback. Each Editor and reviewer comment is addressed individually below.
 
 ### Editor Comment.1
 
   > Comment: There are still important elements of information about the methodology and analyses that are missing from the manuscript. For example, "Methodological Integrity" is missing, among other elements https://apastyle.apa.org/jars/qual-table-1.pdf Please ensure that all elements from both the quantitative and qualitative checklists are addressed in the manuscript.
 
-RESPONSE: Thank you for directing us to the APA JARS qualitative checklist (Levitt et al., 2018, American Psychologist, 73[1], 26-46). We have audited the Methods section against both the JARS-Qual (Table 1) and JARS-Quant (Table 1) checklists. To address your concern, we have (a) added a new dedicated subsection titled "Methodological Integrity" under the Qualitative Analysis subsection of the Methods, and (b) strengthened the Reflexivity subsection with a statement on the researcher-participant relationship. To make coverage verifiable without cross-referencing the manuscript, we reproduce the newly added text below and annotate the specific JARS elements it addresses in square brackets.
+RESPONSE: Thank you for directing us to the APA JARS qualitative checklist (Levitt et al., 2018, American Psychologist, 73[1], 26-46). We have audited the Methods section against both the JARS-Qual (Table 1) and JARS-Quant (Table 1) checklists. To address your concern, we have (a) added a new dedicated subsection titled "Methodological Integrity" under the Qualitative Analysis subsection of the Methods, and (b) strengthened the Reflexivity subsection with a statement on the researcher-participant relationship. We show the newly added text below and annotate the specific JARS elements it addresses in square brackets.
 
 Addition 1. The full text of the new "Methodological Integrity" subsection under Qualitative Analysis is reproduced verbatim below, with inline annotations marking each JARS-Qual element:
 
@@ -36,7 +36,7 @@ Coverage of the JARS-Quant elements added in the first round of revision (Partic
 
   > Comment: Please include a thematic map https://www.sciencedirect.com/science/article/pii/S2949916X25000222
 
-RESPONSE: Thank you for this helpful suggestion and for directing us to the Ahmed et al. (2025) article on thematic analysis (Journal of Medicine, Surgery, and Public Health, 6, 100198). We have designed and added a new figure (Figure 2, thematic map) at the opening of the Qualitative analysis subsection of the Results, immediately before Table 2. Theme names and sub-theme names in the figure are identical to those reported in Table 2 and in the Results narrative. Ahmed et al. (2025) is cited at the point of figure introduction in the manuscript.
+RESPONSE: Thank you for this helpful suggestion and for directing us to the Ahmed et al. (2025) article on thematic analysis (Journal of Medicine, Surgery, and Public Health, 6, 100198). We have designed and added a new figure (Figure 2, thematic map) at the opening of the Qualitative analysis subsection of the Results, immediately before Table 2.
 
 The new figure is introduced by the following revised passage, which replaces the previous single-sentence pointer to Table 2:
 
@@ -46,13 +46,29 @@ The new figure is introduced by the following revised passage, which replaces th
 
   > Comment: There are still several statements/sections in the discussion without references. Please include supporting references for all statements.
 
-RESPONSE: [TODO: Identify which statements in the Discussion lacked references and list the references added. Note any cases where a statement was reframed rather than cited (e.g., interpretive claims clearly framed as the authors' interpretation).]
+RESPONSE: We re-audited the Discussion and added citations at two locations.
+
+Addition 1 (Comparison with the Literature, third paragraph). The sentence on tacit knowledge in clerkship learning now reads:
+
+> "Clinical reasoning, situational awareness, and tacit professional knowledge, which are central to clerkship learning (Dornan et al., 2014), are difficult to articulate in written form (Yardley et al., 2012) and largely inaccessible to AI systems that operate solely on the written log text."
+
+Dornan et al. (2014, Advances in Health Sciences Education, 19[5], 721-749) is the Experience-Based Learning paper establishing that clerkship learning is "too tacit, complex, contextualised, and individual to be defined as a set of competencies." Yardley et al. (2012, Medical Teacher AMEE Guide No. 63, 34[2], e102-e115) establishes that tacit workplace learning "is probably the largest part of the learning process in workplaces" and that practitioners "have difficulty describing the more complex aspects of their work."
+
+Addition 2 (Implications of Findings, second paragraph). The hybrid-approaches sentence now reads:
+
+> "Various hybrid approaches merit exploration, including AI-drafted feedback refined by educators, role-based distribution where AI and supervisors focus on different aspects of student work, or AI enhancement of educator-authored feedback (Banihashem et al., 2025; Zhang et al., 2025)."
+
+Zhang et al. (2025, arXiv:2504.10961) empirically tests co-produced feedback in a generative-AI setting (Claude 3.5 Sonnet); its conditions include "AI-initiated feedback reviewed by humans" and "human-generated feedback refined by AI."
+
+Statements that remain uncited are those explicitly framed as the authors' interpretation of their own data (the Principal Findings and Conclusions summaries, and integrative sentences such as "Our findings confirm and deepen this pattern") and statements of future research directions.
 
 ### Editor Comment.4
 
   > Comment: Please mention whether there were any missing data. If there were missing data, provide the proportion of missing data and perform the MCAR test to see if data were missing totally at random and consider performing multiple imputations.
 
-RESPONSE: [TODO: State explicitly whether missing data existed. If none, report 100% completeness with location in the Methods/Results. If any, report proportion, MCAR test results (e.g., Little's MCAR test), and whether multiple imputation was applied or justified as unnecessary.]
+RESPONSE: No missing data were present. The Participants subsection of the Results now states this explicitly and notes that a missingness test and multiple imputation were therefore not required:
+
+> "No missing data were identified; all 161 records contained complete rubric scores from both assessors across all five items, yielding 3,220 observations with 100% data completeness. Because the dataset was complete, we did not perform a missingness test (such as Little's MCAR test) or apply multiple imputation."
 
 ------------------------------------------------------
 
@@ -63,7 +79,7 @@ RESPONSE: [TODO: State explicitly whether missing data existed. If none, report 
   > The authors have made substantial revisions in response to the initial review. In particular, the manuscript is now significantly stronger in its conceptual clarity and methodological transparency... Overall, the manuscript now presents a more credible interpretation of AI versus supervisor feedback, and its central claim of complementarity rather than superiority is much better supported.
   > That said, a few important issues remain, primarily around interpretation, framing, and the implications of some key findings. These are outlined below.
 
-RESPONSE: [TODO: Thank the reviewer and summarize the three major reframings made: (1) language tightening around rubric alignment vs. quality, (2) expanded theorization of AI detectability, (3) reframing of prompt design as operationalization of educational values.]
+RESPONSE: We thank you for the detailed second-round comments, which have substantially sharpened the framing of the paper. Point-by-point responses follow.
 
 ### Major
 
@@ -73,7 +89,43 @@ RESPONSE: [TODO: Thank the reviewer and summarize the three major reframings mad
   > This is especially important given that: 1) The AI was explicitly optimized for the rubric; 2) The rubric does not capture core clinical feedback qualities (e.g., judgment, credibility, contextual awareness)
   > It would be better to further tighten the language throughout Results and Discussion to consistently frame findings as: e.g., 1) "better alignment with rubric criteria" rather than "higher quality", and 2) "Emphasize that different dimensions of quality are being measured" vs. "omitted"
 
-RESPONSE: [TODO: List the specific passages in Results and Discussion that were revised. Quote revised sentences that replace "higher quality" with "better alignment with rubric criteria" and show reframing around "different dimensions of quality being measured." Provide page numbers.]
+RESPONSE: We agree and have tightened the language in eight Results and Discussion passages where "quality" or "superior" was used in a way that could be read as overall superiority rather than as rubric-specific alignment. In each case, "quality" has been replaced with "rubric scores" (or equivalent) when the phrase referred to our quantitative rubric measurements, and "superior adherence" has been softened to "greater adherence". Three Results subsection titles were also renamed accordingly. The framing that "different dimensions of quality are being measured" rather than omitted is retained in the existing Limitations paragraph on the Steiss rubric and in the Methods subsection on the Evaluation Instrument, both of which explicitly state that clinically meaningful dimensions such as diagnostic reasoning and professional judgment are not captured by the rubric.
+
+Changes by location:
+
+Results subsection titles (Quantitative analysis and Integration):
+
+> "Consistency of Rubric Scores" (previously "Consistency of Feedback Quality")
+
+> "Index 3: Length-Score Correlation Patterns" (previously "Length-Quality Correlation Patterns")
+
+> "Index 4: Rubric-Score Consistency and Variability" (previously "Quality Consistency and Variability")
+
+Results, Consistency of Rubric Scores (first sentence and closing sentence of the paragraph):
+
+> "AI exhibited smaller score dispersion, suggesting higher consistency in rubric scores. ... suggesting that AI feedback received more consistent rubric scores, whereas supervisor feedback received more variable ones."
+
+Results, Integration Index 2 (closing sentence):
+
+> "This complementary integration explains how AI feedback aligns with the rubric's structural criteria through both structural adherence and sufficient length."
+
+Results, Integration Index 3 (opening sentence and penultimate sentence):
+
+> "Quantitative examination revealed that while there was no correlation between length and rubric scores in AI feedback, longer submissions received higher scores in supervisor feedback."
+
+> "This suggests that AI more systematically covers the elements specified by the rubric, while supervisors excel at contextual prioritization."
+
+Results, Integration Index 4 (whole paragraph):
+
+> "The quantitative finding that AI feedback rubric scores were more consistent while supervisor feedback rubric scores were more variable was supported by qualitative observations regarding adherence to feedback criteria and structure. The qualitative analysis described AI feedback as closely following the rubric, leading to more uniform rubric scores, whereas supervisors often deviated from the rubric, resulting in variable scores. This integration demonstrates how structural consistency in AI feedback translates directly into measurable rubric-score consistency."
+
+Discussion, Principal Findings (second sentence):
+
+> "AI feedback was significantly longer and demonstrated greater adherence to rubric-based criteria, particularly in providing criteria-based guidance and clear directions for improvement. While supervisor feedback showed greater variability in rubric scores, with length correlating positively with those scores, AI feedback maintained consistent rubric scores regardless of length, suggesting systematic coverage of the structural elements captured by the rubric."
+
+Discussion, Comparison with the Literature (feedback length paragraph, length-score clauses):
+
+> "Furthermore, our results showed no correlation between AI feedback length and rubric scores, while supervisor feedback demonstrated a positive correlation between length and rubric scores."
 
 #### F-Major.2: Implications of perfect detectability
 
@@ -83,29 +135,27 @@ RESPONSE: [TODO: List the specific passages in Results and Discussion that were 
   >  c. The feasibility of integrating AI feedback seamlessly into practice
   > I suggest expanding the Discussion to explicitly theorize: Why AI feedback is so easily identifiable in this context? Whether detectability is a feature (transparency) or a limitation (lack of authenticity)? How this affects real-world implementation and learner trust?
 
-RESPONSE: Thank you for this substantive comment. We agree that the perfect detectability is a finding in its own right and that it raises three distinct theoretical questions, namely why AI feedback was so easily identifiable, whether detectability is best read as a feature or a limitation, and how it may affect real-world implementation and learner trust. We have added text in three locations of the Discussion to address these questions in turn, without re-describing the study design (already covered in Methods) and without duplicating material across sections. Two references have been added to the library for this purpose: Maher, Byszewski, and Lochnan (2026, Perspectives on Medical Education, 15[1], 351-355), which discusses authenticity and voice in AI-assisted reflective writing in medical education; and Morris and Maes (2026, arXiv preprint), a controlled-content pilot demonstrating that identical feedback elicits substantially different learner engagement depending on attributed source (Cohen *d*=0.88-1.56).
+RESPONSE: Thank you for this substantive comment. We agree that the perfect detectability is a finding in its own right and that it raises three distinct theoretical questions, namely why AI feedback was so easily identifiable, whether detectability is best read as a feature or a limitation, and how it may affect real-world implementation and learner trust. We have added text in three locations of the Discussion to address these questions in turn.
 
-Addition 1 (Comparison with the Literature). The previous single paragraph on perfect detection has been split into two paragraphs: one on the implicit-bias concern for our own evaluation, and one on the substantive theorization of detectability. The implicit-bias paragraph now cites Morris and Maes (2026) alongside van de Ridder et al. (2014) and Tripodi et al. (2021) as converging evidence that source attribution can shape evaluation even when content is held identical. The new second paragraph grounds the "why identifiable" question in our own five qualitative themes rather than invoking external mechanism claims, theorizes the observed contrast as a difference in epistemic voice (supervisor feedback grounded in lived clinical encounter, AI feedback operating on textual pattern), cites Maher et al. (2026) for a parallel tension around authenticity and voice in medical education, and explicitly presents detectability as admitting two complementary readings: source transparency on one side and an authenticity gap on the other. The two paragraphs read as follows:
+Addition 1 (Comparison with the Literature). The previous single paragraph has been split into two: one paragraph addressing the implicit-bias concern within the evaluation, one theorizing the detectability finding itself. The two paragraphs read:
 
-> "This perfect detection has implications that warrant discussion along two distinct lines. The first concerns the evaluation itself: because evaluators recognized the feedback source with complete accuracy, they may have formed implicit judgments about source during rubric scoring even though they were not explicitly informed until afterward, and the possibility that such recognition shaped ratings cannot be ruled out. Prior research has demonstrated that knowledge or perception of the feedback provider can influence how feedback is received and evaluated (van de Ridder et al., 2014; Tripodi et al., 2021), and a recent controlled-content experiment further showed that source attribution altered learner engagement by a large margin (Cohen *d*=0.88-1.56) even when the feedback content was held identical (Morris & Maes, 2026). In our study, however, the identification question was administered only after all rubric scoring and free-text comments had been completed, so any such influence would have arisen from the textual characteristics of the feedback rather than from explicit labels, unlike an unblinded evaluation in which the source is known a priori."
+> "This perfect detection has implications that warrant discussion along two distinct lines. The first concerns the evaluation itself: because evaluators recognized the feedback source with complete accuracy, they may have formed implicit judgments about source during rubric scoring even though they were not explicitly informed until afterward, and the possibility that such recognition shaped ratings cannot be ruled out. Prior research has demonstrated that knowledge or perception of the feedback provider can influence how feedback is received and evaluated (van de Ridder et al., 2014; Tripodi et al., 2021), and a recent controlled-content experiment further showed that source attribution altered learner engagement by a large margin (Cohen d=0.88-1.56) even when the feedback content was held identical (Morris & Maes, 2026). In our study, however, the identification question was administered only after all rubric scoring and free-text comments had been completed, so any such influence would have arisen from the textual characteristics of the feedback rather than from explicit labels, unlike an unblinded evaluation in which the source is known a priori."
 
 > "The perfect detection also constitutes a substantive finding in its own right. The five qualitative themes identified in our analysis (adherence to feedback criteria and structure, continuity and consistency, perspective as a clinician, quality of the Japanese language, and text length) collectively describe the lexical, structural, and contextual features that made AI feedback identifiable in this Japanese-language clinical context, with language-level cues such as translation-like phrasing, formatting artifacts, and a formulaic register being particularly salient. At the level of interpretation, these differences suggest that AI and supervisor feedback differ not only in structural properties but in the epistemic voice they carry: supervisor feedback is grounded in lived clinical encounter, whereas AI feedback operates on textual pattern. Similar tensions around authenticity and voice have been raised in recent medical education writing on AI-assisted reflective work (Maher et al., 2026). This voice differential can be read positively as a form of source transparency, since learners and educators are unlikely to mistake one source for the other, but also as an authenticity gap that may affect trust and uptake when AI feedback is delivered to learners. Newer large language models continue to improve in generating natural, human-like text, and future iterations may substantially reduce the detectability of AI-generated feedback, potentially altering both evaluator perceptions and the dynamics of blinded evaluation designs."
 
 Addition 2 (Implications of Findings). We have extended the existing risks listing with two sentences that link the detection finding forward to the real-world delivery context and flag that rubric-score advantages cannot be assumed to translate into learner uptake when source is identifiable:
 
-> "Our finding that evaluators recognized feedback source with perfect accuracy suggests that learners in real-world settings would plausibly do the same, and evidence from controlled-content experiments indicates that source attribution can substantially alter learner engagement when feedback is delivered directly (Cohen *d*=0.88-1.56) (Morris & Maes, 2026). The rubric-score advantages we observed should therefore not be assumed to translate directly into comparable learner uptake or educational impact when AI feedback is delivered to students who can identify its source."
+> "Our finding that evaluators recognized feedback source with perfect accuracy suggests that learners in real-world settings would plausibly do the same, and evidence from controlled-content experiments indicates that source attribution can substantially alter learner engagement when feedback is delivered directly (Cohen d=0.88-1.56) (Morris & Maes, 2026). The rubric-score advantages we observed should therefore not be assumed to translate directly into comparable learner uptake or educational impact when AI feedback is delivered to students who can identify its source."
 
 Addition 3 (Limitations). Because our design examined third-party evaluator judgments rather than learner reception of feedback, we have expanded the eighth limitation to make this scope distinction explicit and to flag that source-attribution effects lie outside our data:
 
 > "Eighth, our study evaluated the structural quality of feedback as assessed by third-party evaluators using the rubric, but did not examine whether AI-generated or supervisor-provided feedback, when delivered to students, elicited different learning behaviors, revisions, engagement, or clinical improvement. Because our design measured judgments by evaluators rather than responses by learner recipients, source-attribution effects that may arise when identifiable AI feedback is delivered directly to students (Morris & Maes, 2026) fall outside the scope of our data. The relationship between perceived feedback quality, source attribution, and actual educational outcomes remains an important area for future investigation."
 
-Coverage of your sub-points: (1) voice / epistemic stance and the transparency-vs-authenticity framing are treated in Addition 1, second paragraph; (a) ecological validity in Additions 2 and 3, with Morris and Maes (2026) as the empirical anchor; (b) implicit bias in Addition 1, first paragraph (the existing Limitations Third paragraph on stratification impossibility is retained); (c) real-world implementation and learner trust in Addition 2 and in the closing clause of Addition 1, second paragraph. The "why identifiable" question is answered through our own five qualitative themes rather than external mechanism claims; the Japanese language-specific cues in the same paragraph also subsume Reviewer F Minor 3 and Reviewer L Minor 1 on language/culture-detectability linkage.
-
 #### F-Major.3: Prompt design as operationalization of educational values
 
   > Comment: The revised manuscript does a good job acknowledging that the AI was rubric-optimized. However, the conceptual implications of prompt design could be further strengthened. Currently, this is framed mainly as a limitation. However, it is also a central intervention in the study, or potentially a design principle for educational AI systems. It would be better to strengthen the Discussion by reframing prompt design as not only a source of bias, but also a mechanism through which educational values are operationalized.
 
-RESPONSE: Thank you for this comment. We agree that the prompt is a central intervention rather than only a methodological constraint, and we have added a new paragraph in the Implications of Findings subsection of the Discussion that reframes prompt design as a deliberate pedagogical operationalization of educational values. Three references have been added to the library to support this framing: Biggs (1996, Higher Education, 32[3], 347-364) for the foundational concept of constructive alignment in instructional design; Sánchez-Mendiola et al. (2025, MedEdPublish, 15, 279) for the contemporary positioning of prompt literacy as a core educator competence in health professions education, including the explicit grounding of prompts in pedagogical and assessment frameworks; and Yavuz, Çelik, and Yavaş Çelik (2024, British Journal of Educational Technology, 56[1], 150-166) for empirical evidence that detailed prompts combined with low temperature settings yield near-perfect inter-replicate consistency in LLM rubric grading.
+RESPONSE: Thank you for this comment. We agree that the prompt is a central intervention rather than only a methodological constraint, and we have added a new paragraph in the Implications of Findings subsection of the Discussion that reframes prompt design as a deliberate pedagogical operationalization of educational values.
 
 The new paragraph reads:
 
@@ -117,7 +167,17 @@ The new paragraph reads:
 
   > Comment: Some methodological explanations (especially around prompt design and rubric alignment) are repeated across sections. Consider tightening for conciseness.
 
-RESPONSE: [TODO: List the sections where redundancy was reduced, with before/after word counts or a summary of the edits.]
+RESPONSE: We tightened two passages where the same point about rubric embedding in the AI prompt was stated more than once.
+
+In the Results, the caveat paragraph following the Comparison of Scores subsection was compressed from three sentences to three tighter ones, removing the passive-voice restatement of the asymmetric design that is already established in the Methods. It now reads:
+
+> "These rubric-based findings should be interpreted in light of the asymmetric design described in the Methods: the rubric criteria were explicitly embedded in the AI prompt but not given to supervisors. The observed score differences therefore reflect adherence to these specific structural dimensions rather than overall educational quality. The qualitative findings, particularly the themes of Perspective as a clinician and Continuity with practice, provide complementary evidence of the clinical value that supervisors contribute and that this rubric does not capture."
+
+In the Limitations, the fifth limitation previously restated that the rubric dimensions "were also explicitly embedded in the AI prompt"; this trailing clause was removed because the same point is already made in the Methods, in the Results caveat above, and in the Implications paragraph on prompt design. The opening sentence of the fifth limitation now reads:
+
+> "Fifth, the evaluation rubric used to assess feedback quality was originally developed for written academic feedback (Steiss et al., 2024) and emphasizes structural dimensions such as criteria-based guidance, clarity of directions, and text alignment."
+
+The definitional statement in the Methods (Prompt Development subsection), the brief mention within the Discussion Comparison with the Literature subsection, the new Implications paragraph on prompt design as an operationalization of educational values, and the Conclusion were retained because each serves a distinct framing purpose.
 
 #### F-Minor.2: Table 2 density
 
@@ -129,7 +189,11 @@ RESPONSE: Thank you for the suggestion. We have trimmed Table 2 from seven colum
 
   > Comment: The added discussion of the Japanese context is helpful. You may still consider one or two sentences more explicitly linking language/culture to AI detectability.
 
-RESPONSE: [TODO: Quote the added sentences that explicitly link Japanese language/cultural features (e.g., honorific register, stylistic conventions) to detectability of AI-generated feedback.]
+RESPONSE: This link is already articulated in the Comparison with the Literature subsection of the Discussion, within the second paragraph on perfect detection that was newly added in response to your earlier Major comment on detectability. The relevant sentence reads:
+
+> "The five qualitative themes identified in our analysis (adherence to feedback criteria and structure, continuity and consistency, perspective as a clinician, quality of the Japanese language, and text length) collectively describe the lexical, structural, and contextual features that made AI feedback identifiable in this Japanese-language clinical context, with language-level cues such as translation-like phrasing, formatting artifacts, and a formulaic register being particularly salient."
+
+The three named cues (translation-like phrasing, formatting artifacts, formulaic register) explicitly tie Japanese-language features to the detectability finding. We have therefore not added further sentences to avoid duplication with that newly added passage.
 
 ------------------------------------------------------
 
@@ -139,7 +203,7 @@ RESPONSE: [TODO: Quote the added sentences that explicitly link Japanese languag
 
   > The authors have provided sufficient responses to the reviewers' comments, and the manuscript has been appropriately revised.
 
-RESPONSE: [TODO: Thank the reviewer for the constructive second-round feedback.]
+RESPONSE: We thank the reviewer for the careful review across both rounds.
 
 ### Minor
 
@@ -147,13 +211,15 @@ RESPONSE: [TODO: Thank the reviewer for the constructive second-round feedback.]
 
   > Comment: The limitation section currently consists of a single paragraph describing eight limitations. For better readability, it would be preferable to separate them into individual paragraphs.
 
-RESPONSE: [TODO: Confirm that the Limitations section has been split into separate paragraphs per limitation. Cite page number.]
+RESPONSE: Done. The Limitations section has been split so that each of the eight limitations (First through Eighth) now occupies its own paragraph.
 
 #### G-Minor.2: GAIDeT reference
 
   > Comment: As GAIDeT is used in the manuscript, its corresponding reference should be added.
 
-RESPONSE: [TODO: Add and cite the GAIDeT reference. Quote the revised sentence with the citation.]
+RESPONSE: The original GAIDeT paper (Suchikova, Tsybuliak, Teixeira da Silva, & Nazarovets, 2026, Accountability in Research, 33[3], 2544331, DOI: 10.1080/08989621.2025.2544331) has been cited at the point of GAIDeT introduction in the Acknowledgements. The revised sentence reads:
+
+> "According to the Generative AI Delegation Taxonomy (GAIDeT) (Suchikova et al., 2026), the following tasks were delegated to generative AI tools under full human supervision: literature search and systematization, code generation, and translation."
 
 ------------------------------------------------------
 
@@ -163,7 +229,7 @@ RESPONSE: [TODO: Add and cite the GAIDeT reference. Quote the revised sentence w
 
   > This manuscript presents a well-designed convergent mixed-methods study comparing AI-generated and supervisor-provided feedback in an authentic clinical clerkship setting. The study is timely and methodologically rigorous, with strong ecological validity and appropriate integration of quantitative and qualitative analyses. The findings clearly demonstrate complementary strengths of AI and human feedback, and the interpretation is generally balanced and cautious. Overall, this work makes a meaningful contribution to medical education and is suitable for publication.
 
-RESPONSE: [TODO: Thank the reviewer for the positive assessment and note the minor refinements made.]
+RESPONSE: We thank the reviewer for the positive assessment.
 
 ### Minor
 
@@ -171,7 +237,17 @@ RESPONSE: [TODO: Thank the reviewer for the positive assessment and note the min
 
   > Comment: A brief note on potential language/context dependency would strengthen external validity.
 
-RESPONSE: [TODO: Quote the added note on language/context dependency (Japanese-language clinical logs, single-institution setting) and its impact on external validity. Cross-reference with the response to F-Minor.3 where relevant.]
+RESPONSE: Language/context dependency and its external-validity implication are addressed in two locations that were added during the first revision round and retained unchanged in this round.
+
+In the Comparison with the Literature subsection, the paragraph on the Japanese linguistic and cultural context closes with an explicit external-validity statement:
+
+> "Rather than framing these contextual factors solely as limitations, we note that they underscore the importance of conducting AI feedback research across diverse linguistic and cultural settings, as both AI performance and user reception are likely to be context-dependent."
+
+The first paragraph of the Limitations section also frames the same point as a generalizability constraint:
+
+> "First, as this research was conducted at a single institution in Japan, the generalizability of our findings to other institutions or cultural contexts needs to be confirmed. The study was conducted entirely in Japanese, and GPT-4o's performance in Japanese may differ from its performance in English, potentially affecting the naturalness and quality of AI-generated feedback."
+
+Together these passages cover both the language-performance dependency (with Strasser et al., 2026 and Harigai et al., 2024 as empirical anchors) and the cultural-reception dependency (Nishigori, 2014), and explicitly flag the external-validity implication for cross-linguistic and cross-cultural extension.
 
 #### L-Minor.2: Rubric-embedded prompting in Discussion
 
