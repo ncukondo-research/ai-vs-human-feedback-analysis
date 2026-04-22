@@ -18,7 +18,8 @@ Legend: **AUTO** = 既存情報で機械的に対応可 / **PARTIAL** = ドラ�
   - 決定 (2026-04-21): 両論文採用。Maher2026-au は voice/authenticity の概念語彙と feature(transparency) vs limitation(authenticity gap) の両義性フレーミング、Morris2026-sa は (i) implicit bias 補強 (ii) ecological validity / 直接提供時の attribution effect Cohen d=0.88–1.56 の定量根拠、に用いる。「なぜ識別容易か」は自研究の5 themes で機構的に説明し Maher は解釈語彙として位置付ける（mechanism を外部文献には求めない）。
 - [x] **F-Major.3 論拠**: prompt設計を「educational valuesのoperationalization」として位置付ける際の参照枠組み（例: curriculum alignment理論、learning design文献）
   - 決定 (2026-04-21): 3件採用。`Biggs1996-yt` (constructive alignment, Higher Education) を理論基盤、`snchezmendiola-2025` (MedEdPublish 2025, prompt literacy as core competence + CRAFT framework で reference framework の埋め込みを推奨) を contemporary HPE application、`Yavuz2024-vj` (BJET 2024, fine-tuned prompt + low temp で ICC=0.972 / SD=0.00 達成) を経験的根拠。fulltext 全件確認済 → library.json 追加済。Triola2024 と Meincke2025 は本論点に直接合致しないため不採用。
-- [ ] **F-Minor.2 方針**: Table 2のどの列を本文に残し、どれをappendixに移すか
+- [x] **F-Minor.2 方針**: Table 2のどの列を本文に残し、どれをappendixに移すか
+  - 決定 (2026-04-21): Minor コメントの意図（本文密度の軽減のみ、分析構造は変更せず）に沿い、**標準案**（7列→5列に削減 + Multimedia Appendix 4 で全列版を保持）を採用。本文 Table 2 に残すのは `Item / AI Mean (95% CI) / Supervisor Mean (95% CI) / Cohen d (95% CI) / Corrected P value` の5列。`Mean Difference (95% CI)` と `uncorrected P value` を Multimedia Appendix 4 へ。外部ファイル方式（Multimedia Appendix 1–3 のパターン踏襲）で `src/assets/appendix/Multimedia Appendix 4. full paired t-test results.docx` を `manuscript.qmd` の `include: false` R chunk から自動生成。
 
 ---
 
@@ -80,8 +81,8 @@ Legend: **AUTO** = 既存情報で機械的に対応可 / **PARTIAL** = ドラ�
   - 現在L.602–603の1段落を限界ごとに分割
 - [ ] **F-Minor.1: 冗長整理**
   - prompt/rubric説明のMethods / Discussion / Limitations間の重複を集約
-- [ ] **F-Minor.2: Table 2 をスリム化 / 一部appendix移動**
-  - Phase 0の方針決定に従って列/行を整理
+- [x] **F-Minor.2: Table 2 をスリム化 / 一部appendix移動**
+  - ✅ 完了 (2026-04-21): Phase 0 方針に従い、`src/manuscript.qmd` L.305-336 の `tbl-paired_ttest_results` を 7列→5列に削減（`select(Item, mean_ai, mean_supervisor, cohens_d, p_bonferroni)`）。`include: false` の新 R chunk (`appendix-4-full-ttest`) を直下に追加し `flextable::save_as_docx()` で 7列完全版を `src/assets/appendix/Multimedia Appendix 4. full paired t-test results.docx` に出力。本文 L.302 の参照文と Table 2 caption を "mean differences and uncorrected P values are provided in Multimedia Appendix 4" に更新。Data Availability の Appendix 列挙を "1, 2, 3, and 4" に更新、`## Multimedia Appendix 4` セクションを新規追加。`compile.sh` 通過確認済。
 
 ## Phase 5: Reply文書作成
 
@@ -95,7 +96,7 @@ Legend: **AUTO** = 既存情報で機械的に対応可 / **PARTIAL** = ドラ�
     - [x] Major.2 (2026-04-21): detectability 理論化。Addition 1 (L.596 2段落化, Maher2026-au + Morris2026-sa 引用) / Addition 2 (Implications L.604) / Addition 3 (Limitations #8 scope 拡張) の3箇所に verbatim quote 付きで記載。F-Minor.3 / L-Minor.1 吸収を末尾 coverage 段落で明記。
     - [x] Major.3 (2026-04-21): prompt design as operationalization of educational values。Implications L.606 新段落 verbatim 転記、Biggs1996-yt + snchezmendiola-2025 + Yavuz2024-vj 引用、L-Minor.2 統合の cross-reference を末尾に追加。
     - [ ] Minor.1
-    - [ ] Minor.2
+    - [x] Minor.2 (2026-04-21): Table 2 を 5 列にスリム化（Item / AI Mean / Supervisor Mean / Cohen d / Corrected P）し、完全版（7列、Mean Difference と uncorrected P を含む）を新規 Multimedia Appendix 4 に外出し。reply doc に verbatim の caption 追記と該当本文の before/after を記載予定。
     - [ ] Minor.3
   - [ ] Reviewer G (Minor.1 / Minor.2)
   - Reviewer L:

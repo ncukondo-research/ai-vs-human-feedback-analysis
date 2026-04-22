@@ -123,7 +123,7 @@ RESPONSE: [TODO: List the sections where redundancy was reduced, with before/aft
 
   > Comment: Table 2 remains dense. Consider whether all reported statistics are necessary in the main text vs. appendix.
 
-RESPONSE: [TODO: State the decision (move to appendix, split, or retain) and the justification. If moved, cite the new appendix location.]
+RESPONSE: Thank you for the suggestion. We have trimmed Table 2 from seven columns to five, retaining Item, AI Mean (95% CI), Supervisor Mean (95% CI), Cohen d (95% CI), and Bonferroni-corrected P value. The Mean Difference (derivable from the two means) and the uncorrected P value (redundant given the corrected value) have been moved to a new Multimedia Appendix 4 that reproduces the full seven-column table. The Table 2 caption and the Data Availability statement have been updated to point to Multimedia Appendix 4.
 
 #### F-Minor.3: Language/culture and AI detectability
 

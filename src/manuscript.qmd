@@ -299,11 +299,11 @@ The scores assigned by the evaluators to the AI and supervisor feedback were com
 
 ![Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed-methods study, Nagoya University, Japan, 2024.](../result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
 
-Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected *P*<.001), clear direction (corrected *P*<.001), prioritization (corrected *P*<.001), accurate (corrected *P*<.001), and supportive (corrected *P*=.011). Details including uncorrected p-values are shown in [@tbl-paired_ttest_results].
+Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected *P*<.001), clear direction (corrected *P*<.001), prioritization (corrected *P*<.001), accurate (corrected *P*<.001), and supportive (corrected *P*=.011). Details are shown in [@tbl-paired_ttest_results]; mean differences and uncorrected *P* values are provided in Multimedia Appendix 4.
 
 ```{r}
 #| label: tbl-paired_ttest_results
-#| tbl-cap: "Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. This rubric assesses structural and content dimensions of written feedback; clinically specific dimensions such as diagnostic reasoning and professional judgment were not directly measured."
+#| tbl-cap: "Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. This rubric assesses structural and content dimensions of written feedback; clinically specific dimensions such as diagnostic reasoning and professional judgment were not directly measured. Mean differences and uncorrected P values are reported in Multimedia Appendix 4."
 #| echo: false
 
 df <- read.csv(here("result", "quantitative", "paired_ttest_results_formatted.csv"))
@@ -314,13 +314,44 @@ df <- df |>
   mutate(Item = factor(Item, levels = item_order, labels = item_labels_tbl)) |>
   arrange(Item)
 
-avail <- 6
-w <- rep(avail /ncol(df), ncol(df))
+df_main <- df |>
+  select(Item, mean_ai, mean_supervisor, cohens_d, p_bonferroni)
 
-df |>
+avail <- 6
+w <- rep(avail / ncol(df_main), ncol(df_main))
+
+df_main |>
   flextable() |>
   flextable::set_table_properties(layout = "fixed") |>
   flextable::width(width = w) |>
+  set_header_labels(
+    Item = "Item",
+    mean_ai = "AI Mean Score (95% CI)",
+    mean_supervisor = "Supervisor Mean Score (95% CI)",
+    cohens_d = "Cohen d\n(95% CI)",
+    p_bonferroni = "Corrected\nP value"
+  ) |>
+  fontsize(size = 8, part = "all") |>
+  theme_vanilla()
+
+```
+
+```{r}
+#| label: appendix-4-full-ttest
+#| include: false
+
+# Generate Multimedia Appendix 4: full paired t-test results table (all 7 columns)
+# as a standalone docx for JMIR supplementary upload.
+df_full <- df |>
+  select(Item, mean_ai, mean_supervisor, mean_diff, cohens_d, p_uncorrected, p_bonferroni)
+
+avail_full <- 7
+w_full <- rep(avail_full / ncol(df_full), ncol(df_full))
+
+ft_full <- df_full |>
+  flextable() |>
+  flextable::set_table_properties(layout = "fixed") |>
+  flextable::width(width = w_full) |>
   set_header_labels(
     Item = "Item",
     mean_ai = "AI Mean Score (95% CI)",
@@ -330,9 +361,17 @@ df |>
     p_uncorrected = "P value",
     p_bonferroni = "Corrected\nP value"
   ) |>
+  flextable::set_caption(
+    caption = "Multimedia Appendix 4. Full Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric, Including Mean Differences and Uncorrected P Values. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. Uncorrected P values are reported alongside Bonferroni-corrected P values for transparency; inference should be based on the corrected values."
+  ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
 
+appendix_4_path <- here(
+  "src", "assets", "appendix",
+  "Multimedia Appendix 4. full paired t-test results.docx"
+)
+flextable::save_as_docx(ft_full, path = appendix_4_path)
 ```
 
 Because the rubric used for scoring is a 5-point scale and the intervals from 1 to 5 may not be equal, using average scores may not be appropriate. Therefore, we used ordinal logistic regression to examine whether there are differences between AI and supervisors scores. We also employed a mixed-effects ordinal model to account for assessor type (student or faculty) and random effects by assessor. The results are shown in @tbl-ordinal-regression-clmm. In the ordinal logistic regression, three effects are expressed as odds ratios (OR) for each category. "Provider: AI" indicates that the larger the OR above 1, the more likely AI is to receive higher scores compared to supervisors. "Assessor type: student" indicates that the larger the OR above 1, the more likely students are to give higher scores compared to faculty. "Interaction: supervisor × student" indicates that the larger the OR above 1, the greater the difference in scores between AI and supervisors among students compared to faculty. *P* values are Bonferroni-corrected for comparisons across 15 items. The results indicated that, for the items criteria-based and clear direction, AI feedback received significantly higher scores than supervisor feedback (OR=11.81 [95% CI: 7.64–18.27], *P*<.001; OR=6.61 [95% CI: 4.35–10.06], *P*<.001) (OR, odds ratio; values larger than 1 indicate higher scores for AI than for supervisors). For accurate, prioritization, and supportive, AI also tended to receive higher scores, but the differences between AI and supervisors were not significant (OR=1.35 [95% CI: 0.91–2.00], *P*>.99; OR=1.70 [95% CI: 1.16–2.50], *P*=.098; OR=1.34 [95% CI: 0.87–2.06], *P*>.99). Regarding assessor type (student vs faculty), no significant differences were observed in any of the items. We also included interaction terms to test whether the effects of AI vs supervisor depended on assessor type, but no significant interaction effects were observed for any item.
@@ -629,7 +668,7 @@ This work was supported by JSPS KAKENHI Grant Number 25K06542. The funder had no
 
 ## Data Availability
 
-The anonymized evaluation data, analysis code, and the source code of the AI feedback generation system are publicly available (doi: https://doi.org/10.5281/zenodo.18868578). The AI feedback generation prompt, the evaluation rubric, and its translation process are provided in Multimedia Appendices 1, 2, and 3, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
+The anonymized evaluation data, analysis code, and the source code of the AI feedback generation system are publicly available (doi: https://doi.org/10.5281/zenodo.18868578). The AI feedback generation prompt, the evaluation rubric, its translation process, and the full paired t-test results table are provided in Multimedia Appendices 1, 2, 3, and 4, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
 
 ## Conflicts of Interest
 None declared.
@@ -645,6 +684,10 @@ This file contains the feedback evaluation rubric used in this study.
 ## Multimedia Appendix 3
 
 This file contains the translation process into Japanese for the feedback evaluation rubric used in this study.
+
+## Multimedia Appendix 4
+
+This file contains the full paired t-test results comparing AI and supervisor feedback scores on the Steiss et al. five-item analytic rubric, including mean differences and uncorrected *P* values that were omitted from Table 2 for readability.
 
 ## References
 
