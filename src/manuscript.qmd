@@ -502,35 +502,9 @@ After completing all rubric scoring and free-text comments, evaluators were aske
 
 ### Qualitative analysis
 
-The qualitative analysis of the free-text comments provided by the evaluators revealed several themes regarding the differences between AI and supervisor feedback. Following the thematic-map guidance of @Ahmed2025-tm, the thematic map in [@fig-thematic_map] visualizes the research question, the five themes, and their sub-themes arranged by feedback provider. The complete list of sub-themes by provider is shown in [@tbl-themes].
+The qualitative analysis of the free-text comments provided by the evaluators revealed several themes regarding the differences between AI and supervisor feedback. Following the thematic-map guidance of @Ahmed2025-tm, the thematic map in [@fig-thematic_map] visualizes the research question, the five themes, and their sub-themes arranged by feedback provider.
 
 ![Thematic map of differences between AI-generated and supervisor feedback on medical students' clinical clerkship logs. The research question is presented at the top, the two feedback modes are shown as contrasting poles, and each of the five themes is displayed with its AI and supervisor sub-themes arranged on the left and right, respectively. Convergent mixed-methods study, 161 clinical clerkship logs, Nagoya University, Japan, 2024.](../src/assets/thematic_map/thematic_map.svg){#fig-thematic_map}
-
-```{r}
-#| label: tbl-themes
-#| tbl-cap: "Themes Identified in Qualitative Analysis of Evaluator Comments on AI-Generated and Supervisor Feedback. Convergent mixed-methods study, 161 clinical clerkship logs, Nagoya University, Japan, 2024."
-#| echo: false
-
-df <- read.csv(here("result", "qualitative", "theme_table_en_simple.csv")) |>
-  pivot_wider(
-    names_from = provider,
-    values_from = sub_theme,
-    values_fn = function(x) paste0("- ", x, collapse = "\n")
-  )
-avail <- 6
-w <- rep(avail /ncol(df), ncol(df))
-df |> 
-  flextable() |>
-  flextable::set_table_properties(layout = "fixed") |>
-  flextable::width(width = w) |>
-  flextable::merge_v(j = "theme") |>
-  set_header_labels(
-    theme = "Theme",
-    AI = "Sub themes for AI",
-    supervisor = "Sub themes for Supervisor"
-  ) |>
-  theme_vanilla()
-```
 
 Five themes were identified as differences between AI and supervisor feedback: "Adherence to the feedback criteria and structure", "Continuity and consistency", "Perspective as a clinician", "Quality of the Japanese language", and "Text length". Below we describe the details of these themes. Citations consist of IDs with three parts. When the first part is "AI_", it indicates comments about AI feedback, and when it is "SU_", it indicates comments about supervisor feedback. The second part shows "_FA" for comments by faculty evaluators and "_ST" for comments by student evaluators. The number in the latter half represents the evaluator ID. The final part indicates the dataset ID.
 

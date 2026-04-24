@@ -36,11 +36,11 @@ Coverage of the JARS-Quant elements added in the first round of revision (Partic
 
   > Comment: Please include a thematic map https://www.sciencedirect.com/science/article/pii/S2949916X25000222
 
-RESPONSE: Thank you for this helpful suggestion and for directing us to the Ahmed et al. (2025) article on thematic analysis (Journal of Medicine, Surgery, and Public Health, 6, 100198). We have designed and added a new figure (Figure 2, thematic map) at the opening of the Qualitative analysis subsection of the Results, immediately before Table 2.
+RESPONSE: Thank you for this helpful suggestion and for directing us to the Ahmed et al. (2025) article on thematic analysis (Journal of Medicine, Surgery, and Public Health, 6, 100198). We have designed and added a new figure (Figure 6, thematic map) at the opening of the Qualitative Analysis subsection of the Results. Because the thematic map visualizes the same themes and sub-themes that were also presented in the Themes table, we removed the Themes table to avoid redundancy.
 
-The new figure is introduced by the following revised passage, which replaces the previous single-sentence pointer to Table 2:
+The new figure is introduced by the following revised passage, which replaces the previous single-sentence pointer to the Themes table:
 
-> "The qualitative analysis of the free-text comments provided by the evaluators revealed several themes regarding the differences between AI and supervisor feedback. Following the thematic-map guidance of Ahmed et al. (2025), the thematic map in Figure 2 visualizes the research question, the five themes, and their sub-themes arranged by feedback provider. The complete list of sub-themes by provider is shown in Table 2."
+> "The qualitative analysis of the free-text comments provided by the evaluators revealed several themes regarding the differences between AI and supervisor feedback. Following the thematic-map guidance of Ahmed et al. (2025), the thematic map in Figure 6 visualizes the research question, the five themes, and their sub-themes arranged by feedback provider."
 
 ### Editor Comment.3
 
