@@ -1,0 +1,21 @@
+{
+  "name": "jars-flowchart",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "bun run generate-jars-flowchart.ts",
+    "screenshot": "pptx2png jars-quant-participant-flowchart.pptx -r 1920x1080 -o . && mv slide_001.png jars-quant-participant-flowchart.png",
+    "svg": "pptx2svg jars-quant-participant-flowchart.pptx -o . && mv slide_001.svg jars-quant-participant-flowchart.svg",
+    "build": "bun run generate && bun run screenshot && bun run svg"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "yaml": "^2.8.2"
+  }
+}
