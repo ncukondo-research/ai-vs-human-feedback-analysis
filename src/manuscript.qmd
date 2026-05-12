@@ -106,19 +106,6 @@ set_flextable_defaults(
 
 # AI-generated versus human supervisor feedback on medical students' clinical clerkship logs: cross-sectional convergent mixed methods study
 
-Takeshi Kondo ,MD, MHPE, PhD; Jeroen Donkers, PhD; Hiroshi Nishigori, MD, MMEd, PhD; Sanne Rovers, PhD; Sylvia Heeneman, PhD
-
-Corresponding author:<br> 
-Takeshi Kondo, MD, MHPE, PhD<br>
-Department of General Medicine/Family & Community Medicine, Nagoya University Graduate School of Medicine, Nagoya, Japan<br>
-65, Tsurumai-cho, Showa-ku,<br>
-Nagoya-city, Aichi, <br>
-Japan <br>
-E-mail: ncukondo@gmail.com; <br>
-Tel: +81-52-741-2111<br>
-Fax: +81-52-741-2111<br>
-ORCID ID: https://orcid.org/0000-0002-3307-671X<br>
-
 ## Abstract
 
 **Background:** Feedback is essential for medical students' learning during clinical clerkships, yet supervising physicians often struggle to provide meaningful written feedback due to time constraints. Large language models offer a promising approach to supplement human feedback, but how AI-generated and human feedback differ in authentic clinical settings remains unclear, as most comparisons have been conducted in classroom or simulation contexts.

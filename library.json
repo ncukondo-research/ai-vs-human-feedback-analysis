@@ -1330,7 +1330,8 @@
         "sha1": "ef283f2272b0724732f298864ba9fae547177180"
       }
     },
-    "language": "en"
+    "language": "en",
+    "PMID": "6876333"
   },
   {
     "id": "Er2025-is",
@@ -1664,7 +1665,8 @@
         ]
       }
     },
-    "language": "en"
+    "language": "en",
+    "PMID": "40353019"
   },
   {
     "id": "Guetterman2015-qt",
@@ -2790,7 +2792,8 @@
     "URL": "http://dx.doi.org/10.1037/amp0000151",
     "publisher": "American Psychological Association (APA)",
     "source": "Crossref",
-    "language": "en"
+    "language": "en",
+    "PMID": "29345485"
   },
   {
     "id": "Lee2024-th",
@@ -4006,7 +4009,8 @@
         "sha1": "1ba400680a89f620ad95d0debad27a8aa0c291c6"
       }
     },
-    "language": "en"
+    "language": "en",
+    "PMID": "34270140"
   },
   {
     "id": "OpenAI2024-uk",
@@ -6092,7 +6096,8 @@
       }
     },
     "source": "Crossref",
-    "language": "en"
+    "language": "en",
+    "PMID": "39466356"
   },
   {
     "id": "strasser-2026",
@@ -6149,7 +6154,8 @@
       }
     },
     "source": "Crossref",
-    "language": "en"
+    "language": "en",
+    "PMID": "41813244"
   },
   {
     "id": "van-de-Ridder2014-ld",
@@ -6404,7 +6410,8 @@
     "ISSN": "2212-277X",
     "URL": "http://dx.doi.org/10.5334/pme.2265",
     "publisher": "Ubiquity Press, Ltd.",
-    "language": "en"
+    "language": "en",
+    "PMID": "41938740"
   },
   {
     "id": "Morris2026-sa",
@@ -6558,7 +6565,8 @@
     "ISSN": "2312-7996",
     "URL": "http://dx.doi.org/10.12688/mep.21403.1",
     "publisher": "F1000 Research Ltd",
-    "language": "en"
+    "language": "en",
+    "PMID": "41552409"
   },
   {
     "id": "Yavuz2024-vj",
@@ -6815,7 +6823,8 @@
         "sha1": "f8269dadb92624e1c02aec4eda423b4f39e07bfd",
         "titleshort": "Experiential learning"
       }
-    }
+    },
+    "PMID": "22289008"
   },
   {
     "type": "article-journal",
