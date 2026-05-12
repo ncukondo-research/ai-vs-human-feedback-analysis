@@ -1,0 +1,85 @@
+# TOC Image Generation Prompts
+
+Copy-paste prompts for generating a JMIR Medical Education compliant TOC image with a chat-UI image model (ChatGPT image, Claude with image tools, Gemini, Midjourney, etc.).
+
+Manuscript: *AI-generated versus human supervisor feedback on medical students' clinical clerkship logs: cross-sectional convergent mixed methods study* (JMIR Medical Education).
+
+---
+
+## A. Master prompt (English, recommended)
+
+```
+Create a photorealistic, full-color landscape photograph for use as a journal Table-of-Contents (TOC) image.
+
+Subject and scene:
+An over-the-shoulder view of a medical student in a hospital setting reviewing a written clinical clerkship log on a laptop screen. The student wears a white coat or hospital scrubs and a stethoscope. A senior physician (supervisor) is partially visible alongside, gesturing toward the screen as if giving feedback. On the laptop screen, two side-by-side feedback panels are softly visible but unreadable: the left panel suggests written human supervisor feedback, the right panel suggests AI-generated feedback shown as faint chat-style bubbles. A few clinical references (a tablet, a notebook with handwritten notes) sit on the desk. Warm, natural hospital lighting. Realistic, documentary photography style.
+
+Composition and framing:
+- Landscape orientation, strict 4:3 aspect ratio.
+- Fills the entire frame edge to edge. No borders, no padding, no white space anywhere.
+- Faces of all people are NOT identifiable: shoot from behind, from the side with face out of frame, or at an angle where features are not recognizable. Show hands, posture, and clothing instead.
+- Single continuous photograph. No collage, no split-screen, no multi-panel layout, no diptych.
+
+Strict prohibitions (do not include any of these):
+- No text, no captions, no labels, no watermarks anywhere in the image.
+- No logos, no brand names, no app icons, no university crests, no product identifiers.
+- No charts, graphs, diagrams, flow charts, bar plots, or schematic illustrations.
+- No cartoon, anime, 3D-render, illustration, vector-art, or painted styles. Photorealistic only.
+- No black-and-white, sepia, or monochrome regions. Full natural color throughout.
+- No stethoscope-on-laptop / lone-keyboard / man-staring-at-monitor cliches.
+- No recognizable faces, name badges, or readable screen text.
+
+Technical output:
+- Resolution: 1200 x 900 pixels (4:3).
+- File format: PNG.
+- Color: full RGB color, no transparency.
+```
+
+### Negative prompt (for Midjourney / SD-style UIs that take one)
+
+```
+text, letters, words, captions, watermark, logo, brand, app icon, university crest, chart, graph, diagram, flow chart, bar plot, cartoon, anime, illustration, 3d render, vector art, painting, monochrome, black and white, sepia, collage, split screen, multi-panel, border, frame, padding, white space, identifiable face, name badge, readable screen text
+```
+
+### Aspect ratio / size flags (image-tool-specific)
+
+- Midjourney: `--ar 4:3 --style raw --v 6`
+- DALL-E / ChatGPT image: ask for `1200x900` and explicitly request PNG.
+- Gemini / Imagen: specify "landscape, 4:3, 1200x900, PNG".
+- Stable Diffusion: width 1200, height 900 (or 800x600 then upscale 1.5x).
+
+---
+
+## B. Alternative scenes (swap into the "Subject and scene" block above)
+
+Use one of these if the master prompt's composition does not work well. The rest of the prompt (constraints, prohibitions, technical output) stays the same.
+
+**Scene 2 — Student alone with the log (single-figure variant):**
+> A medical student in white coat with a stethoscope, photographed from behind or from the side with face out of frame, sitting at a hospital workstation and reviewing a written clerkship log on a laptop. The laptop screen shows two faint, unreadable feedback panels side by side. A notebook with handwritten notes lies on the desk. Hospital ward visible but softly out of focus.
+
+**Scene 3 — Hands-and-screen close-up:**
+> A close-up landscape photograph of a medical student's hands typing on a laptop in a hospital ward. The student's torso (white coat, stethoscope) is partially visible; the head is out of frame. The laptop screen softly shows two unreadable feedback panels side by side, hinting at written supervisor feedback on the left and AI chat-style feedback on the right. Warm clinical lighting.
+
+---
+
+## C. Post-generation checklist (run before uploading)
+
+- [ ] Aspect ratio is exactly 4:3 (1200 x 900 px, or at least 800 x 600 px)
+- [ ] Saved as PNG (not JPG), full RGB color, no alpha/transparency
+- [ ] Image fills the frame; no white borders, padding, or letterboxing
+- [ ] No visible text, logos, watermarks, app icons, or brand identifiers
+- [ ] Photorealistic, not cartoon / illustration / 3D / painting / vector
+- [ ] No collage, split-screen, multi-panel composition
+- [ ] No identifiable human faces (if any face is visible, obtain a signed model release before submission)
+- [ ] Source/licence noted: AI-generated by [tool + version], date, prompt retained; verify the tool's terms permit use as a published TOC image
+- [ ] Not the same image used in any prior publication
+
+---
+
+## D. Japanese reference notes (作業用メモ)
+
+- 画像内に文字・ロゴ・透かしを入れない (JMIR Med Edu はロゴ例外対象外)
+- 4:3 横長、1200×900 px、PNG、フルカラー、白枠なし
+- 顔が映る場合は本人同意書が必要 → 顔が写らないアングルにする方が安全
+- AI 生成画像の場合: 使用ツール名・バージョン・プロンプト・生成日・ライセンス条件をアップロードフォームの "Source" 欄に記載
+- 既出論文での再利用は禁止 (同じ著者でも不可)
