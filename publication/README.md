@@ -29,6 +29,7 @@ Note: the original Quarto build expects this content under `src/...` of the repo
 ### `output/` — published deliverables
 
 - `final_manuscript_no_authors.docx` — Final rendered manuscript uploaded to JMIR. Author block removed from the body, includes a Word comment on the title approving authorship as listed on the journal's preview page, and emits 48 PMID hyperlinks via the JMIR CSL.
+- `TOC_image.png` — Table-of-contents image uploaded for the journal listing.
 - `multimedia_appendices/`
   - `Multimedia Appendix1. Prompt and Prompt Development.docx`
   - `Multimedia Appendix 2.feedback evaluation form.pdf`
@@ -38,3 +39,4 @@ Note: the original Quarto build expects this content under `src/...` of the repo
 ### Other
 
 - `invoice.pdf`, `payment.png` — APC-related records (pre-existing in this directory).
+- `gaidet_ai_disclosure.pdf`, `gaidet_ai_disclosure.txt` — Generative AI disclosure form (GAIDeT) submitted to JMIR.
