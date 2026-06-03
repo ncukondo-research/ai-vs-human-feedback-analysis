@@ -1,6 +1,6 @@
 # JMIR Med Educ 90064 — AQ 最終reply文（Kriyadocs貼り付け用）
 
-決定事項反映済み。**すべての修正は AQ への reply として記載**（直接編集不可）。図はローカルで修正・再生成済み（`5_copyedit/figures_revised/`）で、Kriyadocs の各図 "Replace" でアップロードする。トラックチェンジは reject しない。所属5は既に取り消し線済みのため対応不要。
+決定事項反映済み。**すべての修正は AQ への reply として記載**（直接編集不可）。図はローカルで修正・再生成済み（`6_copyedit/figures_revised/`）で、Kriyadocs の各図 "Replace" でアップロードする。トラックチェンジは reject しない。所属5は既に取り消し線済みのため対応不要。
 
 凡例: 各項目に「英語reply（貼り付け用）」を記載。番号 Q* は本フォルダ `copyedit_queries_raw.json` の index に対応。
 
@@ -95,7 +95,7 @@ Cumulative Link Mixed-Effects Models 表（Table 3）の補正後の表記（unc
 
 ## 図（Q5 / Q11 / Q13 / Q14 / Q15 / Q17 / Q20）
 
-いずれもローカルで修正・再生成済み（`5_copyedit/figures_revised/`）。各図の "Replace" でアップロードのうえ、以下を reply。
+いずれもローカルで修正・再生成済み（`6_copyedit/figures_revised/`）。各図の "Replace" でアップロードのうえ、以下を reply。
 
 **Q5（Figure 1）**
 > A revised Figure 1 has been uploaded. "Preparation of Feedback for Evaluation" is changed to "Preparation of feedback for evaluation", and "supervisor feedback" to "Supervisor feedback".
