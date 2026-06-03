@@ -202,11 +202,12 @@ plot <- tidy_data |>
   distinct(record_id, person, .keep_all = TRUE) |>
   ggplot(aes(x = feedback_letter_count, fill = person)) +
   geom_histogram(alpha = 0.6, position = "identity", bins = 30) +
-  scale_fill_manual(values = c("ai" = "blue", "supervisor" = "orange")) +
+  scale_fill_manual(values = c("ai" = "blue", "supervisor" = "orange"),
+                    labels = c("ai" = "AI", "supervisor" = "Supervisor"),
+                    name = "Feedback provider") +
   labs(
-    x = "Letter Count",
-    y = "Frequency",
-    fill = "Feedback Provider"
+    x = "Letter count",
+    y = "Frequency"
   ) +
   theme_minimal()
 
@@ -274,16 +275,18 @@ diff_by_id <- paired_by_id |>
   mutate(diffvalue = ai - supervisor)
 
 item_levels <- c("criteria.based", "clear.direction", "accurate", "prioritization", "supportive")
-item_labels <- c("(A) Criteria Based", "(B) Clear Direction", "(C) Accurate", "(D) Prioritization", "(E) Supportive")
+item_labels <- c("(A) Criteria-based", "(B) Clear direction", "(C) Accurate", "(D) Prioritization", "(E) Supportive")
 
 graph_diff_by_id <- diff_by_id |>
-  mutate(item = factor(item, levels = item_levels, labels = item_labels)) |>
+  mutate(item = factor(item, levels = item_levels, labels = item_labels),
+         assessor_type = factor(ifelse(assessor_type == "faculty", "Faculty", "Student"),
+                                levels = c("Faculty", "Student"))) |>
   ggplot(aes(x = diffvalue, fill = assessor_type)) +
   geom_bar(position = "dodge") +
   facet_wrap2(~ item, axes = "all") +
-  ggtitle("Differences between scores(AI-Supervisor)") +
-  scale_x_continuous(breaks = -4:4) +
-  labs(x = "Difference between AI and Supervisor") +
+  scale_x_continuous(breaks = -4:4, labels = function(x) gsub("-", "−", x)) +
+  scale_fill_discrete(name = "Assessor type") +
+  labs(x = "Difference between AI and supervisor (AI − supervisor)", y = "Count") +
   theme_minimal()
 
 graph_diff_by_id |>
@@ -712,9 +715,11 @@ mean_score_by_record |>
 # Plot overlapping histograms of per-record mean scores, colored by provider
 plot_mean_score_by_record <- ggplot(mean_score_by_record, aes(x = mean_score, fill = person)) +
   geom_histogram(alpha = 0.6, position = "identity", bins = 30) +
-  scale_fill_manual(values = c("ai" = "blue", "supervisor" = "orange"), name = "Feedback Provider") +
+  scale_fill_manual(values = c("ai" = "blue", "supervisor" = "orange"),
+                    labels = c("ai" = "AI", "supervisor" = "Supervisor"),
+                    name = "Feedback provider") +
   labs(
-    x = "Per-record Mean Score",
+    x = "Per-record mean score",
     y = "Frequency"
   ) +
   theme_minimal()

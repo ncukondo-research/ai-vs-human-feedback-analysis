@@ -1,0 +1,338 @@
+[
+ {
+  "i": 0,
+  "from": "Niranjani (PREEDITOR)",
+  "time": "25 May 2026 4:55 PM",
+  "q": "Please provide Department for affiliations [2], if applicable.“Please note that you will not be able to make changes directly. List all changes, if any, as a response to this query, and your CE/PE will apply them.”",
+  "hl": "",
+  "ctx": "2The School of Health Professions Education, Maastricht University, Maastricht, The Netherlands"
+ },
+ {
+  "i": 1,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:23 AM",
+  "q": "Please specify whether “t test” is 1-tailed or 2-tailed in all the instances.",
+  "hl": "t- tests",
+  "ctx": "This cross-sectional convergent mixed- methods study included 161 weekly clinical clerkship logs from 47 fifth- and sixth-year medical students across 12 clinical departments at Nagoya University, Japan (January–-May 2024). Of 164 eligible logs, 3 were excluded because supervisors entered contact messages rather than s"
+ },
+ {
+  "i": 2,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:25 AM",
+  "q": "Please provide SD for mean values in all the instances.",
+  "hl": "mean",
+  "ctx": "AI feedback was significantly longer than supervisor feedback (mean 382 vs 98 characters; Cohen d=2.84, 95% CI 2.50–‐3.19; PP<.001). Cumulative link mixed-effects models showed that AI scored higher on criteria-based (odds ratio [OR] 11.81, 95% CI 7.64–‐18.27; PP<.001) and clear direction (OR 6.61, 95% CI 4.35–‐10.06; "
+ },
+ {
+  "i": 3,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:06 AM",
+  "q": "As per the journal guidelines, all P values should be presented to two decimals, or to three decimals when P<.01 or when rounding would change significance (eg, P=.048). Please revise all P values.",
+  "hl": "P=",
+  "ctx": "AI feedback was significantly longer than supervisor feedback (mean 382 vs 98 characters; Cohen d=2.84, 95% CI 2.50–‐3.19; PP<.001). Cumulative link mixed-effects models showed that AI scored higher on criteria-based (odds ratio [OR] 11.81, 95% CI 7.64–‐18.27; PP<.001) and clear direction (OR 6.61, 95% CI 4.35–‐10.06; "
+ },
+ {
+  "i": 4,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:40 AM",
+  "q": "The meaning of this sentence is unclear. Please rephrase.",
+  "hl": "In clinical clerkships, supervising physicians work closely with students, allowing feedback to draw on direct observation of behaviors, tacit professional norms, and shared patient care experiences, dimensions that may ",
+  "ctx": "When comparing AI and humans in other clinical environments including clinical clerkships, a key limitation is that most existing comparisons have examined classroom or simulation tasks rather than authentic clinical activities [18,20,23,24]. In clinical clerkships, supervising physicians work closely with students, al"
+ },
+ {
+  "i": 5,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "30 May 2026 12:30 PM",
+  "q": "As per house style, please make the following changes to the figure and reupload the figure by clicking the \"Replace\" button:\n\n(1) Please change “Preparation of Feedback for Evaluation” to “Preparation of feedback for evaluation”, \"supervisor feedback\" to \"Supervisor feedback\"",
+  "hl": "Figure 1arrow_downwardDownloadReplaceCite Now1Figure 1. Overview of the feedback preparation and evaluation process in a mixed- methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at N",
+  "ctx": "Figure 1 arrow_downwardDOWNLOAD REPLACE CITE NOW 1"
+ },
+ {
+  "i": 6,
+  "from": "Exeter Pre-editing",
+  "time": "25 May 2026 4:51 PM",
+  "q": "Please check the figure's captions and content in detail.",
+  "hl": "",
+  "ctx": "Figure 1.Overview of the feedback preparation and evaluation process in a mixed- methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at Nagoya University, Japan. Student logs from the e-portfolio were used to generate AI feedback (GPT-4o) and collect supervisor feedback, which were t"
+ },
+ {
+  "i": 7,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 9:32 AM",
+  "q": "Please check and update the author initials NK, OS, NY, and DI, as the author names are not present in the author byline. If they are not the authors of the paper, please expand their names.",
+  "hl": "NK",
+  "ctx": "The original feedback quality evaluation rubric [18] was adapted for this study by modifying context-specific terms to fit the current research on student logs. The translation was performed by two2 bilingual individuals, (TK and HN), who are fluent in both Japanese and English and experienced in medical education. The"
+ },
+ {
+  "i": 8,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 9:38 AM",
+  "q": "As per journal rules, software should be cited as a web reference only if it is the subject of the paper. If the software is mentioned in passing, it can be referred to in the Methods section with the developer’s information in parentheses, eg, “SPSS (version 24.0; IBM Corp)”.\n\nPlease check if reference [47] can be removed and retaining only its developer names. If so, please add the name of the developer (ie, name of the organization and not the individuals) for [R].",
+  "hl": "R",
+  "ctx": "All quantitative analyses were conducted in R (version 4.4.2) [47]. Text length was operationalized as the number of Unicode characters (UTF-8) in each feedback entry. Since Japanese writing does not use spaces between words, and word counts can vary depending on morphological analysis methods, we used character counts"
+ },
+ {
+  "i": 9,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 10:55 AM",
+  "q": "Please provide IQR (interquartile range) values—distance between the 25th and 75th percentiles—along with median values as a hyphenated range (eg, median 10, IQR 5-15).",
+  "hl": "median",
+  "ctx": "During the clinical clerkship conducted at Nagoya UniversityNU from January 9, 2024, to May 5, 2024, combinations of student clerkship logs and corresponding supervisor feedback were collected. The data included nine9 clinical departments and three3 community hospitals, involving a total of 47 medical students and 42 s"
+ },
+ {
+  "i": 10,
+  "from": "Exeter Pre-editing",
+  "time": "25 May 2026 4:51 PM",
+  "q": "Please check the table's captions, content, and footnotes in detail.",
+  "hl": "",
+  "ctx": "Table 1.Dataset Summarysummarya. Convergent mixed-methods study comparing AI-generated and supervisor feedback on clinical clerkship logs, Nagoya University, Japan, 2024."
+ },
+ {
+  "i": 11,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "30 May 2026 12:34 PM",
+  "q": "As per house style, please make the following changes to the figure and reupload the figure by clicking the \"Replace\" button:\n\n1. Please set all text labels in sentence case (eg, Feedback generation, Supervisor feedback, etc)\n\n2. Please ensure that the numbers are accurate\n\n3. Please remove space present before and after =\n\n4. Please remove thousand seaprator comma from four digit numerals (eg, 3220)",
+  "hl": "Figure 2arrow_downwardDownloadReplaceCite Now1Figure 2.Participant flowchart for a mixed- methods study comparing AI-generated and supervisor feedback on clinical clerkship logs at Nagoya University, Japan (January 2024–",
+  "ctx": "Figure 2 arrow_downwardDOWNLOAD REPLACE CITE NOW 1"
+ },
+ {
+  "i": 12,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 10:58 AM",
+  "q": "Please provide an appropriate section title here.",
+  "hl": "see below",
+  "ctx": "Shapiro-Wilk tests assessed the normality of paired differences for all comparisons. The feedback length difference was normally distributed (W=0.992,; PP=.550), supporting the use of the paired t- test for that variable. However, all five5 rubric score differences departed significantly from normality (all W≤0.939,; a"
+ },
+ {
+  "i": 13,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "30 May 2026 12:38 PM",
+  "q": "As per house style, please make the following changes to the figure and reupload the figure by clicking the \"Replace\" button:\n\n(1) Please set all text labels in sentence case (eg, Feedback provider, AI, Supervisor, etc)",
+  "hl": "Figure 3arrow_downwardDownloadReplaceCite Now1Figure 3.Distribution of AI-generated and supervisor feedback lengths by character count for 161 clinical clerkship logs from 47 medical students, Nagoya University, Japan, 2",
+  "ctx": "Figure 3 arrow_downwardDOWNLOAD REPLACE CITE NOW 1"
+ },
+ {
+  "i": 14,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 11:14 AM",
+  "q": "As per journal guideline, comparative bar graphs with exact values can be retained. Please provide exact values in Figure 4. Else, please provide the data from this figure in the form of a table in the manuscript (please reply to this AQ and upload the Word document via the \"Upload file\" button) or retain the figure as is in Multimedia Appendix section.",
+  "hl": "Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed- meth",
+  "ctx": "Figure 4.Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed- methods study, Nagoya University, Japan, 2024. AI: artificial intelligence."
+ },
+ {
+  "i": 15,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 8:30 PM",
+  "q": "As per house style, please make the following changes to the figure and reupload the figure by clicking the \"Replace\" button:\n\n1. Please set all the text labels in sentence case (eg, Assessor type, Faculty, etc)\n\n2. Please change \"Criteria Based\" to \"Criteria-based\"\n\n3. Please change hyphens present before numerals to minus symbol",
+  "hl": "Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed- meth",
+  "ctx": "Figure 4.Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed- methods study, Nagoya University, Japan, 2024. AI: artificial intelligence."
+ },
+ {
+  "i": 16,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 11:32 AM",
+  "q": "Please provide mean for SD values in all the instances.",
+  "hl": "SD",
+  "ctx": "To compare the consistency of rubric scores between AI and supervisors, we plotted the distribution of per-clinical clerkship log mean scores (see Figure 5). AI exhibited smaller score dispersion, suggesting higher consistency in rubric scores. We further tested whether the variance of per-clinical clerkship log mean s"
+ },
+ {
+  "i": 17,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "30 May 2026 12:41 PM",
+  "q": "As per house style, please make the following changes to the figure and reupload the figure by clicking the \"Replace\" button:\n\n(1) Please set all text labels in sentence case (eg, Feedback provider, AI, Supervisor, etc)",
+  "hl": "Figure 5.arrow_downwardDownloadReplaceCite Now1Figure 5.Distribution of per-record mean rubric scores for AI-generated and supervisor feedback on 161 clinical clerkship logs, Nagoya University, Japan, 2024. AI feedback s",
+  "ctx": "Figure 5. arrow_downwardDOWNLOAD REPLACE CITE NOW 1"
+ },
+ {
+  "i": 18,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "1 Jun 2026 9:03 PM",
+  "q": "P values cannot be 0 and 1. When reported as 1, it should be changed to “>.99”. Please check if the value is correct in all the instances.",
+  "hl": "AI",
+  "ctx": "AI"
+ },
+ {
+  "i": 19,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "1 Jun 2026 9:18 PM",
+  "q": "As per the journal guidelines, all P values should be presented to two decimals, or to three decimals when P<.01 or when rounding would change significance (eg, P=.048). Please revise all P values in this table.",
+  "hl": "P value",
+  "ctx": "κ, P value"
+ },
+ {
+  "i": 20,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 12:55 AM",
+  "q": "Please provide image for Figure 6.",
+  "hl": "Thematic map of differences between AI-generated and supervisor feedback on medical students’ clinical clerkship logs. The research question is presented at the top, the two2 feedback modes are shown as contrasting poles",
+  "ctx": "Figure 6.Thematic map of differences between AI-generated and supervisor feedback on medical students’ clinical clerkship logs. The research question is presented at the top, the two2 feedback modes are shown as contrasting poles, and each of the five5 themes is displayed with its AI and supervisor sub-themes arranged "
+ },
+ {
+  "i": 21,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 4:15 PM",
+  "q": "The meaning of this sentence is unclear. Please rephrase.",
+  "hl": "The quantitative results showing AI feedback scored significantly higher in clear direction and criteria-based categories, with higher trends in other rubric items, were complemented by qualitative findings regarding adh",
+  "ctx": "The quantitative results showing AI feedback scored significantly higher in clear direction and criteria-based categories, with higher trends in other rubric items, were complemented by qualitative findings regarding adherence to feedback criteria and structure, as well as text length. Qualitative analysis revealed tha"
+ },
+ {
+  "i": 22,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 12:24 PM",
+  "q": "Please choose one of the template statements in the KB (https://support.jmir.org/hc/en-us/articles/360030832631-What-is-your-data-sharing-policy-) with minor changes as appropriate.",
+  "hl": "",
+  "ctx": "The anonymized evaluation data, analysis code, and the source code of the artificial intelligence (AI) feedback generation system are publicly available (https://doi.org/10.5281/zenodo.18868578). The AI feedback generation prompt, the evaluation rubric, its translation process, and the full paired t test results table "
+ },
+ {
+  "i": 23,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 12:23 PM",
+  "q": "URLs are not allowed in the main text as per JMIR guideline. Please consider deleting the URL “https://doi.org/10.5281/zenodo.18868578” or please confirm if this could be moved to the reference list just citing the reference alone here. If so, please provide complete reference details.",
+  "hl": "",
+  "ctx": "The anonymized evaluation data, analysis code, and the source code of the artificial intelligence (AI) feedback generation system are publicly available (https://doi.org/10.5281/zenodo.18868578). The AI feedback generation prompt, the evaluation rubric, its translation process, and the full paired t test results table "
+ },
+ {
+  "i": 24,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 9:20 AM",
+  "q": "Please check if the caption of all multimedia appendices are correct.",
+  "hl": "The feedback generation prompt for AIartificial intelligence used in this study and its development process.90064-Multimedia-Appendix-1.docxMultimedia Appendix 2ReplaceCite Now2Multimedia Appendix 2This file contains tTh",
+  "ctx": "Multimedia Appendix 1This file contains tThe feedback generation prompt for AIartificial intelligence used in this study and its development process."
+ },
+ {
+  "i": 25,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 9:19 AM",
+  "q": "There is a discrepancy in Multimedia Appendix 4 caption between here and appendix file. Please confirm on the caption to be retained.",
+  "hl": "The full paired t- test results comparing AIartificial intelligence and supervisor feedback scores on the Steiss et al. five5-item analytic rubric, including mean differences and uncorrected P values that were omitted fr",
+  "ctx": "Multimedia Appendix 4This file contains tThe full paired t- test results comparing AIartificial intelligence and supervisor feedback scores on the Steiss et al. five5-item analytic rubric, including mean differences and uncorrected P values that were omitted from Table 2 for readability."
+ },
+ {
+  "i": 26,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 12:28 PM",
+  "q": "Please check if the details of references [12, 35, 48, 64] are correct.",
+  "hl": "",
+  "ctx": "12.Dai W, Lin J, Jin H, et al. Can large language models provide feedback to students? A case study on ChatGPT. Presented at: 2023 IEEE International Conference on Advanced Learning Technologies (ICALT); Jul 10-13, 2023; Orem, UT, United States. [doi: 10.1109/ICALT58122.2023.00100]"
+ },
+ {
+  "i": 27,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 3:23 PM",
+  "q": "Please update the details of reference [41].",
+  "hl": "",
+  "ctx": "41.Jacobsen LJ, Weber KE. The promises and pitfalls of ChatGPT as a feedback provider in higher education: an exploratory study of prompt engineering and the quality of AI-driven feedback. OSF Preprints. Preprint posted online on 2023. [doi: 10.31219/osf.io/cr257]"
+ },
+ {
+  "i": 28,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:02 AM",
+  "q": "As per the journal guidelines on article structure, I have added a subheading here. You may change this to a more appropriate subheading if you wish.",
+  "hl": "OverviewJDA was used to integrate the results of the quantitative and qualitative analyses. The integration of quantitative and qualitative findings reveals six6 convergent patterns that illuminate the differences betwee",
+  "ctx": "Overview"
+ },
+ {
+  "i": 29,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 3:36 PM",
+  "q": "Please check if the Acknowledgments statement is correct.",
+  "hl": "",
+  "ctx": "The authors thank the following evaluators for their contribution to this study: Aya Shimotomai, Dai Iwata, Eishin Muramatsu, Hidekazu Kito, Hideki Takemi, Hiroaki Hakamata, Hirotake Machida, Kota Tokunaga, Mayuko Kitayama, Minoru Kishi, Naoki Yamada, Naomi Hino-Fukuyo, Nobuhiro Miyamae, Rikuto Kikunaga, Sou Suzuki, Ta"
+ },
+ {
+  "i": 30,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 12:49 AM",
+  "q": "Please go through my revisions and address all author queries (AQs) in the manuscript. Copyediting is intended to bring the manuscript in line with the JMIR House Style and Editorial Guidelines and AMA Manual of Style (11th ed). Do not reject any tracked changes made to the document. Instead of rejecting tracked changes, add a copyeditor query (CQ) if you disagree with any edits. In addition, insert a CQ for any additional requests or queries. Please follow the instructions in the email to complete the Author Revisions step. Thereafter, I will do a final round of editing on your paper in the Copyediting Final stage (before typesetting) to incorporate the changes requested by you. If you have any questions, please contact me at indumathi.v@aptaracorp.com. – Indumathi",
+  "hl": "AI",
+  "ctx": "AI-Generated Versus Human Supervisor Feedback on Medical Students’ Clinical Clerkship Logs: Cross-Sectional Convergent Mixed Methods Study"
+ },
+ {
+  "i": 31,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 12:50 AM",
+  "q": "At this stage, please ensure that the author metadata have been extracted correctly. For any changes to the metadata, please let me know by raising a CQ, so that I may make these changes for you during the Copyediting Final stage.",
+  "hl": "Takeshi",
+  "ctx": "Takeshi KondoMD, MHPE, PhD1,2Jeroen DonkersPhD2,3Hiroshi NishigoriMD, MMEd, PhD1Sanne RoversPhD2,4Sylvia HeenemanPhD2,4"
+ },
+ {
+  "i": 32,
+  "from": "Niranjani (PREEDITOR)",
+  "time": "25 May 2026 4:56 PM",
+  "q": "Please check whether all affiliations are displayed correctly. “Please note that you will not be able to make changes directly. List all changes, if any, as a response to this query, and your CE/PE will apply them.”",
+  "hl": "",
+  "ctx": "1Center for Medical Education, Nagoya University Graduate School of Medicine, 65, Tsurumai-cho, Showa-ku, Nagoya, 466-8550, Japan, 81 52 741 2111"
+ },
+ {
+  "i": 33,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 8:55 AM",
+  "q": "Please provide an appropriate section title in place of \"see below\".",
+  "hl": "see below",
+  "ctx": "This study was conducted as a cross-sectional mixed- methods study employusing a convergent design from a pragmatic perspective [37,38]. From the pragmatist standpoint of gaining insights that contribute to building a system where AI and supervisors complement each other to promote student learning, we examine the diff"
+ },
+ {
+  "i": 34,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 9:07 AM",
+  "q": "Please provide expansion of API.",
+  "hl": "API",
+  "ctx": "To generate high-quality feedback through large language modelLLMs, it is crucial to carefully craft the prompts provided to the model [41]. Since the students’ clinical clerkship logs are written in Japanese and the feedback is for Japanese students, we created the prompts in Japanese. Although Steiss et al [18] dealt"
+ },
+ {
+  "i": 35,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 9:39 AM",
+  "q": "Please provide expansion of UTF-8.",
+  "hl": "UTF-8",
+  "ctx": "All quantitative analyses were conducted in R (version 4.4.2) [47]. Text length was operationalized as the number of Unicode characters (UTF-8) in each feedback entry. Since Japanese writing does not use spaces between words, and word counts can vary depending on morphological analysis methods, we used character counts"
+ },
+ {
+  "i": 36,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:00 AM",
+  "q": "As per the journal guidelines on article structure, I have added a subheading here. You may change this to a more appropriate subheading if you wish.",
+  "hl": "OverviewFor the qualitative analysis, narrative comments from the open questions were organized in a table, followed by a thematic analysis [49]. Thematic analysis consists of the following steps: (1) Ffamiliarize with t",
+  "ctx": "Overview"
+ },
+ {
+  "i": 37,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:01 AM",
+  "q": "As per the journal guidelines on article structure, I have added a subheading here. You may change this to a more appropriate subheading if you wish.",
+  "hl": "OverviewDuring the clinical clerkship conducted at Nagoya UniversityNU from January 9, 2024, to May 5, 2024, combinations of student clerkship logs and corresponding supervisor feedback were collected. The data included ",
+  "ctx": "Overview"
+ },
+ {
+  "i": 38,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 10:56 AM",
+  "q": "Please provide expansion of MCAR.",
+  "hl": "MCAR",
+  "ctx": "From October 2024 to January 2025, 10 medical students and 10 faculty who were not involved in the creation of the above student clerkship logs or feedback evaluated the AI and supervisor feedback. No missing data were identified; all 161 records contained complete rubric scores from both assessors across all five5 ite"
+ },
+ {
+  "i": 39,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "1 Jun 2026 8:58 PM",
+  "q": "As per the journal guidelines, all P values should be presented to two decimals, or to three decimals when P<.01 or when rounding would change significance (eg, P=.048). Please check if the revised P values are correct.",
+  "hl": "P",
+  "ctx": "P value"
+ },
+ {
+  "i": 40,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "1 Jun 2026 9:01 PM",
+  "q": "P values cannot be 0 and 1. When reported as 1, it should be changed to “>.99”. Please check if the value is correct in all the instances.",
+  "hl": ".99",
+  "ctx": "1.000P>.99"
+ },
+ {
+  "i": 41,
+  "from": "Aptara (COPYEDITOR)",
+  "time": "2 Jun 2026 1:02 AM",
+  "q": "As per the journal guidelines on article structure, I have added a subheading here. You may change this to a more appropriate subheading if you wish.",
+  "hl": "OverviewThe qualitative analysis of the free-text comments provided by the evaluators revealed several themes regarding the differences between AI and supervisor feedback. Following the thematic-map guidance of Ahmed et ",
+  "ctx": "Overview"
+ }
+]
