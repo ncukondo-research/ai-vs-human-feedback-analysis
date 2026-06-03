@@ -172,7 +172,7 @@ addBox(
   r1y,
   MAIN_W,
   r1h,
-  `Assessed for eligibility\n(n = ${enroll.logs_collected.total} logs from ${enroll.students.total} students)`,
+  `Assessed for eligibility\n(n=${enroll.logs_collected.total} logs from ${enroll.students.total} students)`,
   { align: "center" }
 );
 
@@ -181,11 +181,11 @@ const exclH = 0.7;
 const exclY = r1y + r1h / 2 - exclH / 2; // vertically centered with Assessed box
 addBox(EXCL_X, exclY, EXCL_W, exclH, [
   {
-    text: `Excluded (total n = ${excl.logs_excluded.total}) because\n`,
+    text: `Excluded (total n=${excl.logs_excluded.total}) because\n`,
     options: { fontSize: 9, bold: true },
   },
   {
-    text: `Did not meet inclusion criteria (n = ${excl.logs_excluded.total})\n`,
+    text: `Did not meet inclusion criteria (n=${excl.logs_excluded.total})\n`,
     options: { fontSize: 8 },
   },
   {
@@ -210,7 +210,7 @@ const r2y = 1.7;
 const r2h = 0.4;
 
 arrowDown(MAIN_CX, el_y + STAGE_H, r2y);
-addBox(MAIN_X, r2y, MAIN_W, r2h, `Eligible logs (n = ${excl.logs_remaining})`, {
+addBox(MAIN_X, r2y, MAIN_W, r2h, `Eligible logs (n=${excl.logs_remaining})`, {
   align: "center",
 });
 
@@ -219,7 +219,7 @@ addBox(MAIN_X, r2y, MAIN_W, r2h, `Eligible logs (n = ${excl.logs_remaining})`, {
 // ================================================================
 const fl_y = 2.25;
 arrowDown(MAIN_CX, r2y + r2h, fl_y);
-addStageLabel(fl_y, "Feedback Generation");
+addStageLabel(fl_y, "Feedback generation");
 
 // ================================================================
 // ROW 3: SPLIT — SUPERVISOR / AI FEEDBACK
@@ -235,14 +235,14 @@ arrowDown(LEFT_CX, sj1, r3y);
 arrowDown(RIGHT_CX, sj1, r3y);
 
 addBox(LEFT_X, r3y, SPLIT_W, r3h, [
-  { text: "Supervisor Feedback\n", options: { fontSize: 10, bold: true } },
-  { text: `(n = ${fb.supervisor_feedback.total})\n`, options: { fontSize: 9 } },
+  { text: "Supervisor feedback\n", options: { fontSize: 10, bold: true } },
+  { text: `(n=${fb.supervisor_feedback.total})\n`, options: { fontSize: 9 } },
   { text: fb.supervisor_feedback.description, options: { fontSize: 8 } },
 ]);
 
 addBox(RIGHT_X, r3y, SPLIT_W, r3h, [
-  { text: "AI Feedback\n", options: { fontSize: 10, bold: true } },
-  { text: `(n = ${fb.ai_feedback.total})\n`, options: { fontSize: 9 } },
+  { text: "AI feedback\n", options: { fontSize: 10, bold: true } },
+  { text: `(n=${fb.ai_feedback.total})\n`, options: { fontSize: 9 } },
   { text: fb.ai_feedback.model, options: { fontSize: 8 } },
 ]);
 
@@ -281,7 +281,7 @@ addBox(
   r4y,
   MAIN_W,
   r4h,
-  `Paired datasets assembled (n = ${fb.datasets_assembled})`,
+  `Paired datasets assembled (n=${fb.datasets_assembled})`,
   { align: "center" }
 );
 
@@ -329,21 +329,21 @@ arrowDown(LEFT_CX, sj2, r6y);
 arrowDown(RIGHT_CX, sj2, r6y);
 
 addBox(LEFT_X, r6y, SPLIT_W, r6h, [
-  { text: "Quantitative Analysis\n", options: { fontSize: 10, bold: true } },
+  { text: "Quantitative analysis\n", options: { fontSize: 10, bold: true } },
   {
-    text: `n = ${analysis.quantitative.logs_analyzed} logs\n`,
+    text: `n=${analysis.quantitative.logs_analyzed} logs\n`,
     options: { fontSize: 9 },
   },
   {
-    text: `${analysis.quantitative.total_observations.toLocaleString()} observations`,
+    text: `${analysis.quantitative.total_observations} observations`,
     options: { fontSize: 8 },
   },
 ]);
 
 addBox(RIGHT_X, r6y, SPLIT_W, r6h, [
-  { text: "Qualitative Analysis\n", options: { fontSize: 10, bold: true } },
+  { text: "Qualitative analysis\n", options: { fontSize: 10, bold: true } },
   {
-    text: `n = ${analysis.qualitative.logs_analyzed} logs\n`,
+    text: `n=${analysis.qualitative.logs_analyzed} logs\n`,
     options: { fontSize: 9 },
   },
   { text: analysis.qualitative.method, options: { fontSize: 8 } },
