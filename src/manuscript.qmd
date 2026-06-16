@@ -282,15 +282,13 @@ The length of the feedback was compared between AI and supervisor feedback. Mean
 
 #### Comparison of Scores
 
-The scores assigned by the evaluators to the AI and supervisor feedback were compared. @fig-diff-ai-vs-supervisor shows the differences in feedback scores by AI and supervisors for the same log. Values greater than 0 indicate that the AI score is higher, and values less than 0 indicate that the supervisor score is higher. Although there are slight differences among evaluators, AI scores tend to be higher except for the “supportive” item.
+The scores assigned by the evaluators to the AI and supervisor feedback were compared. Multimedia Appendix 4 shows the differences in feedback scores by AI and supervisors for the same log. Values greater than 0 indicate that the AI score is higher, and values less than 0 indicate that the supervisor score is higher. Although there are slight differences among evaluators, AI scores tend to be higher except for the “supportive” item.
 
-![Distribution of score differences between AI-generated and supervisor feedback for each rubric category, evaluated by 10 faculty and 10 student assessors. Positive values indicate higher AI scores. Convergent mixed-methods study, Nagoya University, Japan, 2024.](../result/quantitative/fig_diff_ai_vs_supervisor.svg){#fig-diff-ai-vs-supervisor}
-
-Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected *P*<.001), clear direction (corrected *P*<.001), prioritization (corrected *P*<.001), accurate (corrected *P*<.001), and supportive (corrected *P*=.011). Details are shown in [@tbl-paired_ttest_results]; mean differences and uncorrected *P* values are provided in Multimedia Appendix 4.
+Next, we compared the mean scores of AI and supervisor feedback for each category. In all categories, AI feedback had higher mean scores than supervisor feedback. A t-test comparing the mean scores of supervisor feedback and AI feedback showed that AI feedback was rated significantly higher in all categories after Bonferroni correction: criteria-based (corrected *P*<.001), clear direction (corrected *P*<.001), prioritization (corrected *P*<.001), accurate (corrected *P*<.001), and supportive (corrected *P*=.011). Details are shown in [@tbl-paired_ttest_results]; mean differences and uncorrected *P* values are provided in Multimedia Appendix 5.
 
 ```{r}
 #| label: tbl-paired_ttest_results
-#| tbl-cap: "Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. This rubric assesses structural and content dimensions of written feedback; clinically specific dimensions such as diagnostic reasoning and professional judgment were not directly measured. Mean differences and uncorrected P values are reported in Multimedia Appendix 4."
+#| tbl-cap: "Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. This rubric assesses structural and content dimensions of written feedback; clinically specific dimensions such as diagnostic reasoning and professional judgment were not directly measured. Mean differences and uncorrected P values are reported in Multimedia Appendix 5."
 #| echo: false
 
 df <- read.csv(here("result", "quantitative", "paired_ttest_results_formatted.csv"))
@@ -324,10 +322,10 @@ df_main |>
 ```
 
 ```{r}
-#| label: appendix-4-full-ttest
+#| label: appendix-5-full-ttest
 #| include: false
 
-# Generate Multimedia Appendix 4: full paired t-test results table (all 7 columns)
+# Generate Multimedia Appendix 5: full paired t-test results table (all 7 columns)
 # as a standalone docx for JMIR supplementary upload.
 df_full <- df |>
   select(Item, mean_ai, mean_supervisor, mean_diff, cohens_d, p_uncorrected, p_bonferroni)
@@ -349,16 +347,16 @@ ft_full <- df_full |>
     p_bonferroni = "Corrected\nP value"
   ) |>
   flextable::set_caption(
-    caption = "Multimedia Appendix 4. Full Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric, Including Mean Differences and Uncorrected P Values. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. Uncorrected P values are reported alongside Bonferroni-corrected P values for transparency; inference should be based on the corrected values."
+    caption = "Multimedia Appendix 5. Full Paired T-test Results Comparing AI and Supervisor Feedback Scores on the Steiss et al. Five-Item Analytic Rubric, Including Mean Differences and Uncorrected P Values. Convergent mixed-methods study, Nagoya University medical students, Japan, 2024. Rubric items: (A) criteria-based, (B) clear direction, (C) accurate, (D) prioritization, (E) supportive. Uncorrected P values are reported alongside Bonferroni-corrected P values for transparency; inference should be based on the corrected values."
   ) |>
   fontsize(size = 8, part = "all") |>
   theme_vanilla()
 
-appendix_4_path <- here(
+appendix_5_path <- here(
   "src", "assets", "appendix",
-  "Multimedia Appendix 4. full paired t-test results.docx"
+  "Multimedia Appendix 5. full paired t-test results.docx"
 )
-flextable::save_as_docx(ft_full, path = appendix_4_path)
+flextable::save_as_docx(ft_full, path = appendix_5_path)
 ```
 
 Because the rubric used for scoring is a 5-point scale and the intervals from 1 to 5 may not be equal, using average scores may not be appropriate. Therefore, we used ordinal logistic regression to examine whether there are differences between AI and supervisors scores. We also employed a mixed-effects ordinal model to account for assessor type (student or faculty) and random effects by assessor. The results are shown in @tbl-ordinal-regression-clmm. In the ordinal logistic regression, three effects are expressed as odds ratios (OR) for each category. "Provider: AI" indicates that the larger the OR above 1, the more likely AI is to receive higher scores compared to supervisors. "Assessor type: student" indicates that the larger the OR above 1, the more likely students are to give higher scores compared to faculty. "Interaction: supervisor × student" indicates that the larger the OR above 1, the greater the difference in scores between AI and supervisors among students compared to faculty. *P* values are Bonferroni-corrected for comparisons across 15 items. The results indicated that, for the items criteria-based and clear direction, AI feedback received significantly higher scores than supervisor feedback (OR=11.81 [95% CI: 7.64–18.27], *P*<.001; OR=6.61 [95% CI: 4.35–10.06], *P*<.001) (OR, odds ratio; values larger than 1 indicate higher scores for AI than for supervisors). For accurate, prioritization, and supportive, AI also tended to receive higher scores, but the differences between AI and supervisors were not significant (OR=1.35 [95% CI: 0.91–2.00], *P*>.99; OR=1.70 [95% CI: 1.16–2.50], *P*=.098; OR=1.34 [95% CI: 0.87–2.06], *P*>.99). Regarding assessor type (student vs faculty), no significant differences were observed in any of the items. We also included interaction terms to test whether the effects of AI vs supervisor depended on assessor type, but no significant interaction effects were observed for any item.
@@ -645,7 +643,7 @@ This work was supported by JSPS KAKENHI Grant Number 25K06542. The funder had no
 
 ## Data Availability
 
-The anonymized evaluation data, the analysis code, and the source code of the AI feedback generation system are openly available in the Zenodo repository [@Kondo2026-data]. The AI feedback generation prompt, the evaluation rubric, its translation process, and the full paired t-test results table are provided in Multimedia Appendices 1, 2, 3, and 4, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
+The anonymized evaluation data, the analysis code, and the source code of the AI feedback generation system are openly available in the Zenodo repository [@Kondo2026-data]. The AI feedback generation prompt, the evaluation rubric, its translation process, the distribution of rubric score differences between AI and supervisor feedback by rubric item and assessor type, and the full paired t-test results table are provided in Multimedia Appendices 1, 2, 3, 4, and 5, respectively. The original clinical clerkship logs are not publicly available because some entries may contain personally identifiable information about medical students, and public release of the log texts would exceed the scope of consent obtained through the opt-out procedure approved by the ethics committee.
 
 ## Conflicts of Interest
 None declared.
@@ -663,6 +661,10 @@ This file contains the feedback evaluation rubric used in this study.
 This file contains the translation process into Japanese for the feedback evaluation rubric used in this study.
 
 ## Multimedia Appendix 4
+
+This file contains the distribution of rubric score differences between AI-generated and supervisor feedback by rubric item and assessor type.
+
+## Multimedia Appendix 5
 
 This file contains the full paired t-test results comparing AI and supervisor feedback scores on the Steiss et al. five-item analytic rubric, including mean differences and uncorrected *P* values that were omitted from Table 2 for readability.
 
